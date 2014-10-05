@@ -34,8 +34,46 @@ class ContractStatusList extends CI_Controller {
         
     }
     
+    /*
+     * 遷移先画面判定ロジック
+     * 
+     * ボタン押下時のバリュー値によって遷移先画面を判定し、
+     * 遷移先画面毎に別理を行う。
+     */
     function contractInfo_conform() {
 
+        $data['move'] = $this->input->post('move');
+        if ($data['move'] == '企業情報変更画面へ') {
+            $this->contractInfo_change();
+        } elseif ($data['move'] == '企業情報照会画面へ') {
+            $this->contractInfo_reference();
+        } elseif ($data['move'] == '企業情報登録画面へ') {
+            $this->contractInfo_add();
+        } else {
+            $this->index();
+        }
+    }
+
+    /*
+     * 企業情報照会画面へ
+     */
+    function contractInfo_reference() {
+        $this->load->view('customer_reference_view');
+    }
+    
+    
+    /*
+     * 企業情報追加画面へ
+     */
+    function contractInfo_add() {
+        $data['company_data'] = null;
+        $this->load->view('contractinfo_conform_view', $data);
+    }
+    
+    /*
+     * 企業情報変更画面へ
+     */
+    function contractInfo_change() {
         $data['check1'] = $this->input->post('check_radio');
         $data['company_data'] = $this->contractStatusList_model->get_company_data($data['check1']);
         foreach ($data['company_data'] as $row) {
@@ -73,12 +111,6 @@ class ContractStatusList extends CI_Controller {
         $this->session->set_userdata('company_id', $company_id);
           
 //        $data['test1']= $this->session->userdata('company_id');
-        $this->load->view('contractinfo_conform_view', $data);
-    }
-    
-        
-    function contractInfo_add() {
-        $data['company_data'] = null;
         $this->load->view('contractinfo_conform_view', $data);
     }
     

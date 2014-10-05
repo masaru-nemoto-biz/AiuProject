@@ -44,13 +44,9 @@
             <?php endforeach; ?>
         </table>
     </br>
-        <input type="submit" name="henkou" value="企業情報変更画面へ"/>
-        <?=form_close();?>
-        <?=form_open('contractstatuslist/contractInfo_add')?>
-        <input type="submit" value="企業情報登録画面へ"/>
-        <?=form_close();?>
-        <?=form_open('contractstatuslist/reference')?>
-        <input type="submit" value="企業情報照会画面へ"/>
+        <input type="submit" name="move" value="企業情報変更画面へ"/>
+        <input type="submit" name="move" value="企業情報照会画面へ"/>
+        <input type="submit" name="move" value="企業情報登録画面へ"/>
         <?=form_close();?>
     </body>
 </html>
