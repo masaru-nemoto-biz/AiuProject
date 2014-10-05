@@ -1,11 +1,13 @@
 <?php
 class ContractStatusList extends CI_Controller {
     
+    var $message;
+    
     function ContractStatusList() {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form','url'));
-        
+        $this->load->library('session');
         $this->load->model('contractStatusList_model');
         
         $this->config->load('config_shop', TRUE);
@@ -19,6 +21,7 @@ class ContractStatusList extends CI_Controller {
     
     function index() {
 
+        $data['message'] = $this->session->userdata('message');
         $data['list'] = $this->contractStatusList_model->get_company_list();
         $this->load->view('contractstatuslist_view', $data);
     }
@@ -75,6 +78,14 @@ class ContractStatusList extends CI_Controller {
      */
     function contractInfo_change() {
         $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('ContractStatusList/index');
+        }
+        
         $data['company_data'] = $this->contractStatusList_model->get_company_data($data['check1']);
         foreach ($data['company_data'] as $row) {
             $company_id = $row->company_id;

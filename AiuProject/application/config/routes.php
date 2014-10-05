@@ -39,7 +39,7 @@
 */
 
 // $route['default_controller'] = "welcome";
-$route['default_controller'] = "contractStatusList";
+$route['default_controller'] = "login";
 $route['404_override'] = '';
 
 /* End of file routes.php */
