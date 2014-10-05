@@ -11,7 +11,7 @@
         </br>
         </br>
         <?php if (is_null($company_data)) : ?>
-            <?= form_open('contractstatuslist/conform_add') ?>
+            <?= form_open('contractstatusconform/conform_add') ?>
             <div style="font-size: 12px;position: relative; margin-right:auto; margin-left:auto; width: 1000px">
                 <div style="position: absolute; top: 50px; left: 10px; font-size:12px">
                     <div style="font-weight:bold; font-size: 18px">◆企業情報</div>
@@ -102,7 +102,7 @@
             </div>
             <?= form_close(); ?>
         <?php else: ?>
-            <?= form_open('contractstatuslist/conform') ?>
+            <?= form_open('contractstatusconform/conform') ?>
                 <?php foreach ($company_data as $row): ?>
         <div style="font-size: 12px">
                 <div style="position: absolute; top: 50px; left: 10px; font-size:12px">
