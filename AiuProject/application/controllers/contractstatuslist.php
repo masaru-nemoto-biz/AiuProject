@@ -257,5 +257,10 @@ class ContractStatusList extends CI_Controller {
         
     }
     
+    function contractinfo_view(){
+        $this->load->view('contractinfo_view');
+        
+    }
+    
 }
 ?>
