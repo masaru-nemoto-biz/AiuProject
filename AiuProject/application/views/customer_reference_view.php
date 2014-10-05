@@ -8,17 +8,19 @@
 </head>
     <body>
             <div style="font-size: 12px; position: relative; margin-right:auto; margin-left:auto; width: 800px">
-                <div style="position: absolute; top: 0px; left: 10px; font-size: 16px">
-                    <table border="1">
-                        <tr><td align="center" width="800"><b>顧客カード</b></td></tr>
+                <div style="position: absolute; top: 10px; left: 10px; font-size: 16px">
+                    <table border="0">
+                        <tr bgcolor="#cccccc"><td align="center" width="800"><b>顧客カード</b></td></tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 0px; left: 10px">
+                <div style="position: absolute; top: 0px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
+                    </table>
                 </div>
-                <div style="position: absolute; top: 50px; left: 10px;">
-                    <table border="1">
+                <div style="position: absolute; top: 360px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
                         <tr><td width="120" align="center" rowspan="2"><b>企業名</b></td>
-                            <td align="center"width="60"><b>カナ</b></td><td colspan="2">参照したいデータ１</td></tr>
+                            <td align="center" width="60"><b>カナ</b></td><td colspan="2">参照したいデータ１</td></tr>
                         <tr>
                             <td align="center" width="60"><b>漢字</b></td><td colspan="2">参照したいデータ２</td>
                         </tr>
@@ -36,23 +38,23 @@
                         </tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 400px; left: 10px;">
-                    <table border="1">
+                <div style="position: absolute; top: 680px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
                         <tr><td width="120" align="center"><b>アプローチ</b></td><td width="60" align="center"><b>回数</b></td>
                             <td width="60" align="center">参照したいデータ11</td><td width="560">参照したいデータ12</td>
                         </tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 455px; left: 10px;">
-                    <table border="1">
+                <div style="position: absolute; top: 740px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
                         <tr><td width="120" align="center"><b>生年月日</b></td><td width="280">参照したいデータ13</td>
                             <td width="120" align="center"><b>人柄</b></td><td width="280">参照したいデータ15</td>
                         </tr>
                         <tr><td align="center"><b>趣味</b></td><td colspan="3">参照したいデータ16</td></tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 540px; left: 10px;">
-                    <table border="1">
+                <div style="position: absolute; top: 835px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
                         <tr><td width="120" align="center"><b>業種</b></td><td width="280">参照したいデータ17</td>
                             <td width="120" align="center"><b>設立</b></td><td width="280">参照したいデータ18</td>
                         </tr>
@@ -62,13 +64,13 @@
                         </tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 665px; left: 10px;">
-                    <table border="1">
+                <div style="position: absolute; top: 965px; left: 10px;">
+                    <table border="1" style="border-collapse:collapse">
                         <tr><td width="120" align="center"><b>今後のフォロー</b></td><td colspan="3" width="680">参照したいデータ19</td></tr>
                         <tr><td align="center"><b>備考</b></td><td colspan="3">参照したいデータ20</td></tr>
                     </table>
                 </div>
-                <div style="position: absolute; top: 760px; left: 10px;">
+                <div style="position: absolute; top: 1060px; left: 10px;">
                     <input type="submit" value="完了"/>
                 </div>
             </div>
