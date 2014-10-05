@@ -3,12 +3,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="<?=base_url();?>css/shop.css" type="text/css" />
+    <link href="<?=base_url();?>css/bootstrap.css" rel="stylesheet">
     <title>AIU</title>
 </head>
     <body>
         <?=form_open('contractstatuslist/contractInfo_conform')?>
-        <table border="3">
+        <table border="1">
             <caption align=center><h2>企業一覧</h2></caption>
             <tr bgcolor="#cccccc">
                 <th>選択</th>
@@ -43,10 +43,19 @@
                 </tr>
             <?php endforeach; ?>
         </table>
-    </br>
-        <input type="submit" name="move" value="企業情報変更画面へ"/>
-        <input type="submit" name="move" value="企業情報照会画面へ"/>
-        <input type="submit" name="move" value="企業情報登録画面へ"/>
+        <?php if (!empty($message)) : ?>
+        <div class="alert alert-error" style="width: 400px; margin-top: 10px">
+            <a class="close" data-dismiss="alert">×</a>
+        <?= $message ?>
+        </div>
+        <?php endif; ?>
+        <input class="btn btn-primary" type="submit" name="move" value="企業情報変更画面へ"/>
+        <input class="btn btn-primary" type="submit" name="move" value="企業情報照会画面へ"/>
+        <input class="btn btn-primary" type="submit" name="move" value="企業情報登録画面へ"/>
         <?=form_close();?>
     </body>
+    <!-- jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Bootstrapで使うJavaScriptの読み込み-->
+    <script src="<?=base_url();?>js/bootstrap.min.js"></script>
 </html>
