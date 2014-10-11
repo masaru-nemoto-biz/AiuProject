@@ -5,7 +5,6 @@ Class ContractStatusList_model extends CI_Model {
         parent::__construct();
         $this->load->database();
     }
-
     
     function get_company_list() {
         $this->db->order_by('company_id');
@@ -65,6 +64,15 @@ Class ContractStatusList_model extends CI_Model {
         return $query->result();
     }
     
+    function get_company_detail($check_radio) {
+        $this->db->select('*');
+        $this->db->from('company_info');
+        $this->db->join('contract_detail', 'contract_detail.company_id = company_info.company_id', 'left');
+        $this->db->where('company_info.company_id', $check_radio);
+        $query = $this->db->get();
+        
+        return $query->result();
+    }
     
     function set_company_data($company_id, $array) {
         $this->db->where('company_id', $company_id);

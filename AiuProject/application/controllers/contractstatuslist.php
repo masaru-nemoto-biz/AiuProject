@@ -9,6 +9,7 @@ class ContractStatusList extends CI_Controller {
         $this->load->helper(array('form','url'));
         $this->load->library('session');
         $this->load->model('contractStatusList_model');
+        $this->load->model('contractInfo_model');
         
         $this->config->load('config_shop', TRUE);
         
@@ -54,6 +55,8 @@ class ContractStatusList extends CI_Controller {
             $this->contractInfo_reference();
         } elseif ($data['move'] == '企業情報登録画面へ') {
             $this->contractInfo_add();
+        } elseif ($data['move'] == '契約状況一覧画面へ') {
+            $this->move_contractInfo();
         } else {
             $this->index();
         }
@@ -152,6 +155,16 @@ class ContractStatusList extends CI_Controller {
         $this->session->set_userdata('company_id', $company_id);
 
         $this->load->view('contractinfo_conform_view', $data);
+    }
+
+    /*
+     * 企業情報追加画面へ
+     */
+    function move_contractInfo() {
+        $data['company_id'] = $this->input->post('check_radio');
+        $data['list1'] = $this->contractStatusList_model->get_company_detail($data['company_id']);
+        $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
+        $this->load->view('contractinfolist_view', $data);
     }
 }
 ?>

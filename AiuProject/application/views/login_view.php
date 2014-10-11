@@ -42,13 +42,13 @@
     </head>
     <body>
         <?=form_open('login/success')?>
-        <div class="container">
+        <div class="container form-group">
             <div class="form-signin">
                 <h2 class="form-signin-heading">Please sign in</h2>
-                <input type="text" class="input-block-level" placeholder="User" name="user">
-                <input type="password" class="input-block-level" placeholder="Password" name="password">
+                <input type="text" class="form-control input-sm" placeholder="User" name="user">
+                <input type="password" class="form-control input-sm" placeholder="Password" name="password">
 
-                <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
             </div>
         </div>
         <?=form_close();?>
