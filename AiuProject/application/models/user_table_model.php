@@ -25,25 +25,13 @@ Class User_table_model extends CI_Model {
     function insert_user_data($array) {
         $this->db->insert('aiu_user', $array); 
     }
-//    function get_category_name($id) {
-//        $this->db->select('name');
-//        $this->db->where('id', $id);
-//        $query = $this->db->get('category');
-//        $row = $query->row();
-//        return $row->name;
-//    }
-//
-//    function get_product_count($cat_id) {
-//        $this->db->where('category_id', $cat_id);
-//        $query = $this->db->get('product');
-//        return $query->num_rows();
-//    }
-//    
-//    function get_product_item($id) {
-//        $this->db->where('id', $id);
-//        $query = $this->db->get('product');
-//        return $query->row();
-//    }
+
+    function get_user_count($user, $password) {
+        $this->db->where('user_id', $user);
+        $this->db->where('password', $password);
+        $this->db->from('aiu_user');
+        return $this->db->count_all_results();
+    }
 }
 
 ?>
