@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="<?= base_url(); ?>css/bootstrap.css" rel="stylesheet">
+        <link href="<?= base_url(); ?>css/bootstrap.css" rel="stylesheet"/>
         <title>AIU</title>
         <!-- ビューポートの設定-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
