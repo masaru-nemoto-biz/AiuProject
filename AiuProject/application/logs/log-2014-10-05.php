@@ -6717,3 +6717,359 @@ DEBUG - 2014-10-05 19:14:07 --> Config file loaded: application/config/config_sh
 DEBUG - 2014-10-05 19:14:07 --> File loaded: application/views/contractstatuslist_view.php
 DEBUG - 2014-10-05 19:14:07 --> Final output sent to browser
 DEBUG - 2014-10-05 19:14:07 --> Total execution time: 0.0518
+DEBUG - 2014-10-05 19:29:29 --> Config Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:29:29 --> URI Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Router Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Output Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Security Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Input Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:29:29 --> Language Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:29:29 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Session Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:29:29 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Session routines successfully run
+DEBUG - 2014-10-05 19:29:29 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:29:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:29:29 --> Model Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Model Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:29:29 --> Config file loaded: application/config/config_shop.php
+ERROR - 2014-10-05 19:29:29 --> Severity: Notice  --> Undefined variable: company_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:29:29 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:29:29 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:29:29 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:29:29 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:29:29 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:29:29 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:29:29 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:29:29 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:29:29 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:29:29 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:29:29 --> Final output sent to browser
+DEBUG - 2014-10-05 19:29:29 --> Total execution time: 0.0423
+DEBUG - 2014-10-05 19:33:56 --> Config Class Initialized
+DEBUG - 2014-10-05 19:33:56 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:33:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:33:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:33:56 --> URI Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Router Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Output Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Security Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Input Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:33:57 --> Language Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:33:57 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Session Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:33:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Session routines successfully run
+DEBUG - 2014-10-05 19:33:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:33:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:33:57 --> Model Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Model Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:33:57 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:33:57 --> Session class already loaded. Second attempt ignored.
+ERROR - 2014-10-05 19:33:57 --> Severity: Notice  --> Undefined variable: company_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:33:57 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:33:57 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:33:57 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:33:57 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:33:57 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:33:57 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:33:57 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:33:57 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:33:57 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:33:57 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:33:57 --> Final output sent to browser
+DEBUG - 2014-10-05 19:33:57 --> Total execution time: 0.0468
+DEBUG - 2014-10-05 19:34:00 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:00 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:00 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:00 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:00 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:00 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:00 --> File loaded: application/views/contractstatuslist_view.php
+DEBUG - 2014-10-05 19:34:00 --> Final output sent to browser
+DEBUG - 2014-10-05 19:34:00 --> Total execution time: 0.0560
+DEBUG - 2014-10-05 19:34:03 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:03 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:03 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:03 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:03 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:03 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:03 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:03 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:03 --> Session class already loaded. Second attempt ignored.
+ERROR - 2014-10-05 19:34:03 --> Severity: Notice  --> Undefined variable: company_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:34:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:34:03 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:34:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:34:03 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:34:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:34:03 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:34:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:34:03 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:34:03 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:34:03 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:34:03 --> Final output sent to browser
+DEBUG - 2014-10-05 19:34:03 --> Total execution time: 0.0404
+DEBUG - 2014-10-05 19:34:05 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:05 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:05 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:05 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:05 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:05 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:05 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:05 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:05 --> File loaded: application/views/contractstatuslist_view.php
+DEBUG - 2014-10-05 19:34:05 --> Final output sent to browser
+DEBUG - 2014-10-05 19:34:05 --> Total execution time: 0.0739
+DEBUG - 2014-10-05 19:34:06 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:06 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:06 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:06 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:06 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:06 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:06 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:06 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:06 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:06 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:06 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:06 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:06 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:06 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:06 --> File loaded: application/views/contractstatuslist_view.php
+DEBUG - 2014-10-05 19:34:06 --> Final output sent to browser
+DEBUG - 2014-10-05 19:34:06 --> Total execution time: 0.0314
+DEBUG - 2014-10-05 19:34:11 --> Config Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:34:11 --> URI Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Router Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Output Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Security Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Input Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:34:11 --> Language Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:34:11 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Session Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:34:11 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Session routines successfully run
+DEBUG - 2014-10-05 19:34:11 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:34:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:34:11 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Model Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:34:11 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:34:11 --> Session class already loaded. Second attempt ignored.
+ERROR - 2014-10-05 19:34:11 --> Severity: Notice  --> Undefined variable: company_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:34:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 13
+ERROR - 2014-10-05 19:34:11 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:34:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:34:11 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:34:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:34:11 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:34:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:34:11 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:34:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:34:11 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:34:11 --> Final output sent to browser
+DEBUG - 2014-10-05 19:34:11 --> Total execution time: 0.0414
+DEBUG - 2014-10-05 19:35:08 --> Config Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:35:08 --> URI Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Router Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Output Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Security Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Input Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:35:08 --> Language Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:35:08 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Session Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:35:08 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Session routines successfully run
+DEBUG - 2014-10-05 19:35:08 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:35:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:35:08 --> Model Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Model Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:35:08 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:35:08 --> Session class already loaded. Second attempt ignored.
+ERROR - 2014-10-05 19:35:08 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:35:08 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:35:08 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:35:08 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:35:08 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:35:08 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:35:08 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:35:08 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:35:08 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:35:08 --> Final output sent to browser
+DEBUG - 2014-10-05 19:35:08 --> Total execution time: 0.0452
+DEBUG - 2014-10-05 19:35:14 --> Config Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:35:14 --> URI Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Router Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Output Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Security Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Input Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:35:14 --> Language Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:35:14 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Session Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:35:14 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Session routines successfully run
+DEBUG - 2014-10-05 19:35:14 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:35:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:35:14 --> Model Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Model Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:35:14 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:35:14 --> Session class already loaded. Second attempt ignored.
+ERROR - 2014-10-05 19:35:14 --> Severity: Notice  --> Undefined variable: representative_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:35:14 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 39
+ERROR - 2014-10-05 19:35:14 --> Severity: Notice  --> Undefined variable: contract_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:35:14 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 56
+ERROR - 2014-10-05 19:35:14 --> Severity: Notice  --> Undefined variable: bank_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:35:14 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 73
+ERROR - 2014-10-05 19:35:14 --> Severity: Notice  --> Undefined variable: other_list D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+ERROR - 2014-10-05 19:35:14 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_reference_view.php 93
+DEBUG - 2014-10-05 19:35:14 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:35:14 --> Final output sent to browser
+DEBUG - 2014-10-05 19:35:14 --> Total execution time: 0.0408
+DEBUG - 2014-10-05 19:38:03 --> Config Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Hooks Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Utf8 Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> UTF-8 Support Enabled
+DEBUG - 2014-10-05 19:38:03 --> URI Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Router Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Output Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Security Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Input Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-05 19:38:03 --> Language Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Loader Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Helper loaded: url_helper
+DEBUG - 2014-10-05 19:38:03 --> Controller Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Session Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Helper loaded: string_helper
+DEBUG - 2014-10-05 19:38:03 --> Encrypt Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Session routines successfully run
+DEBUG - 2014-10-05 19:38:03 --> Helper loaded: form_helper
+DEBUG - 2014-10-05 19:38:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:38:03 --> Model Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Model Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Database Driver Class Initialized
+DEBUG - 2014-10-05 19:38:03 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-05 19:38:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-05 19:38:03 --> File loaded: application/views/contractinfo_reference_view.php
+DEBUG - 2014-10-05 19:38:03 --> Final output sent to browser
+DEBUG - 2014-10-05 19:38:03 --> Total execution time: 0.0370
