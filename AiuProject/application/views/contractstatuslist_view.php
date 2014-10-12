@@ -4,6 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="<?=base_url();?>css/bootstrap.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<!--[if lt IE 9]>
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
     <title>AIU</title>
     <style type="text/css">
         body {
@@ -21,9 +26,11 @@
         </div>
         <?=form_close();?>
         <?=form_open('contractstatuslist/contractInfo_conform')?>
-        <table border="1" style="margin-left: auto; margin-right: auto;">
+        <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-condensed">
             <caption align=center><h2>企業一覧</h2></caption>
-            <tr bgcolor="#cccccc">
+            <thead>
+            <tr>
                 <th>選択</th>
                 <th>企業No</th>
                 <th>企業名</th>
@@ -38,6 +45,7 @@
                 <th>その他</th>
                 <th>事故状況</th>
             </tr>
+            </thead>
             <?php foreach ($list as $row): ?>
                 <tr>
                     <td><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
@@ -56,8 +64,9 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+        </div>
         <?php if (!empty($message)) : ?>
-        <div class="alert alert-error" style="width: 400px; margin-top: 10px">
+        <div class="alert alert-danger" style="width: 300px; margin-top: 10px">
             <a class="close" data-dismiss="alert">×</a>
         <?= $message ?>
         </div>
@@ -66,9 +75,9 @@
             <input class="btn btn-primary" type="submit" name="move" value="企業情報変更画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報照会画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報登録画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧画面へ"/>
         </div>
         <?=form_close();?>
-        </div>
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
