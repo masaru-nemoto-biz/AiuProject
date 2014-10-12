@@ -28,7 +28,7 @@
 </head>
     <body>
         <div class="container" style="font-size: 12px;">
-            <?= form_open('contractstatuslist/index') ?>
+            <?= form_open('corpinfolist/index') ?>
             <div class="clearfix" style="border: 1px solid #e5e5e5;width: 824px; margin-left: auto; margin-right: auto;">
                 <div class="pull-left" style="border: 1px solid #e5e5e5; width: 400px; padding-left: 10px; padding-top: 10px;">
                     <label class="font_subhead">◆企業情報</label>
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div class="center_auto" style="border: 1px solid #e5e5e5;width: 150px;">
-            <input style="width:150px" type="submit" value="完了"/>
+            <input style="width:150px" type="submit" value="企業情報一覧画面へ"/>
             </div>
             <?= form_close(); ?>
         </div>

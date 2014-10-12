@@ -29,11 +29,11 @@
 </head>
     <body>
         <div class="container" style="font-size: 12px;">
-        <?= form_open('ContractInfoConform/conform_add') ?>
+        <?= form_open('corpinfolist/registration_add') ?>
         <div style="font-size: 12px; position: relative; margin-right:auto; margin-left:auto; width: 800px">
             <div style="position: relative; top: 10px; left: 10px; font-size: 28px">
                 <table border="0" align="center" height="50">
-                    <tr bgcolor="#cccccc"><td align="center" width="700"><b>契約情報登録画面</b></td></tr>
+                    <tr bgcolor="#cccccc"><td align="center" width="700"><b>事故状況登録画面</b></td></tr>
                 </table>
             </div>
             <div style="position: absolute; top: 80px; left: 0px">
@@ -43,17 +43,12 @@
             </div> 
             <div style="position: absolute; top: 140px; left: 10px">
                 <table border="3">
-                    <tr><th width="120" bgcolor="#cccccc">保険種別</th><td><input type="text" name="insurance_classification_id" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">保険会社</th><td><input type="password" name="insurance_company_id" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">商品名(カナ)</th><td><input type="text" name="brand_name" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">区分</th><td><input type="text" name="division" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">証券番号</th><td><input type="text" name="policy_number" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">保険期間</th><td><input type="text" name="insurance_period" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">契約期間</th><td><input type="text" name="contract_period" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">月P</th><td><input type="text" name="month_p" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">年払い</th><td><input type="text" name="yearly_payment" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">ANP</th><td><input type="text" name="anp" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">合計ANP</th><td><input type="text" name="total_anp" value="" size="50" /></td></tr>
+                    <tr><th width="120" bgcolor="#cccccc">事故</th><td><input type="text" name="user_id" value="" size="50" /></td></tr>
+                    <tr><th bgcolor="#cccccc">現状</th><td><input type="password" name="password" value="" size="50" /></td></tr>
+                    <tr><th bgcolor="#cccccc">発生日時</th><td><input type="text" name="user_name" value="" size="50" /></td></tr>
+                    <tr><th bgcolor="#cccccc">損サ担当</th><td><input type="text" name="user_name_kana" value="" size="50" /></td></tr>
+                    <tr><th bgcolor="#cccccc">連絡先</th><td><input type="text" name="authority" value="" size="50" /></td></tr>
+                    <tr><th bgcolor="#cccccc">支払い</th><td><input type="text" name="registration_user_id" value="" size="50" /></td></tr>
                 </table>
             </div>
         </div>
@@ -71,5 +66,4 @@
     <script>
         $("#table_id").dataTable();
     </script>
-    
 </html>

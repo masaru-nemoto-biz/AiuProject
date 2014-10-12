@@ -1,7 +1,7 @@
 <?php
-Class ContractStatusList_model extends CI_Model {
+Class corpStatus_model extends CI_Model {
     
-    function ContractStatusList_model(){
+    function corpStatus_model(){
         parent::__construct();
         $this->load->database();
     }

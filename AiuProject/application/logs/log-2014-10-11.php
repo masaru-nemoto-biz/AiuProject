@@ -11308,3 +11308,31 @@ DEBUG - 2014-10-11 20:51:25 --> Config file loaded: application/config/config_sh
 DEBUG - 2014-10-11 20:51:25 --> File loaded: application/views/contractinfolist_view.php
 DEBUG - 2014-10-11 20:51:25 --> Final output sent to browser
 DEBUG - 2014-10-11 20:51:25 --> Total execution time: 0.0418
+DEBUG - 2014-10-11 20:56:29 --> Config Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Hooks Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Utf8 Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> UTF-8 Support Enabled
+DEBUG - 2014-10-11 20:56:29 --> URI Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Router Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Output Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Security Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Input Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-11 20:56:29 --> Language Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Loader Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Helper loaded: url_helper
+DEBUG - 2014-10-11 20:56:29 --> Controller Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Session Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Helper loaded: string_helper
+DEBUG - 2014-10-11 20:56:29 --> Encrypt Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Session routines successfully run
+DEBUG - 2014-10-11 20:56:29 --> Helper loaded: form_helper
+DEBUG - 2014-10-11 20:56:29 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-11 20:56:29 --> Model Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Model Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Database Driver Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Model Class Initialized
+DEBUG - 2014-10-11 20:56:29 --> Config file loaded: application/config/config_shop.php
+DEBUG - 2014-10-11 20:56:29 --> File loaded: application/views/contractinfolist_view.php
+DEBUG - 2014-10-11 20:56:29 --> Final output sent to browser
+DEBUG - 2014-10-11 20:56:29 --> Total execution time: 0.0353
