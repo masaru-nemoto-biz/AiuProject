@@ -359,6 +359,13 @@ class CI_Upload {
 					);
 	}
 
+        /*
+         * 2014/10/12 nemoto
+         */
+	public function file_name()
+	{
+		return $this->file_name;
+	}
 	// --------------------------------------------------------------------
 
 	/**

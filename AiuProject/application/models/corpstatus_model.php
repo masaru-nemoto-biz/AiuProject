@@ -94,8 +94,16 @@ Class corpStatus_model extends CI_Model {
         $this->db->where('company_id', $company_id);
         $this->db->update('other_info', $array5); 
     }
-    
-    
+
+    function set_upload_data($company_id, $business_card) {
+        $data = array(
+               'business_card' => $business_card
+            );
+        $this->db->where('company_id', $company_id);
+        //$this->db->where('contract_id', $contract_id);
+        $this->db->update('contract_detail', $data); 
+    }
+
     function insert_company_data($array) {
         $this->db->insert('company_info', $array); 
     }
@@ -111,6 +119,15 @@ Class corpStatus_model extends CI_Model {
     function insert_other_data($array5) {
         $this->db->insert('other_info', $array5); 
     }
+    
+    
+    function insert_img($param) {
+        $this->db
+                ->set('img_data', $param->image)
+                ->set('ima_mime', $param->mime)
+                ->insert('image_tb'); 
+    }
+    
 //    function get_category_name($id) {
 //        $this->db->select('name');
 //        $this->db->where('id', $id);

@@ -75,9 +75,10 @@
         </div>
         <?php endif; ?>
         <div style="margin-top: 25px">
+            <input class="btn btn-primary" type="submit" name="move" value="企業情報登録画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報変更画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報照会画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="企業情報登録画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="顧客カード"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧画面へ"/>
         </div>
         <?=form_close();?>
