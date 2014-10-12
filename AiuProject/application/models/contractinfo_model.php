@@ -12,6 +12,17 @@ Class ContractInfo_model extends CI_Model {
         $query = $this->db->get('contract_info');
         return $query->result();
     }
+
+    function get_contract_info($contract_id) {
+        $this->db->where('contract_id', $contract_id);
+        $query = $this->db->get('contract_info');
+        return $query->result();
+    }
+    
+    
+    function insert_contract_data($array) {
+        $this->db->insert('contract_info', $array); 
+    }
 }
 
 ?>

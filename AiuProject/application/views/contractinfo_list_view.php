@@ -34,7 +34,7 @@
             <input class="btn btn-primary" type="submit" name="move" value="logout"/>
         </div>
         <?=form_close();?>
-        <?=form_open('contractstatuslist/contractInfo_conform')?>
+        <?=form_open('ContractInfoList/contractInfoList_conform')?>
         <div class="page-header text-center">
             <p class="h2">契約情報一覧画面 <span class="small">契約情報の閲覧・登録が可能</span></p>
         </div>
@@ -65,7 +65,7 @@
         </div>
         <?php endforeach; ?>
         <div class="table-responsive">
-        <table  id="table_id" class="table table-striped table-bordered table-hover table-condensed">
+        <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
                 <th>選択</th>
@@ -110,7 +110,7 @@
         <?php endif; ?>
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="契約情報登録画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約情報画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="事故状況登録画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報一覧画面へ"/>
         </div>
         <?=form_close();?>
