@@ -58,7 +58,7 @@ class CorpInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '参照したい企業にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('CorpInfoList/index');
+            redirect('corpinfolist/index');
         }
         
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1']);
@@ -110,7 +110,7 @@ class CorpInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '変更したい企業にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('CorpInfoList/index');
+            redirect('corpinfolist/index');
         }
         
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1']);
@@ -153,7 +153,7 @@ class CorpInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '参照したい企業にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('CorpInfoList/index');
+            redirect('corpinfolist/index');
         }
         
         $data['company_id'] = $this->input->post('check_radio');
@@ -172,7 +172,7 @@ class CorpInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '参照したい企業にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('CorpInfoList/index');
+            redirect('corpinfolist/index');
         }
         
         $data['company_id'] = $this->input->post('check_radio');

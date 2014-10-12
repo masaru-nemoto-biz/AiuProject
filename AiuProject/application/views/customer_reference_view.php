@@ -62,6 +62,7 @@
                 </div>
             </div>
             <div class="row" style="margin-top: 10px">
+                <div class="table-responsive">
                 <table  class="table table-striped table-bordered table-hover table-condensed">
                     <tr><td width="120" align="center" rowspan="2"><b>企業名</b></td>
                         <td align="center" width="60"><b>カナ</b></td><td colspan="2">参照したいデータ１</td></tr>
@@ -105,6 +106,7 @@
                     <tr><td width="120" align="center"><b>今後のフォロー</b></td><td colspan="3" width="680">参照したいデータ19</td></tr>
                     <tr><td align="center"><b>備考</b></td><td colspan="3">参照したいデータ20</td></tr>
                 </table>
+                </div>
                 <?= form_open('corpinfolist/contractInfo_conform') ?>
                 <input class="btn btn-primary" type="submit"　name="move" value="企業情報一覧画面へ"/>
                 <?= form_close();?>
