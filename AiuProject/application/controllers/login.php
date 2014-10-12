@@ -7,7 +7,7 @@ class Login extends CI_Controller {
         $this->load->helper(array('form','url'));
         
         $this->load->model('user_table_model');
-        $this->load->model('contractStatusList_model');
+        $this->load->model('corpStatus_model');
 
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -27,8 +27,8 @@ class Login extends CI_Controller {
         
         if ($count == 1) {
             // 遷移
-            $data['list'] = $this->contractStatusList_model->get_company_list();
-            $this->load->view('contractStatusList_view', $data);
+            $data['list'] = $this->corpStatus_model->get_company_list();
+            $this->load->view('corpinfo_list_view', $data);
         } else {
             redirect('login/index');
         }

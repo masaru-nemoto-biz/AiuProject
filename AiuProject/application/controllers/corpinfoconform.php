@@ -1,5 +1,5 @@
 <?php
-class ContractStatusConform extends CI_Controller {
+class CorpInfoConform extends CI_Controller {
 
     var $array;  // 企業情報
     var $array2; // 代表者詳細
@@ -7,11 +7,11 @@ class ContractStatusConform extends CI_Controller {
     var $array4; // 口座詳細
     var $array5; // その他
     
-    function ContractStatusConform() {
+    function CorpInfoConform() {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form','url'));
-        $this->load->model('contractStatusList_model');
+        $this->load->model('corpStatus_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -23,14 +23,14 @@ class ContractStatusConform extends CI_Controller {
         
         $this->conform_Prepare();
         
-        $this->contractStatusList_model->set_company_data($this->session->userdata('company_id'), $this->array);
-        $this->contractStatusList_model->set_representative_data($this->session->userdata('company_id'), $this->array2);
-        $this->contractStatusList_model->set_contract_data($this->session->userdata('company_id'), $this->array3);
-        $this->contractStatusList_model->set_bank_data($this->session->userdata('company_id'), $this->array4);
-        $this->contractStatusList_model->set_other_data($this->session->userdata('company_id'), $this->array5);
+        $this->corpStatus_model->set_company_data($this->session->userdata('company_id'), $this->array);
+        $this->corpStatus_model->set_representative_data($this->session->userdata('company_id'), $this->array2);
+        $this->corpStatus_model->set_contract_data($this->session->userdata('company_id'), $this->array3);
+        $this->corpStatus_model->set_bank_data($this->session->userdata('company_id'), $this->array4);
+        $this->corpStatus_model->set_other_data($this->session->userdata('company_id'), $this->array5);
        
-        $data['list'] = $this->contractStatusList_model->get_company_list();
-        $this->load->view('contractStatusList_view', $data);
+        $data['list'] = $this->corpStatus_model->get_company_list();
+        $this->load->view('corpinfo_list_view', $data);
     }
     
     /*
@@ -40,14 +40,14 @@ class ContractStatusConform extends CI_Controller {
         
         $this->conform_Prepare();
         
-        $this->contractStatusList_model->insert_company_data($this->array);
-        $this->contractStatusList_model->insert_representative_data($this->array2);
-        $this->contractStatusList_model->insert_contract_data($this->array3);
-        $this->contractStatusList_model->insert_bank_data($this->array4);
-        $this->contractStatusList_model->insert_other_data($this->array5);
+        $this->corpStatus_model->insert_company_data($this->array);
+        $this->corpStatus_model->insert_representative_data($this->array2);
+        $this->corpStatus_model->insert_contract_data($this->array3);
+        $this->corpStatus_model->insert_bank_data($this->array4);
+        $this->corpStatus_model->insert_other_data($this->array5);
         
-        $data['list'] = $this->contractStatusList_model->get_company_list();
-        $this->load->view('contractStatusList_view', $data);
+        $data['list'] = $this->corpStatus_model->get_company_list();
+        $this->load->view('corpinfo_list_view', $data);
     }
     
     /*
