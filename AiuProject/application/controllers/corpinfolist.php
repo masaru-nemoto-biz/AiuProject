@@ -21,18 +21,7 @@ class CorpInfoList extends CI_Controller {
         $data['list'] = $this->corpStatus_model->get_company_list();
         $this->load->view('corpinfo_list_view', $data);
     }
-    
-    function reference_index() {
-        
-        $data['company_list'] = $this->corpStatus_model->get_company_list();
-        $data['representative_list'] = $this->corpStatus_model->get_representative_list();
-        $data['contract_list'] = $this->corpStatus_model->get_contract_list();
-        $data['bank_list'] = $this->corpStatus_model->get_bank_list();
-        $data['other_list'] = $this->corpStatus_model->get_other_list();
-        $this->load->view('corpinfo_reference_view', $data);
-        
-    }
-    
+
     /*
      * 遷移先画面判定ロジック
      * 
@@ -52,6 +41,8 @@ class CorpInfoList extends CI_Controller {
             $this->contractInfo_add();
         } elseif ($data['move'] == '契約状況一覧画面へ') {
             $this->move_contractInfo();
+        } elseif ($data['move'] == '顧客カード') {
+            $this->customer_reference();
         } else {
             $this->index();
         }
@@ -169,6 +160,51 @@ class CorpInfoList extends CI_Controller {
         $data['list1'] = $this->corpStatus_model->get_company_detail($data['company_id']);
         $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
         $this->load->view('contractinfo_list_view', $data);
+    }
+
+    /*
+     * 顧客カードへ
+     */
+    function customer_reference() {
+        $data['check'] = $this->input->post('check_radio');
+                
+        if (empty($data['check'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '参照したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('CorpInfoList/index');
+        }
+        
+        $data['company_id'] = $this->input->post('check_radio');
+        $this->session->set_userdata('company_id', $data['company_id']);
+        $data['contract_detail'] = $this->corpStatus_model->get_contract_data($data['company_id']);
+        $this->load->view('customer_reference_view', $data);
+    }
+
+    /*
+     * ファイルアップロード
+     */
+    function do_upload() {
+        $config['upload_path'] = './uploads/';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size']	= '100';
+        $config['max_width']  = '1024';
+        $config['max_height']  = '768';
+        $config['overwrite']  = 'TRUE';
+        $config['remove_spaces']  = 'TRUE';
+
+        $this->load->library('upload', $config);
+        $file_name = null;
+   
+        if ( ! $this->upload->do_upload()) {
+            $data['message'] = $this->upload->display_errors();
+        } else {
+            $data['file_name'] =$this->upload->file_name();
+            $this->corpStatus_model->set_upload_data($this->session->userdata('company_id'),$this->upload->file_name());
+        }
+        
+        $data['contract_detail'] = $this->corpStatus_model->get_contract_data($this->session->userdata('company_id'));
+        $this->load->view('customer_reference_view', $data);
     }
 }
 ?>
