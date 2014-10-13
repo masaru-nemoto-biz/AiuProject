@@ -25,6 +25,10 @@
             padding-bottom: 40px;
             background-color: #f5f5f5;
         }
+        .center_auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
     <body>

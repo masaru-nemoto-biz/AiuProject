@@ -37,6 +37,30 @@ Class Master_model extends CI_Model {
         $query = $this->db->get('announcement_mst');
         return $query->result();
     }
+
+    /*
+     * 保険種別マスタ
+     */
+    function insurance_classification_mst() {
+        $query = $this->db->get('insurance_classification_mst');
+        return $query->result();
+    }
+ 
+    /*
+     * 保険会社マスタ
+     */
+    function insurance_company_mst() {
+        $query = $this->db->get('insurance_company_mst');
+        return $query->result();
+    }
+ 
+    /*
+     * 法人区分マスタ
+     */
+    function corp_division_mst() {
+        $query = $this->db->get('corp_division_mst');
+        return $query->result();
+    }
 }
 
 ?>

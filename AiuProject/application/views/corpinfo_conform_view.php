@@ -27,7 +27,7 @@
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div class="pull-left" style="width: 400px; padding-left: 10px; padding-top: 10px;">
                     <label style="font-size: 18px">◆企業情報</label>
-                    <table border="0">
+                    <table>
                         <tr><td width="120">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="" size="50" /></td></tr>
                         <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="" size="50" /></td></tr>
                         <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="" size="50" /></td></tr>
@@ -42,8 +42,8 @@
                         <tr><td>業種 第一</td><td><input class="form-control input-sm" type="text" name="biz_first" value="" size="50" /></td></tr>
                         <tr><td>業種 第二</td><td><input class="form-control input-sm" type="text" name="biz_second" value="" size="50" /></td></tr>
                         <tr><td>従業員数</td><td><input class="form-control input-sm" type="text" name="employees" value="" size="50" /></td></tr>
-                        <tr><td>契約担当者</td><td><input class="form-control input-sm" type="text" name="contract_staff" value="" size="50" /></td></tr>
-                        <tr><td>連絡先</td><td><input class="form-control input-sm" type="text" name="contact_address" value="" size="50" /></td></tr>
+                        <tr><td><s>契約担当者</s></td><td><input class="form-control input-sm" type="text" name="contract_staff" value="" size="50" /></td></tr>
+                        <tr><td><s>連絡先</s></td><td><input class="form-control input-sm" type="text" name="contact_address" value="" size="50" /></td></tr>
                         <tr><td>法人会加入有無</td>
                             <td>
                                 <select class="form-control input-sm" name="corp_member">
@@ -138,19 +138,23 @@
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="" size="50" /></td></tr>
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="" size="50" /></td></tr>
                     </table>
+                    <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆その他詳細</label>
+                    <table>
+                        <tr><td width="120">契約手段</td><td><input class="form-control input-sm" type="text" name="contract_way" value="" size="50" /></td></tr>
+                        <tr><td width="120">契約場所</td><td><input class="form-control input-sm" type="text" name="contact_place" value="" size="50" /></td></tr>
+                        <tr><td width="120">連絡時間帯</td><td><input class="form-control input-sm" type="text" name="contact_time" value="" size="50" /></td></tr>
+                    </table>
                 </div>
             </div>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div style="padding-left: 10px; padding-top: 10px; width: 800px;">
                     <label style="font-weight:bold; font-size: 18px">◆その他詳細</label>
                     <table>
-                        <tr><td width="120">契約手段</td><td><textarea class="form-control input-sm" style="width:650px;" name="contract_way" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>契約場所</td><td><textarea class="form-control input-sm" style="width:650px;" name="contact_place" cols="120" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>連絡時間帯</td><td><textarea class="form-control input-sm" style="width:650px;" name="contact_time" cols="120" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>人柄</td><td><textarea class="form-control input-sm" style="width:650px;" name="personality" cols="120" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>家族構成</td><td><textarea class="form-control input-sm" style="width:650px;" name="family_structure" cols="120" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>趣味</td><td><textarea class="form-control input-sm" style="width:650px;" name="taste" cols="120" rows="5" wrap="hard"></textarea></td></tr>
-                        <tr><td>状況</td><td><textarea class="form-control input-sm" style="width:650px;" name="state" cols="120" rows="5" wrap="hard"></textarea></td></tr>
+                        <tr><td width="120">備考</td><td><textarea class="form-control input-sm" style="width:650px;" name="remarks" cols="120" rows="5" wrap="hard"></textarea></td></tr>
+                        <tr><td><del>人柄</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="personality" cols="120" rows="5" wrap="hard"></textarea></td></tr>
+                        <tr><td><del>家族構成</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="family_structure" cols="120" rows="5" wrap="hard"></textarea></td></tr>
+                        <tr><td><del>趣味</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="taste" cols="120" rows="5" wrap="hard"></textarea></td></tr>
+                        <tr><td><del>状況</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="state" cols="120" rows="5" wrap="hard"></textarea></td></tr>
                     </table>
                 </div>
             </div>
@@ -290,20 +294,26 @@
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
                     </table>
                     <?php endforeach; ?>
+                    <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆その他詳細</label>
+                    <?php foreach ($other as $row): ?>
+                    <table>
+                        <tr><td width="120">契約手段</td><td><input class="form-control input-sm" type="text" name="contract_way" value="<?= $row->contract_way ?>" size="50" /></td></tr>
+                        <tr><td width="120">契約場所</td><td><input class="form-control input-sm" type="text" name="contact_place" value="<?= $row->contact_place ?>" size="50" /></td></tr>
+                        <tr><td width="120">連絡時間帯</td><td><input class="form-control input-sm" type="text" name="contact_time" value="<?= $row->contact_time ?>" size="50" /></td></tr>
+                    </table>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div style="padding-left: 10px; padding-top: 10px; width: 800px;">
-                    <label style="font-weight:bold; font-size: 18px">◆その他詳細</label>
+                    <label style="font-weight:bold; font-size: 18px">◆備考</label>
                     <?php foreach ($other as $row): ?>
                     <table>
-                        <tr><td width="120">契約手段</td><td><textarea class="form-control input-sm" style="width:650px;" name="contract_way" rows="5" wrap="hard"><?= $row->contract_way ?></textarea></td></tr>
-                        <tr><td>契約場所</td><td><textarea class="form-control input-sm" style="width:650px;" name="contact_place" cols="120" rows="5" wrap="hard"><?= $row->contact_place ?></textarea></td></tr>
-                        <tr><td>連絡時間帯</td><td><textarea class="form-control input-sm" style="width:650px;" name="contact_time" cols="120" rows="5" wrap="hard"><?= $row->contact_time ?></textarea></td></tr>
-                        <tr><td>人柄</td><td><textarea class="form-control input-sm" style="width:650px;" name="personality" cols="120" rows="5" wrap="hard"><?= $row->personality ?></textarea></td></tr>
-                        <tr><td>家族構成</td><td><textarea class="form-control input-sm" style="width:650px;" name="family_structure" cols="120" rows="5" wrap="hard"><?= $row->family_structure ?></textarea></td></tr>
-                        <tr><td>趣味</td><td><textarea class="form-control input-sm" style="width:650px;" name="taste" cols="120" rows="5" wrap="hard"><?= $row->taste ?></textarea></td></tr>
-                        <tr><td>状況</td><td><textarea class="form-control input-sm" style="width:650px;" name="state" cols="120" rows="5" wrap="hard"><?= $row->state ?></textarea></td></tr>
+                        <tr><td width="120">備考</td><td><textarea class="form-control input-sm" style="width:650px;" name="remarks" cols="120" rows="5" wrap="hard"><?= $row->remarks ?></textarea></td></tr>
+                        <tr><td><del>人柄</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="personality" cols="120" rows="5" wrap="hard"><?= $row->personality ?></textarea></td></tr>
+                        <tr><td><del>家族構成</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="family_structure" cols="120" rows="5" wrap="hard"><?= $row->family_structure ?></textarea></td></tr>
+                        <tr><td><del>趣味</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="taste" cols="120" rows="5" wrap="hard"><?= $row->taste ?></textarea></td></tr>
+                        <tr><td><del>状況</del></td><td><textarea class="form-control input-sm" style="width:650px;" name="state" cols="120" rows="5" wrap="hard"><?= $row->state ?></textarea></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>

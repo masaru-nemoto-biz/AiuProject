@@ -25,51 +25,103 @@
             padding-bottom: 40px;
             background-color: #f5f5f5;
         }
+        .center_auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
     <body>
-        <div class="container" style="font-size: 12px;">
+        <div class="container form-group" style="font-size: 12px;">
         <?= form_open('ContractInfoConform/conform_add') ?>
-        <div style="font-size: 12px; position: relative; margin-right:auto; margin-left:auto; width: 800px">
-            <div style="position: relative; top: 10px; left: 10px; font-size: 28px">
-                <table border="0" align="center" height="50">
-                    <tr bgcolor="#cccccc"><td align="center" width="700"><b>契約情報登録画面</b></td></tr>
-                </table>
+        <div class="page-header text-center">
+            <p class="h2">契約情報登録画面</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            <div class="table-responsive">
+            <table class="table">
+                <tr><th width="120">保険種別</th>
+                    <td>
+                        <select class="form-control input-sm" name="insurance_classification_id">
+                            <?php foreach ($insurance_classification_mst as $row): ?>
+                            <option value="<?= $row->insur_class_id ?>"><?= $row->insur_class_name ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th width="120">保険会社</th>
+                    <td>
+                        <select class="form-control input-sm" name="insurance_company_id">
+                            <?php foreach ($insurance_company_mst as $row): ?>
+                            <option value="<?= $row->insur_corp_id ?>"><?= $row->insur_corp_name ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>商品名</th><td><input class="form-control input-sm" type="text" name="brand_name" value="" /></td></tr>
+                <tr><th width="120">区分</th>
+                    <td>
+                        <select class="form-control input-sm" name="division">
+                            <?php foreach ($corp_division_mst as $row): ?>
+                            <option value="<?= $row->corp_div_id ?>"><?= $row->corp_div_name ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>証券番号</th><td><input class="form-control input-sm" type="text" name="policy_number" value="" /></td></tr>
+                <tr><th>契約期間</th><td><input class="form-control input-sm" type="text" name="contract_period" value="" /></td></tr>
+                <tr><th>保険期間</th><td><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period" value="" />-<input id="after" class="form-control input-sm" type="date" value="" readonly /></td></tr>
+                <tr><th>月P</th><td><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td></tr>
+                <tr><th>年払い</th><td><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td></tr>
+                <tr><th>ANP</th><td><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
+                <tr><th><del>合計ANP</del></th><td><input class="form-control input-sm" type="text" name="total_anp" value="" /></td></tr>
+            </table>
             </div>
-            <div style="position: absolute; top: 80px; left: 0px">
-                <table border="0" width="800">
-                    <tr><td align="right">株式会社テスト１</td></tr>
-                </table>
-            </div> 
-            <div style="position: absolute; top: 140px; left: 10px">
-                <table border="3">
-                    <tr><th width="120" bgcolor="#cccccc">保険種別</th><td><input type="text" name="insurance_classification_id" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">保険会社</th><td><input type="password" name="insurance_company_id" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">商品名(カナ)</th><td><input type="text" name="brand_name" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">区分</th><td><input type="text" name="division" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">証券番号</th><td><input type="text" name="policy_number" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">保険期間</th><td><input type="text" name="insurance_period" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">契約期間</th><td><input type="text" name="contract_period" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">月P</th><td><input type="text" name="month_p" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">年払い</th><td><input type="text" name="yearly_payment" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">ANP</th><td><input type="text" name="anp" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">合計ANP</th><td><input type="text" name="total_anp" value="" size="50" /></td></tr>
-                </table>
             </div>
+            <div class="col-md-3"></div>
         </div>
         <div class="center_auto" style="margin-top: 10px; width: 150px;">
             <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
         </div>
         <?= form_close(); ?>
-        </div>
+
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Bootstrapで使うJavaScriptの読み込み-->
     <script src="<?=base_url();?>js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script>
-        $("#table_id").dataTable();
-    </script>
-    
+<script type="text/javascript">
+<!--
+        $("#month_p").blur(function(){
+            if($(this).val() != ""){
+            $("#anp").val($("#month_p").val() * 12);
+            $("#yearly_payment").attr("disabled", "disabled");
+            } else {
+                $("#yearly_payment").removeAttr("disabled");
+                $("#anp").val('');
+            }
+        });
+        $("#yearly_payment").blur(function(){
+            if($(this).val() != ""){
+            $("#anp").val($("#yearly_payment").val());
+            $("#month_p").attr("disabled", "disabled");
+            } else {
+                $("#month_p").removeAttr("disabled");
+                $("#anp").val('');
+            }
+        });
+        $("#insurance_period").blur(function(){
+            if($(this).val() != ""){
+                var date1 = new Date($("#insurance_period").val());
+                date1.setDate(date1.getDate() + Number(364));
+            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+            } else {
+                $("#after").val('');
+            }
+        });
+
+//-->
+</script>
 </html>

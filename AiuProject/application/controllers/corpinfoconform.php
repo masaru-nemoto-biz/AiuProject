@@ -17,7 +17,7 @@ class CorpInfoConform extends CI_Controller {
     }
 
     /*
-     * 契約状況変更ロジック
+     * 企業情報変更ロジック
      */
     function conform() {
         
@@ -34,7 +34,7 @@ class CorpInfoConform extends CI_Controller {
     }
     
     /*
-     * 契約状況追加ロジック
+     * 企業情報追加ロジック
      */
     function conform_add() {
         
@@ -51,7 +51,7 @@ class CorpInfoConform extends CI_Controller {
     }
     
     /*
-     * 契約状況登録準備ロジック
+     * 企業情報登録準備ロジック
      * 
      * 画面入力された契約状況を各変数へ詰め替える
      */
@@ -118,7 +118,8 @@ class CorpInfoConform extends CI_Controller {
             'personality' => $this->input->post('personality'),
             'family_structure' => $this->input->post('family_structure'),
             'taste' => $this->input->post('taste'),
-            'state' => $this->input->post('state'));
+            'state' => $this->input->post('state'),
+            'remarks' => $this->input->post('remarks'));
     }
     
 }
