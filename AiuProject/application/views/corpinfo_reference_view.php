@@ -104,6 +104,14 @@
                         <tr><td>自宅電話番号</td><td>：<?= $row->home_phone ?></td></tr>
                     </table>
                     <?php endforeach; ?>
+                    <label class="font_subhead" style="margin-top: 20px;">◆その他詳細</label>
+                    <?php foreach ($other as $row): ?>
+                    <table>
+                        <tr><td width="120">契約手段</td><td>：<?= $row->contract_way ?></td></tr>
+                        <tr><td>契約場所</td><td>：<?= $row->contact_place ?></td></tr>
+                        <tr><td>連絡時間帯</td><td>：<?= $row->contact_time ?></td></tr>
+                    </table>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
@@ -111,13 +119,11 @@
                     <label style="font-weight:bold; font-size: 18px">◆その他詳細</label>
                     <?php foreach ($other as $row): ?>
                     <table>
-                        <tr><td width="120">契約手段</td><td>：<?= $row->contract_way ?></td></tr>
-                        <tr><td>契約場所</td><td>：<?= $row->contact_place ?></td></tr>
-                        <tr><td>連絡時間帯</td><td>：<?= $row->contact_time ?></td></tr>
-                        <tr><td>人柄</td><td>：<?= $row->personality ?></td></tr>
-                        <tr><td>家族構成</td><td>：<?= $row->family_structure ?></td></tr>
-                        <tr><td>趣味</td><td>：<?= $row->taste ?></td></tr>
-                        <tr><td>状況</td><td>：<?= $row->state ?></td></tr>
+                        <tr><td width="120">備考</td><td>：<?= $row->remarks ?></td></tr>
+                        <tr><td><del>人柄</del></td><td>：<?= $row->personality ?></td></tr>
+                        <tr><td><del>家族構成</del></td><td>：<?= $row->family_structure ?></td></tr>
+                        <tr><td><del>趣味</del></td><td>：<?= $row->taste ?></td></tr>
+                        <tr><td><del>状況</del></td><td>：<?= $row->state ?></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>

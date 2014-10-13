@@ -10,6 +10,7 @@ class ContractInfoList extends CI_Controller {
         $this->load->library('session');
         $this->load->model('corpstatus_model');
         $this->load->model('contractInfo_model');
+        $this->load->model('master_model');
                         
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -59,7 +60,11 @@ class ContractInfoList extends CI_Controller {
      */
     function contractInfo_add() {
 
-        $this->load->view('contractinfo_conform_view');
+        $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
+        $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
+        $data['corp_division_mst'] = $this->master_model->corp_division_mst();
+        
+        $this->load->view('contractinfo_conform_view', $data);
     }
 
     /*
