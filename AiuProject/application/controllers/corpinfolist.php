@@ -10,6 +10,7 @@ class CorpInfoList extends CI_Controller {
         $this->load->library('session');
         $this->load->model('corpStatus_model');
         $this->load->model('contractInfo_model');
+        $this->load->model('master_model');
                         
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -97,6 +98,11 @@ class CorpInfoList extends CI_Controller {
      */
     function contractInfo_add() {
         $data['company_data'] = null;
+        $data['sex_mst'] = $this->master_model->get_sex_list();
+        $data['jurid_personal_mst'] = $this->master_model->jurid_personal_mst();
+        $data['deposits_event_mst'] = $this->master_model->deposits_event_mst();
+        $data['announcement_mst'] = $this->master_model->announcement_mst();
+        
         $this->load->view('corpinfo_conform_view', $data);
     }
     
@@ -139,7 +145,12 @@ class CorpInfoList extends CI_Controller {
         }
         $this->load->library('session');
         $this->session->set_userdata('company_id', $company_id);
-
+        
+        $data['sex_mst'] = $this->master_model->get_sex_list();
+        $data['jurid_personal_mst'] = $this->master_model->jurid_personal_mst();
+        $data['deposits_event_mst'] = $this->master_model->deposits_event_mst();
+        $data['announcement_mst'] = $this->master_model->announcement_mst();
+        
         $this->load->view('corpinfo_conform_view', $data);
     }
 
