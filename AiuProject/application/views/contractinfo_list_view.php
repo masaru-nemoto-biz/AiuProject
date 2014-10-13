@@ -34,7 +34,7 @@
             <input class="btn btn-primary" type="submit" name="move" value="logout"/>
         </div>
         <?=form_close();?>
-        <?=form_open('ContractInfoList/contractInfoList_conform')?>
+        <?=form_open('contractinfolist/contractInfoList_conform')?>
         <div class="page-header text-center">
             <p class="h2">契約情報一覧画面 <span class="small">契約情報の閲覧・登録が可能</span></p>
         </div>

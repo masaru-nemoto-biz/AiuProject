@@ -48,7 +48,10 @@
                 <input type="text" class="form-control input-sm" placeholder="User" name="user">
                 <input type="password" class="form-control input-sm" placeholder="Password" name="password">
 
-                <button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+                <input class="btn btn-primary" type="submit" name="move" value="Sign in"/>
+                <div style="text-align: right">
+                <input class="btn btn-xs btn-primary" type="submit" name="move" value="user manage"/>
+                </div>
             </div>
         </div>
         <?=form_close();?>

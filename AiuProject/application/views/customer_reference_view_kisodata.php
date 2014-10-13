@@ -83,7 +83,7 @@
                 <div style="position: absolute; top: 1130px; left: 10px;">
                     <div style="font-weight:bold; font-size: 18px">◆その他詳細</div>
                     <table border="1">
-                        <tr><td width="120">契約手段</td><td width="870"><?= $row->contact_way ?></td></tr>
+                        <tr><td width="120">契約手段</td><td width="870"><?= $row->contract_way ?></td></tr>
                         <tr><td>契約場所</td><td width="870"><?= $row->contact_place ?></td></tr>
                         <tr><td>連絡時間帯</td><td width="870"><?= $row->contact_time ?></td></tr>
                         <tr><td>人柄</td><td width="870"><?= $row->personality ?></td></tr>
