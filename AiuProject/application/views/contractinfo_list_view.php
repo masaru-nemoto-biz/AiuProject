@@ -80,24 +80,22 @@
                 <th>月P</th>
                 <th>年払い</th>
                 <th>ANP</th>
-                <th>合計ANP</th>
             </tr>
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
                     <td><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
-                    <td><?= $row->company_id ?></td>
-                    <td><?= $row->insurance_classification_id ?></td>
-                    <td></td>
+                    <td><?= $row->insur_class_name ?></td>
+                    <td><?= $row->insur_corp_name ?></td>
+                    <td><?= $row->corp_name ?></td>
                     <td><?= $row->brand_name ?></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><?= $row->corp_div_name ?></td>
+                    <td><?= $row->policy_number ?></td>
+                    <td><?= $row->insurance_period ?></td>
+                    <td><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
+                    <td><?= $row->month_p ?></td>
+                    <td><?= $row->yearly_payment ?></td>
+                    <td><?= $row->anp ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>

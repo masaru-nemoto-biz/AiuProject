@@ -41,9 +41,9 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
             <div class="table-responsive">
-            <table class="table">
+            <table border="0" class="table">
                 <tr><th width="120">保険種別</th>
-                    <td>
+                    <td colspan="6">
                         <select class="form-control input-sm" name="insurance_classification_id">
                             <?php foreach ($insurance_classification_mst as $row): ?>
                             <option value="<?= $row->insur_class_id ?>"><?= $row->insur_class_name ?></option>
@@ -52,7 +52,7 @@
                     </td>
                 </tr>
                 <tr><th width="120">保険会社</th>
-                    <td>
+                    <td colspan="6">
                         <select class="form-control input-sm" name="insurance_company_id">
                             <?php foreach ($insurance_company_mst as $row): ?>
                             <option value="<?= $row->insur_corp_id ?>"><?= $row->insur_corp_name ?></option>
@@ -60,9 +60,9 @@
                         </select>
                     </td>
                 </tr>
-                <tr><th>商品名</th><td><input class="form-control input-sm" type="text" name="brand_name" value="" /></td></tr>
+                <tr><th>商品名</th><td colspan="6"><input class="form-control input-sm" type="text" name="brand_name" value="" /></td></tr>
                 <tr><th width="120">区分</th>
-                    <td>
+                    <td colspan="6">
                         <select class="form-control input-sm" name="division">
                             <?php foreach ($corp_division_mst as $row): ?>
                             <option value="<?= $row->corp_div_id ?>"><?= $row->corp_div_name ?></option>
@@ -70,12 +70,24 @@
                         </select>
                     </td>
                 </tr>
-                <tr><th>証券番号</th><td><input class="form-control input-sm" type="text" name="policy_number" value="" /></td></tr>
-                <tr><th>契約期間</th><td><input class="form-control input-sm" type="text" name="contract_period" value="" /></td></tr>
-                <tr><th>保険期間</th><td><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period" value="" />-<input id="after" class="form-control input-sm" type="date" value="" readonly /></td></tr>
-                <tr><th>月P</th><td><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td></tr>
-                <tr><th>年払い</th><td><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td></tr>
-                <tr><th>ANP</th><td><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
+                <tr><th>証券番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="policy_number" value="" /></td></tr>
+                <tr><th>契約期間</th>
+                    <td><input id="contract_period_y" class="form-control input-sm" type="text" name="contract_period_y" value="" /></td>
+                    <td align="center" style="vertical-align: bottom">年</td>
+                    <td><input id="contract_period_m" class="form-control input-sm" type="text" name="contract_period_m" value="" /></td>
+                    <td align="center" style="vertical-align: bottom">ヶ月</td>
+                    <td><input id="contract_period_d" class="form-control input-sm" type="text" name="contract_period_d" value="" /></td>
+                    <td align="center" style="vertical-align: bottom">日</td>
+                </tr>
+                <tr><th>保険期間</th>
+                    <td colspan="6"><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period" value="" />
+                        <p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p>
+                        <input id="after" class="form-control input-sm" type="date" value="" readonly />
+                    </td>
+                </tr>
+                <tr><th>月P</th><td colspan="6"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td></tr>
+                <tr><th>年払い</th><td colspan="6"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td></tr>
+                <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
                 <tr><th><del>合計ANP</del></th><td><input class="form-control input-sm" type="text" name="total_anp" value="" /></td></tr>
             </table>
             </div>
@@ -115,11 +127,34 @@
         $("#insurance_period").blur(function(){
             if($(this).val() != ""){
                 var date1 = new Date($("#insurance_period").val());
-                date1.setDate(date1.getDate() + Number(364));
+                date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
+                date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
+                date1.setDate(date1.getDate() + Number($("#contract_period_d").val()));
             $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
             } else {
                 $("#after").val('');
             }
+        });
+        $("#contract_period_y").blur(function(){
+            var date1 = new Date($("#insurance_period").val());
+            date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
+            date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
+            date1.setDate(date1.getDate() + Number($("#contract_period_d").val()));
+            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+        });
+        $("#contract_period_m").blur(function(){
+            var date1 = new Date($("#insurance_period").val());
+            date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
+            date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
+            date1.setDate(date1.getDate() + Number($("#contract_period_d").val()));
+            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+        });
+        $("#contract_period_d").blur(function(){
+            var date1 = new Date($("#insurance_period").val());
+            date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
+            date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
+            date1.setDate(date1.getDate() + Number($("#contract_period_d").val()));
+            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
         });
 
 //-->

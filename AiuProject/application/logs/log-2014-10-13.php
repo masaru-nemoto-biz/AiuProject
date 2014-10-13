@@ -11908,3 +11908,2707 @@ DEBUG - 2014-10-13 17:03:08 --> Model Class Initialized
 DEBUG - 2014-10-13 17:03:08 --> File loaded: application/views/contractinfo_conform_view.php
 DEBUG - 2014-10-13 17:03:08 --> Final output sent to browser
 DEBUG - 2014-10-13 17:03:08 --> Total execution time: 0.0355
+DEBUG - 2014-10-13 17:43:31 --> Config Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:43:31 --> URI Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Router Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Output Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Security Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Input Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:43:31 --> Language Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:43:31 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Session Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:43:31 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Session routines successfully run
+DEBUG - 2014-10-13 17:43:31 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:43:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:43:31 --> Model Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Model Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Model Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> Model Class Initialized
+DEBUG - 2014-10-13 17:43:31 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:43:31 --> Final output sent to browser
+DEBUG - 2014-10-13 17:43:31 --> Total execution time: 0.0385
+DEBUG - 2014-10-13 17:46:46 --> Config Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:46:46 --> URI Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Router Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Output Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Security Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Input Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:46:46 --> Language Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:46:46 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Session Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:46:46 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Session routines successfully run
+DEBUG - 2014-10-13 17:46:46 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:46:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:46:46 --> Model Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Model Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Model Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> Model Class Initialized
+DEBUG - 2014-10-13 17:46:46 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:46:46 --> Final output sent to browser
+DEBUG - 2014-10-13 17:46:46 --> Total execution time: 0.0374
+DEBUG - 2014-10-13 17:47:42 --> Config Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:47:42 --> URI Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Router Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Output Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Security Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Input Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:47:42 --> Language Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:47:42 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Session Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:47:42 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Session routines successfully run
+DEBUG - 2014-10-13 17:47:42 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:47:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:47:42 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:42 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:47:42 --> Final output sent to browser
+DEBUG - 2014-10-13 17:47:42 --> Total execution time: 0.0343
+DEBUG - 2014-10-13 17:47:51 --> Config Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:47:51 --> URI Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Router Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Output Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Security Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Input Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:47:51 --> Language Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:47:51 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Session Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:47:51 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Session routines successfully run
+DEBUG - 2014-10-13 17:47:51 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:47:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:47:51 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> Model Class Initialized
+DEBUG - 2014-10-13 17:47:51 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:47:51 --> Final output sent to browser
+DEBUG - 2014-10-13 17:47:51 --> Total execution time: 0.0427
+DEBUG - 2014-10-13 17:48:34 --> Config Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:48:34 --> URI Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Router Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Output Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Security Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Input Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:48:34 --> Language Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:48:34 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Session Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:48:34 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Session routines successfully run
+DEBUG - 2014-10-13 17:48:34 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:48:34 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:48:34 --> Model Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Model Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Model Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> Model Class Initialized
+DEBUG - 2014-10-13 17:48:34 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:48:34 --> Final output sent to browser
+DEBUG - 2014-10-13 17:48:34 --> Total execution time: 0.0355
+DEBUG - 2014-10-13 17:49:45 --> Config Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:49:45 --> URI Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Router Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Output Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Security Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Input Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:49:45 --> Language Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:49:45 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Session Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:49:45 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Session routines successfully run
+DEBUG - 2014-10-13 17:49:45 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:49:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:49:45 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:45 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:49:45 --> Final output sent to browser
+DEBUG - 2014-10-13 17:49:45 --> Total execution time: 0.0419
+DEBUG - 2014-10-13 17:49:54 --> Config Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:49:54 --> URI Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Router Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Output Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Security Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Input Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:49:54 --> Language Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:49:54 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Session Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:49:54 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Session routines successfully run
+DEBUG - 2014-10-13 17:49:54 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:49:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:49:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:49:54 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:49:54 --> Final output sent to browser
+DEBUG - 2014-10-13 17:49:54 --> Total execution time: 0.0564
+DEBUG - 2014-10-13 17:51:18 --> Config Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:51:18 --> URI Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Router Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Output Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Security Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Input Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:51:18 --> Language Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:51:18 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Session Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:51:18 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Session routines successfully run
+DEBUG - 2014-10-13 17:51:18 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:51:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:51:18 --> Model Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Model Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Model Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> Model Class Initialized
+DEBUG - 2014-10-13 17:51:18 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:51:18 --> Final output sent to browser
+DEBUG - 2014-10-13 17:51:18 --> Total execution time: 0.0355
+DEBUG - 2014-10-13 17:52:27 --> Config Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:52:27 --> URI Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Router Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Output Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Security Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Input Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:52:27 --> Language Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:52:27 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Session Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:52:27 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Session routines successfully run
+DEBUG - 2014-10-13 17:52:27 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:52:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:52:27 --> Model Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Model Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Model Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> Model Class Initialized
+DEBUG - 2014-10-13 17:52:27 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:52:27 --> Final output sent to browser
+DEBUG - 2014-10-13 17:52:27 --> Total execution time: 0.0361
+DEBUG - 2014-10-13 17:53:13 --> Config Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:53:13 --> URI Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Router Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Output Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Security Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Input Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:53:13 --> Language Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:53:13 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Session Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:53:13 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Session routines successfully run
+DEBUG - 2014-10-13 17:53:13 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:53:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:53:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:53:13 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:53:13 --> Final output sent to browser
+DEBUG - 2014-10-13 17:53:13 --> Total execution time: 0.0415
+DEBUG - 2014-10-13 17:54:13 --> Config Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:54:13 --> URI Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Router Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Output Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Security Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Input Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:54:13 --> Language Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:54:13 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Session Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:54:13 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Session routines successfully run
+DEBUG - 2014-10-13 17:54:13 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:54:13 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:54:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:13 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:54:13 --> Final output sent to browser
+DEBUG - 2014-10-13 17:54:13 --> Total execution time: 0.0352
+DEBUG - 2014-10-13 17:54:54 --> Config Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:54:54 --> URI Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Router Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Output Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Security Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Input Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:54:54 --> Language Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:54:54 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Session Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:54:54 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Session routines successfully run
+DEBUG - 2014-10-13 17:54:54 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:54:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:54:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> Model Class Initialized
+DEBUG - 2014-10-13 17:54:54 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:54:54 --> Final output sent to browser
+DEBUG - 2014-10-13 17:54:54 --> Total execution time: 0.0358
+DEBUG - 2014-10-13 17:55:00 --> Config Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:55:00 --> URI Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Router Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Output Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Security Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Input Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:55:00 --> Language Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:55:00 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Session Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:55:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Session routines successfully run
+DEBUG - 2014-10-13 17:55:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:55:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:55:00 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:00 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:55:00 --> Final output sent to browser
+DEBUG - 2014-10-13 17:55:00 --> Total execution time: 0.0393
+DEBUG - 2014-10-13 17:55:08 --> Config Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:55:08 --> URI Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Router Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Output Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Security Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Input Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:55:08 --> Language Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:55:08 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Session Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:55:08 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Session routines successfully run
+DEBUG - 2014-10-13 17:55:08 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:55:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:55:08 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> Model Class Initialized
+DEBUG - 2014-10-13 17:55:08 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:55:08 --> Final output sent to browser
+DEBUG - 2014-10-13 17:55:08 --> Total execution time: 0.0542
+DEBUG - 2014-10-13 17:56:16 --> Config Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:56:16 --> URI Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Router Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Output Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Security Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Input Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:56:16 --> Language Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:56:16 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Session Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:56:16 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Session routines successfully run
+DEBUG - 2014-10-13 17:56:16 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:56:16 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:56:16 --> Model Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Model Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Model Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> Model Class Initialized
+DEBUG - 2014-10-13 17:56:16 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:56:16 --> Final output sent to browser
+DEBUG - 2014-10-13 17:56:16 --> Total execution time: 0.0353
+DEBUG - 2014-10-13 17:57:44 --> Config Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:57:44 --> URI Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Router Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Output Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Security Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Input Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:57:44 --> Language Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:57:44 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Session Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:57:44 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Session routines successfully run
+DEBUG - 2014-10-13 17:57:44 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:57:44 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:57:44 --> Model Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Model Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Model Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> Model Class Initialized
+DEBUG - 2014-10-13 17:57:44 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:57:44 --> Final output sent to browser
+DEBUG - 2014-10-13 17:57:44 --> Total execution time: 0.0438
+DEBUG - 2014-10-13 17:58:40 --> Config Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:58:40 --> URI Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Router Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Output Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Security Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Input Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:58:40 --> Language Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:58:40 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Session Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:58:40 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Session routines successfully run
+DEBUG - 2014-10-13 17:58:40 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:58:40 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:58:40 --> Model Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Model Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Model Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> Model Class Initialized
+DEBUG - 2014-10-13 17:58:40 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:58:40 --> Final output sent to browser
+DEBUG - 2014-10-13 17:58:40 --> Total execution time: 0.0354
+DEBUG - 2014-10-13 17:59:57 --> Config Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Hooks Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 17:59:57 --> URI Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Router Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Output Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Security Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Input Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 17:59:57 --> Language Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Loader Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 17:59:57 --> Controller Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Session Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 17:59:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Session routines successfully run
+DEBUG - 2014-10-13 17:59:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 17:59:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 17:59:57 --> Model Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Model Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Model Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> Model Class Initialized
+DEBUG - 2014-10-13 17:59:57 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 17:59:57 --> Final output sent to browser
+DEBUG - 2014-10-13 17:59:57 --> Total execution time: 0.0361
+DEBUG - 2014-10-13 18:00:11 --> Config Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:00:11 --> URI Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Router Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Output Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Security Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Input Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:00:11 --> Language Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:00:11 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Session Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:00:11 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Session routines successfully run
+DEBUG - 2014-10-13 18:00:11 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:00:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:00:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:00:11 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:00:11 --> Final output sent to browser
+DEBUG - 2014-10-13 18:00:11 --> Total execution time: 0.0368
+DEBUG - 2014-10-13 18:01:40 --> Config Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:01:40 --> URI Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Router Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Output Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Security Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Input Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:01:40 --> Language Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:01:40 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Session Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:01:40 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Session routines successfully run
+DEBUG - 2014-10-13 18:01:40 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:01:40 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:01:40 --> Model Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Model Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Model Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> Model Class Initialized
+DEBUG - 2014-10-13 18:01:40 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:01:40 --> Final output sent to browser
+DEBUG - 2014-10-13 18:01:40 --> Total execution time: 0.0367
+DEBUG - 2014-10-13 18:02:14 --> Config Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:02:14 --> URI Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Router Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Output Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Security Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Input Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:02:14 --> Language Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:02:14 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Session Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:02:14 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Session routines successfully run
+DEBUG - 2014-10-13 18:02:14 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:02:14 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:02:14 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:14 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:02:14 --> Final output sent to browser
+DEBUG - 2014-10-13 18:02:14 --> Total execution time: 0.0659
+DEBUG - 2014-10-13 18:02:38 --> Config Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:02:38 --> URI Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Router Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Output Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Security Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Input Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:02:38 --> Language Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:02:38 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Session Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:02:38 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Session routines successfully run
+DEBUG - 2014-10-13 18:02:38 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:02:38 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:02:38 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> Model Class Initialized
+DEBUG - 2014-10-13 18:02:38 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:02:38 --> Final output sent to browser
+DEBUG - 2014-10-13 18:02:38 --> Total execution time: 0.0505
+DEBUG - 2014-10-13 18:04:31 --> Config Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:04:31 --> URI Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Router Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Output Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Security Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Input Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:04:31 --> Language Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:04:31 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Session Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:04:31 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Session routines successfully run
+DEBUG - 2014-10-13 18:04:31 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:04:31 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:04:31 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:31 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:04:31 --> Final output sent to browser
+DEBUG - 2014-10-13 18:04:31 --> Total execution time: 0.0365
+DEBUG - 2014-10-13 18:04:43 --> Config Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:04:43 --> URI Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Router Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Output Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Security Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Input Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:04:43 --> Language Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:04:43 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Session Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:04:43 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Session routines successfully run
+DEBUG - 2014-10-13 18:04:43 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:04:43 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:04:43 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> Model Class Initialized
+DEBUG - 2014-10-13 18:04:43 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:04:43 --> Final output sent to browser
+DEBUG - 2014-10-13 18:04:43 --> Total execution time: 0.0677
+DEBUG - 2014-10-13 18:05:05 --> Config Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:05:05 --> URI Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Router Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Output Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Security Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Input Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:05:05 --> Language Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:05:05 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Session Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:05:05 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Session routines successfully run
+DEBUG - 2014-10-13 18:05:05 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:05:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:05:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:05:05 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:05:05 --> Final output sent to browser
+DEBUG - 2014-10-13 18:05:05 --> Total execution time: 0.0368
+DEBUG - 2014-10-13 18:06:00 --> Config Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:06:00 --> URI Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Router Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Output Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Security Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Input Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:06:00 --> Language Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:06:00 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Session Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:06:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Session routines successfully run
+DEBUG - 2014-10-13 18:06:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:06:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:06:00 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:00 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:06:00 --> Final output sent to browser
+DEBUG - 2014-10-13 18:06:00 --> Total execution time: 0.0368
+DEBUG - 2014-10-13 18:06:09 --> Config Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:06:09 --> URI Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Router Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Output Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Security Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Input Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:06:09 --> Language Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:06:09 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Session Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:06:09 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Session routines successfully run
+DEBUG - 2014-10-13 18:06:09 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:06:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:06:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:06:09 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:06:09 --> Final output sent to browser
+DEBUG - 2014-10-13 18:06:09 --> Total execution time: 0.0365
+DEBUG - 2014-10-13 18:07:23 --> Config Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:07:23 --> URI Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Router Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Output Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Security Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Input Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:07:23 --> Language Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:07:23 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Session Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:07:23 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Session routines successfully run
+DEBUG - 2014-10-13 18:07:23 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:07:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:07:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:07:23 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:07:23 --> Final output sent to browser
+DEBUG - 2014-10-13 18:07:23 --> Total execution time: 0.0352
+DEBUG - 2014-10-13 18:08:09 --> Config Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:08:09 --> URI Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Router Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Output Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Security Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Input Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:08:09 --> Language Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:08:09 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Session Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:08:09 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Session routines successfully run
+DEBUG - 2014-10-13 18:08:09 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:08:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:08:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:09 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:08:09 --> Final output sent to browser
+DEBUG - 2014-10-13 18:08:09 --> Total execution time: 0.0355
+DEBUG - 2014-10-13 18:08:46 --> Config Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:08:46 --> URI Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Router Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Output Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Security Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Input Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:08:46 --> Language Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:08:46 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Session Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:08:46 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Session routines successfully run
+DEBUG - 2014-10-13 18:08:46 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:08:46 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:08:46 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> Model Class Initialized
+DEBUG - 2014-10-13 18:08:46 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:08:46 --> Final output sent to browser
+DEBUG - 2014-10-13 18:08:46 --> Total execution time: 0.0352
+DEBUG - 2014-10-13 18:09:05 --> Config Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:09:05 --> URI Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Router Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Output Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Security Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Input Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:09:05 --> Language Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:09:05 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Session Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:09:05 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Session routines successfully run
+DEBUG - 2014-10-13 18:09:05 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:09:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:09:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> Model Class Initialized
+DEBUG - 2014-10-13 18:09:05 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:09:05 --> Final output sent to browser
+DEBUG - 2014-10-13 18:09:05 --> Total execution time: 0.0351
+DEBUG - 2014-10-13 18:11:28 --> Config Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:11:28 --> URI Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Router Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Output Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Security Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Input Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:11:28 --> Language Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:11:28 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Session Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:11:28 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Session routines successfully run
+DEBUG - 2014-10-13 18:11:28 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:11:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:11:28 --> Model Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Model Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Model Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> Model Class Initialized
+DEBUG - 2014-10-13 18:11:28 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:11:28 --> Final output sent to browser
+DEBUG - 2014-10-13 18:11:28 --> Total execution time: 0.0406
+DEBUG - 2014-10-13 18:12:18 --> Config Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:12:18 --> URI Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Router Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Output Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Security Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Input Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:12:18 --> Language Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:12:18 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Session Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:12:18 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Session routines successfully run
+DEBUG - 2014-10-13 18:12:18 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:12:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:12:18 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:18 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:12:18 --> Final output sent to browser
+DEBUG - 2014-10-13 18:12:18 --> Total execution time: 0.0350
+DEBUG - 2014-10-13 18:12:33 --> Config Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:12:33 --> URI Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Router Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Output Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Security Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Input Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:12:33 --> Language Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:12:33 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Session Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:12:33 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Session routines successfully run
+DEBUG - 2014-10-13 18:12:33 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:12:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:12:33 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:33 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:12:33 --> Final output sent to browser
+DEBUG - 2014-10-13 18:12:33 --> Total execution time: 0.0362
+DEBUG - 2014-10-13 18:12:56 --> Config Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:12:56 --> URI Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Router Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Output Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Security Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Input Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:12:56 --> Language Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:12:56 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Session Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:12:56 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Session routines successfully run
+DEBUG - 2014-10-13 18:12:56 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:12:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:12:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:12:56 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:12:56 --> Final output sent to browser
+DEBUG - 2014-10-13 18:12:56 --> Total execution time: 0.0362
+DEBUG - 2014-10-13 18:13:21 --> Config Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:13:21 --> URI Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Router Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Output Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Security Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Input Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:13:21 --> Language Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:13:21 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Session Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:13:21 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Session routines successfully run
+DEBUG - 2014-10-13 18:13:21 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:13:21 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:13:21 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:21 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:13:21 --> Final output sent to browser
+DEBUG - 2014-10-13 18:13:21 --> Total execution time: 0.0387
+DEBUG - 2014-10-13 18:13:41 --> Config Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:13:41 --> URI Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Router Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Output Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Security Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Input Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:13:41 --> Language Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:13:41 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Session Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:13:41 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Session routines successfully run
+DEBUG - 2014-10-13 18:13:41 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:13:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:13:41 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:41 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:13:41 --> Final output sent to browser
+DEBUG - 2014-10-13 18:13:41 --> Total execution time: 0.0345
+DEBUG - 2014-10-13 18:13:45 --> Config Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:13:45 --> URI Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Router Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Output Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Security Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Input Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:13:45 --> Language Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:13:45 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Session Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:13:45 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Session routines successfully run
+DEBUG - 2014-10-13 18:13:45 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:13:45 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:13:45 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> Model Class Initialized
+DEBUG - 2014-10-13 18:13:45 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:13:45 --> Final output sent to browser
+DEBUG - 2014-10-13 18:13:45 --> Total execution time: 0.0820
+DEBUG - 2014-10-13 18:14:23 --> Config Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:14:23 --> URI Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Router Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Output Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Security Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Input Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:14:23 --> Language Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:14:23 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Session Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:14:23 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Session routines successfully run
+DEBUG - 2014-10-13 18:14:23 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:14:23 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:14:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:23 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:14:23 --> Final output sent to browser
+DEBUG - 2014-10-13 18:14:23 --> Total execution time: 0.0354
+DEBUG - 2014-10-13 18:14:54 --> Config Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:14:54 --> URI Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Router Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Output Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Security Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Input Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:14:54 --> Language Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:14:54 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Session Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:14:54 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Session routines successfully run
+DEBUG - 2014-10-13 18:14:54 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:14:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:14:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:14:54 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:14:54 --> Final output sent to browser
+DEBUG - 2014-10-13 18:14:54 --> Total execution time: 0.0336
+DEBUG - 2014-10-13 18:15:17 --> Config Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:15:17 --> URI Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Router Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Output Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Security Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Input Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:15:17 --> Language Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:15:17 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Session Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:15:17 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Session routines successfully run
+DEBUG - 2014-10-13 18:15:17 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:15:17 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:15:17 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:17 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:15:17 --> Final output sent to browser
+DEBUG - 2014-10-13 18:15:17 --> Total execution time: 0.0359
+DEBUG - 2014-10-13 18:15:36 --> Config Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:15:36 --> URI Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Router Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Output Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Security Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Input Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:15:36 --> Language Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:15:36 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Session Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:15:36 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Session routines successfully run
+DEBUG - 2014-10-13 18:15:36 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:15:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:15:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:36 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:15:36 --> Final output sent to browser
+DEBUG - 2014-10-13 18:15:36 --> Total execution time: 0.0341
+DEBUG - 2014-10-13 18:15:47 --> Config Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:15:47 --> URI Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Router Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Output Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Security Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Input Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:15:47 --> Language Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:15:47 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Session Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:15:47 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Session routines successfully run
+DEBUG - 2014-10-13 18:15:47 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:15:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:15:47 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:47 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:15:47 --> Final output sent to browser
+DEBUG - 2014-10-13 18:15:47 --> Total execution time: 0.1779
+DEBUG - 2014-10-13 18:15:56 --> Config Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:15:56 --> URI Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Router Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Output Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Security Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Input Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:15:56 --> Language Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:15:56 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Session Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:15:56 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Session routines successfully run
+DEBUG - 2014-10-13 18:15:56 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:15:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:15:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> Model Class Initialized
+DEBUG - 2014-10-13 18:15:56 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:15:56 --> Final output sent to browser
+DEBUG - 2014-10-13 18:15:56 --> Total execution time: 0.0555
+DEBUG - 2014-10-13 18:16:11 --> Config Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:16:11 --> URI Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Router Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Output Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Security Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Input Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:16:11 --> Language Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:16:11 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Session Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:16:11 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Session routines successfully run
+DEBUG - 2014-10-13 18:16:11 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:16:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:16:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:11 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:16:11 --> Final output sent to browser
+DEBUG - 2014-10-13 18:16:11 --> Total execution time: 0.0366
+DEBUG - 2014-10-13 18:16:30 --> Config Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:16:30 --> URI Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Router Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Output Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Security Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Input Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:16:30 --> Language Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:16:30 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Session Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:16:30 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Session routines successfully run
+DEBUG - 2014-10-13 18:16:30 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:16:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:16:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:16:30 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:16:30 --> Final output sent to browser
+DEBUG - 2014-10-13 18:16:30 --> Total execution time: 0.0484
+DEBUG - 2014-10-13 18:52:57 --> Config Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:52:57 --> URI Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Router Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Output Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Security Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Input Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:52:57 --> Language Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:52:57 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Session Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:52:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Session routines successfully run
+DEBUG - 2014-10-13 18:52:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:52:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:52:57 --> Model Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Model Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Model Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> Model Class Initialized
+DEBUG - 2014-10-13 18:52:57 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:52:57 --> Final output sent to browser
+DEBUG - 2014-10-13 18:52:57 --> Total execution time: 0.0400
+DEBUG - 2014-10-13 18:54:30 --> Config Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:54:30 --> URI Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Router Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Output Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Security Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Input Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:54:30 --> Language Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:54:30 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Session Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:54:30 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Session routines successfully run
+DEBUG - 2014-10-13 18:54:30 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:54:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:54:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:30 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:54:30 --> Final output sent to browser
+DEBUG - 2014-10-13 18:54:30 --> Total execution time: 0.0358
+DEBUG - 2014-10-13 18:54:59 --> Config Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:54:59 --> URI Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Router Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Output Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Security Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Input Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:54:59 --> Language Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:54:59 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Session Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:54:59 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Session routines successfully run
+DEBUG - 2014-10-13 18:54:59 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:54:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:54:59 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> Model Class Initialized
+DEBUG - 2014-10-13 18:54:59 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:54:59 --> Final output sent to browser
+DEBUG - 2014-10-13 18:54:59 --> Total execution time: 0.0350
+DEBUG - 2014-10-13 18:55:06 --> Config Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:55:06 --> URI Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Router Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Output Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Security Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Input Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:55:06 --> Language Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:55:06 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Session Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:55:06 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Session routines successfully run
+DEBUG - 2014-10-13 18:55:06 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:55:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:55:06 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:06 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:55:06 --> Final output sent to browser
+DEBUG - 2014-10-13 18:55:06 --> Total execution time: 0.0356
+DEBUG - 2014-10-13 18:55:53 --> Config Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:55:53 --> URI Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Router Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Output Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Security Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Input Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:55:53 --> Language Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:55:53 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Session Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:55:53 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Session routines successfully run
+DEBUG - 2014-10-13 18:55:53 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:55:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:55:53 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> Model Class Initialized
+DEBUG - 2014-10-13 18:55:53 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:55:53 --> Final output sent to browser
+DEBUG - 2014-10-13 18:55:53 --> Total execution time: 0.0366
+DEBUG - 2014-10-13 18:56:07 --> Config Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:56:07 --> URI Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Router Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Output Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Security Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Input Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:56:07 --> Language Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:56:07 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Session Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:56:07 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Session routines successfully run
+DEBUG - 2014-10-13 18:56:07 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:56:07 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:56:07 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:07 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:56:07 --> Final output sent to browser
+DEBUG - 2014-10-13 18:56:07 --> Total execution time: 0.0363
+DEBUG - 2014-10-13 18:56:42 --> Config Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:56:42 --> URI Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Router Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Output Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Security Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Input Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:56:42 --> Language Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:56:42 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Session Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:56:42 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Session routines successfully run
+DEBUG - 2014-10-13 18:56:42 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:56:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:56:42 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:42 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:56:42 --> Final output sent to browser
+DEBUG - 2014-10-13 18:56:42 --> Total execution time: 0.0366
+DEBUG - 2014-10-13 18:56:54 --> Config Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:56:54 --> URI Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Router Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Output Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Security Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Input Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:56:54 --> Language Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:56:54 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Session Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:56:54 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Session routines successfully run
+DEBUG - 2014-10-13 18:56:54 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:56:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:56:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> Model Class Initialized
+DEBUG - 2014-10-13 18:56:54 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:56:54 --> Final output sent to browser
+DEBUG - 2014-10-13 18:56:54 --> Total execution time: 0.0372
+DEBUG - 2014-10-13 18:57:26 --> Config Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:57:26 --> URI Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Router Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Output Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Security Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Input Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:57:26 --> Language Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:57:26 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Session Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:57:26 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Session routines successfully run
+DEBUG - 2014-10-13 18:57:26 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:57:26 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:57:26 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:26 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:57:26 --> Final output sent to browser
+DEBUG - 2014-10-13 18:57:26 --> Total execution time: 0.0371
+DEBUG - 2014-10-13 18:57:36 --> Config Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:57:36 --> URI Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Router Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Output Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Security Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Input Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:57:36 --> Language Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:57:36 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Session Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:57:36 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Session routines successfully run
+DEBUG - 2014-10-13 18:57:36 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:57:36 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:57:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> Model Class Initialized
+DEBUG - 2014-10-13 18:57:36 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:57:36 --> Final output sent to browser
+DEBUG - 2014-10-13 18:57:36 --> Total execution time: 0.0366
+DEBUG - 2014-10-13 18:58:39 --> Config Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:58:39 --> URI Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Router Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Output Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Security Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Input Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:58:39 --> Language Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:58:39 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Session Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:58:39 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Session routines successfully run
+DEBUG - 2014-10-13 18:58:39 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:58:39 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:58:39 --> Model Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Model Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Model Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> Model Class Initialized
+DEBUG - 2014-10-13 18:58:39 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:58:39 --> Final output sent to browser
+DEBUG - 2014-10-13 18:58:39 --> Total execution time: 0.0370
+DEBUG - 2014-10-13 18:59:20 --> Config Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Hooks Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 18:59:20 --> URI Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Router Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Output Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Security Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Input Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 18:59:20 --> Language Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Loader Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 18:59:20 --> Controller Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Session Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 18:59:20 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Session routines successfully run
+DEBUG - 2014-10-13 18:59:20 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 18:59:20 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 18:59:20 --> Model Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Model Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Model Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> Model Class Initialized
+DEBUG - 2014-10-13 18:59:20 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 18:59:20 --> Final output sent to browser
+DEBUG - 2014-10-13 18:59:20 --> Total execution time: 0.0354
+DEBUG - 2014-10-13 19:00:08 --> Config Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:00:08 --> URI Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Router Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Output Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Security Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Input Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:00:08 --> Language Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:00:08 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Session Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:00:08 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Session routines successfully run
+DEBUG - 2014-10-13 19:00:08 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:00:08 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:00:08 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:08 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:00:08 --> Final output sent to browser
+DEBUG - 2014-10-13 19:00:08 --> Total execution time: 0.0367
+DEBUG - 2014-10-13 19:00:25 --> Config Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:00:25 --> URI Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Router Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Output Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Security Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Input Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:00:25 --> Language Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:00:25 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Session Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:00:25 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Session routines successfully run
+DEBUG - 2014-10-13 19:00:25 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:00:25 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:00:25 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:25 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:00:25 --> Final output sent to browser
+DEBUG - 2014-10-13 19:00:25 --> Total execution time: 0.0362
+DEBUG - 2014-10-13 19:00:41 --> Config Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:00:41 --> URI Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Router Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Output Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Security Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Input Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:00:41 --> Language Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:00:41 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Session Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:00:41 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Session routines successfully run
+DEBUG - 2014-10-13 19:00:41 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:00:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:00:41 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:41 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:00:41 --> Final output sent to browser
+DEBUG - 2014-10-13 19:00:41 --> Total execution time: 0.0351
+DEBUG - 2014-10-13 19:00:56 --> Config Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:00:56 --> URI Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Router Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Output Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Security Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Input Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:00:56 --> Language Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:00:56 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Session Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:00:56 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Session routines successfully run
+DEBUG - 2014-10-13 19:00:56 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:00:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:00:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:00:56 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:00:56 --> Final output sent to browser
+DEBUG - 2014-10-13 19:00:56 --> Total execution time: 0.0355
+DEBUG - 2014-10-13 19:01:19 --> Config Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:01:19 --> URI Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Router Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Output Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Security Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Input Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:01:19 --> Language Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:01:19 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Session Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:01:19 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Session routines successfully run
+DEBUG - 2014-10-13 19:01:19 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:01:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:01:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:19 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:01:19 --> Final output sent to browser
+DEBUG - 2014-10-13 19:01:19 --> Total execution time: 0.0376
+DEBUG - 2014-10-13 19:01:28 --> Config Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:01:28 --> URI Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Router Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Output Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Security Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Input Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:01:28 --> Language Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:01:28 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Session Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:01:28 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Session routines successfully run
+DEBUG - 2014-10-13 19:01:28 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:01:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:01:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:01:28 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:01:28 --> Final output sent to browser
+DEBUG - 2014-10-13 19:01:28 --> Total execution time: 0.0388
+DEBUG - 2014-10-13 19:02:06 --> Config Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:02:06 --> URI Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Router Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Output Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Security Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Input Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:02:06 --> Language Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:02:06 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Session Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:02:06 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Session routines successfully run
+DEBUG - 2014-10-13 19:02:06 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:02:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:02:06 --> Model Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Model Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Model Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> Model Class Initialized
+DEBUG - 2014-10-13 19:02:06 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:02:06 --> Final output sent to browser
+DEBUG - 2014-10-13 19:02:06 --> Total execution time: 0.0353
+DEBUG - 2014-10-13 19:03:19 --> Config Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:03:19 --> URI Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Router Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Output Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Security Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Input Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:03:19 --> Language Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:03:19 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Session Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:03:19 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Session routines successfully run
+DEBUG - 2014-10-13 19:03:19 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:03:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:03:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:19 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:03:19 --> Final output sent to browser
+DEBUG - 2014-10-13 19:03:19 --> Total execution time: 0.0346
+DEBUG - 2014-10-13 19:03:30 --> Config Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:03:30 --> URI Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Router Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Output Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Security Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Input Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:03:30 --> Language Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:03:30 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Session Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:03:30 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Session routines successfully run
+DEBUG - 2014-10-13 19:03:30 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:03:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:03:30 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> Model Class Initialized
+DEBUG - 2014-10-13 19:03:30 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:03:30 --> Final output sent to browser
+DEBUG - 2014-10-13 19:03:30 --> Total execution time: 0.0349
+DEBUG - 2014-10-13 19:04:42 --> Config Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:04:42 --> URI Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Router Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Output Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Security Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Input Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:04:42 --> Language Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:04:42 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Session Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:04:42 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Session routines successfully run
+DEBUG - 2014-10-13 19:04:42 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:04:42 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:04:42 --> Model Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Model Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Model Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> Model Class Initialized
+DEBUG - 2014-10-13 19:04:42 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:04:42 --> Final output sent to browser
+DEBUG - 2014-10-13 19:04:42 --> Total execution time: 0.0399
+DEBUG - 2014-10-13 19:05:00 --> Config Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:05:00 --> URI Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Router Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Output Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Security Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Input Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:05:00 --> Language Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:05:00 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Session Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:05:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Session routines successfully run
+DEBUG - 2014-10-13 19:05:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:05:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:05:00 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:05:00 --> Final output sent to browser
+DEBUG - 2014-10-13 19:05:00 --> Total execution time: 0.0625
+DEBUG - 2014-10-13 19:08:18 --> Config Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:08:18 --> URI Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Router Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Output Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Security Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Input Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:08:18 --> Language Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:08:18 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Session Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:08:18 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Session routines successfully run
+DEBUG - 2014-10-13 19:08:18 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:08:18 --> Model Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Model Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> Model Class Initialized
+DEBUG - 2014-10-13 19:08:18 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:08:18 --> Final output sent to browser
+DEBUG - 2014-10-13 19:08:18 --> Total execution time: 0.0706
+DEBUG - 2014-10-13 19:09:04 --> Config Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:09:04 --> URI Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Router Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Output Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Security Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Input Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:09:04 --> Language Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:09:04 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Session Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:09:04 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Session routines successfully run
+DEBUG - 2014-10-13 19:09:04 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:09:04 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:09:04 --> Model Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Model Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Model Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> Model Class Initialized
+DEBUG - 2014-10-13 19:09:04 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:09:04 --> Final output sent to browser
+DEBUG - 2014-10-13 19:09:04 --> Total execution time: 0.0333
+DEBUG - 2014-10-13 19:11:00 --> Config Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:11:00 --> URI Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Router Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Output Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Security Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Input Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:11:00 --> Language Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:11:00 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Session Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:11:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Session routines successfully run
+DEBUG - 2014-10-13 19:11:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:11:00 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:11:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:00 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:11:00 --> Final output sent to browser
+DEBUG - 2014-10-13 19:11:00 --> Total execution time: 0.0370
+DEBUG - 2014-10-13 19:11:49 --> Config Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:11:49 --> URI Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Router Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Output Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Security Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Input Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:11:49 --> Language Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:11:49 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Session Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:11:49 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Session routines successfully run
+DEBUG - 2014-10-13 19:11:49 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:11:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:11:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:11:49 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:11:49 --> Final output sent to browser
+DEBUG - 2014-10-13 19:11:49 --> Total execution time: 0.0364
+DEBUG - 2014-10-13 19:12:24 --> Config Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:12:24 --> URI Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Router Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Output Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Security Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Input Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:12:24 --> Language Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:12:24 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Session Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:12:24 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Session routines successfully run
+DEBUG - 2014-10-13 19:12:24 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:12:24 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:12:24 --> Model Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Model Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Model Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> Model Class Initialized
+DEBUG - 2014-10-13 19:12:24 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:12:24 --> Final output sent to browser
+DEBUG - 2014-10-13 19:12:24 --> Total execution time: 0.0342
+DEBUG - 2014-10-13 19:14:50 --> Config Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:14:50 --> URI Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Router Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Output Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Security Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Input Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:14:50 --> Language Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:14:50 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Session Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:14:50 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Session routines successfully run
+DEBUG - 2014-10-13 19:14:50 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:14:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:14:50 --> Model Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Model Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Model Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> Model Class Initialized
+DEBUG - 2014-10-13 19:14:50 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:14:50 --> Final output sent to browser
+DEBUG - 2014-10-13 19:14:50 --> Total execution time: 0.0351
+DEBUG - 2014-10-13 19:15:28 --> Config Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:15:28 --> URI Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Router Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Output Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Security Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Input Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:15:28 --> Language Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:15:28 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Session Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:15:28 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Session routines successfully run
+DEBUG - 2014-10-13 19:15:28 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:15:28 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:15:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> Model Class Initialized
+DEBUG - 2014-10-13 19:15:28 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:15:28 --> Final output sent to browser
+DEBUG - 2014-10-13 19:15:28 --> Total execution time: 0.0352
+DEBUG - 2014-10-13 19:16:10 --> Config Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:16:10 --> URI Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Router Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Output Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Security Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Input Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:16:10 --> Language Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:16:10 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Session Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:16:10 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Session routines successfully run
+DEBUG - 2014-10-13 19:16:10 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:16:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:16:10 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:10 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:16:10 --> Final output sent to browser
+DEBUG - 2014-10-13 19:16:10 --> Total execution time: 0.0378
+DEBUG - 2014-10-13 19:16:49 --> Config Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:16:49 --> URI Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Router Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Output Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Security Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Input Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:16:49 --> Language Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:16:49 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Session Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:16:49 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Session routines successfully run
+DEBUG - 2014-10-13 19:16:49 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:16:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:16:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:16:49 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:16:49 --> Final output sent to browser
+DEBUG - 2014-10-13 19:16:49 --> Total execution time: 0.0357
+DEBUG - 2014-10-13 19:18:49 --> Config Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:18:49 --> URI Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Router Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Output Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Security Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Input Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:18:49 --> Language Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:18:49 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Session Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:18:49 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Session routines successfully run
+DEBUG - 2014-10-13 19:18:49 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:18:49 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:18:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:18:49 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:18:49 --> Final output sent to browser
+DEBUG - 2014-10-13 19:18:49 --> Total execution time: 0.0363
+DEBUG - 2014-10-13 19:25:57 --> Config Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:25:57 --> URI Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Router Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Output Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Security Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Input Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:25:57 --> Language Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:25:57 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Session Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:25:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Session routines successfully run
+DEBUG - 2014-10-13 19:25:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:25:57 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:25:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:25:57 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:25:57 --> Final output sent to browser
+DEBUG - 2014-10-13 19:25:57 --> Total execution time: 0.0411
+DEBUG - 2014-10-13 19:26:40 --> Config Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:26:40 --> URI Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Router Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Output Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Security Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Input Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:26:40 --> Language Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:26:40 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Session Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:26:40 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Session routines successfully run
+DEBUG - 2014-10-13 19:26:40 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:26:40 --> Model Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Model Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:26:40 --> Model Class Initialized
+ERROR - 2014-10-13 19:26:40 --> Severity: Notice  --> Undefined property: stdClass::$contract_period D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 96
+ERROR - 2014-10-13 19:26:40 --> Severity: Notice  --> Undefined property: stdClass::$contract_period D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 96
+ERROR - 2014-10-13 19:26:40 --> Severity: Notice  --> Undefined property: stdClass::$contract_period D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 96
+ERROR - 2014-10-13 19:26:40 --> Severity: Notice  --> Undefined property: stdClass::$contract_period D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 96
+ERROR - 2014-10-13 19:26:40 --> Severity: Notice  --> Undefined property: stdClass::$contract_period D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 96
+DEBUG - 2014-10-13 19:26:40 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:26:40 --> Final output sent to browser
+DEBUG - 2014-10-13 19:26:40 --> Total execution time: 0.0891
+DEBUG - 2014-10-13 19:27:32 --> Config Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:27:32 --> URI Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Router Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Output Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Security Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Input Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:27:32 --> Language Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:27:32 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Session Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:27:32 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Session routines successfully run
+DEBUG - 2014-10-13 19:27:32 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:27:32 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:32 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:27:32 --> Final output sent to browser
+DEBUG - 2014-10-13 19:27:32 --> Total execution time: 0.0867
+DEBUG - 2014-10-13 19:27:56 --> Config Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:27:56 --> URI Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Router Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Output Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Security Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Input Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:27:56 --> Language Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:27:56 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Session Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:27:56 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Session routines successfully run
+DEBUG - 2014-10-13 19:27:56 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:27:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:27:56 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:27:56 --> Final output sent to browser
+DEBUG - 2014-10-13 19:27:56 --> Total execution time: 0.0655
+DEBUG - 2014-10-13 19:29:27 --> Config Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:29:27 --> URI Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Router Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Output Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Security Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Input Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:29:27 --> Language Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:29:27 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Session Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:29:27 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Session routines successfully run
+DEBUG - 2014-10-13 19:29:27 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:29:27 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:29:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:27 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:29:27 --> Final output sent to browser
+DEBUG - 2014-10-13 19:29:27 --> Total execution time: 0.0352
+DEBUG - 2014-10-13 19:29:57 --> Config Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:29:57 --> URI Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Router Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Output Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Security Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Input Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:29:57 --> Language Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:29:57 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Session Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:29:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Session routines successfully run
+DEBUG - 2014-10-13 19:29:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:29:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:29:57 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:29:57 --> Final output sent to browser
+DEBUG - 2014-10-13 19:29:57 --> Total execution time: 0.0680
+DEBUG - 2014-10-13 19:30:37 --> Config Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:30:37 --> URI Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Router Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Output Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Security Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Input Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:30:37 --> Language Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:30:37 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Session Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:30:37 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Session routines successfully run
+DEBUG - 2014-10-13 19:30:37 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:30:37 --> Model Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Model Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> Model Class Initialized
+DEBUG - 2014-10-13 19:30:37 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:30:37 --> Final output sent to browser
+DEBUG - 2014-10-13 19:30:37 --> Total execution time: 0.0595
+DEBUG - 2014-10-13 19:34:56 --> Config Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:34:56 --> URI Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Router Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Output Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Security Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Input Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:34:56 --> Language Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:34:56 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Session Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:34:56 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Session routines successfully run
+DEBUG - 2014-10-13 19:34:56 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:34:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> Model Class Initialized
+DEBUG - 2014-10-13 19:34:56 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:34:56 --> Final output sent to browser
+DEBUG - 2014-10-13 19:34:56 --> Total execution time: 0.0636
+DEBUG - 2014-10-13 19:35:29 --> Config Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:35:29 --> URI Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Router Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Output Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Security Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Input Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:35:29 --> Language Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:35:29 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Session Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:35:29 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Session routines successfully run
+DEBUG - 2014-10-13 19:35:29 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:35:29 --> Model Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Model Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:35:29 --> Model Class Initialized
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+ERROR - 2014-10-13 19:35:29 --> Severity: Notice  --> Undefined property: stdClass::$insur_class_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 88
+DEBUG - 2014-10-13 19:35:29 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:35:29 --> Final output sent to browser
+DEBUG - 2014-10-13 19:35:29 --> Total execution time: 0.0732
+DEBUG - 2014-10-13 19:36:57 --> Config Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:36:57 --> URI Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Router Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Output Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Security Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Input Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:36:57 --> Language Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:36:57 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Session Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:36:57 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Session routines successfully run
+DEBUG - 2014-10-13 19:36:57 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:36:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> Model Class Initialized
+DEBUG - 2014-10-13 19:36:57 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:36:57 --> Final output sent to browser
+DEBUG - 2014-10-13 19:36:57 --> Total execution time: 0.0648
+DEBUG - 2014-10-13 19:37:36 --> Config Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:37:36 --> URI Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Router Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Output Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Security Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Input Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:37:36 --> Language Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:37:36 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Session Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:37:36 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Session routines successfully run
+DEBUG - 2014-10-13 19:37:36 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:37:36 --> Model Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Model Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> Model Class Initialized
+DEBUG - 2014-10-13 19:37:36 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:37:36 --> Final output sent to browser
+DEBUG - 2014-10-13 19:37:36 --> Total execution time: 0.0776
+DEBUG - 2014-10-13 19:38:49 --> Config Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:38:49 --> URI Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Router Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Output Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Security Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Input Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:38:49 --> Language Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:38:49 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Session Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:38:49 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Session routines successfully run
+DEBUG - 2014-10-13 19:38:49 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:38:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> Model Class Initialized
+DEBUG - 2014-10-13 19:38:49 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:38:49 --> Final output sent to browser
+DEBUG - 2014-10-13 19:38:49 --> Total execution time: 0.0548
+DEBUG - 2014-10-13 19:39:00 --> Config Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:39:00 --> URI Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Router Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Output Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Security Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Input Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:39:00 --> Language Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:39:00 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Session Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:39:00 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Session routines successfully run
+DEBUG - 2014-10-13 19:39:00 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:39:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Model Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:39:00 --> Model Class Initialized
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:39:00 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+DEBUG - 2014-10-13 19:39:00 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:39:00 --> Final output sent to browser
+DEBUG - 2014-10-13 19:39:00 --> Total execution time: 0.0694
+DEBUG - 2014-10-13 19:40:20 --> Config Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:40:20 --> URI Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Router Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Output Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Security Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Input Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:40:20 --> Language Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:40:20 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Session Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:40:20 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Session routines successfully run
+DEBUG - 2014-10-13 19:40:20 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:40:20 --> Model Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Model Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> Model Class Initialized
+DEBUG - 2014-10-13 19:40:20 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:40:20 --> Final output sent to browser
+DEBUG - 2014-10-13 19:40:20 --> Total execution time: 0.0640
+DEBUG - 2014-10-13 19:41:27 --> Config Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:41:27 --> URI Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Router Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Output Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Security Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Input Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:41:27 --> Language Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:41:27 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Session Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:41:27 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Session routines successfully run
+DEBUG - 2014-10-13 19:41:27 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:41:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:41:27 --> Model Class Initialized
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+ERROR - 2014-10-13 19:41:27 --> Severity: Notice  --> Undefined property: stdClass::$company_name D:\xampp\htdocs\AiuProject\AiuProject\application\views\contractinfo_list_view.php 90
+DEBUG - 2014-10-13 19:41:27 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:41:27 --> Final output sent to browser
+DEBUG - 2014-10-13 19:41:27 --> Total execution time: 0.0778
+DEBUG - 2014-10-13 19:41:44 --> Config Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:41:44 --> URI Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Router Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Output Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Security Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Input Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:41:44 --> Language Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:41:44 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Session Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:41:44 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Session routines successfully run
+DEBUG - 2014-10-13 19:41:44 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:41:44 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:44 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2014-10-13 19:41:44 --> Final output sent to browser
+DEBUG - 2014-10-13 19:41:44 --> Total execution time: 0.0617
+DEBUG - 2014-10-13 19:41:52 --> Config Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Hooks Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Utf8 Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> UTF-8 Support Enabled
+DEBUG - 2014-10-13 19:41:52 --> URI Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Router Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Output Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Security Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Input Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-13 19:41:52 --> Language Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Loader Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Helper loaded: url_helper
+DEBUG - 2014-10-13 19:41:52 --> Controller Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Session Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Helper loaded: string_helper
+DEBUG - 2014-10-13 19:41:52 --> Encrypt Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Session routines successfully run
+DEBUG - 2014-10-13 19:41:52 --> Helper loaded: form_helper
+DEBUG - 2014-10-13 19:41:52 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-13 19:41:52 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Database Driver Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> Model Class Initialized
+DEBUG - 2014-10-13 19:41:52 --> File loaded: application/views/contractinfo_conform_view.php
+DEBUG - 2014-10-13 19:41:52 --> Final output sent to browser
+DEBUG - 2014-10-13 19:41:52 --> Total execution time: 0.0341
