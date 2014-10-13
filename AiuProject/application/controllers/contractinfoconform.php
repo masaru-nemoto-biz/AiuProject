@@ -37,7 +37,7 @@ class ContractInfoConform extends CI_Controller {
         
         $data['company_id'] = $this->session->userdata('company_id');
         
-        $this->array = array('insurance_classification_id' => $this->input->post('corp_kana'),
+        $this->array = array('insurance_classification_id' => $this->input->post('insurance_classification_id'),
             'insurance_company_id' => $this->input->post('insurance_company_id'),
             'company_id' => $data['company_id'],
             'brand_name' => $this->input->post('brand_name'),
