@@ -31,6 +31,8 @@ class CorpInfoList extends CI_Controller {
      */
     function contractInfo_conform() {
 
+        $this->session->set_userdata('company_id', $this->input->post('check_radio'));
+        
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
