@@ -36,7 +36,7 @@
         <?=form_close();?>
         <?=form_open('contractinfolist/contractInfoList_conform')?>
         <div class="page-header text-center">
-            <p class="h2">契約情報一覧画面 <span class="small">契約情報の閲覧・登録が可能</span></p>
+            <p class="h2">契約情報一覧画面<span class="small">契約情報の閲覧・登録が可能</span></p>
         </div>
         <?php foreach ($list1 as $row): ?>
         <div class="row">

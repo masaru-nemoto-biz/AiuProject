@@ -32,27 +32,25 @@
     </style>
 </head>
     <body>
-        <div class="container" style="font-size: 12px;">
-        <?= form_open('corpinfolist/registration_add') ?>
-        <div style="font-size: 12px; position: relative; margin-right:auto; margin-left:auto; width: 800px">
-            <div style="position: relative; top: 10px; left: 10px; font-size: 28px">
-                <table border="0" align="center" height="50">
-                    <tr bgcolor="#cccccc"><td align="center" width="700"><b>事故状況登録画面</b></td></tr>
-                </table>
-            </div>
-            <div style="position: absolute; top: 80px; left: 0px">
-                <table border="0" width="800">
-                    <tr><td align="right">株式会社テスト１</td></tr>
-                </table>
-            </div> 
-            <div style="position: absolute; top: 140px; left: 10px">
-                <table border="3">
-                    <tr><th width="120" bgcolor="#cccccc">事故</th><td><input type="text" name="user_id" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">現状</th><td><input type="password" name="password" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">発生日時</th><td><input type="text" name="user_name" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">損サ担当</th><td><input type="text" name="user_name_kana" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">連絡先</th><td><input type="text" name="authority" value="" size="50" /></td></tr>
-                    <tr><th bgcolor="#cccccc">支払い</th><td><input type="text" name="registration_user_id" value="" size="50" /></td></tr>
+        <div class="container form-group" style="font-size: 12px;">
+            <?= form_open('corpinfolist/registration_add') ?>
+        <div class="page-header text-center">
+            <p class="h2">事故状況登録画面</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+            <div class="table-responsive">
+            <table align="right">
+                 <tr align="right"><th align="right" width="120">株式会社テスト１</th><td colspan="6"></td></tr>
+            </table>
+            <table border="0" class="table">  
+                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>現状</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
                 </table>
             </div>
         </div>
@@ -60,6 +58,7 @@
             <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
         </div>
         <?= form_close(); ?>
+        </div>
         </div>
     </body>
     <!-- jQueryの読み込み-->
