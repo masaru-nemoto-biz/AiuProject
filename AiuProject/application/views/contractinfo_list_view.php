@@ -91,7 +91,7 @@
                     <td><?= $row->brand_name ?></td>
                     <td><?= $row->corp_div_name ?></td>
                     <td><?= $row->policy_number ?></td>
-                    <td><?= $row->insurance_period ?></td>
+                    <td><?= $row->insurance_period_start ?>～<?= $row->insurance_period_end ?></td>
                     <td><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
                     <td><?= $row->month_p ?></td>
                     <td><?= $row->yearly_payment ?></td>
@@ -112,7 +112,6 @@
             <input class="btn btn-primary" type="submit" name="move" value="企業情報一覧画面へ"/>
         </div>
         <?=form_close();?>
- 
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id").dataTable();
