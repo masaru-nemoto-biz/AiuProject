@@ -60,9 +60,6 @@ class User_table extends CI_Controller {
     }
     
     function conform_add() {
-        
-//        $timedata = date('Y_m_d');
-//        echo "$timedata";          この２行はできなかった。$timedataはdbにその値を入れることはできない。
 
         $data['user_name'] = $this->input->post('user_name');
         $array = array(
