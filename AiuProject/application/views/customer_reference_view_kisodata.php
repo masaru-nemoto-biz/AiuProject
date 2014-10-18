@@ -86,10 +86,6 @@
                         <tr><td width="120">契約手段</td><td width="870"><?= $row->contract_way ?></td></tr>
                         <tr><td>契約場所</td><td width="870"><?= $row->contact_place ?></td></tr>
                         <tr><td>連絡時間帯</td><td width="870"><?= $row->contact_time ?></td></tr>
-                        <tr><td>人柄</td><td width="870"><?= $row->personality ?></td></tr>
-                        <tr><td>家族構成</td><td width="870"><?= $row->family_structure ?></td></tr>
-                        <tr><td>趣味</td><td width="870"><?= $row->taste ?></td></tr>
-                        <tr><td>状況</td><td width="870"><?= $row->state ?></td></tr>
                     </table>
                 </div>
                 <?php endforeach; ?>

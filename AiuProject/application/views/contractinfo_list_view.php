@@ -25,6 +25,9 @@
             padding-bottom: 40px;
             background-color: #f5f5f5;
         }
+        .table-style {
+            white-space: nowrap;
+        }
     </style>
 </head>
     <body>
@@ -36,7 +39,7 @@
         <?=form_close();?>
         <?=form_open('contractinfolist/contractInfoList_conform')?>
         <div class="page-header text-center">
-            <p class="h2">契約情報一覧画面 <span class="small">契約情報の閲覧・登録が可能</span></p>
+            <p class="h2">契約情報一覧画面<span class="small">契約情報の閲覧・登録が可能</span></p>
         </div>
         <?php foreach ($list1 as $row): ?>
         <div class="row">
@@ -59,7 +62,6 @@
                 <table class="table table-condensed">
                     <tr><td width="70">月P合計</td><td width="200">計算する</td></tr>
                     <tr><td>年払い合計</td><td width="200">計算する</td></tr>
-                    <tr><td>合計ANP</td><td width="200">計算する</td></tr>
                 </table>
             </div>
         </div>
@@ -68,40 +70,47 @@
         <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
-                <th>選択</th>
-                <th>保険種別</th>
-                <th>保険会社</th>
-                <th>企業No</th>
-                <th>商品名</th>
-                <th>区分</th>
-                <th>証券番号</th>
-                <th>保険期間</th>
-                <th>契約期間</th>
-                <th>月P</th>
-                <th>年払い</th>
-                <th>ANP</th>
+                <th class="table-style">選択</th>
+                <th class="table-style">保険種別</th>
+                <th class="table-style">保険会社</th>
+                <th class="table-style">企業名</th>
+                <th class="table-style">商品名</th>
+                <th class="table-style">区分</th>
+                <th class="table-style">証券番号</th>
+                <th class="table-style">保険期間</th>
+                <th class="table-style">契約期間</th>
+                <th class="table-style">月P</th>
+                <th class="table-style">年払い</th>
+                <th class="table-style">ANP</th>
+                <th class="table-style">事故</th>
             </tr>
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
-                    <td><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
-                    <td><?= $row->insur_class_name ?></td>
-                    <td><?= $row->insur_corp_name ?></td>
-                    <td><?= $row->corp_name ?></td>
-                    <td><?= $row->brand_name ?></td>
-                    <td><?= $row->corp_div_name ?></td>
-                    <td><?= $row->policy_number ?></td>
-                    <td><?= $row->insurance_period_start ?>～<?= $row->insurance_period_end ?></td>
-                    <td><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
-                    <td><?= $row->month_p ?></td>
-                    <td><?= $row->yearly_payment ?></td>
-                    <td><?= $row->anp ?></td>
+                    <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /><?= $row->contract_id ?></td>
+                    <td class="table-style"><?= $row->insur_class_name ?></td>
+                    <td class="table-style"><?= $row->insur_corp_name ?></td>
+                    <td class="table-style"><?= $row->corp_name ?></td>
+                    <td class="table-style"><?= $row->brand_name ?></td>
+                    <td class="table-style"><?= $row->corp_div_name ?></td>
+                    <td class="table-style"><?= $row->policy_number ?></td>
+                    <td class="table-style"><?= $row->insurance_period_start ?>～<?= $row->insurance_period_end ?></td>
+                    <td class="table-style"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
+                    <td class="table-style"><?= $row->month_p ?></td>
+                    <td class="table-style"><?= $row->yearly_payment ?></td>
+                    <td class="table-style"><?= $row->anp ?></td>
+                    <td class="table-style">
+                        <?php foreach ($acc_list as $row1): ?>
+                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_status ?><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    
                 </tr>
             <?php endforeach; ?>
         </table>
         </div>
         <?php if (!empty($message)) : ?>
-        <div class="alert alert-danger" style="width: 300px; margin-top: 10px">
+        <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
             <a class="close" data-dismiss="alert">×</a>
         <?= $message ?>
         </div>
@@ -114,9 +123,13 @@
         <?=form_close();?>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
-        $("#table_id").dataTable();
+        $("#table_id").dataTable( {
+                    "aoColumnDefs": [
+                        { "bVisible": false, "aTargets": [  ] }
+                    ] } );
+
     </script>
-    
+
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
