@@ -11,6 +11,7 @@ class ContractInfoList extends CI_Controller {
         $this->load->model('corpstatus_model');
         $this->load->model('contractInfo_model');
         $this->load->model('master_model');
+        $this->load->model('accident_model');
                         
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -19,8 +20,9 @@ class ContractInfoList extends CI_Controller {
     function index() {
 
         $data['message'] = $this->session->userdata('message');
-        $data['list1'] = $this->corpstatus_model->get_company_detail($data['company_id']);
-        $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
+        $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
+        $data['list2'] = $this->contractInfo_model->get_contract_list($this->session->userdata('company_id'));
+        $data['acc_list'] = $this->contractInfo_model->get_accident_list($this->session->userdata('company_id'));
         $this->load->view('contractinfo_list_view', $data);
     }
 
@@ -32,6 +34,8 @@ class ContractInfoList extends CI_Controller {
      */
     function contractInfoList_conform() {
 
+        $this->session->set_userdata('contract_id', $this->input->post('check_radio'));
+        
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
@@ -51,8 +55,7 @@ class ContractInfoList extends CI_Controller {
      */
     function move_contractInfoList() {
 
-        $data['list'] = $this->corpstatus_model->get_company_list();
-        $this->load->view('corpinfo_list_view', $data);
+        redirect('corpinfolist/index');
     }
 
     /*
@@ -68,10 +71,21 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 契約情報登録画面へ
+     * 事故状況登録画面へ
      */
     function accident_add() {
-
+        
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '登録したい契約情報にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('contractinfolist/index');
+        }
+        
+        $data['list'] = $this->accident_model->get_accident_info($data['check1']);
+        
         $this->load->view('accident_conform_view');
     }
 }

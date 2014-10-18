@@ -70,7 +70,7 @@
                         </select>
                     </td>
                 </tr>
-                <tr><th>証券番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="policy_number" value="" /></td></tr>
+                <tr><th>証券番号</th><td colspan="6"><input id="policy_number" class="form-control input-sm" type="text" name="policy_number" value="" /></td></tr>
                 <tr><th>契約期間</th>
                     <td><input id="contract_period_y" class="form-control input-sm" type="text" name="contract_period_y" value="" /></td>
                     <td align="center" style="vertical-align: bottom">年</td>
@@ -88,7 +88,6 @@
                 <tr><th>月P</th><td colspan="6"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td></tr>
                 <tr><th>年払い</th><td colspan="6"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td></tr>
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
-                <tr><th><del>合計ANP</del></th><td><input class="form-control input-sm" type="text" name="total_anp" value="" /></td></tr>
             </table>
             </div>
             </div>
@@ -124,37 +123,26 @@
                 $("#anp").val('');
             }
         });
-        $("#insurance_period").blur(function(){
-            if($(this).val() != ""){
-                var date1 = new Date($("#insurance_period").val());
-                date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
-                date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
-                date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
-            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
-            } else {
-                $("#after").val('');
-            }
-        });
         $("#contract_period_y").blur(function(){
             var date1 = new Date($("#insurance_period").val());
             date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
             date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
             date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
-            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+            $("#after").val([date1.getFullYear(), ("0"+(date1.getMonth() + 1)).slice(-2), ("0"+date1.getDate()).slice(-2)].join('-'));
         });
         $("#contract_period_m").blur(function(){
             var date1 = new Date($("#insurance_period").val());
             date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
             date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
             date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
-            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+            $("#after").val([date1.getFullYear(), ("0"+(date1.getMonth() + 1)).slice(-2), ("0"+date1.getDate()).slice(-2)].join('-'));
         });
         $("#contract_period_d").blur(function(){
             var date1 = new Date($("#insurance_period").val());
             date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
             date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
             date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
-            $("#after").val([date1.getFullYear(), date1.getMonth() + 1, date1.getDate()].join('-'));
+            $("#after").val([date1.getFullYear(), ("0"+(date1.getMonth() + 1)).slice(-2), ("0"+date1.getDate()).slice(-2)].join('-'));
         });
 
 //-->

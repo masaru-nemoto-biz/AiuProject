@@ -4,6 +4,33 @@ Class corpStatus_model extends CI_Model {
     function corpStatus_model(){
         parent::__construct();
         $this->load->database();
+        $this->load->helper('date');
+    }
+    
+    function get_3m_ago($id) {
+        
+        $this->db->select('contract_info.company_id');
+        $this->db->from('company_info');
+        $this->db->join('contract_info', 'contract_info.company_id = company_info.company_id', 'left');
+        $this->db->where('contract_info.insurance_period_end <', date('Y-m-d', strtotime("-3 month")));
+        $this->db->where('contract_info.insurance_classification_id', $id);
+
+        $this->db->distinct();
+        $query = $this->db->get();
+        
+        return $query->result();
+    }
+    
+        function get_accident() {
+            
+        $this->db->select('accident_info.company_id');
+        $this->db->from('company_info');
+        $this->db->join('accident_info', 'accident_info.company_id = company_info.company_id', 'left');
+
+        $this->db->distinct();
+        $query = $this->db->get();
+        
+        return $query->result();
     }
     
     function get_company_list() {
@@ -16,11 +43,7 @@ Class corpStatus_model extends CI_Model {
         $query = $this->db->get('representative_detail');
         return $query->result();
     }
-    function get_contract_list() {
-        $this->db->order_by('company_id');
-        $query = $this->db->get('contract_detail');
-        return $query->result();
-    }
+
     function get_bank_list() {
         $this->db->order_by('company_id');
         $query = $this->db->get('bank_account_info');
@@ -110,7 +133,7 @@ Class corpStatus_model extends CI_Model {
     function insert_representative_data($array2) {
         $this->db->insert('representative_detail', $array2); 
     }
-    function insert_contract_data($array3) {
+    function insert_contractant_data($array3) {
         $this->db->insert('contract_detail', $array3); 
     } 
     function insert_bank_data($array4) {

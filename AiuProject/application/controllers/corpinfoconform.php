@@ -29,8 +29,7 @@ class CorpInfoConform extends CI_Controller {
         $this->corpStatus_model->set_bank_data($this->session->userdata('company_id'), $this->array4);
         $this->corpStatus_model->set_other_data($this->session->userdata('company_id'), $this->array5);
        
-        $data['list'] = $this->corpStatus_model->get_company_list();
-        $this->load->view('corpinfo_list_view', $data);
+        redirect('corpinfolist/index');
     }
     
     /*
@@ -42,12 +41,11 @@ class CorpInfoConform extends CI_Controller {
         
         $this->corpStatus_model->insert_company_data($this->array);
         $this->corpStatus_model->insert_representative_data($this->array2);
-        $this->corpStatus_model->insert_contract_data($this->array3);
+        $this->corpStatus_model->insert_contractant_data($this->array3);
         $this->corpStatus_model->insert_bank_data($this->array4);
         $this->corpStatus_model->insert_other_data($this->array5);
         
-        $data['list'] = $this->corpStatus_model->get_company_list();
-        $this->load->view('corpinfo_list_view', $data);
+        redirect('corpinfolist/index');
     }
     
     /*
@@ -71,8 +69,6 @@ class CorpInfoConform extends CI_Controller {
             'biz_first' => $this->input->post('biz_first'),
             'biz_second' => $this->input->post('biz_second'),
             'employees' => $this->input->post('employees'),
-            'contract_staff' => $this->input->post('contract_staff'),
-            'contact_address' => $this->input->post('contact_address'),
             'corp_member' => $this->input->post('corp_member'),
             'juridical_personality' => $this->input->post('juridical_personality'));
         
@@ -115,10 +111,6 @@ class CorpInfoConform extends CI_Controller {
         $this->array5 = array('contract_way' => $this->input->post('contract_way'),
             'contact_place' => $this->input->post('contact_place'),
             'contact_time' => $this->input->post('contact_time'),
-            'personality' => $this->input->post('personality'),
-            'family_structure' => $this->input->post('family_structure'),
-            'taste' => $this->input->post('taste'),
-            'state' => $this->input->post('state'),
             'remarks' => $this->input->post('remarks'));
     }
     

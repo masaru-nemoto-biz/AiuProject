@@ -33,7 +33,7 @@
 </head>
     <body>
         <div class="container form-group" style="font-size: 12px;">
-            <?= form_open('corpinfolist/registration_add') ?>
+            <?= form_open('accidentconform/conform_add') ?>
         <div class="page-header text-center">
             <p class="h2">事故状況登録画面</p>
         </div>
@@ -45,12 +45,13 @@
                  <tr align="right"><th align="right" width="120">株式会社テスト１</th><td colspan="6"></td></tr>
             </table>
             <table border="0" class="table">  
-                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
-                    <tr><th>現状</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
-                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
-                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
-                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
-                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="???" value="" /></td></tr>
+                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
+                    <tr><th>現状</th><td colspan="6"><input class="form-control input-sm" type="text" name="status_quo" value="" /></td></tr>
+                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="text" name="occurrence_date" value="" /></td></tr>
+                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
+                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
+                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="" /></td></tr>
+                    <tr><th>ステータス</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_status" value="" /></td></tr>
                 </table>
             </div>
         </div>
