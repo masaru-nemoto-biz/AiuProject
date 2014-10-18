@@ -22,10 +22,7 @@ class ContractInfoConform extends CI_Controller {
         
         $this->contractInfo_model->insert_contract_data($this->array);
         
-        $data['company_id'] = $this->session->userdata('company_id');
-        $data['list1'] = $this->corpstatus_model->get_company_detail($data['company_id']);
-        $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
-        $this->load->view('contractinfo_list_view', $data);
+        redirect('contractinfolist/index');
     }
     
     /*

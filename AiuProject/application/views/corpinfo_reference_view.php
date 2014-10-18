@@ -48,8 +48,6 @@
                         <tr><td>業種 第一</td><td>：<?= $row->biz_first ?></td></tr>
                         <tr><td>業種 第二</td><td>：<?= $row->biz_second ?></td></tr>
                         <tr><td>従業員数</td><td>：<?= $row->employees ?></td></tr>
-                        <tr><td>契約担当者</td><td>：<?= $row->contract_staff ?></td></tr>
-                        <tr><td>連絡先</td><td>：<?= $row->contact_address ?></td></tr>
                         <tr><td>法人会加入有無</td><td>：<?= $row->corp_member ?></td></tr>
                         <tr><td>法人格</td><td>：<?= $row->juridical_personality ?></td></tr>
                     </table>
@@ -120,10 +118,6 @@
                     <?php foreach ($other as $row): ?>
                     <table>
                         <tr><td width="120">備考</td><td>：<?= $row->remarks ?></td></tr>
-                        <tr><td><del>人柄</del></td><td>：<?= $row->personality ?></td></tr>
-                        <tr><td><del>家族構成</del></td><td>：<?= $row->family_structure ?></td></tr>
-                        <tr><td><del>趣味</del></td><td>：<?= $row->taste ?></td></tr>
-                        <tr><td><del>状況</del></td><td>：<?= $row->state ?></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>
