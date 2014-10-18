@@ -54,17 +54,43 @@
             </tr>
             </thead>
             <?php foreach ($list as $row): ?>
+            
                 <tr>
                     <td><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
                     <td><?= $row->company_id ?></td>
                     <td><?= $row->corp_name ?></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                        <?php foreach ($fire as $row_fire): ?>
+                        <?php if ($row_fire->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td>
+                        <?php foreach ($accident as $row_acc): ?>
+                        <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td>
+                        <?php foreach ($liability as $row_liability): ?>
+                        <?php if ($row_liability->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td>
+                        <?php foreach ($large as $row_large): ?>
+                        <?php if ($row_large->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td>
+                        <?php foreach ($other as $row_other): ?>
+                        <?php if ($row_other->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td>
+                        <?php foreach ($count_acc as $row_acc): ?>
+                        <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">事故あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
                 </tr>
+            
             <?php endforeach; ?>
         </table>
         </div>
@@ -84,7 +110,11 @@
         <?=form_close();?>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
-        $("#table_id1").dataTable();
+        $("#table_id1").dataTable( {
+                    "aoColumnDefs": [
+                        { "bVisible": false, "aTargets": [  ] }
+                    ] } );
+
     </script>
     </body>
     <!-- jQueryの読み込み-->

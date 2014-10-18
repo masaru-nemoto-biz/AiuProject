@@ -11,7 +11,6 @@ class CorpInfoList extends CI_Controller {
         $this->load->model('corpStatus_model');
         $this->load->model('contractInfo_model');
         $this->load->model('master_model');
-                        
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -19,7 +18,15 @@ class CorpInfoList extends CI_Controller {
     function index() {
 
         $data['message'] = $this->session->userdata('message');
+        
+        $data['fire'] = $this->corpStatus_model->get_3m_ago('1');
+        $data['accident'] = $this->corpStatus_model->get_3m_ago('2');
+        $data['liability'] = $this->corpStatus_model->get_3m_ago('3');
+        $data['large'] = $this->corpStatus_model->get_3m_ago('4');
+        $data['other'] = $this->corpStatus_model->get_3m_ago('5');
+        $data['count_acc'] = $this->corpStatus_model->get_accident();
         $data['list'] = $this->corpStatus_model->get_company_list();
+        
         $this->load->view('corpinfo_list_view', $data);
     }
 
@@ -172,6 +179,7 @@ class CorpInfoList extends CI_Controller {
         $data['company_id'] = $this->input->post('check_radio');
         $data['list1'] = $this->corpStatus_model->get_company_detail($data['company_id']);
         $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
+        $data['acc_list'] = $this->contractInfo_model->get_accident_list($this->session->userdata('company_id'));
         $this->load->view('contractinfo_list_view', $data);
     }
 
@@ -219,5 +227,6 @@ class CorpInfoList extends CI_Controller {
         $data['contract_detail'] = $this->corpStatus_model->get_contract_data($this->session->userdata('company_id'));
         $this->load->view('customer_reference_view', $data);
     }
+
 }
 ?>
