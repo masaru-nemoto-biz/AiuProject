@@ -34,6 +34,12 @@ class Login extends CI_Controller {
 
         } elseif ($count == 1 and $this->input->post('move') == 'Sign in') {
             // 遷移
+            $data['fire'] = $this->corpStatus_model->get_3m_ago('1');
+            $data['accident'] = $this->corpStatus_model->get_3m_ago('2');
+            $data['liability'] = $this->corpStatus_model->get_3m_ago('3');
+            $data['large'] = $this->corpStatus_model->get_3m_ago('4');
+            $data['other'] = $this->corpStatus_model->get_3m_ago('5');
+            $data['count_acc'] = $this->corpStatus_model->get_accident();
             $data['list'] = $this->corpStatus_model->get_company_list();
             $this->load->view('corpinfo_list_view', $data);
         } else {

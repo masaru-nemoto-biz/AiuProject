@@ -167,20 +167,16 @@ class CorpInfoList extends CI_Controller {
      * 契約情報画面へ
      */
     function move_contractInfo() {
-        $data['check'] = $this->input->post('check_radio');
+        $data['company_id'] = $this->input->post('check_radio');
                 
-        if (empty($data['check'])) {
+        if (empty($data['company_id'])) {
             // チェックなしの場合は自画面遷移
             $message = '参照したい企業にチェックを入れてください';
             $this->session->set_userdata('message', $message);
             redirect('corpinfolist/index');
         }
         
-        $data['company_id'] = $this->input->post('check_radio');
-        $data['list1'] = $this->corpStatus_model->get_company_detail($data['company_id']);
-        $data['list2'] = $this->contractInfo_model->get_contract_list($data['company_id']);
-        $data['acc_list'] = $this->contractInfo_model->get_accident_list($this->session->userdata('company_id'));
-        $this->load->view('contractinfo_list_view', $data);
+        redirect('contractinfolist/index');
     }
 
     /*

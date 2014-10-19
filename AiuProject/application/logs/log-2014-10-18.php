@@ -17577,3 +17577,593 @@ DEBUG - 2014-10-18 20:42:18 --> Model Class Initialized
 DEBUG - 2014-10-18 20:42:18 --> File loaded: application/views/corpinfo_list_view.php
 DEBUG - 2014-10-18 20:42:18 --> Final output sent to browser
 DEBUG - 2014-10-18 20:42:18 --> Total execution time: 0.0624
+DEBUG - 2014-10-18 20:51:48 --> Config Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:51:48 --> URI Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Router Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Output Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Security Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Input Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:51:48 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:51:48 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:51:48 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:51:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:51:48 --> Language Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:51:48 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Session Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:51:48 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Session routines successfully run
+DEBUG - 2014-10-18 20:51:48 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:51:48 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-18 20:51:48 --> Model Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Model Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:51:48 --> Model Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> Model Class Initialized
+DEBUG - 2014-10-18 20:51:48 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2014-10-18 20:51:48 --> Final output sent to browser
+DEBUG - 2014-10-18 20:51:48 --> Total execution time: 0.0552
+DEBUG - 2014-10-18 20:56:05 --> Config Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:56:05 --> URI Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Router Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Output Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Security Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Input Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:56:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:56:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:56:05 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:56:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:56:05 --> Language Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:56:05 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Session Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:56:05 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Session routines successfully run
+DEBUG - 2014-10-18 20:56:05 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:56:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2014-10-18 20:56:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:56:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:56:05 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2014-10-18 20:56:05 --> Final output sent to browser
+DEBUG - 2014-10-18 20:56:05 --> Total execution time: 0.0625
+DEBUG - 2014-10-18 20:57:06 --> Config Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:57:06 --> URI Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Router Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Output Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Security Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Input Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:06 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:06 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:06 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:06 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:06 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:57:06 --> CSRF token verified 
+DEBUG - 2014-10-18 20:57:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:57:06 --> Language Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:57:06 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Session Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:57:06 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Session routines successfully run
+DEBUG - 2014-10-18 20:57:06 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:57:06 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:06 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:57:06 --> File loaded: application/views/login_view.php
+DEBUG - 2014-10-18 20:57:06 --> Final output sent to browser
+DEBUG - 2014-10-18 20:57:06 --> Total execution time: 0.0382
+DEBUG - 2014-10-18 20:57:11 --> Config Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:57:11 --> URI Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Router Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Output Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Security Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Input Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:57:11 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:57:11 --> CSRF token verified 
+DEBUG - 2014-10-18 20:57:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:57:11 --> Language Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:57:11 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Session Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:57:11 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Session routines successfully run
+DEBUG - 2014-10-18 20:57:11 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:57:11 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Model Class Initialized
+DEBUG - 2014-10-18 20:57:11 --> Helper loaded: date_helper
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: fire D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 63
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: accident D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 68
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: liability D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 73
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: large D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 78
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: other D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 83
+ERROR - 2014-10-18 20:57:11 --> Severity: Notice  --> Undefined variable: count_acc D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+ERROR - 2014-10-18 20:57:11 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\corpinfo_list_view.php 88
+DEBUG - 2014-10-18 20:57:11 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2014-10-18 20:57:11 --> Final output sent to browser
+DEBUG - 2014-10-18 20:57:11 --> Total execution time: 0.1725
+DEBUG - 2014-10-18 20:59:05 --> Config Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:59:05 --> URI Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Router Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Output Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Security Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Input Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:05 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:59:05 --> CSRF token verified 
+DEBUG - 2014-10-18 20:59:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:59:05 --> Language Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:59:05 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Session Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:59:05 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Session routines successfully run
+DEBUG - 2014-10-18 20:59:05 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:59:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:05 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:59:05 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2014-10-18 20:59:05 --> Final output sent to browser
+DEBUG - 2014-10-18 20:59:05 --> Total execution time: 0.0575
+DEBUG - 2014-10-18 20:59:07 --> Config Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:59:07 --> URI Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Router Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Output Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Security Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Input Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:07 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:07 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:07 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:07 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:07 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:59:07 --> CSRF token verified 
+DEBUG - 2014-10-18 20:59:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:59:07 --> Language Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:59:07 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Session Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:59:07 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Session routines successfully run
+DEBUG - 2014-10-18 20:59:07 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:59:07 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:07 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:59:07 --> File loaded: application/views/login_view.php
+DEBUG - 2014-10-18 20:59:07 --> Final output sent to browser
+DEBUG - 2014-10-18 20:59:07 --> Total execution time: 0.0348
+DEBUG - 2014-10-18 20:59:13 --> Config Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Hooks Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Utf8 Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> UTF-8 Support Enabled
+DEBUG - 2014-10-18 20:59:13 --> URI Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Router Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Output Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Security Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Input Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> XSS Filtering completed
+DEBUG - 2014-10-18 20:59:13 --> CRSF cookie Set
+DEBUG - 2014-10-18 20:59:13 --> CSRF token verified 
+DEBUG - 2014-10-18 20:59:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-10-18 20:59:13 --> Language Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Loader Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Helper loaded: url_helper
+DEBUG - 2014-10-18 20:59:13 --> Controller Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Session Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Helper loaded: string_helper
+DEBUG - 2014-10-18 20:59:13 --> Encrypt Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Session routines successfully run
+DEBUG - 2014-10-18 20:59:13 --> Helper loaded: form_helper
+DEBUG - 2014-10-18 20:59:13 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Database Driver Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Model Class Initialized
+DEBUG - 2014-10-18 20:59:13 --> Helper loaded: date_helper
+DEBUG - 2014-10-18 20:59:13 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2014-10-18 20:59:13 --> Final output sent to browser
+DEBUG - 2014-10-18 20:59:13 --> Total execution time: 0.0441
