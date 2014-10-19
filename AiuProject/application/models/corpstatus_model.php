@@ -12,7 +12,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->select('contract_info.company_id');
         $this->db->from('company_info');
         $this->db->join('contract_info', 'contract_info.company_id = company_info.company_id', 'left');
-        $this->db->where('contract_info.insurance_period_end <', date('Y-m-d', strtotime("-3 month")));
+        $this->db->where('contract_info.insurance_period_end <', date('Y-m-d', strtotime("+3 month")));
         $this->db->where('contract_info.insurance_classification_id', $id);
 
         $this->db->distinct();

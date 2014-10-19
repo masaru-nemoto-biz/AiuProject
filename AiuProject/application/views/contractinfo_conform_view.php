@@ -33,7 +33,7 @@
 </head>
     <body>
         <div class="container form-group" style="font-size: 12px;">
-        <?= form_open('ContractInfoConform/conform_add') ?>
+        <?= form_open('contractinfoconform/conform_add') ?>
         <div class="page-header text-center">
             <p class="h2">契約情報登録画面</p>
         </div>
@@ -144,7 +144,13 @@
             date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
             $("#after").val([date1.getFullYear(), ("0"+(date1.getMonth() + 1)).slice(-2), ("0"+date1.getDate()).slice(-2)].join('-'));
         });
-
+        $("#insurance_period").blur(function(){
+            var date1 = new Date($("#insurance_period").val());
+            date1.setYear(date1.getFullYear()+Number($("#contract_period_y").val()));
+            date1.setMonth(date1.getMonth()+Number($("#contract_period_m").val()));
+            date1.setDate(date1.getDate() + Number($("#contract_period_d").val()-1));
+            $("#after").val([date1.getFullYear(), ("0"+(date1.getMonth() + 1)).slice(-2), ("0"+date1.getDate()).slice(-2)].join('-'));
+        });
 //-->
 </script>
 </html>

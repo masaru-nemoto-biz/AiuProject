@@ -106,9 +106,9 @@
                         <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="" size="50" /></td></tr>
-                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="" size="50" /></td></tr>
-                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="" size="50" /></td></tr>
-                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="" size="50" /></td></tr>
+                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="" size="50" /></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4">
@@ -281,9 +281,9 @@
                         <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
-                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
+                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $row->address ?>" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
                     </table>
                     <?php endforeach; ?>
                     <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆その他詳細</label>

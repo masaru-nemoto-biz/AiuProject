@@ -40,8 +40,8 @@
                         <tr><td>所在地</td><td>：<?= $row->address ?></td></tr>
                         <tr><td>電話番号</td><td>：<?= $row->phone ?></td></tr>
                         <tr><td>FAX</td><td>：<?= $row->fax ?></td></tr>
-                        <tr><td>会社メールアドレス</td><td>：<?= $row->company_mail ?></td></tr>
-                        <tr><td>会社HP</td><td>：<?= $row->company_hp ?></td></tr>
+                        <tr><td>会社メールアドレス</td><td>：<a href="<?= $row->company_mail ?>"><?= $row->company_mail ?></a></td></tr>
+                        <tr><td>会社HP</td><td>：<a href="<?= $row->company_hp ?>" target="_blank"><?= $row->company_hp ?></a></td></tr>
                         <tr><td>設立年月日</td><td>：<?= $row->establishment ?></td></tr>
                         <tr><td>資本金</td><td>：<?= $row->capital ?></td></tr>
                         <tr><td>決算月</td><td>：<?= $row->settling_month ?></td></tr>
@@ -81,7 +81,7 @@
                         <tr><td>性別</td><td>：<?= $row->sex ?></td></tr>
                         <tr><td>生年月日</td><td>：<?= $row->birthday ?></td></tr>
                         <tr><td>携帯電話</td><td>：<?= $row->mobile_phone ?></td></tr>
-                        <tr><td>メールアドレス</td><td>：<?= $row->mail ?></td></tr>
+                        <tr><td>メールアドレス</td><td>：<a href="<?= $row->mail ?>"><?= $row->mail ?></a></td></tr>
                         <tr><td>自宅郵便番号</td><td>：<?= $row->post ?></td></tr>
                         <tr><td>自宅所在地</td><td>：<?= $row->address ?></td></tr>
                         <tr><td>自宅電話番号</td><td>：<?= $row->home_phone ?></td></tr>
@@ -96,10 +96,10 @@
                         <tr><td>性別</td><td>：<?= $row->sex ?></td></tr>
                         <tr><td>生年月日</td><td>：<?= $row->birthday ?></td></tr>
                         <tr><td>携帯電話</td><td>：<?= $row->mobile_phone ?></td></tr>
-                        <tr><td>メールアドレス</td><td>：<?= $row->mail ?></td></tr>
-                        <tr><td>自宅郵便番号</td><td>：<?= $row->post ?></td></tr>
-                        <tr><td>自宅所在地</td><td>：<?= $row->address ?></td></tr>
-                        <tr><td>自宅電話番号</td><td>：<?= $row->home_phone ?></td></tr>
+                        <tr><td>メールアドレス</td><td>：<a href="<?= $row->mail ?>"><?= $row->mail ?></a></td></tr>
+                        <tr><td>郵便番号</td><td>：<?= $row->post ?></td></tr>
+                        <tr><td>所在地</td><td>：<?= $row->address ?></td></tr>
+                        <tr><td>電話番号</td><td>：<?= $row->home_phone ?></td></tr>
                     </table>
                     <?php endforeach; ?>
                     <label class="font_subhead" style="margin-top: 20px;">◆その他詳細</label>
@@ -114,7 +114,7 @@
             </div>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div style="padding-left: 10px; padding-top: 10px; width: 800px;">
-                    <label style="font-weight:bold; font-size: 18px">◆その他詳細</label>
+                    <label style="font-weight:bold; font-size: 18px">◆備考</label>
                     <?php foreach ($other as $row): ?>
                     <table>
                         <tr><td width="120">備考</td><td>：<?= $row->remarks ?></td></tr>
