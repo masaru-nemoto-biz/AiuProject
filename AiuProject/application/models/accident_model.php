@@ -15,6 +15,11 @@ Class Accident_model extends CI_Model {
     function insert_accident_data($array) {
         $this->db->insert('accident_info', $array); 
     }
+    
+    function set_accident_data($acc_id, $array) {
+        $this->db->where('acc_id', $acc_id);
+        $this->db->update('accident_info', $array); 
+    }
 }
 
 ?>

@@ -20,8 +20,12 @@ class AccidentConform extends CI_Controller {
     function conform_add() {
         
         $this->conform_Prepare();
-        
-        $this->accident_model->insert_accident_data($this->array);
+        $acc_id = $this->session->userdata('acc_id');
+        if (empty($acc_id)){
+            $this->accident_model->insert_accident_data($this->array);
+        } else {
+            $this->accident_model->set_accident_data($acc_id, $this->array);
+        }
         
         redirect('contractinfolist/index');
     }
@@ -41,7 +45,7 @@ class AccidentConform extends CI_Controller {
             'sonsa' => $this->input->post('sonsa'),
             'acc_phone' => $this->input->post('acc_phone'),
             'payment' => $this->input->post('payment'),
-            'acc_status' => $this->input->post('acc_status'));
+            'acc_status_id' => $this->input->post('acc_status_id'));
     }
     
 }

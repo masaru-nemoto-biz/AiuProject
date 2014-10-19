@@ -23,6 +23,11 @@ class ContractInfoList extends CI_Controller {
         $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
         $data['list2'] = $this->contractInfo_model->get_contract_list($this->session->userdata('company_id'));
         $data['acc_list'] = $this->contractInfo_model->get_accident_list($this->session->userdata('company_id'));
+        $data['month_p_sum'] = $this->contractInfo_model->get_month_p_sum($this->session->userdata('company_id'));
+        $data['yearly_p_sum'] = $this->contractInfo_model->get_yearly_p_sum($this->session->userdata('company_id'));
+        $data['anp_sum'] = $this->contractInfo_model->get_anp_sum($this->session->userdata('company_id'));
+        $data['month_3ago'] = date('Y-m-d', strtotime("+3 month"));
+        
         $this->load->view('contractinfo_list_view', $data);
     }
 
@@ -41,9 +46,11 @@ class ContractInfoList extends CI_Controller {
         
         if ($data['move'] == '企業情報一覧画面へ') {
             $this->move_contractInfoList();
-        } elseif ($data['move'] == '事故状況登録画面へ') {
+        } elseif ($data['move'] == '事故状況登録/変更画面へ') {
             $this->accident_add();
         } elseif ($data['move'] == '契約情報登録画面へ') {
+            $this->contractInfo_add();
+        } elseif ($data['move'] == '3か月前') {
             $this->contractInfo_add();
         } else {
             $this->index();
@@ -71,7 +78,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 事故状況登録画面へ
+     * 事故状況登録/変更画面へ
      */
     function accident_add() {
         
@@ -84,9 +91,19 @@ class ContractInfoList extends CI_Controller {
             redirect('contractinfolist/index');
         }
         
-        $data['list'] = $this->accident_model->get_accident_info($data['check1']);
+        $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
+        $data['accident_status_mst'] = $this->master_model->accident_status_mst();
         
-        $this->load->view('accident_conform_view');
+        if (!empty($data['acc_list'])) {
+            foreach ($data['acc_list'] as $row) {
+                $acc_id = $row->acc_id;
+            }
+            $this->session->set_userdata('acc_id', $acc_id);
+        } else {
+            $this->session->unset_userdata('acc_id');
+        }
+        
+        $this->load->view('accident_conform_view', $data);
     }
 }
 ?>

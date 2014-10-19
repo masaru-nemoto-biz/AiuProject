@@ -44,15 +44,51 @@
             <table align="right">
                  <tr align="right"><th align="right" width="120">株式会社テスト１</th><td colspan="6"></td></tr>
             </table>
+            <?php if (empty($acc_list)) : ?>
             <table border="0" class="table">  
                     <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
-                    <tr><th>現状</th><td colspan="6"><input class="form-control input-sm" type="text" name="status_quo" value="" /></td></tr>
-                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="text" name="occurrence_date" value="" /></td></tr>
+                    <tr><th>現状</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
+                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="" /></td></tr>
                     <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
                     <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
                     <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="" /></td></tr>
-                    <tr><th>ステータス</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_status" value="" /></td></tr>
-                </table>
+                    <tr><th>ステータス</th>
+                        <td colspan="6">
+                            <select class="form-control input-sm" name="acc_status_id">
+                                <?php foreach ($accident_status_mst as $row): ?>
+                                <option value="<?= $row->acc_status_id ?>"><?= $row->acc_status_name ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            <?php else: ?>
+            <?php foreach ($acc_list as $row): ?>
+            <table border="0" class="table">  
+                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" /></td></tr>
+                    <tr><th>現状</th>
+                        <td colspan="6">
+                            <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                        </td>
+                    </tr>
+                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" /></td></tr>
+                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" /></td></tr>
+                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" /></td></tr>
+                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" /></td></tr>
+                    <tr><th>ステータス</th>
+                        <td colspan="6">
+                            <select class="form-control input-sm" name="acc_status_id">
+                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row->acc_status_id) :?>selected="selected"<?php endif; ?>>
+                                    <?= $row_accident_status->acc_status_name ?>
+                                </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            <?php endforeach; ?>
+            <?php endif; ?>
             </div>
         </div>
         <div class="center_auto" style="margin-top: 10px; width: 150px;">

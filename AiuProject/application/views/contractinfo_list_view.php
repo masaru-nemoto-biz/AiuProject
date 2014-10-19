@@ -60,8 +60,27 @@
             </div>
             <div class="col-md-4">
                 <table class="table table-condensed">
-                    <tr><td width="70">月P合計</td><td width="200">計算する</td></tr>
-                    <tr><td>年払い合計</td><td width="200">計算する</td></tr>
+                    <tr><td width="70">月P合計</td>
+                        <td width="200">
+                        <?php foreach ($month_p_sum as $row): ?>
+                            <?= $row->month_p ?>
+                        <?php endforeach; ?>
+                        </td>
+                    </tr>
+                    <tr><td>年払い合計</td>
+                        <td width="200">
+                        <?php foreach ($yearly_p_sum as $row): ?>
+                            <?= $row->yearly_payment ?>
+                        <?php endforeach; ?>
+                        </td>
+                    </tr>
+                    <tr><td>ANP合計</td>
+                        <td width="200">
+                        <?php foreach ($anp_sum as $row): ?>
+                            <?= $row->anp ?>
+                        <?php endforeach; ?>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -73,7 +92,7 @@
                 <th class="table-style">選択</th>
                 <th class="table-style">保険種別</th>
                 <th class="table-style">保険会社</th>
-                <th class="table-style">企業名</th>
+                <!--<th class="table-style">企業名</th>-->
                 <th class="table-style">商品名</th>
                 <th class="table-style">区分</th>
                 <th class="table-style">証券番号</th>
@@ -82,6 +101,7 @@
                 <th class="table-style">月P</th>
                 <th class="table-style">年払い</th>
                 <th class="table-style">ANP</th>
+                <th class="table-style">お知らせ</th>
                 <th class="table-style">事故</th>
             </tr>
             </thead>
@@ -90,7 +110,7 @@
                     <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /><?= $row->contract_id ?></td>
                     <td class="table-style"><?= $row->insur_class_name ?></td>
                     <td class="table-style"><?= $row->insur_corp_name ?></td>
-                    <td class="table-style"><?= $row->corp_name ?></td>
+                    <!--<td class="table-style"><?= $row->corp_name ?></td>-->
                     <td class="table-style"><?= $row->brand_name ?></td>
                     <td class="table-style"><?= $row->corp_div_name ?></td>
                     <td class="table-style"><?= $row->policy_number ?></td>
@@ -100,11 +120,16 @@
                     <td class="table-style"><?= $row->yearly_payment ?></td>
                     <td class="table-style"><?= $row->anp ?></td>
                     <td class="table-style">
+                        <?php if ($row->insurance_period_end < $month_3ago) : ?>
+                            <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
+                            <span class="label label-danger">3ヶ月前あり</span>
+                        <?php endif; ?>
+                    </td>
+                    <td class="table-style">
                         <?php foreach ($acc_list as $row1): ?>
-                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_status ?><?php endif; ?>
+                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_status_name ?><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    
                 </tr>
             <?php endforeach; ?>
         </table>
@@ -117,7 +142,7 @@
         <?php endif; ?>
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="契約情報登録画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="事故状況登録画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="事故状況登録/変更画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="企業情報一覧画面へ"/>
         </div>
         <?=form_close();?>
