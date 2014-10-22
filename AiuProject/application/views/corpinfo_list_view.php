@@ -25,6 +25,9 @@
             padding-bottom: 40px;
             background-color: #f5f5f5;
         }
+        .table-style {
+            white-space: nowrap;
+        }
     </style>
 </head>
     <body>
@@ -42,49 +45,49 @@
         <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
-                <th>選択</th>
-                <th>企業No</th>
-                <th>企業名</th>
-                <th>火災保険</th>
-                <th>傷害保険</th>
-                <th>賠償保険</th>
-                <th>生命保険</th>
-                <th>その他</th>
-                <th>事故状況</th>
+                <th class="table-style">選択</th>
+                <th class="table-style">企業No</th>
+                <th class="table-style">企業名</th>
+                <th class="table-style">火災保険</th>
+                <th class="table-style">傷害保険</th>
+                <th class="table-style">賠償保険</th>
+                <th class="table-style">生命保険</th>
+                <th class="table-style">その他</th>
+                <th class="table-style">事故状況</th>
             </tr>
             </thead>
             <?php foreach ($list as $row): ?>
             
                 <tr>
-                    <td><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
-                    <td><?= $row->company_id ?></td>
-                    <td><?= $row->corp_name ?></td>
-                    <td>
+                    <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
+                    <td class="table-style"><?= $row->company_id ?></td>
+                    <td class="table-style"><?= $row->corp_name ?></td>
+                    <td class="table-style">
                         <?php foreach ($fire as $row_fire): ?>
                         <?php if ($row_fire->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td>
+                    <td class="table-style">
                         <?php foreach ($accident as $row_acc): ?>
                         <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td>
+                    <td class="table-style">
                         <?php foreach ($liability as $row_liability): ?>
                         <?php if ($row_liability->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td>
+                    <td class="table-style">
                         <?php foreach ($large as $row_large): ?>
                         <?php if ($row_large->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td>
+                    <td class="table-style">
                         <?php foreach ($other as $row_other): ?>
                         <?php if ($row_other->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td>
+                    <td class="table-style">
                         <?php foreach ($count_acc as $row_acc): ?>
                         <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">事故あり</span><?php endif; ?>
                         <?php endforeach; ?>
