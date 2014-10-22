@@ -29,6 +29,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .table-style {
+            white-space: nowrap;
+        }
     </style>
 </head>
     <body>
@@ -41,18 +44,18 @@
             <div class="col-md-3"></div>
             <div class="col-md-6">
             <div class="table-responsive">
-            <table align="right">
-                 <tr align="right"><th align="right" width="120">株式会社テスト１</th><td colspan="6"></td></tr>
-            </table>
             <?php if (empty($acc_list)) : ?>
+            <?php foreach (contract_list as $row): ?>
+                <?= $row->contract_name ?>
+            <?php endforeach; ?>
             <table border="0" class="table">  
-                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
-                    <tr><th>現状</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
-                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="" /></td></tr>
-                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
-                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
-                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="" /></td></tr>
-                    <tr><th>ステータス</th>
+                    <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
+                    <tr><th class="table-style">現状</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
+                    <tr><th class="table-style">発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="" /></td></tr>
+                    <tr><th class="table-style">損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
+                    <tr><th class="table-style">連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
+                    <tr><th class="table-style">支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="" /></td></tr>
+                    <tr><th class="table-style">ステータス</th>
                         <td colspan="6">
                             <select class="form-control input-sm" name="acc_status_id">
                                 <?php foreach ($accident_status_mst as $row): ?>
@@ -65,17 +68,17 @@
             <?php else: ?>
             <?php foreach ($acc_list as $row): ?>
             <table border="0" class="table">  
-                    <tr><th>事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" /></td></tr>
-                    <tr><th>現状</th>
+                    <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" /></td></tr>
+                    <tr><th class="table-style">現状</th>
                         <td colspan="6">
                             <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
                         </td>
                     </tr>
-                    <tr><th>発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" /></td></tr>
-                    <tr><th>損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" /></td></tr>
-                    <tr><th>連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" /></td></tr>
-                    <tr><th>支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" /></td></tr>
-                    <tr><th>ステータス</th>
+                    <tr><th class="table-style">発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" /></td></tr>
+                    <tr><th class="table-style">損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" /></td></tr>
+                    <tr><th class="table-style">連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" /></td></tr>
+                    <tr><th class="table-style">支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" /></td></tr>
+                    <tr><th class="table-style">ステータス</th>
                         <td colspan="6">
                             <select class="form-control input-sm" name="acc_status_id">
                                 <?php foreach ($accident_status_mst as $row_accident_status): ?>
