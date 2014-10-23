@@ -21,6 +21,7 @@ class AccidentConform extends CI_Controller {
         
         $this->conform_Prepare();
         $acc_id = $this->session->userdata('acc_id');
+        
         if (empty($acc_id)){
             $this->accident_model->insert_accident_data($this->array);
         } else {
@@ -37,7 +38,8 @@ class AccidentConform extends CI_Controller {
      */
     function conform_Prepare() {
         
-        $this->array = array('contract_id' => $this->session->userdata('contract_id'),
+        $this->array = array('acc_id' => $this->input->post('acc_id'),
+            'contract_id' => $this->session->userdata('contract_id'),
             'company_id' => $this->session->userdata('company_id'),
             'acc_contents' => $this->input->post('acc_contents'),
             'status_quo' => $this->input->post('status_quo'),

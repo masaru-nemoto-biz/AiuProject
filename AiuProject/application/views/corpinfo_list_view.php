@@ -39,15 +39,15 @@
         <?=form_close();?>
         <?=form_open('corpinfolist/contractInfo_conform')?>
         <div class="page-header text-center">
-            <p class="h2">企業情報一覧画面 <span class="small">企業情報の閲覧・登録が可能</span></p>
+            <p class="h2">契約者情報一覧画面 <span class="small">契約者情報の閲覧・登録が可能</span></p>
         </div>
         <div class="table-responsive">
         <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
             <tr>
                 <th class="table-style">選択</th>
-                <th class="table-style">企業No</th>
-                <th class="table-style">企業名</th>
+                <th class="table-style">No</th>
+                <th class="table-style">契約元</th>
                 <th class="table-style">火災保険</th>
                 <th class="table-style">傷害保険</th>
                 <th class="table-style">賠償保険</th>
@@ -104,9 +104,9 @@
         </div>
         <?php endif; ?>
         <div style="margin-top: 25px">
-            <input class="btn btn-primary" type="submit" name="move" value="企業情報登録画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="企業情報変更画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="企業情報照会画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者情報登録画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者情報変更画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者情報照会画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="顧客カード"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧画面へ"/>
         </div>

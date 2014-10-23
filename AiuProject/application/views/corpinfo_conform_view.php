@@ -32,7 +32,7 @@
             <?= form_open('corpinfoconform/conform_add') ?>
             <div class="row">
                 <div class="col-md-4">
-                    <label class="label_size">◆企業情報</label>
+                    <label class="label_size">◆契約者情報</label>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="" size="50" /></td></tr>
                         <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="" size="50" /></td></tr>
@@ -162,7 +162,7 @@
             <?= form_open('corpinfoconform/conform') ?>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div class="pull-left" style="width: 400px; padding-left: 10px; padding-top: 10px;">
-                    <label style="font-size: 18px">◆企業情報</label>
+                    <label style="font-size: 18px">◆契約者情報</label>
                     <?php foreach ($company_data as $row): ?>
                     <table>
                         <tr><td width="120">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $row->corp_name ?>" size="50" /></td></tr>

@@ -44,12 +44,14 @@ class ContractInfoList extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '企業情報一覧画面へ') {
+        if ($data['move'] == '契約者情報一覧画面へ') {
             $this->move_contractInfoList();
         } elseif ($data['move'] == '事故状況登録/変更画面へ') {
             $this->accident_add();
         } elseif ($data['move'] == '契約情報登録画面へ') {
             $this->contractInfo_add();
+        } elseif ($data['move'] == '契約情報変更画面へ') {
+            $this->contractInfo_change();
         } elseif ($data['move'] == '3か月前') {
             $this->contractInfo_add();
         } else {
@@ -58,7 +60,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 企業情報画面へ
+     * 契約者情報画面へ
      */
     function move_contractInfoList() {
 
@@ -70,6 +72,28 @@ class ContractInfoList extends CI_Controller {
      */
     function contractInfo_add() {
 
+        $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
+        $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
+        $data['corp_division_mst'] = $this->master_model->corp_division_mst();
+        
+        $this->load->view('contractinfo_conform_view', $data);
+    }
+
+    /*
+     * 契約情報変更画面へ
+     */
+    function contractInfo_change() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい契約情報にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('contractinfolist/index');
+        }
+        
+        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
         $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
         $data['corp_division_mst'] = $this->master_model->corp_division_mst();
@@ -91,6 +115,7 @@ class ContractInfoList extends CI_Controller {
             redirect('contractinfolist/index');
         }
         
+        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
         $data['accident_status_mst'] = $this->master_model->accident_status_mst();
         

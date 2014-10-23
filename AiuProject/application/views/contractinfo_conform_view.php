@@ -35,11 +35,16 @@
         <div class="container form-group" style="font-size: 12px;">
         <?= form_open('contractinfoconform/conform_add') ?>
         <div class="page-header text-center">
+            <?php if (empty($contract_list)) : ?>
             <p class="h2">契約情報登録画面</p>
+            <?php else: ?>
+            <p class="h2">契約情報変更画面</p>
+            <?php endif; ?>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
+            <?php if (empty($contract_list)) : ?>
             <div class="table-responsive">
             <table border="0" class="table">
                 <tr><th width="120">保険種別</th>
@@ -90,6 +95,62 @@
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
             </table>
             </div>
+            <?php else: ?>
+            <?php foreach ($contract_list as $row): ?>
+            <div class="table-responsive">
+            <table border="0" class="table">
+                <tr><th width="120">保険種別</th>
+                    <td colspan="6">
+                        <select class="form-control input-sm" name="insurance_classification_id">
+                            <?php foreach ($insurance_classification_mst as $row_mst): ?>
+                            <option value="<?= $row_mst->insur_class_id ?>"><?= $row_mst->insur_class_name ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th width="120">保険会社</th>
+                    <td colspan="6">
+                        <select class="form-control input-sm" name="insurance_company_id">
+                            <?php foreach ($insurance_company_mst as $row_mst): ?>
+                            <option value="<?= $row_mst->insur_corp_id ?>"><?= $row_mst->insur_corp_name ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>商品名</th><td colspan="6"><input class="form-control input-sm" type="text" name="brand_name" value="<?= $row->brand_name ?>" /></td></tr>
+                <tr><th width="120">区分</th>
+                    <td colspan="6">
+                        <select class="form-control input-sm" name="division">
+                            <?php foreach ($corp_division_mst as $row_mst): ?>
+                            <option value="<?= $row_mst->corp_div_id ?>" <?php if ($row_mst->corp_div_id == $row->division) :?>selected="selected"<?php endif; ?>>
+                                        <?= $row_mst->corp_div_name ?>
+                            </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
+                <tr><th>証券番号</th><td colspan="6"><input id="policy_number" class="form-control input-sm" type="text" name="policy_number" value="<?= $row->policy_number ?>" /></td></tr>
+                <tr><th>契約期間</th>
+                    <td><input id="contract_period_y" class="form-control input-sm" type="text" name="contract_period_y" value="<?= $row->contract_period_y ?>" /></td>
+                    <td align="center" style="vertical-align: bottom">年</td>
+                    <td><input id="contract_period_m" class="form-control input-sm" type="text" name="contract_period_m" value="<?= $row->contract_period_m ?>" /></td>
+                    <td align="center" style="vertical-align: bottom">ヶ月</td>
+                    <td><input id="contract_period_d" class="form-control input-sm" type="text" name="contract_period_d" value="<?= $row->contract_period_d ?>" /></td>
+                    <td align="center" style="vertical-align: bottom">日</td>
+                </tr>
+                <tr><th>保険期間</th>
+                    <td colspan="6"><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period_start" value="<?= $row->insurance_period_start ?>" />
+                        <p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p>
+                        <input id="after" class="form-control input-sm" type="date" name="insurance_period_end" value="<?= $row->insurance_period_end ?>" readonly />
+                    </td>
+                </tr>
+                <tr><th>月P</th><td colspan="6"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="<?= $row->month_p ?>" /></td></tr>
+                <tr><th>年払い</th><td colspan="6"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="<?= $row->yearly_payment ?>" /></td></tr>
+                <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="<?= $row->anp ?>" readonly /></td></tr>
+            </table>
+            </div>
+            <?php endforeach; ?>
+            <?php endif; ?>
             </div>
             <div class="col-md-3"></div>
         </div>

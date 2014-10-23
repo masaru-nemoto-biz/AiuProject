@@ -84,6 +84,11 @@ Class ContractInfo_model extends CI_Model {
     function insert_contract_data($array) {
         $this->db->insert('contract_info', $array); 
     }
+
+    function set_contract_data($contract_id, $array) {
+        $this->db->where('contract_id', $contract_id);
+        $this->db->update('contract_info', $array); 
+    }
 }
 
 ?>
