@@ -1,7 +1,7 @@
 <?php
 class CorpInfoConform extends CI_Controller {
 
-    var $array;  // 企業情報
+    var $array;  // 契約者情報
     var $array2; // 代表者詳細
     var $array3; // 契約担当者詳細
     var $array4; // 口座詳細
@@ -17,7 +17,7 @@ class CorpInfoConform extends CI_Controller {
     }
 
     /*
-     * 企業情報変更ロジック
+     * 契約者情報変更ロジック
      */
     function conform() {
         
@@ -33,7 +33,7 @@ class CorpInfoConform extends CI_Controller {
     }
     
     /*
-     * 企業情報追加ロジック
+     * 契約者情報追加ロジック
      */
     function conform_add() {
         
@@ -49,7 +49,7 @@ class CorpInfoConform extends CI_Controller {
     }
     
     /*
-     * 企業情報登録準備ロジック
+     * 契約者情報登録準備ロジック
      * 
      * 画面入力された契約状況を各変数へ詰め替える
      */

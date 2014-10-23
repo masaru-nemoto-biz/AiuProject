@@ -38,19 +38,20 @@
         <div class="container form-group" style="font-size: 12px;">
             <?= form_open('accidentconform/conform_add') ?>
         <div class="page-header text-center">
-            <p class="h2">事故状況登録画面</p>
+            <p class="h2">事故進捗状況の明細画面</p>
         </div>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
             <div class="table-responsive">
             <?php if (empty($acc_list)) : ?>
-            <?php foreach (contract_list as $row): ?>
-                <?= $row->contract_name ?>
+            <?php foreach ($contract_list as $row): ?>
+                証券番号：<?= $row1->policy_number ?>
             <?php endforeach; ?>
-            <table border="0" class="table">  
+            <table border="0" class="table">
+                    <tr><th class="table-style">事故受付番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_id" value="" /></td></tr>
                     <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
-                    <tr><th class="table-style">現状</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
+                    <tr><th class="table-style">状況</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
                     <tr><th class="table-style">発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="" /></td></tr>
                     <tr><th class="table-style">損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
                     <tr><th class="table-style">連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
@@ -67,9 +68,13 @@
             </table>
             <?php else: ?>
             <?php foreach ($acc_list as $row): ?>
-            <table border="0" class="table">  
+            <?php foreach ($contract_list as $row1): ?>
+                証券番号：<?= $row1->policy_number ?>
+            <?php endforeach; ?>
+            <table border="0" class="table">
+                    <tr><th class="table-style">事故受付番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_id" value="<?= $row->acc_id ?>" readonly="readonly" /></td></tr>
                     <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" /></td></tr>
-                    <tr><th class="table-style">現状</th>
+                    <tr><th class="table-style">状況</th>
                         <td colspan="6">
                             <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
                         </td>

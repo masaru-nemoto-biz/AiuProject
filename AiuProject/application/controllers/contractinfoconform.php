@@ -17,10 +17,15 @@ class ContractInfoConform extends CI_Controller {
      * 契約情報追加ロジック
      */
     function conform_add() {
-        
+                
         $this->conform_Prepare();
+        $contract_id = $this->session->userdata('contract_id');
         
-        $this->contractInfo_model->insert_contract_data($this->array);
+        if (empty($contract_id)){
+            $this->contractInfo_model->insert_contract_data($this->array);
+        } else {
+            $this->contractInfo_model->set_contract_data($contract_id, $this->array);
+        }
         
         redirect('contractinfolist/index');
     }

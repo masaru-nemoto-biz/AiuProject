@@ -142,8 +142,9 @@
         <?php endif; ?>
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="契約情報登録画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約情報変更画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="事故状況登録/変更画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="企業情報一覧画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
         </div>
         <?=form_close();?>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
