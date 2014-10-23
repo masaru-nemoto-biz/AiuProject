@@ -13,7 +13,7 @@
         <?php foreach ($xxxxxxxxx as $row): ?>
             <div style="font-size: 12px">
                 <div style="position: absolute; top: 50px; left: 10px;">
-                    <div style="font-weight:bold; font-size: 18px">◆企業情報</div>
+                    <div style="font-weight:bold; font-size: 18px">◆契約者情報</div>
                     <table border="1">
                         <tr><td width="120">企業名</td><td><?= $row->corp_name ?></td></tr>
                         <tr><td>氏名</td><td><?= $row->corp_kana ?></td></tr>

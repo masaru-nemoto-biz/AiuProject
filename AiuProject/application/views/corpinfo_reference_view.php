@@ -31,7 +31,7 @@
             <?= form_open('corpinfolist/index') ?>
             <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
                 <div class="pull-left" style="width: 400px; padding-left: 10px; padding-top: 10px;">
-                    <label class="font_subhead">◆企業情報</label>
+                    <label class="font_subhead">◆契約者情報</label>
                     <?php foreach ($company_data as $row): ?>
                     <table border="0">
                         <tr><td width="120">法人名称</td><td>：<?= $row->corp_name ?></td></tr>
@@ -123,7 +123,7 @@
                 </div>
             </div>
             <div class="center_auto" style="margin-top: 10px; width: 150px;">
-            <input class="btn btn-primary" style="width:150px" type="submit" value="企業情報一覧画面へ"/>
+            <input class="btn btn-primary" style="width:150px" type="submit" value="契約者情報一覧画面へ"/>
             </div>
             <?= form_close(); ?>
         </div>

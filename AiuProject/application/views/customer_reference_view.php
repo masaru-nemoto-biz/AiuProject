@@ -108,7 +108,7 @@
                 </table>
                 </div>
                 <?= form_open('corpinfolist/contractInfo_conform') ?>
-                <input class="btn btn-primary" type="submit"　name="move" value="企業情報一覧画面へ"/>
+                <input class="btn btn-primary" type="submit"　name="move" value="契約者情報一覧画面へ"/>
                 <?= form_close();?>
             </div>
          </div>

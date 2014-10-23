@@ -43,11 +43,11 @@ class CorpInfoList extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '企業情報変更画面へ') {
+        if ($data['move'] == '契約者情報変更画面へ') {
             $this->contractInfo_change();
-        } elseif ($data['move'] == '企業情報照会画面へ') {
+        } elseif ($data['move'] == '契約者情報照会画面へ') {
             $this->contractInfo_reference();
-        } elseif ($data['move'] == '企業情報登録画面へ') {
+        } elseif ($data['move'] == '契約者情報登録画面へ') {
             $this->contractInfo_add();
         } elseif ($data['move'] == '契約状況一覧画面へ') {
             $this->move_contractInfo();
@@ -59,7 +59,7 @@ class CorpInfoList extends CI_Controller {
     }
 
     /*
-     * 企業情報照会画面へ
+     * 契約者情報照会画面へ
      */
     function contractInfo_reference() {
         $data['check1'] = $this->input->post('check_radio');
@@ -103,7 +103,7 @@ class CorpInfoList extends CI_Controller {
     
     
     /*
-     * 企業情報追加画面へ
+     * 契約者情報追加画面へ
      */
     function contractInfo_add() {
         $data['company_data'] = null;
@@ -116,7 +116,7 @@ class CorpInfoList extends CI_Controller {
     }
     
     /*
-     * 企業情報変更画面へ
+     * 契約者情報変更画面へ
      */
     function contractInfo_change() {
         $data['check1'] = $this->input->post('check_radio');
