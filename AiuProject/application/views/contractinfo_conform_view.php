@@ -103,7 +103,9 @@
                     <td colspan="6">
                         <select class="form-control input-sm" name="insurance_classification_id">
                             <?php foreach ($insurance_classification_mst as $row_mst): ?>
-                            <option value="<?= $row_mst->insur_class_id ?>"><?= $row_mst->insur_class_name ?></option>
+                            <option value="<?= $row_mst->insur_class_id ?>" <?php if ($row_mst->insur_class_id == $row->insurance_classification_id) :?>selected="selected"<?php endif; ?>>
+                                        <?= $row_mst->insur_class_name ?>
+                            </option>
                             <?php endforeach; ?>
                         </select>
                     </td>
@@ -112,7 +114,9 @@
                     <td colspan="6">
                         <select class="form-control input-sm" name="insurance_company_id">
                             <?php foreach ($insurance_company_mst as $row_mst): ?>
-                            <option value="<?= $row_mst->insur_corp_id ?>"><?= $row_mst->insur_corp_name ?></option>
+                            <option value="<?= $row_mst->insur_corp_id ?>" <?php if ($row_mst->insur_corp_id == $row->insurance_company_id) :?>selected="selected"<?php endif; ?>>
+                                        <?= $row_mst->insur_corp_name ?>
+                            </option>
                             <?php endforeach; ?>
                         </select>
                     </td>
