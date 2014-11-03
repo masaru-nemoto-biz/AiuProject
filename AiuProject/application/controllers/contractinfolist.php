@@ -52,8 +52,8 @@ class ContractInfoList extends CI_Controller {
             $this->contractInfo_add();
         } elseif ($data['move'] == '契約情報変更画面へ') {
             $this->contractInfo_change();
-        } elseif ($data['move'] == '3か月前') {
-            $this->contractInfo_add();
+        } elseif ($data['move'] == '削除') {
+            $this->contractInfo_delete();
         } else {
             $this->index();
         }
@@ -122,6 +122,7 @@ class ContractInfoList extends CI_Controller {
         if (!empty($data['acc_list'])) {
             foreach ($data['acc_list'] as $row) {
                 $acc_id = $row->acc_id;
+                $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
             }
             $this->session->set_userdata('acc_id', $acc_id);
         } else {
@@ -129,6 +130,25 @@ class ContractInfoList extends CI_Controller {
         }
         
         $this->load->view('accident_conform_view', $data);
+    }
+
+    /*
+     * 契約情報削除
+     */
+    function contractInfo_delete() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '削除したい契約情報にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('contractinfolist/index');
+        }
+        
+        $this->contractInfo_model->set_contract_delflg($this->session->userdata('contract_id'));
+        
+        redirect('contractinfolist/index');
     }
 }
 ?>

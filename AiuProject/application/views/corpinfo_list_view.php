@@ -57,7 +57,6 @@
             </tr>
             </thead>
             <?php foreach ($list as $row): ?>
-            
                 <tr>
                     <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
                     <td class="table-style"><?= $row->company_id ?></td>
@@ -109,7 +108,27 @@
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報照会画面へ"/>
             <input class="btn btn-primary" type="submit" name="move" value="顧客カード"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧画面へ"/>
+            <!-- 切り替えボタンの設定 -->
+            <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約者情報削除</a>
         </div>
+        <!-- モーダルの設定 -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">閉じる</span></button>
+                <h5 class="modal-title" id="myModalLabel">削除確認</h5>
+              </div>
+              <div class="modal-body">
+                <p>削除してもよろしいですか?</p>
+              </div>
+              <div class="modal-footer">
+                <input class="btn btn-primary" type="submit" name="move" value="削除"/>
+                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         <?=form_close();?>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
