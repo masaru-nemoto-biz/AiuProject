@@ -51,8 +51,10 @@ class CorpInfoList extends CI_Controller {
             $this->contractInfo_add();
         } elseif ($data['move'] == '契約状況一覧画面へ') {
             $this->move_contractInfo();
-        } elseif ($data['move'] == '顧客カード') {
-            $this->customer_reference();
+        } elseif ($data['move'] == '契約状況一覧画面へ') {
+            $this->move_contractInfo();
+        } elseif ($data['move'] == '削除') {
+            $this->contractInfo_delete();
         } else {
             $this->index();
         }
@@ -224,5 +226,22 @@ class CorpInfoList extends CI_Controller {
         $this->load->view('customer_reference_view', $data);
     }
 
+    /*
+     * 契約者情報削除
+     */
+    function contractInfo_delete() {
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '削除したい契約者にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('corpinfolist/index');
+        }
+        
+        $this->corpStatus_model->set_company_del($this->session->userdata('company_id'));
+        
+        redirect('corpinfolist/index');
+    }
 }
 ?>

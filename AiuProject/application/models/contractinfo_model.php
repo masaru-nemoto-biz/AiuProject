@@ -90,9 +90,9 @@ Class ContractInfo_model extends CI_Model {
         $this->db->update('contract_info', $array); 
     }
 
-    function del_contract_data($contract_id) {
+    function set_contract_delflg($contract_id) {
         $this->db->where('contract_id', $contract_id);
-        $this->db->delete('contract_info');  
+        $this->db->update('contract_info', array('del_flg' => '1'));
     }
 }
 

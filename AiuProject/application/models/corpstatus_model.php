@@ -21,7 +21,7 @@ Class corpStatus_model extends CI_Model {
         return $query->result();
     }
     
-        function get_accident() {
+    function get_accident() {
             
         $this->db->select('accident_info.company_id');
         $this->db->from('company_info');
@@ -150,26 +150,25 @@ Class corpStatus_model extends CI_Model {
                 ->set('ima_mime', $param->mime)
                 ->insert('image_tb'); 
     }
-    
-//    function get_category_name($id) {
-//        $this->db->select('name');
-//        $this->db->where('id', $id);
-//        $query = $this->db->get('category');
-//        $row = $query->row();
-//        return $row->name;
-//    }
-//
-//    function get_product_count($cat_id) {
-//        $this->db->where('category_id', $cat_id);
-//        $query = $this->db->get('product');
-//        return $query->num_rows();
-//    }
-//    
-//    function get_product_item($id) {
-//        $this->db->where('id', $id);
-//        $query = $this->db->get('product');
-//        return $query->row();
-//    }
+
+    function set_company_del($company_id) {
+        
+        $this->db->where('company_id', $company_id);
+        $this->db->update('company_info', array('del_flg' => '1'));
+
+        $this->db->where('company_id', $company_id);
+        $this->db->update('contract_detail', array('del_flg' => '1'));
+
+        $this->db->where('company_id', $company_id);
+        $this->db->update('representative_detail', array('del_flg' => '1'));
+
+        $this->db->where('company_id', $company_id);
+        $this->db->update('bank_account_info', array('del_flg' => '1'));
+
+        $this->db->where('company_id', $company_id);
+        $this->db->update('other_info', array('del_flg' => '1'));
+
+    }
 }
 
 ?>
