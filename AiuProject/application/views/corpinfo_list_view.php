@@ -57,7 +57,6 @@
             </tr>
             </thead>
             <?php foreach ($list as $row): ?>
-            
                 <tr>
                     <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
                     <td class="table-style"><?= $row->company_id ?></td>

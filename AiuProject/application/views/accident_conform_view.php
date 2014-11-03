@@ -35,76 +35,159 @@
     </style>
 </head>
     <body>
-        <div class="container form-group" style="font-size: 12px;">
-            <?= form_open('accidentconform/conform_add') ?>
+      <div class="container form-group" style="font-size: 12px;">
+        <?= form_open('accidentconform/conform_add') ?>
         <div class="page-header text-center">
             <p class="h2">事故進捗状況の明細画面</p>
         </div>
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-            <div class="table-responsive">
-            <?php if (empty($acc_list)) : ?>
-            <?php foreach ($contract_list as $row): ?>
-                証券番号：<?= $row->policy_number ?>
-            <?php endforeach; ?>
-            <table border="0" class="table">
-                    <tr><th class="table-style">事故受付番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_id" value="" /></td></tr>
-                    <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="" /></td></tr>
-                    <tr><th class="table-style">状況</th><td colspan="6"><textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea></td></tr>
-                    <tr><th class="table-style">発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="" /></td></tr>
-                    <tr><th class="table-style">損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="" /></td></tr>
-                    <tr><th class="table-style">連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="" /></td></tr>
-                    <tr><th class="table-style">支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="" /></td></tr>
-                    <tr><th class="table-style">ステータス</th>
-                        <td colspan="6">
-                            <select class="form-control input-sm" name="acc_status_id">
-                                <?php foreach ($accident_status_mst as $row): ?>
-                                <option value="<?= $row->acc_status_id ?>"><?= $row->acc_status_name ?></option>
-                                <?php endforeach; ?>
-                            </select>
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td style="width:100px">証券番号</td>
+                        <td>
+                            <?php foreach ($contract_list as $row): ?>
+                              <?= $row->policy_number ?>
+                            <?php endforeach; ?>
                         </td>
                     </tr>
-            </table>
-            <?php else: ?>
-            <?php foreach ($acc_list as $row): ?>
-            <?php foreach ($contract_list as $row1): ?>
-                証券番号：<?= $row1->policy_number ?>
-            <?php endforeach; ?>
-            <table border="0" class="table">
-                    <tr><th class="table-style">事故受付番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_id" value="<?= $row->acc_id ?>" readonly="readonly" /></td></tr>
-                    <tr><th class="table-style">事故</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" /></td></tr>
-                    <tr><th class="table-style">状況</th>
-                        <td colspan="6">
-                            <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                    <tr><td style="width:100px">事故受付番号</td>
+                        <td>
+                            <?php if (!empty($acc_list)) : ?>
+                              <?php foreach ($acc_list as $row): ?>
+                                <input class="form-control input-sm" type="text" name="acc_id" value="<?= $row->acc_id ?>" readonly="readonly" />
+                              <?php endforeach; ?>
+                            <?php else: ?>
+                                <input class="form-control input-sm" type="text" name="acc_id" value="" readonly="readonly" />
+                            <?php endif; ?>
                         </td>
                     </tr>
-                    <tr><th class="table-style">発生日時</th><td colspan="6"><input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" /></td></tr>
-                    <tr><th class="table-style">損サ担当</th><td colspan="6"><input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" /></td></tr>
-                    <tr><th class="table-style">連絡先</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" /></td></tr>
-                    <tr><th class="table-style">支払い</th><td colspan="6"><input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" /></td></tr>
-                    <tr><th class="table-style">ステータス</th>
-                        <td colspan="6">
-                            <select class="form-control input-sm" name="acc_status_id">
+                </table>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td width="70">事故</td>
+                        <td width="200">
+                          <?php if (!empty($acc_list)) : ?>
+                          <?php foreach ($acc_list as $row): ?>
+                            <input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" />
+                          <?php endforeach; ?>
+                          <?php else: ?>
+                            <input class="form-control input-sm" type="text" name="acc_contents" value="" />
+                          <?php endif; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">発生日時</td>
+                        <td>
+                          <?php if (!empty($acc_list)) : ?>
+                            <?php foreach ($acc_list as $row): ?>
+                              <input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" />
+                            <?php endforeach; ?>
+                          <?php else: ?>
+                              <input class="form-control input-sm" type="date" name="occurrence_date" value="" />
+                          <?php endif; ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td style="width:100px">損サ担当</td>
+                        <td>
+                            <?php if (!empty($acc_list)) : ?>
+                            <?php foreach ($acc_list as $row): ?>
+                              <input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" />
+                            <?php endforeach; ?>
+                            <?php else: ?>
+                              <input class="form-control input-sm" type="text" name="sonsa" value="" />
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">連絡先</td>
+                        <td>
+                            <?php if (!empty($acc_list)) : ?>
+                            <?php foreach ($acc_list as $row): ?>
+                              <input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" />
+                            <?php endforeach; ?>
+                            <?php else: ?>
+                              <input class="form-control input-sm" type="text" name="acc_phone" value="" />
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">支払い</td>
+                        <td>
+                            <?php if (!empty($acc_list)) : ?>
+                            <?php foreach ($acc_list as $row): ?>
+                              <input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" />
+                            <?php endforeach; ?>
+                            <?php else: ?>
+                              <input class="form-control input-sm" type="text" name="payment" value="" />
+                            <?php endif; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">ステータス</td>
+                        <td>
+                            <?php if (!empty($acc_list)) : ?><?php foreach ($acc_list as $row): ?>
+                              <select class="form-control input-sm" name="acc_status_id">
                                 <?php foreach ($accident_status_mst as $row_accident_status): ?>
-                                <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row->acc_status_id) :?>selected="selected"<?php endif; ?>>
+                                  <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row->acc_status_id) :?>selected="selected"<?php endif; ?>>
                                     <?= $row_accident_status->acc_status_name ?>
-                                </option>
+                                  </option>
                                 <?php endforeach; ?>
-                            </select>
+                              </select>
+                            <?php endforeach; ?>
+                            <?php else: ?>
+                              <select class="form-control input-sm" name="acc_status_id">
+                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                  <option value="<?= $row_accident_status->acc_status_id ?>">
+                                    <?= $row_accident_status->acc_status_name ?>
+                                  </option>
+                                <?php endforeach; ?>
+                              </select>
+                            <?php endif; ?>
                         </td>
                     </tr>
-            </table>
-            <?php endforeach; ?>
-            <?php endif; ?>
+                </table>
             </div>
         </div>
-        <div class="center_auto" style="margin-top: 10px; width: 150px;">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th class="table-style">日時</th>
+                  <th class="table-style">状況</th>
+                  <th class="table-style">担当者</th>
+                </tr>
+              </thead>
+                <?php if (!empty($acc_detail_list)) : ?>
+                <?php foreach ($acc_detail_list as $row): ?>
+                <tr>
+                  <td class="table-style"><?= $row->upd_date ?></td>
+                  <td class="table-style">
+                    <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                  </td>
+                  <td class="table-style"><input type="text" name="upd_user" value="<?= $row->upd_user ?>" /></td>
+                </tr>
+                <?php endforeach; ?>
+                <?php endif; ?>
+                <tr>
+                  <td class="table-style"></td>
+                  <td class="table-style">
+                    <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea>
+                  </td>
+                  <td class="table-style"><input type="text" name="upd_user" value="" /></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+          <div class="center_auto" style="margin-top: 10px; width: 150px;">
             <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
         </div>
         <?= form_close(); ?>
         </div>
-        </div>
+      </div>
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
