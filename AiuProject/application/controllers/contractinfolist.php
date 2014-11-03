@@ -122,6 +122,7 @@ class ContractInfoList extends CI_Controller {
         if (!empty($data['acc_list'])) {
             foreach ($data['acc_list'] as $row) {
                 $acc_id = $row->acc_id;
+                $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
             }
             $this->session->set_userdata('acc_id', $acc_id);
         } else {
@@ -145,7 +146,7 @@ class ContractInfoList extends CI_Controller {
             redirect('contractinfolist/index');
         }
         
-        $this->contractInfo_model->set_contract_delflg($this->session->userdata('company_id'));
+        $this->contractInfo_model->set_contract_delflg($this->session->userdata('contract_id'));
         
         redirect('contractinfolist/index');
     }

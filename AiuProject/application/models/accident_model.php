@@ -12,6 +12,12 @@ Class Accident_model extends CI_Model {
         return $query->result();
     }
     
+    function get_accident_detail($acc_id) {
+        $this->db->where('acc_id', $acc_id);
+        $query = $this->db->get('accident_detail');
+        return $query->result();
+    }
+    
     function insert_accident_data($array) {
         $this->db->insert('accident_info', $array); 
     }

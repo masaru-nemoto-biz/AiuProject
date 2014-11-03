@@ -14,6 +14,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->join('contract_info', 'contract_info.company_id = company_info.company_id', 'left');
         $this->db->where('contract_info.insurance_period_end <', date('Y-m-d', strtotime("+3 month")));
         $this->db->where('contract_info.insurance_classification_id', $id);
+        $this->db->where('contract_info.del_flg', '0');
 
         $this->db->distinct();
         $query = $this->db->get();
@@ -26,6 +27,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->select('accident_info.company_id');
         $this->db->from('company_info');
         $this->db->join('accident_info', 'accident_info.company_id = company_info.company_id', 'left');
+        $this->db->where('accident_info.del_flg', '0');
 
         $this->db->distinct();
         $query = $this->db->get();
@@ -35,51 +37,41 @@ Class corpStatus_model extends CI_Model {
     
     function get_company_list() {
         $this->db->order_by('company_id');
+        $this->db->where('company_info.del_flg', '0');
         $query = $this->db->get('company_info');
-        return $query->result();
-    }
-    function get_representative_list() {
-        $this->db->order_by('company_id');
-        $query = $this->db->get('representative_detail');
         return $query->result();
     }
 
-    function get_bank_list() {
-        $this->db->order_by('company_id');
-        $query = $this->db->get('bank_account_info');
-        return $query->result();
-    }
-    function get_other_list() {
-        $this->db->order_by('company_id');
-        $query = $this->db->get('other_info');
-        return $query->result();
-    }
-    
-    
     function get_company_data($check_radio) {
         $this->db->where('company_id', $check_radio);
+        $this->db->where('company_info.del_flg', '0');
         $this->db->order_by('company_id');
         $query = $this->db->get('company_info');
         return $query->result();
     }
+
     function get_representative_data($check_radio) {
         $this->db->where('company_id', $check_radio);
+        $this->db->where('representative_detail.del_flg', '0');
         $this->db->order_by('company_id');
         $query = $this->db->get('representative_detail');
         return $query->result();
     }
+    
     function get_contract_data($check_radio) {
         $this->db->where('company_id', $check_radio);
         $this->db->order_by('company_id');
         $query = $this->db->get('contract_detail');
         return $query->result();
     }
+    
     function get_bank_data($check_radio) {
         $this->db->where('company_id', $check_radio);
         $this->db->order_by('company_id');
         $query = $this->db->get('bank_account_info');
         return $query->result();
     }
+    
     function get_other_data($check_radio) {
         $this->db->where('company_id', $check_radio);
         $this->db->order_by('company_id');
@@ -142,7 +134,6 @@ Class corpStatus_model extends CI_Model {
     function insert_other_data($array5) {
         $this->db->insert('other_info', $array5); 
     }
-    
     
     function insert_img($param) {
         $this->db
