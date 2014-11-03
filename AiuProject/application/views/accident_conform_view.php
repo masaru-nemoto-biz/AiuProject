@@ -46,7 +46,7 @@
             <div class="table-responsive">
             <?php if (empty($acc_list)) : ?>
             <?php foreach ($contract_list as $row): ?>
-                証券番号：<?= $row1->policy_number ?>
+                証券番号：<?= $row->policy_number ?>
             <?php endforeach; ?>
             <table border="0" class="table">
                     <tr><th class="table-style">事故受付番号</th><td colspan="6"><input class="form-control input-sm" type="text" name="acc_id" value="" /></td></tr>
