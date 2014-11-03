@@ -40,6 +40,7 @@
             }
         </style>
     </head>
+    
     <body>
         <?=form_open('login/success')?>
         <div class="container form-group">
