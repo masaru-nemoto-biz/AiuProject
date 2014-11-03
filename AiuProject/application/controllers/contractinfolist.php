@@ -145,7 +145,7 @@ class ContractInfoList extends CI_Controller {
             redirect('contractinfolist/index');
         }
         
-        $data['contract_list'] = $this->contractInfo_model->del_contract_data($this->session->userdata('contract_id'));
+        $this->contractInfo_model->set_contract_delflg($this->session->userdata('company_id'));
         
         redirect('contractinfolist/index');
     }
