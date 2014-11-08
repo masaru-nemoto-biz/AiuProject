@@ -54,7 +54,8 @@ class ContractInfoConform extends CI_Controller {
             'yearly_payment' => $this->input->post('yearly_payment'),
             'anp' => $this->input->post('anp'),
             'total_anp' => $this->input->post('total_anp'),
-            'contract_status' => $this->input->post('contract_status'));
+            'contract_status' => $this->input->post('contract_status'),
+            'contract_owner' => $this->input->post('contract_owner'));
     }
     
 }

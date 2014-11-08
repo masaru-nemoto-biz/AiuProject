@@ -95,13 +95,14 @@
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
                 <tr><th>ステータス</th>
                     <td colspan="6">
-                        <select class="form-control input-sm" name="contract_status">
+                        <select id="contract_status" class="form-control input-sm" name="contract_status">
                           <?php foreach ($contract_status_mst as $row_mst): ?>
                             <option value="<?= $row_mst->contract_status_id ?>"><?= $row_mst->contract_status_name ?></option>
                           <?php endforeach; ?>
                         </select>
                     </td>
                 </tr>
+                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="" /></td></tr>
             </table>
             </div>
             <?php else: ?>
@@ -162,7 +163,7 @@
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="<?= $row->anp ?>" readonly /></td></tr>
                 <tr><th>ステータス</th>
                     <td colspan="6">
-                        <select class="form-control input-sm" name="contract_status">
+                        <select id="contract_status" class="form-control input-sm" name="contract_status">
                             <?php foreach ($contract_status_mst as $row_mst): ?>
                             <option value="<?= $row_mst->contract_status_id ?>" <?php if ($row_mst->contract_status_id == $row->contract_status) :?>selected="selected"<?php endif; ?>>
                                         <?= $row_mst->contract_status_name ?>
@@ -171,6 +172,7 @@
                         </select>
                     </td>
                 </tr>
+                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="<?= $row->contract_owner ?>" /></td></tr>
             </table>
             </div>
             <?php endforeach; ?>

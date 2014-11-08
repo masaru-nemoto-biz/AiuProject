@@ -104,6 +104,7 @@
                 <th class="table-style">ステータス</th>
                 <th class="table-style">お知らせ</th>
                 <th class="table-style">事故</th>
+                <th class="table-style">担当者</th>
             </tr>
             </thead>
             <?php foreach ($list2 as $row): ?>
@@ -136,6 +137,7 @@
                         <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_status_name ?><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
+                    <td class="table-style"><?= $row->contract_owner ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
