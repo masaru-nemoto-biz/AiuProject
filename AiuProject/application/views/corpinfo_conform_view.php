@@ -34,6 +34,18 @@
                 <div class="col-md-4">
                     <label class="label_size">◆契約者情報</label>
                     <table class="table table-condensed">
+                        <tr><td class="td_head_size">契約者タイプ</td>
+                            <td>
+                              <select class="form-control input-sm" name="division">
+                                <?php foreach ($corp_division_mst as $row): ?>
+                                  <option value="<?= $row->corp_div_id ?>"><?= $row->corp_div_name ?></option>
+                                <?php endforeach; ?>
+                              </select>
+                            </td>
+                        </tr>
+                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="" size="50" /></td></tr>
+                    </table>
+                    <table class="table table-condensed">
                         <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="" size="50" /></td></tr>
                         <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="" size="50" /></td></tr>
                         <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="" size="50" /></td></tr>
@@ -160,12 +172,26 @@
         <?php else: ?>
         <div class="container form-group" style="font-size: 12px;">
             <?= form_open('corpinfoconform/conform') ?>
-            <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
-                <div class="pull-left" style="width: 400px; padding-left: 10px; padding-top: 10px;">
-                    <label style="font-size: 18px">◆契約者情報</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <label class="label_size">◆契約者情報</label>
                     <?php foreach ($company_data as $row): ?>
-                    <table>
-                        <tr><td width="120">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $row->corp_name ?>" size="50" /></td></tr>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">契約者タイプ</td>
+                            <td>
+                              <select class="form-control input-sm" name="contracter_type">
+                                <?php foreach ($corp_division_mst as $row_mst): ?>
+                                  <option value="<?= $row_mst->corp_div_id ?>" <?php if ($row_mst->corp_div_id == $row->contracter_type) :?>selected="selected"<?php endif; ?>>
+                                    <?= $row_mst->corp_div_name ?>
+                                  </option>
+                                <?php endforeach; ?>
+                              </select>
+                            </td>
+                        </tr>
+                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="<?= $row->upd_user ?>" size="50" /></td></tr>
+                    </table>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $row->corp_name ?>" size="50" /></td></tr>
                         <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="<?= $row->corp_kana ?>" size="50" /></td></tr>
                         <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="<?= $row->post ?>" size="50" /></td></tr>
                         <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="<?= $row->address ?>" size="50" /></td></tr>
@@ -198,13 +224,64 @@
                                 </select>
                             </td>
                         </tr>
+                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="<?= $row->upd_user ?>" size="50" /></td></tr>
                     </table>
                     <?php endforeach; ?>
-                    <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆口座詳細</label>
+                </div>
+                <div class="col-md-4">
+                    <label class="label_size">◆代表者詳細</label>
+                    <?php foreach ($representative as $row): ?>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">代表者氏名</td><td><input class="form-control input-sm" type="text" name="representative_name" value="<?= $row->representative_name ?>" size="50" /></td></tr>
+                        <tr><td>代表者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="representative_kana" value="<?= $row->representative_kana ?>" size="50" /></td></tr>
+                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="rep_title" value="<?= $row->title ?>" size="50" /></td></tr>
+                        <tr><td>性別</td>
+                            <td>
+                                <select class="form-control input-sm" name="rep_sex">
+                                    <?php foreach ($sex_mst as $row_rep_sex): ?>
+                                    <option value="<?= $row_rep_sex->sex_id ?>" <?php if ($row_rep_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_rep_sex->sex_name ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
+                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
+                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
+                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $row->post ?>" size="50" /></td></tr>
+                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $row->address ?>" size="50" /></td></tr>
+                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
+                    </table>
+                    <?php endforeach; ?>
+                    <label class="label_size">◆契約担当者詳細</label>
+                    <?php foreach ($contract as $row): ?>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $row->contract_name ?>" size="50" /></td></tr>
+                        <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="<?= $row->contract_kana ?>" size="50" /></td></tr>
+                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="con_title" value="<?= $row->title ?>" size="50" /></td></tr>
+                        <tr><td>性別</td>
+                            <td>
+                                <select class="form-control input-sm" name="con_sex">
+                                    <?php foreach ($sex_mst as $row_con_sex): ?>
+                                    <option value="<?= $row_con_sex->sex_id ?>" <?php if ($row_con_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_con_sex->sex_name ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
+                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
+                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
+                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $row->address ?>" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
+                    </table>
+                    <?php endforeach; ?>
+                </div>
+                <div class="col-md-4">
+                    <label class="label_size">◆口座詳細</label>
                     <?php foreach ($bank as $row): ?>
-                    <table>
-                        <tr><td width="120">口振番号</td><td><input class="form-control input-sm" type="text" name="account_transfer_num" value="<?= $row->account_transfer_num ?>" size="50" /></td></tr>
-                        <tr><td>口座名義人　住所</td><td><input class="form-control input-sm" type="text" name="bank_address" value="<?= $row->address ?>" size="50" /></td></tr>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">口振番号</td><td><input class="form-control input-sm" type="text" name="account_transfer_num" value="<?= $row->account_transfer_num ?>" size="50" /></td></tr>
+                        <tr><td>口座名義人　住所</td><td><inpu class="form-control input-sm"t type="text" name="bank_address" value="<?= $row->address ?>" size="50" /></td></tr>
                         <tr><td>口座名義人　名称</td><td><input class="form-control input-sm" type="text" name="bank_holder_name" value="<?= $row->holder_name ?>" size="50" /></td></tr>
                         <tr><td>口座名義人　連絡先</td><td><input class="form-control input-sm" type="text" name="bank_phone" value="<?= $row->phone ?>" size="50" /></td></tr>
                         <tr><td>指定口座　銀行名</td><td><input class="form-control input-sm" type="text" name="bank_name" value="<?= $row->bank_name ?>" size="50" /></td></tr>
@@ -238,80 +315,23 @@
                         </tr>
                     </table>
                     <?php endforeach; ?>
-                </div>
-                <div class="pull-left" style="width: 400px; padding-left: 10px; padding-top: 10px;">
-                    <label style="font-size: 18px">◆代表者詳細</label>
-                    <?php foreach ($representative as $row): ?>
-                    <table>
-                        <tr><td width="120">代表者氏名</td><td><input class="form-control input-sm" type="text" name="representative_name" value="<?= $row->representative_name ?>" size="50" /></td></tr>
-                        <tr><td>代表者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="representative_kana" value="<?= $row->representative_kana ?>" size="50" /></td></tr>
-                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="rep_title" value="<?= $row->title ?>" size="50" /></td></tr>
-                        <tr><td>性別</td>
-                            <td>
-                                <select class="form-control input-sm" name="rep_sex">
-                                    <?php foreach ($sex_mst as $row_rep_sex): ?>
-                                    <option value="<?= $row_rep_sex->sex_id ?>" <?php if ($row_rep_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_rep_sex->sex_name ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
-                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
-                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
-                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
-                    </table>
-                    <?php endforeach; ?>
-                    <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆契約担当者詳細</label>
-                    <?php foreach ($contract as $row): ?>
-                    <table>
-                        <tr><td width="120">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $row->contract_name ?>" size="50" /></td></tr>
-                        <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="<?= $row->contract_kana ?>" size="50" /></td></tr>
-                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="con_title" value="<?= $row->title ?>" size="50" /></td></tr>
-                        <tr><td>性別</td>
-                            <td>
-                                <select class="form-control input-sm" name="con_sex">
-                                    <?php foreach ($sex_mst as $row_con_sex): ?>
-                                    <option value="<?= $row_con_sex->sex_id ?>" <?php if ($row_con_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_con_sex->sex_name ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
-                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
-                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
-                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
-                    </table>
-                    <?php endforeach; ?>
-                    <label style="font-weight:bold; font-size: 18px; margin-top: 20px;">◆その他詳細</label>
+                    <label class="label_size">◆その他詳細</label>
                     <?php foreach ($other as $row): ?>
-                    <table>
-                        <tr><td width="120">契約手段</td><td><input class="form-control input-sm" type="text" name="contract_way" value="<?= $row->contract_way ?>" size="50" /></td></tr>
-                        <tr><td width="120">契約場所</td><td><input class="form-control input-sm" type="text" name="contact_place" value="<?= $row->contact_place ?>" size="50" /></td></tr>
-                        <tr><td width="120">連絡時間帯</td><td><input class="form-control input-sm" type="text" name="contact_time" value="<?= $row->contact_time ?>" size="50" /></td></tr>
-                    </table>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-            <div class="clearfix" style="width: 800px; margin-left: auto; margin-right: auto;">
-                <div style="padding-left: 10px; padding-top: 10px; width: 800px;">
-                    <label style="font-weight:bold; font-size: 18px">◆備考</label>
-                    <?php foreach ($other as $row): ?>
-                    <table>
-                        <tr><td width="120">備考</td><td><textarea class="form-control input-sm" style="width:650px;" name="remarks" cols="120" rows="5" wrap="hard"><?= $row->remarks ?></textarea></td></tr>
+                    <table class="table table-condensed">
+                        <tr><td class="td_head_size">契約手段</td><td><input class="form-control input-sm" type="text" name="contract_way" value="<?= $row->contract_way ?>" size="50" /></td></tr>
+                        <tr><td>契約場所</td><td><input class="form-control input-sm" type="text" name="contact_place" value="<?= $row->contact_place ?>" size="50" /></td></tr>
+                        <tr><td>連絡時間帯</td><td><input class="form-control input-sm" type="text" name="contact_time" value="<?= $row->contact_time ?>" size="50" /></td></tr>
+                        <tr><td>備考</td><td><textarea class="form-control input-sm" name="remarks" cols="120" rows="7" wrap="hard"><?= $row->remarks ?></textarea></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>
             </div>
             <div class="center_auto" style="margin-top: 10px; width: 150px;">
-            <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
+                <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
             </div>
             <?= form_close(); ?>
-        <?php endif; ?>
         </div>
+        <?php endif; ?>
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

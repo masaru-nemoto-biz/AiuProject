@@ -46,7 +46,6 @@
             <thead>
             <tr>
                 <th class="table-style">選択</th>
-                <th class="table-style">No</th>
                 <th class="table-style">契約元</th>
                 <th class="table-style">火災保険</th>
                 <th class="table-style">傷害保険</th>
@@ -54,13 +53,19 @@
                 <th class="table-style">生命保険</th>
                 <th class="table-style">その他</th>
                 <th class="table-style">事故状況</th>
+                <th class="table-style">担当者</th>
             </tr>
             </thead>
             <?php foreach ($list as $row): ?>
                 <tr>
                     <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
-                    <td class="table-style"><?= $row->company_id ?></td>
-                    <td class="table-style"><?= $row->corp_name ?></td>
+                    <td class="table-style">
+                        <?php if (3 == $row->contracter_type) : ?>
+                          <?= $row->representative_name ?>
+                        <?php else: ?>
+                          <?= $row->corp_name ?>
+                        <?php endif; ?>
+                    </td>
                     <td class="table-style">
                         <?php foreach ($fire as $row_fire): ?>
                         <?php if ($row_fire->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
@@ -91,6 +96,7 @@
                         <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">事故あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
+                    <td class="table-style"><?= $row->upd_user ?></td>
                 </tr>
             
             <?php endforeach; ?>
