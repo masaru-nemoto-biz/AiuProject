@@ -101,13 +101,14 @@
                 <th class="table-style">月P</th>
                 <th class="table-style">年払い</th>
                 <th class="table-style">ANP</th>
+                <th class="table-style">ステータス</th>
                 <th class="table-style">お知らせ</th>
                 <th class="table-style">事故</th>
             </tr>
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
-                    <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /><?= $row->contract_id ?></td>
+                    <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
                     <td class="table-style"><?= $row->insur_class_name ?></td>
                     <td class="table-style"><?= $row->insur_corp_name ?></td>
                     <!--<td class="table-style"><?= $row->corp_name ?></td>-->
@@ -119,10 +120,15 @@
                     <td class="table-style"><?= $row->month_p ?></td>
                     <td class="table-style"><?= $row->yearly_payment ?></td>
                     <td class="table-style"><?= $row->anp ?></td>
+                    <td class="table-style"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
                     <td class="table-style">
                         <?php if ($row->insurance_period_end < $month_3ago) : ?>
-                            <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
+                          <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
+                          <?php if (3 == $row->contract_status) :?>
+                            <span class="label label-success">3ヶ月前あり</span>
+                          <?php else: ?>
                             <span class="label label-danger">3ヶ月前あり</span>
+                          <?php endif; ?>
                         <?php endif; ?>
                     </td>
                     <td class="table-style">

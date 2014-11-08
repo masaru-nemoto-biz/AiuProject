@@ -93,6 +93,15 @@
                 <tr><th>月P</th><td colspan="6"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td></tr>
                 <tr><th>年払い</th><td colspan="6"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td></tr>
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td></tr>
+                <tr><th>ステータス</th>
+                    <td colspan="6">
+                        <select class="form-control input-sm" name="contract_status">
+                          <?php foreach ($contract_status_mst as $row_mst): ?>
+                            <option value="<?= $row_mst->contract_status_id ?>"><?= $row_mst->contract_status_name ?></option>
+                          <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
             </table>
             </div>
             <?php else: ?>
@@ -151,6 +160,17 @@
                 <tr><th>月P</th><td colspan="6"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="<?= $row->month_p ?>" /></td></tr>
                 <tr><th>年払い</th><td colspan="6"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="<?= $row->yearly_payment ?>" /></td></tr>
                 <tr><th>ANP</th><td colspan="6"><input id="anp" class="form-control input-sm" type="text" name="anp" value="<?= $row->anp ?>" readonly /></td></tr>
+                <tr><th>ステータス</th>
+                    <td colspan="6">
+                        <select class="form-control input-sm" name="contract_status">
+                            <?php foreach ($contract_status_mst as $row_mst): ?>
+                            <option value="<?= $row_mst->contract_status_id ?>" <?php if ($row_mst->contract_status_id == $row->contract_status) :?>selected="selected"<?php endif; ?>>
+                                        <?= $row_mst->contract_status_name ?>
+                            </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </td>
+                </tr>
             </table>
             </div>
             <?php endforeach; ?>
