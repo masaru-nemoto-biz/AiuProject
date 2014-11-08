@@ -124,8 +124,10 @@ class ContractInfoList extends CI_Controller {
                 $acc_id = $row->acc_id;
                 $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
             }
+            $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
             $this->session->set_userdata('acc_id', $acc_id);
         } else {
+            $this->session->unset_userdata('acc_detail_list');
             $this->session->unset_userdata('acc_id');
         }
         
