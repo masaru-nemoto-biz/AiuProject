@@ -32,6 +32,11 @@ Class User_table_model extends CI_Model {
         $this->db->from('aiu_user');
         return $this->db->count_all_results();
     }
+    
+    function set_user_delflg($user_num) {
+        $this->db->where('user_num', $user_num);
+        $this->db->update('aiu_user', array('del_flg' => '1'));
+    }
+    
 }
-
 ?>
