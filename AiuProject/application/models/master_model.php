@@ -69,6 +69,14 @@ Class Master_model extends CI_Model {
         $query = $this->db->get('accident_status_mst');
         return $query->result();
     }
+ 
+    /*
+     * 契約情報ステータスマスタ
+     */
+    function contract_status_mst() {
+        $query = $this->db->get('contract_status_mst');
+        return $query->result();
+    }
 }
 
 ?>

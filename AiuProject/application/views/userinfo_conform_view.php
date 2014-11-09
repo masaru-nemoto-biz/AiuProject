@@ -57,7 +57,6 @@
                    <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
                 </div>
             </div>
-        </div>
             <?= form_close(); ?>
         <?php else: ?>
         <div class="page-header text-center">
