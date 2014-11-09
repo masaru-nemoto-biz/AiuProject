@@ -57,7 +57,7 @@
                                 <input class="form-control input-sm" type="text" name="acc_id" value="<?= $row->acc_id ?>" readonly="readonly" />
                               <?php endforeach; ?>
                             <?php else: ?>
-                                <input class="form-control input-sm" type="text" name="acc_id" value="" readonly="readonly" />
+                                <input class="form-control input-sm" type="text" name="acc_id" value="" />
                             <?php endif; ?>
                         </td>
                     </tr>
@@ -163,20 +163,24 @@
                 <?php if (!empty($acc_detail_list)) : ?>
                 <?php foreach ($acc_detail_list as $row): ?>
                 <tr>
-                  <td class="table-style"><?= $row->upd_date ?></td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                    <input class="form-control input-sm" type="date" name="upd_date<?= $row->acc_status_id ?>" value="<?= $row->upd_date ?>" />
                   </td>
-                  <td class="table-style"><input type="text" name="upd_user" value="<?= $row->upd_user ?>" /></td>
+                  <td class="table-style">
+                    <textarea class="form-control input-sm" name="status_quo<?= $row->acc_status_id ?>" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                  </td>
+                  <td class="table-style"><input type="text" name="upd_user<?= $row->acc_status_id ?>" value="<?= $row->upd_user ?>" /></td>
                 </tr>
                 <?php endforeach; ?>
                 <?php endif; ?>
                 <tr>
-                  <td class="table-style"></td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="status_quo" cols="120" rows="7" wrap="hard"></textarea>
+                    <input class="form-control input-sm" type="date" name="upd_date_new" value="" />
                   </td>
-                  <td class="table-style"><input type="text" name="upd_user" value="" /></td>
+                  <td class="table-style">
+                    <textarea class="form-control input-sm" name="status_quo_new" cols="120" rows="7" wrap="hard"></textarea>
+                  </td>
+                  <td class="table-style"><input type="text" name="upd_user_new" value="" /></td>
                 </tr>
               </table>
             </div>

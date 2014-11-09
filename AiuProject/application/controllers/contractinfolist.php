@@ -27,6 +27,7 @@ class ContractInfoList extends CI_Controller {
         $data['yearly_p_sum'] = $this->contractInfo_model->get_yearly_p_sum($this->session->userdata('company_id'));
         $data['anp_sum'] = $this->contractInfo_model->get_anp_sum($this->session->userdata('company_id'));
         $data['month_3ago'] = date('Y-m-d', strtotime("+3 month"));
+        $data['contract_status_mst'] = $this->master_model->contract_status_mst();
         
         $this->load->view('contractinfo_list_view', $data);
     }
@@ -75,6 +76,7 @@ class ContractInfoList extends CI_Controller {
         $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
         $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
         $data['corp_division_mst'] = $this->master_model->corp_division_mst();
+        $data['contract_status_mst'] = $this->master_model->contract_status_mst();
         
         $this->load->view('contractinfo_conform_view', $data);
     }
@@ -97,6 +99,7 @@ class ContractInfoList extends CI_Controller {
         $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
         $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
         $data['corp_division_mst'] = $this->master_model->corp_division_mst();
+        $data['contract_status_mst'] = $this->master_model->contract_status_mst();
         
         $this->load->view('contractinfo_conform_view', $data);
     }
@@ -124,8 +127,10 @@ class ContractInfoList extends CI_Controller {
                 $acc_id = $row->acc_id;
                 $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
             }
+            $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
             $this->session->set_userdata('acc_id', $acc_id);
         } else {
+            $this->session->unset_userdata('acc_detail_list');
             $this->session->unset_userdata('acc_id');
         }
         

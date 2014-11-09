@@ -70,6 +70,8 @@ class CorpInfoConform extends CI_Controller {
             'biz_second' => $this->input->post('biz_second'),
             'employees' => $this->input->post('employees'),
             'corp_member' => $this->input->post('corp_member'),
+            'upd_user' => $this->input->post('upd_user'),
+            'contracter_type' => $this->input->post('contracter_type'),
             'juridical_personality' => $this->input->post('juridical_personality'));
         
         $this->array2 = array('representative_name' => $this->input->post('representative_name'),

@@ -36,7 +36,9 @@ Class corpStatus_model extends CI_Model {
     }
     
     function get_company_list() {
-        $this->db->order_by('company_id');
+        $this->db->order_by('company_info.company_id');
+        $this->db->join('contract_detail', 'contract_detail.company_id = company_info.company_id', 'left');
+        $this->db->join('representative_detail', 'representative_detail.company_id = company_info.company_id', 'left');
         $this->db->where('company_info.del_flg', '0');
         $query = $this->db->get('company_info');
         return $query->result();
