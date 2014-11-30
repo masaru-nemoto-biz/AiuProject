@@ -127,7 +127,7 @@
                     <label class="label_size">◆口座詳細</label>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">口振番号</td><td><input class="form-control input-sm" type="text" name="account_transfer_num" value="" size="50" /></td></tr>
-                        <tr><td>口座名義人　住所</td><td><inpu class="form-control input-sm"t type="text" name="bank_address" value="" size="50" /></td></tr>
+                        <tr><td>口座名義人　住所</td><td><input class="form-control input-sm"t type="text" name="bank_address" value="" size="50" /></td></tr>
                         <tr><td>口座名義人　名称</td><td><input class="form-control input-sm" type="text" name="bank_holder_name" value="" size="50" /></td></tr>
                         <tr><td>口座名義人　連絡先</td><td><input class="form-control input-sm" type="text" name="bank_phone" value="" size="50" /></td></tr>
                         <tr><td>指定口座　銀行名</td><td><input class="form-control input-sm" type="text" name="bank_name" value="" size="50" /></td></tr>

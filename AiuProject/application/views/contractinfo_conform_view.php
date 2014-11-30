@@ -47,6 +47,7 @@
             <?php if (empty($contract_list)) : ?>
             <div class="table-responsive">
             <table border="0" class="table">
+                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="" /></td></tr>
                 <tr><th width="120">保険種別</th>
                     <td colspan="6">
                         <select class="form-control input-sm" name="insurance_classification_id">
@@ -102,13 +103,14 @@
                         </select>
                     </td>
                 </tr>
-                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="" /></td></tr>
+                
             </table>
             </div>
             <?php else: ?>
             <?php foreach ($contract_list as $row): ?>
             <div class="table-responsive">
             <table border="0" class="table">
+                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="<?= $row->contract_owner ?>" /></td></tr>
                 <tr><th width="120">保険種別</th>
                     <td colspan="6">
                         <select class="form-control input-sm" name="insurance_classification_id">
@@ -172,7 +174,7 @@
                         </select>
                     </td>
                 </tr>
-                <tr><th>担当者</th><td colspan="6"><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="<?= $row->contract_owner ?>" /></td></tr>
+                
             </table>
             </div>
             <?php endforeach; ?>

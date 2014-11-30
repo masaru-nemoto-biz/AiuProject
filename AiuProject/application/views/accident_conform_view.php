@@ -36,7 +36,7 @@
 </head>
     <body>
       <div class="container form-group" style="font-size: 12px;">
-        <?= form_open('accidentconform/conform_add') ?>
+        <?= form_open('accidentconform/contractInfoList_conform') ?>
         <div class="page-header text-center">
             <p class="h2">事故進捗状況の明細画面</p>
         </div>
@@ -186,8 +186,9 @@
             </div>
           </div>
         </div>
-          <div class="center_auto" style="margin-top: 10px; width: 150px;">
-            <input class="btn btn-primary" style="width:150px" type="submit" value="完了"/>
+        <div class="center_auto" style="margin-top: 10px; width: 310px;">
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="戻る"/>
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="登録"/>
         </div>
         <?= form_close(); ?>
         </div>

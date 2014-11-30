@@ -10,10 +10,56 @@ class AccidentConform extends CI_Controller {
         $this->load->model('corpstatus_model');
         $this->load->model('contractInfo_model');
         $this->load->model('accident_model');
+        $this->load->model('master_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
 
+    
+    /*
+     * 事故状況登録/変更画面へ
+     */
+    function index() {
+        
+        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
+        $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
+        $data['accident_status_mst'] = $this->master_model->accident_status_mst();
+        
+        if (!empty($data['acc_list'])) {
+            foreach ($data['acc_list'] as $row) {
+                $acc_id = $row->acc_id;
+                $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
+            }
+            $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
+            $this->session->set_userdata('acc_id', $acc_id);
+        } else {
+            $this->session->unset_userdata('acc_detail_list');
+            $this->session->unset_userdata('acc_id');
+        }
+        
+        $this->load->view('accident_conform_view', $data);
+    }
+    
+    /*
+     * 遷移先画面判定ロジック
+     * 
+     * ボタン押下時のバリュー値によって遷移先画面を判定し、
+     * 遷移先画面毎に別理を行う。
+     */
+    function contractInfoList_conform() {
+
+        $data['move'] = $this->input->post('move');
+        $this->session->unset_userdata('message');
+        
+        if ($data['move'] == '戻る') {
+            redirect('contractinfolist/index');
+        } elseif ($data['move'] == '登録') {
+            $this->conform_add();
+        } else {
+            $this->index();
+        }
+    }
+    
     /*
      * 事故状況追加ロジック
      */
@@ -39,7 +85,7 @@ class AccidentConform extends CI_Controller {
             $this->accident_model->insert_accident_detail($this->array3);
         }
         
-        redirect('contractinfolist/index');
+        $this->index();
     }
     
     /*

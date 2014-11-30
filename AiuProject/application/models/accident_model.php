@@ -14,6 +14,7 @@ Class Accident_model extends CI_Model {
     
     function get_accident_detail($acc_id) {
         $this->db->where('acc_id', $acc_id);
+        $this->db->order_by('upd_date');
         $query = $this->db->get('accident_detail');
         return $query->result();
     }
