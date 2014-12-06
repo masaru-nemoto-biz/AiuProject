@@ -123,15 +123,14 @@ class ContractInfoList extends CI_Controller {
         $data['accident_status_mst'] = $this->master_model->accident_status_mst();
         
         if (!empty($data['acc_list'])) {
-            foreach ($data['acc_list'] as $row) {
-                $acc_id = $row->acc_id;
-                $data['acc_detail_list'] = $this->accident_model->get_accident_detail($acc_id);
-            }
+            
+            $data['acc_detail_list'] = $this->accident_model->get_accident_detail_contract_id($this->session->userdata('contract_id'));
+            
             $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
-            $this->session->set_userdata('acc_id', $acc_id);
+            $this->session->set_userdata('acc_list', $data['acc_list']);
         } else {
             $this->session->unset_userdata('acc_detail_list');
-            $this->session->unset_userdata('acc_id');
+            $this->session->unset_userdata('acc_list');
         }
         
         $this->load->view('accident_conform_view', $data);

@@ -18,6 +18,7 @@ Class Master_model extends CI_Model {
      * 法人格マスタ
      */
     function jurid_personal_mst() {
+        $this->db->order_by('Jurid_Personal_id');
         $query = $this->db->get('jurid_personal_mst');
         return $query->result();
     }

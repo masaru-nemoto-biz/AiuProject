@@ -83,7 +83,6 @@
                     </tr>
                 </table>
             </div>
-        </div>
         <?php endforeach; ?>
         <div class="table-responsive">
         <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
@@ -155,6 +154,8 @@
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
+        </div>
+        </div>
         </div>
         <!-- モーダルの設定 -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -40,6 +40,8 @@
         <div class="page-header text-center">
             <p class="h2">事故進捗状況の明細画面</p>
         </div>
+<?php foreach ($acc_list as $row_acc_list): ?>
+<div >
         <div class="row">
             <div class="col-md-4">
                 <table class="table table-condensed">
@@ -52,10 +54,8 @@
                     </tr>
                     <tr><td style="width:100px">事故受付番号</td>
                         <td>
-                            <?php if (!empty($acc_list)) : ?>
-                              <?php foreach ($acc_list as $row): ?>
-                                <input class="form-control input-sm" type="text" name="acc_id" value="<?= $row->acc_id ?>" readonly="readonly" />
-                              <?php endforeach; ?>
+                            <?php if (!empty($row_acc_list)) : ?>
+                                <input class="form-control input-sm" type="text" name="acc_id<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->acc_id ?>" readonly="readonly" />
                             <?php else: ?>
                                 <input class="form-control input-sm" type="text" name="acc_id" value="" />
                             <?php endif; ?>
@@ -67,10 +67,8 @@
                 <table class="table table-condensed">
                     <tr><td width="70">事故</td>
                         <td width="200">
-                          <?php if (!empty($acc_list)) : ?>
-                          <?php foreach ($acc_list as $row): ?>
-                            <input class="form-control input-sm" type="text" name="acc_contents" value="<?= $row->acc_contents ?>" />
-                          <?php endforeach; ?>
+                          <?php if (!empty($row_acc_list)) : ?>
+                            <input class="form-control input-sm" type="text" name="acc_contents<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->acc_contents ?>" />
                           <?php else: ?>
                             <input class="form-control input-sm" type="text" name="acc_contents" value="" />
                           <?php endif; ?>
@@ -78,10 +76,8 @@
                     </tr>
                     <tr><td style="width:100px">発生日時</td>
                         <td>
-                          <?php if (!empty($acc_list)) : ?>
-                            <?php foreach ($acc_list as $row): ?>
-                              <input class="form-control input-sm" type="date" name="occurrence_date" value="<?= $row->occurrence_date ?>" />
-                            <?php endforeach; ?>
+                          <?php if (!empty($row_acc_list)) : ?>
+                              <input class="form-control input-sm" type="date" name="occurrence_date<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->occurrence_date ?>" />
                           <?php else: ?>
                               <input class="form-control input-sm" type="date" name="occurrence_date" value="" />
                           <?php endif; ?>
@@ -93,10 +89,8 @@
                 <table class="table table-condensed">
                     <tr><td style="width:100px">損サ担当</td>
                         <td>
-                            <?php if (!empty($acc_list)) : ?>
-                            <?php foreach ($acc_list as $row): ?>
-                              <input class="form-control input-sm" type="text" name="sonsa" value="<?= $row->sonsa ?>" />
-                            <?php endforeach; ?>
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <input class="form-control input-sm" type="text" name="sonsa<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->sonsa ?>" />
                             <?php else: ?>
                               <input class="form-control input-sm" type="text" name="sonsa" value="" />
                             <?php endif; ?>
@@ -104,10 +98,8 @@
                     </tr>
                     <tr><td style="width:100px">連絡先</td>
                         <td>
-                            <?php if (!empty($acc_list)) : ?>
-                            <?php foreach ($acc_list as $row): ?>
-                              <input class="form-control input-sm" type="text" name="acc_phone" value="<?= $row->acc_phone ?>" />
-                            <?php endforeach; ?>
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <input class="form-control input-sm" type="text" name="acc_phone<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->acc_phone ?>" />
                             <?php else: ?>
                               <input class="form-control input-sm" type="text" name="acc_phone" value="" />
                             <?php endif; ?>
@@ -115,10 +107,8 @@
                     </tr>
                     <tr><td style="width:100px">支払い</td>
                         <td>
-                            <?php if (!empty($acc_list)) : ?>
-                            <?php foreach ($acc_list as $row): ?>
-                              <input class="form-control input-sm" type="text" name="payment" value="<?= $row->payment ?>" />
-                            <?php endforeach; ?>
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <input class="form-control input-sm" type="text" name="payment<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->payment ?>" />
                             <?php else: ?>
                               <input class="form-control input-sm" type="text" name="payment" value="" />
                             <?php endif; ?>
@@ -126,17 +116,16 @@
                     </tr>
                     <tr><td style="width:100px">ステータス</td>
                         <td>
-                            <?php if (!empty($acc_list)) : ?><?php foreach ($acc_list as $row): ?>
-                              <select class="form-control input-sm" name="acc_status_id">
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
                                 <?php foreach ($accident_status_mst as $row_accident_status): ?>
-                                  <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row->acc_status_id) :?>selected="selected"<?php endif; ?>>
+                                  <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row_acc_list->acc_status_id) :?>selected="selected"<?php endif; ?>>
                                     <?= $row_accident_status->acc_status_name ?>
                                   </option>
                                 <?php endforeach; ?>
                               </select>
-                            <?php endforeach; ?>
                             <?php else: ?>
-                              <select class="form-control input-sm" name="acc_status_id">
+                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
                                 <?php foreach ($accident_status_mst as $row_accident_status): ?>
                                   <option value="<?= $row_accident_status->acc_status_id ?>">
                                     <?= $row_accident_status->acc_status_name ?>
@@ -151,6 +140,10 @@
         </div>
         <div class="row">
           <div class="col-md-12">
+          <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
+            <thead><tr><th class="table-style"><a class="btn btn-info btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne<?= $row_acc_list->acc_id ?>">状況</a></th></tr></thead>
+          </table>
+          <div id="collapseOne<?= $row_acc_list->acc_id ?>" class="collapse">
             <div class="table-responsive">
               <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
               <thead>
@@ -162,6 +155,7 @@
               </thead>
                 <?php if (!empty($acc_detail_list)) : ?>
                 <?php foreach ($acc_detail_list as $row): ?>
+                <?php if ($row->acc_id == $row_acc_list->acc_id) :?>
                 <tr>
                   <td class="table-style">
                     <input class="form-control input-sm" type="date" name="upd_date<?= $row->acc_status_id ?>" value="<?= $row->upd_date ?>" />
@@ -171,21 +165,89 @@
                   </td>
                   <td class="table-style"><input type="text" name="upd_user<?= $row->acc_status_id ?>" value="<?= $row->upd_user ?>" /></td>
                 </tr>
+                <?php endif; ?>
                 <?php endforeach; ?>
                 <?php endif; ?>
                 <tr>
                   <td class="table-style">
-                    <input class="form-control input-sm" type="date" name="upd_date_new" value="" />
+                    <input class="form-control input-sm" type="date" name="upd_date_new<?= $row_acc_list->acc_id ?>" value="" />
                   </td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="status_quo_new" cols="120" rows="7" wrap="hard"></textarea>
+                    <textarea class="form-control input-sm" name="status_quo_new<?= $row_acc_list->acc_id ?>" cols="120" rows="7" wrap="hard"></textarea>
                   </td>
-                  <td class="table-style"><input type="text" name="upd_user_new" value="" /></td>
+                  <td class="table-style"><input type="text" name="upd_user_new<?= $row_acc_list->acc_id ?>" value="" /></td>
                 </tr>
               </table>
             </div>
           </div>
+          </div>
         </div>
+</div>
+<?php endforeach; ?>
+<div >
+        <div class="row">
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td style="width:100px">証券番号</td>
+                        <td>
+                            <?php foreach ($contract_list as $row): ?>
+                              <?= $row->policy_number ?>
+                            <?php endforeach; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">事故受付番号</td>
+                        <td>
+                            <input class="form-control input-sm" type="text" name="acc_id_new" value="" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td width="70">事故</td>
+                        <td width="200">
+                            <input class="form-control input-sm" type="text" name="acc_contents_new" value="" />
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">発生日時</td>
+                        <td>
+                            <input class="form-control input-sm" type="date" name="occurrence_date_new" value="" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <table class="table table-condensed">
+                    <tr><td style="width:100px">損サ担当</td>
+                        <td>
+                            <input class="form-control input-sm" type="text" name="sonsa_new" value="" />
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">連絡先</td>
+                        <td>
+                            <input class="form-control input-sm" type="text" name="acc_phone_new" value="" />
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">支払い</td>
+                        <td>
+                            <input class="form-control input-sm" type="text" name="payment_new" value="" />
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">ステータス</td>
+                        <td>
+                            <select class="form-control input-sm" name="acc_status_id_new">
+                              <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                <option value="<?= $row_accident_status->acc_status_id ?>">
+                                  <?= $row_accident_status->acc_status_name ?>
+                                </option>
+                              <?php endforeach; ?>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</div>
         <div class="center_auto" style="margin-top: 10px; width: 310px;">
             <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="戻る"/>
             <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="登録"/>

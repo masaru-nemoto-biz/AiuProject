@@ -67,14 +67,21 @@ Class ContractInfo_model extends CI_Model {
         $this->db->join('accident_status_mst', 'accident_status_mst.acc_status_id = accident_info.acc_status_id', 'left');
         $this->db->where('contract_info.company_id', $company_id);
         $this->db->where('accident_info.del_flg', '0');
-        $this->db->where('accident_info.acc_status_id', '1');
-        $this->db->or_where('accident_info.acc_status_id', '2');
-        $this->db->where('accident_info.del_flg', '0');
+//        $this->db->where('accident_info.acc_status_id', '1');
+//        $this->db->or_where('accident_info.acc_status_id', '2');
+//        $this->db->where('accident_info.del_flg', '0');
         $query = $this->db->get();
         
         return $query->result();
     }
 
+    function get_accident_data($contract_id) {
+        $this->db->where('contract_id', $contract_id);
+        $this->db->order_by('acc_id');
+        $query = $this->db->get('accident_info');
+        return $query->result();
+    }
+/*
     function get_accident_data($contract_id) {
         $this->db->select('*');
         $this->db->from('accident_info');
@@ -89,7 +96,7 @@ Class ContractInfo_model extends CI_Model {
         
         return $query->result();
     }
-    
+*/
     function insert_contract_data($array) {
         $this->db->insert('contract_info', $array); 
     }

@@ -6,9 +6,22 @@ Class Accident_model extends CI_Model {
         $this->load->database();
     }
 
+    function count_accident_info($contract_id) {
+        $this->db->where('contract_id', $contract_id);
+        $this->db->from('accident_info');
+        return $this->db->count_all_results();
+    }
+    
     function get_accident_info($contract_id) {
         $this->db->where('contract_id', $contract_id);
         $query = $this->db->get('accident_info');
+        return $query->result();
+    }
+    
+    function get_accident_detail_contract_id($contract_id) {
+        $this->db->where('contract_id', $contract_id);
+        $this->db->order_by('upd_date');
+        $query = $this->db->get('accident_detail');
         return $query->result();
     }
     
