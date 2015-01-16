@@ -54,11 +54,11 @@
                         <tr><td>会社メールアドレス</td><td><a href="mailto:<?= $row->company_mail ?>"><?= $row->company_mail ?></a></td></tr>
                         <tr><td>会社HP</td><td><a href="<?= $row->company_hp ?>" target="_blank"><?= $row->company_hp ?></a></td></tr>
                         <tr><td>設立年月日</td><td><?= $row->establishment ?></td></tr>
-                        <tr><td>資本金</td><td><?= $row->capital ?></td></tr>
-                        <tr><td>決算月</td><td><?= $row->settling_month ?></td></tr>
+                        <tr><td>資本金</td><td><?= $row->capital."　円" ?></td></tr>
+                        <tr><td>決算月</td><td><?= $row->settling_month."　月" ?></td></tr>
                         <tr><td>業種 第一</td><td><?= $row->biz_first ?></td></tr>
                         <tr><td>業種 第二</td><td><?= $row->biz_second ?></td></tr>
-                        <tr><td>従業員数</td><td><?= $row->employees ?></td></tr>
+                        <tr><td>従業員数</td><td><?= $row->employees."　人" ?></td></tr>
                         <tr><td>法人会加入有無</td><td><?php if (0 == $row->corp_member) :?>無し<?php else: ?>有り<?php endif; ?></td></tr>
                         <tr><td>法人格</td>
                             <td>
@@ -154,6 +154,7 @@
                         <tr><td class="td_head_size">契約手段</td><td><?= $row->contract_way ?></td></tr>
                         <tr><td>契約場所</td><td><?= $row->contact_place ?></td></tr>
                         <tr><td>連絡時間帯</td><td><?= $row->contact_time ?></td></tr>
+                        <tr><td>決算書取得方法</td><td><?= $row->fin_st_acq ?></td></tr>
                         <tr><td>備考</td><td><?= $row->remarks ?></td></tr>
                     </table>
                     <?php endforeach; ?>

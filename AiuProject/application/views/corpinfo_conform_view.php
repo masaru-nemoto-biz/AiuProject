@@ -46,22 +46,22 @@
                         <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="" size="50" /></td></tr>
                     </table>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="" size="50" /></td></tr>
-                        <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="" size="50" /></td></tr>
-                        <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="" size="50" /></td></tr>
-                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="" size="50" /></td></tr>
-                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="corp_phone" value="" size="50" /></td></tr>
-                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="corp_fax" value="" size="50" /></td></tr>
-                        <tr><td>会社メールアドレス</td><td><input class="form-control input-sm" type="text" name="company_mail" value="" size="50" /></td></tr>
-                        <tr><td>会社HP</td><td><input class="form-control input-sm" type="text" name="company_hp" value="" size="50" /></td></tr>
-                        <tr><td>設立年月日</td><td><input class="form-control input-sm" type="text" name="establishment" value="" size="50" /></td></tr>
-                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="" size="50" /></td></tr>
-                        <tr><td>決算月</td><td><input class="form-control input-sm" type="text" name="settling_month" value="" size="50" /></td></tr>
-                        <tr><td>業種 第一</td><td><input class="form-control input-sm" type="text" name="biz_first" value="" size="50" /></td></tr>
-                        <tr><td>業種 第二</td><td><input class="form-control input-sm" type="text" name="biz_second" value="" size="50" /></td></tr>
-                        <tr><td>従業員数</td><td><input class="form-control input-sm" type="text" name="employees" value="" size="50" /></td></tr>
+                        <tr><td class="td_head_size">法人名称</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_name" value="" size="50" /></td></tr>
+                        <tr><td>法人名称(カナ)</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_kana" value="" size="50" /></td></tr>
+                        <tr><td>郵便番号(〒)</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_post" value="" size="50" /></td></tr>
+                        <tr><td>所在地</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_address" value="" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_phone" value="" size="50" /></td></tr>
+                        <tr><td>FAX</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_fax" value="" size="50" /></td></tr>
+                        <tr><td>会社メールアドレス</td><td colspan="2"><input class="form-control input-sm" type="text" name="company_mail" value="" size="50" /></td></tr>
+                        <tr><td>会社HP</td><td colspan="2"><input class="form-control input-sm" type="text" name="company_hp" value="" size="50" /></td></tr>
+                        <tr><td>設立年月日</td><td colspan="2"><input class="form-control input-sm" type="date" name="establishment" value="" size="50" /></td></tr>
+                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="" size="50" /></td><td style="vertical-align: bottom">円</td></tr>
+                        <tr><td>決算月</td><td><input class="form-control input-sm" type="text" name="settling_month" value="" size="50" /></td></td><td style="vertical-align: bottom">月</td></tr>
+                        <tr><td>業種 第一</td><td colspan="2"><input class="form-control input-sm" type="text" name="biz_first" value="" size="50" /></td></tr>
+                        <tr><td>業種 第二</td><td colspan="2"><input class="form-control input-sm" type="text" name="biz_second" value="" size="50" /></td></tr>
+                        <tr><td>従業員数</td><td><input class="form-control input-sm" type="text" name="employees" value="" size="50" /></td></td><td style="vertical-align: bottom">人</td></tr>
                         <tr><td>法人会加入有無</td>
-                            <td>
+                            <td colspan="2">
                                 <select class="form-control input-sm" name="corp_member">
                                     <option value="0" >無し</option>
                                     <option value="1" >有り</option>
@@ -69,7 +69,7 @@
                             </td>
                         </tr>
                         <tr><td>法人格</td>
-                            <td>
+                            <td colspan="2">
                                 <select class="form-control input-sm" name="juridical_personality">
                                     <?php foreach ($jurid_personal_mst as $row): ?>
                                     <option value="<?= $row->Jurid_Personal_id ?>"><?= $row->Jurid_Personal_name ?></option>
@@ -94,7 +94,7 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="rep_birthday" value="" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="rep_birthday" value="" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="" size="50" /></td></tr>
                         <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="" size="50" /></td></tr>
@@ -115,7 +115,7 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="con_birthday" value="" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="" size="50" /></td></tr>
                         <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="" size="50" /></td></tr>
@@ -200,8 +200,8 @@
                         <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="corp_fax" value="<?= $row->fax ?>" size="50" /></td></tr>
                         <tr><td>会社メールアドレス</td><td><input class="form-control input-sm" type="text" name="company_mail" value="<?= $row->company_mail ?>" size="50" /></td></tr>
                         <tr><td>会社HP</td><td><input class="form-control input-sm" type="text" name="company_hp" value="<?= $row->company_hp ?>" size="50" /></td></tr>
-                        <tr><td>設立年月日</td><td><input class="form-control input-sm" type="text" name="establishment" value="<?= $row->establishment ?>" size="50" /></td></tr>
-                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="<?= $row->capital ?>" size="50" /></td></tr>
+                        <tr><td>設立年月日</td><td><input class="form-control input-sm" type="date" name="establishment" value="<?= $row->establishment ?>" size="50" /></td></tr>
+                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="<?= $row->capital ?>" size="50" /></td><td style="vertical-align: bottom">円</td></tr>
                         <tr><td>決算月</td><td><input class="form-control input-sm" type="text" name="settling_month" value="<?= $row->settling_month ?>" size="50" /></td></tr>
                         <tr><td>業種 第一</td><td><input class="form-control input-sm" type="text" name="biz_first" value="<?= $row->biz_first ?>" size="50" /></td></tr>
                         <tr><td>業種 第二</td><td><input class="form-control input-sm" type="text" name="biz_second" value="<?= $row->biz_second ?>" size="50" /></td></tr>
@@ -245,7 +245,7 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
                         <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $row->post ?>" size="50" /></td></tr>
@@ -268,7 +268,7 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="text" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
                         <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
                         <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>

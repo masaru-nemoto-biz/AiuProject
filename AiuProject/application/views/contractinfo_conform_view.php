@@ -53,7 +53,6 @@
                     <td><input class="form-control input-sm" type="text" name="brand_name" value="" /></td>
                     <td width="70px">担当者</td>
                     <td><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="" /></td>
-
                 </tr>
                 </table>
                 <table border="0" class="table">
@@ -92,26 +91,28 @@
                 </tr>
                 </table>
                 <table border="0" class="table">
-                <tr><td>保険期間</td>
-                    <td><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period_start" value="" />
-                        <p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p>
-                        <input id="after" class="form-control input-sm" type="date" name="insurance_period_end" value="" readonly />
-                    </td>
-                    <td>月P</td>
-                    <td><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td>
-                    <td>年払い</td>
-                    <td><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td>
-                    <td>ANP</td>
-                    <td><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td>
-                    <td>ステータス</td>
-                    <td>
+                <tr><td nowrap>保険期間</td>
+                    <td><input id="insurance_period" class="form-control input-sm" type="date" name="insurance_period_start" value="" /></td>
+                    <td><p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p></td>
+                    <td><input id="after" class="form-control input-sm" type="date" name="insurance_period_end" value="" readonly /></td>
+                    <td nowrap>月額保険料</td>
+                    <td width="125px"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="" /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>一時払い</td>
+                    <td width="125px"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="" /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>年間保険料</td>
+                    <td width="125px"><input id="anp" class="form-control input-sm" type="text" name="anp" value="" readonly /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>ステータス</td>
+                    <td width="130px">
                         <select id="contract_status" class="form-control input-sm" name="contract_status">
                           <?php foreach ($contract_status_mst as $row_mst): ?>
                             <option value="<?= $row_mst->contract_status_id ?>"><?= $row_mst->contract_status_name ?></option>
                           <?php endforeach; ?>
                         </select>
                     </td>
-                </tr>                
+                </tr>
             </table>
             </div>
             <?php else: ?>
@@ -170,19 +171,22 @@
             </table>
             <table border="0" class="table">
                 <tr>
-                    <td>保険期間</td>
-                    <td><input id="insurance_period" class="form-control input-sm" style="margin-right: 10px" type="date" name="insurance_period_start" value="<?= $row->insurance_period_start ?>" />
-                        <p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p>
-                        <input id="after" class="form-control input-sm" type="date" name="insurance_period_end" value="<?= $row->insurance_period_end ?>" readonly />
+                    <td nowrap>保険期間</td>
+                    <td><input id="insurance_period" class="form-control input-sm" type="date" name="insurance_period_start" value="<?= $row->insurance_period_start ?>" />
                     </td>
-                    <td>月P</td>
-                    <td><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="<?= $row->month_p ?>" /></td>
-                    <td>年払い</td>
-                    <td><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="<?= $row->yearly_payment ?>" /></td>
-                    <td>ANP</td>
-                    <td><input id="anp" class="form-control input-sm" type="text" name="anp" value="<?= $row->anp ?>" readonly /></td>
-                    <td>ステータス</td>
-                    <td>
+                    <td><p style="text-align: center; vertical-align: bottom; margin-top: 6px;">～</p></td>
+                    <td><input id="after" class="form-control input-sm" type="date" name="insurance_period_end" value="<?= $row->insurance_period_end ?>" readonly /></td>
+                    <td nowrap>月額保険料</td>
+                    <td width="125px"><input id="month_p" class="form-control input-sm" type="text" name="month_p" value="<?= $row->month_p ?>" /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>一時払い</td>
+                    <td width="125px"><input id="yearly_payment" class="form-control input-sm" type="text" name="yearly_payment" value="<?= $row->yearly_payment ?>" /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>年間保険料</td>
+                    <td width="125px"><input id="anp" class="form-control input-sm" type="text" name="anp" value="<?= $row->anp ?>" readonly /></td>
+                    <td align="center" style="vertical-align: bottom">円</td>
+                    <td nowrap>ステータス</td>
+                    <td width="130px">
                         <select id="contract_status" class="form-control input-sm" name="contract_status">
                             <?php foreach ($contract_status_mst as $row_mst): ?>
                             <option value="<?= $row_mst->contract_status_id ?>" <?php if ($row_mst->contract_status_id == $row->contract_status) :?>selected="selected"<?php endif; ?>>

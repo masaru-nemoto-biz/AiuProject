@@ -88,7 +88,7 @@
             <div class="col-md-4">
                 <table class="table table-condensed">
                     <tr><td style="width:100px">損サ担当</td>
-                        <td>
+                        <td colspan="2">
                             <?php if (!empty($row_acc_list)) : ?>
                               <input class="form-control input-sm" type="text" name="sonsa<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->sonsa ?>" />
                             <?php else: ?>
@@ -97,7 +97,7 @@
                         </td>
                     </tr>
                     <tr><td style="width:100px">連絡先</td>
-                        <td>
+                        <td colspan="2">
                             <?php if (!empty($row_acc_list)) : ?>
                               <input class="form-control input-sm" type="text" name="acc_phone<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->acc_phone ?>" />
                             <?php else: ?>
@@ -113,9 +113,10 @@
                               <input class="form-control input-sm" type="text" name="payment" value="" />
                             <?php endif; ?>
                         </td>
+                        <td align="center" style="vertical-align: bottom">円</td>
                     </tr>
                     <tr><td style="width:100px">ステータス</td>
-                        <td>
+                        <td colspan="2">
                             <?php if (!empty($row_acc_list)) : ?>
                               <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
                                 <?php foreach ($accident_status_mst as $row_accident_status): ?>
@@ -219,12 +220,12 @@
             <div class="col-md-4">
                 <table class="table table-condensed">
                     <tr><td style="width:100px">損サ担当</td>
-                        <td>
+                        <td colspan="2">
                             <input class="form-control input-sm" type="text" name="sonsa_new" value="" />
                         </td>
                     </tr>
                     <tr><td style="width:100px">連絡先</td>
-                        <td>
+                        <td colspan="2">
                             <input class="form-control input-sm" type="text" name="acc_phone_new" value="" />
                         </td>
                     </tr>
@@ -232,9 +233,10 @@
                         <td>
                             <input class="form-control input-sm" type="text" name="payment_new" value="" />
                         </td>
+                        <td align="center" style="vertical-align: bottom">円</td>
                     </tr>
                     <tr><td style="width:100px">ステータス</td>
-                        <td>
+                        <td colspan="2">
                             <select class="form-control input-sm" name="acc_status_id_new">
                               <?php foreach ($accident_status_mst as $row_accident_status): ?>
                                 <option value="<?= $row_accident_status->acc_status_id ?>">
