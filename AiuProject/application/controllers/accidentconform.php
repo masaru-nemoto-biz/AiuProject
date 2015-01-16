@@ -66,55 +66,41 @@ class AccidentConform extends CI_Controller {
      */
     function conform_add() {
         
-        $acc_count = $this->session->userdata('acc_count');
-        if ($acc_count == 1){
-/*        
-            $this->conform_Prepare();
-            $this->conform_Prepare_new();
-            
-            $upd_date_new = $this->input->post('upd_date_new' . $acc_id);
-            $this->accident_model->insert_accident_data($this->array_new);
+        // 既存事故情報変更
+        // TODO 出来ればindexのsession情報を利用したい。
+        //$data['acc_list'] = $this->session->userdata('acc_list');
+        $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
+        foreach ($data['acc_list'] as $row) {
+            $this->conform_Prepare($row->acc_id);
+            $this->accident_model->set_accident_data($row->acc_id, $this->array);
+        }
         
-            if (!empty($upd_date_new)){
-                $this->conform_Prepare_status_quo_new($acc_id);
-                $this->accident_model->insert_accident_detail($this->array3);
-            }
- * 
- */
-        } else {
-            $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
-            //$data['acc_list'] = $this->session->userdata('acc_list');
-            
-            // 既存事故情報変更
-            foreach ($data['acc_list'] as $row) {
-                $this->conform_Prepare($row->acc_id);
-                $this->accident_model->set_accident_data($row->acc_id, $this->array);
-            }
-            
-            // 事故情報追加
-            $acc_id_new = $this->input->post('acc_id_new');
-            if (!empty($acc_id_new)) {
-                $this->conform_Prepare_new();
-                $this->accident_model->insert_accident_data($this->array_new);
-            }
-
-            
-            // 既存事故詳細変更
+        // 事故情報追加
+        $acc_id_new = $this->input->post('acc_id_new');
+        if (!empty($acc_id_new)) {
+            $this->conform_Prepare_new();
+            $this->accident_model->insert_accident_data($this->array_new);
+        }
+         
+        // 既存事故詳細変更
+        // TODO 出来ればindexのsession情報を利用したい。
+        $data['acc_detail_list'] = $this->accident_model->get_accident_detail_contract_id($this->session->userdata('contract_id'));
+        if (!empty($data['acc_detail_list'])) {
             foreach ($this->session->userdata('acc_detail_list') as $row) {
                 $this->conform_Prepare_status_quo($row->acc_status_id);
                 $this->accident_model->set_accident_detail($row->acc_status_id, $this->array2);
             }
-            
-            // 事故詳細追加
-            foreach ($data['acc_list'] as $row) {
-                $status_quo_new = $this->input->post('status_quo_new' . $row->acc_id);
-                if (!empty($status_quo_new)){
-                    $this->conform_Prepare_status_quo_new($row->acc_id);
-                    $this->accident_model->insert_accident_detail($this->array3);
-                }
-            }
         }
 
+        
+        // 事故詳細追加
+        foreach ($data['acc_list'] as $row) {
+            $status_quo_new = $this->input->post('status_quo_new' . $row->acc_id);
+            if (!empty($status_quo_new)){
+                $this->conform_Prepare_status_quo_new($row->acc_id);
+                $this->accident_model->insert_accident_detail($this->array3);
+            }
+        }
         
         $this->index();
     }

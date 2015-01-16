@@ -24,6 +24,7 @@ class CorpInfoList extends CI_Controller {
         $data['liability'] = $this->corpStatus_model->get_3m_ago('3');
         $data['large'] = $this->corpStatus_model->get_3m_ago('4');
         $data['other'] = $this->corpStatus_model->get_3m_ago('5');
+        $data['auto'] = $this->corpStatus_model->get_3m_ago('6');
         $data['count_acc'] = $this->corpStatus_model->get_accident();
         $data['list'] = $this->corpStatus_model->get_company_list();
         

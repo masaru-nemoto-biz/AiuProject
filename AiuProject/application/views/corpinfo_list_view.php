@@ -51,6 +51,7 @@
                 <th class="table-style">傷害保険</th>
                 <th class="table-style">賠償保険</th>
                 <th class="table-style">生命保険</th>
+                <th class="table-style">自動車</th>
                 <th class="table-style">その他</th>
                 <th class="table-style">事故状況</th>
                 <th class="table-style">担当者</th>
@@ -84,6 +85,11 @@
                     <td class="table-style">
                         <?php foreach ($large as $row_large): ?>
                         <?php if ($row_large->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td class="table-style">
+                        <?php foreach ($auto as $row_auto): ?>
+                        <?php if ($row_auto->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
                     <td class="table-style">

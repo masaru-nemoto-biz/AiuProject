@@ -81,6 +81,13 @@ Class ContractInfo_model extends CI_Model {
         $query = $this->db->get('accident_info');
         return $query->result();
     }
+
+    function get_car_info($contract_id) {
+        $this->db->where('contract_id', $contract_id);
+        $this->db->order_by('carinfo_no');
+        $query = $this->db->get('car_info');
+        return $query->result();
+    }
 /*
     function get_accident_data($contract_id) {
         $this->db->select('*');
@@ -110,6 +117,16 @@ Class ContractInfo_model extends CI_Model {
         $this->db->where('contract_id', $contract_id);
         $this->db->update('contract_info', array('del_flg' => '1'));
     }
-}
+
+    function insert_car_data($array) {
+        $this->db->insert('car_info', $array);
+    }
+    
+    function set_car_data($carinfo_no, $array) {
+        $this->db->where('carinfo_no', $carinfo_no);
+        $this->db->update('car_info', $array); 
+    }
+    
+    }
 
 ?>

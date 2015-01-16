@@ -54,7 +54,7 @@
             </div>
             <div class="col-md-4">
                 <table class="table table-condensed">
-                    <tr><td width="70">契約担当者</td><td width="200"><?= $row->contract_name ?></td></tr>
+                    <tr><td width="70">契約担当者</td><td width="200"><?= $row->contract_name. "　様" ?></td></tr>
                     <tr><td>連絡先</td><td width="200"><?= $row->mobile_phone ?></td></tr>
                 </table>
             </div>
@@ -83,7 +83,10 @@
                     </tr>
                 </table>
             </div>
+        </div>
         <?php endforeach; ?>
+<div class="row">
+    <div class="col-md-12">
         <div class="table-responsive">
         <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
@@ -141,6 +144,8 @@
             <?php endforeach; ?>
         </table>
         </div>
+    </div>
+</div>
         <?php if (!empty($message)) : ?>
         <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
             <a class="close" data-dismiss="alert">×</a>
@@ -154,7 +159,6 @@
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
-        </div>
         </div>
         </div>
         <!-- モーダルの設定 -->

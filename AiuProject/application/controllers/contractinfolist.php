@@ -101,6 +101,8 @@ class ContractInfoList extends CI_Controller {
         $data['corp_division_mst'] = $this->master_model->corp_division_mst();
         $data['contract_status_mst'] = $this->master_model->contract_status_mst();
         
+        $data['car_list'] = $this->contractInfo_model->get_car_info($this->session->userdata('contract_id'));
+        
         $this->load->view('contractinfo_conform_view', $data);
     }
 
