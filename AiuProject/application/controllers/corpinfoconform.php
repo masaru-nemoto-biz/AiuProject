@@ -113,6 +113,7 @@ class CorpInfoConform extends CI_Controller {
         $this->array5 = array('contract_way' => $this->input->post('contract_way'),
             'contact_place' => $this->input->post('contact_place'),
             'contact_time' => $this->input->post('contact_time'),
+            'fin_st_acq' => $this->input->post('fin_st_acq'),
             'remarks' => $this->input->post('remarks'));
     }
     

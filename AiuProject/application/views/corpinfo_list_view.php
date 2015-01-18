@@ -145,9 +145,9 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id1").dataTable( {
-                    "aoColumnDefs": [
-                        { "bVisible": false, "aTargets": [  ] }
-                    ] } );
+                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [  ] }],
+                    "sScrollY": "500px"
+                } );
 
     </script>
     </body>

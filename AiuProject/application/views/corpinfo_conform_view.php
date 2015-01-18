@@ -322,7 +322,7 @@
                         <tr><td class="td_head_size">契約手段</td><td><input class="form-control input-sm" type="text" name="contract_way" value="<?= $row->contract_way ?>" size="50" /></td></tr>
                         <tr><td>契約場所</td><td><input class="form-control input-sm" type="text" name="contact_place" value="<?= $row->contact_place ?>" size="50" /></td></tr>
                         <tr><td>連絡時間帯</td><td><input class="form-control input-sm" type="text" name="contact_time" value="<?= $row->contact_time ?>" size="50" /></td></tr>
-                        <tr><td>決算書取得方法</td><td><input class="form-control input-sm" type="text" name="fin_st_acq" value="" size="50" /></td></tr>
+                        <tr><td>決算書取得方法</td><td><input class="form-control input-sm" type="text" name="fin_st_acq" value="<?= $row->fin_st_acq ?>" size="50" /></td></tr>
                         <tr><td>備考</td><td><textarea class="form-control input-sm" name="remarks" cols="120" rows="7" wrap="hard"><?= $row->remarks ?></textarea></td></tr>
                     </table>
                     <?php endforeach; ?>

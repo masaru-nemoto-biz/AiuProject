@@ -104,7 +104,7 @@
                 <th class="table-style">一時払い</th>
                 <th class="table-style">年間保険料</th>
                 <th class="table-style">ステータス</th>
-                <th class="table-style">お知らせ</th>
+                <th class="table-style">満期お知らせ</th>
                 <th class="table-style">事故</th><th class="table-style">事故受け番号</th>
                 <th class="table-style">担当者</th>
             </tr>
@@ -188,9 +188,9 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id").dataTable( {
-                    "aoColumnDefs": [
-                        { "bVisible": false, "aTargets": [  ] }
-                    ] } );
+                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 3,4,7,11 ] }],
+                    "bStateSave": true
+                } );
 
     </script>
 
