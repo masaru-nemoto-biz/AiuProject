@@ -47,11 +47,11 @@ class ContractInfoList extends CI_Controller {
         
         if ($data['move'] == '契約者情報一覧画面へ') {
             $this->move_contractInfoList();
-        } elseif ($data['move'] == '事故状況登録/変更画面へ') {
+        } elseif ($data['move'] == '事故進捗状況') {
             $this->accident_add();
-        } elseif ($data['move'] == '契約情報登録画面へ') {
+        } elseif ($data['move'] == '新規契約登録') {
             $this->contractInfo_add();
-        } elseif ($data['move'] == '契約情報変更画面へ') {
+        } elseif ($data['move'] == '契約情報追加/変更') {
             $this->contractInfo_change();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
@@ -69,7 +69,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 契約情報登録画面へ
+     * 新規契約登録画面へ
      */
     function contractInfo_add() {
 
@@ -82,7 +82,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 契約情報変更画面へ
+     * 契約情報追加/変更画面へ
      */
     function contractInfo_change() {
                 
@@ -107,7 +107,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 事故状況登録/変更画面へ
+     * 事故進捗状況画面へ
      */
     function accident_add() {
         

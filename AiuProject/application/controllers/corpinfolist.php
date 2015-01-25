@@ -44,15 +44,13 @@ class CorpInfoList extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '契約者情報変更画面へ') {
+        if ($data['move'] == '情報変更/追加') {
             $this->contractInfo_change();
-        } elseif ($data['move'] == '契約者情報照会画面へ') {
+        } elseif ($data['move'] == '情報照会&進捗') {
             $this->contractInfo_reference();
-        } elseif ($data['move'] == '契約者情報登録画面へ') {
+        } elseif ($data['move'] == '新規登録') {
             $this->contractInfo_add();
-        } elseif ($data['move'] == '契約状況一覧画面へ') {
-            $this->move_contractInfo();
-        } elseif ($data['move'] == '契約状況一覧画面へ') {
+        } elseif ($data['move'] == '契約状況一覧') {
             $this->move_contractInfo();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
@@ -62,7 +60,7 @@ class CorpInfoList extends CI_Controller {
     }
 
     /*
-     * 契約者情報照会画面へ
+     * 情報照会&進捗画面へ
      */
     function contractInfo_reference() {
         $data['check1'] = $this->input->post('check_radio');
@@ -126,7 +124,7 @@ class CorpInfoList extends CI_Controller {
     }
     
     /*
-     * 契約者情報変更画面へ
+     * 情報変更/追加画面へ
      */
     function contractInfo_change() {
         $data['check1'] = $this->input->post('check_radio');
@@ -191,7 +189,7 @@ class CorpInfoList extends CI_Controller {
     }
 
     /*
-     * 顧客カードへ
+     * 契約者書類画面へ
      */
     function customer_reference() {
         $data['check'] = $this->input->post('check_radio');

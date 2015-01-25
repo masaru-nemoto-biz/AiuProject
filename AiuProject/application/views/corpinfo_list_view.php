@@ -47,6 +47,9 @@
             <tr>
                 <th class="table-style">選択</th>
                 <th class="table-style">契約元</th>
+                <th class="table-style">会社名</th>
+                <th class="table-style">代表者名</th>
+                <th class="table-style">代表者連絡先</th>
                 <th class="table-style">火災保険</th>
                 <th class="table-style">傷害保険</th>
                 <th class="table-style">賠償保険</th>
@@ -66,6 +69,15 @@
                         <?php else: ?>
                           <?= $row->corp_name ?>
                         <?php endif; ?>
+                    </td>
+                    <td class="table-style">
+                      <?= $row->corp_name ?>
+                    </td>
+                    <td class="table-style">
+                      <?= $row->representative_name ?>
+                    </td>
+                    <td class="table-style">
+                      <?= $row->rep_mobile_phone ?>
                     </td>
                     <td class="table-style">
                         <?php foreach ($fire as $row_fire): ?>
@@ -115,11 +127,11 @@
         </div>
         <?php endif; ?>
         <div style="margin-top: 25px">
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報登録画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報変更画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報照会画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="顧客カード"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="新規登録"/>
+            <input class="btn btn-primary" type="submit" name="move" value="情報変更/追加"/>
+            <input class="btn btn-primary" type="submit" name="move" value="情報照会&進捗"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者書類"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約者情報削除</a>
         </div>
@@ -145,8 +157,10 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id1").dataTable( {
-                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [  ] }],
-                    "sScrollY": "500px"
+                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 2,3,4 ] }],
+                    "sScrollY": "500px",
+                    "bStateSave": true,
+                    "iDisplayLength": 25
                 } );
 
     </script>

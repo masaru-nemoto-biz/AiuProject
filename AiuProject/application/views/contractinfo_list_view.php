@@ -158,9 +158,9 @@
         </div>
         <?php endif; ?>
         <div style="margin-top: 30px">
-            <input class="btn btn-primary" type="submit" name="move" value="契約情報登録画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約情報変更画面へ"/>
-            <input class="btn btn-primary" type="submit" name="move" value="事故状況登録/変更画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="新規契約登録"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
+            <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
@@ -189,7 +189,9 @@
     <script>
         $("#table_id").dataTable( {
                     "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 3,4,7,11 ] }],
-                    "bStateSave": true
+                    "sScrollY": "200px",
+                    "bStateSave": true,
+                    "iDisplayLength": 25
                 } );
 
     </script>

@@ -17,7 +17,7 @@ class AccidentConform extends CI_Controller {
 
     
     /*
-     * 事故状況登録/変更画面へ
+     * 事故進捗状況
      */
     function index() {
         

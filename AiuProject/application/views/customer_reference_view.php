@@ -30,7 +30,7 @@
     <body>
         <div class="container" style="font-size: 12px;">
             <div class="page-header text-center">
-                <p class="h2">顧客カード <span class="small"></span></p>
+                <p class="h2">契約者書類 <span class="small"></span></p>
             </div>
             <div class="row">
                 <div class="col-md-4">

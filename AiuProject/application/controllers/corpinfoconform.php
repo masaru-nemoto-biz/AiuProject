@@ -79,7 +79,7 @@ class CorpInfoConform extends CI_Controller {
             'title' => $this->input->post('rep_title'),
             'sex' => $this->input->post('rep_sex'),
             'birthday' => $this->input->post('rep_birthday'),
-            'mobile_phone' => $this->input->post('rep_mobile_phone'),
+            'rep_mobile_phone' => $this->input->post('rep_mobile_phone'),
             'mail' => $this->input->post('rep_mail'),
             'post' => $this->input->post('rep_post'),
             'address' => $this->input->post('rep_address'),
