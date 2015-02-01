@@ -57,6 +57,8 @@ class CorpInfoList extends CI_Controller {
             $this->move_contractInfo();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_reference();
         } else {
             $this->index();
         }
@@ -206,8 +208,9 @@ class CorpInfoList extends CI_Controller {
         
         $data['company_id'] = $this->input->post('check_radio');
         $this->session->set_userdata('company_id', $data['company_id']);
-        $data['contract_detail'] = $this->corpStatus_model->get_contract_data($data['company_id']);
-        $this->load->view('customer_reference_view', $data);
+        $data['list1'] = $this->corpStatus_model->get_company_detail($this->session->userdata('company_id'));
+        
+        $this->load->view('customer_ref_view', $data);
     }
 
     /*

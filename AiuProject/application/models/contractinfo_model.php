@@ -127,7 +127,10 @@ Class ContractInfo_model extends CI_Model {
         $this->db->select('contract_info.contract_id, policy_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
         $this->db->like($seach_column, $seach_obj);
         $this->db->from('contract_info');
+        $this->db->join('company_info', 'contract_info.company_id = company_info.company_id', 'left outer');
+        $this->db->join('representative_detail', 'representative_detail.company_id = company_info.company_id', 'left outer');
         $this->db->join('accident_info', 'contract_info.contract_id = accident_info.contract_id', 'left outer');
+        $this->db->where('contract_info.del_flg', '0');
         $query = $this->db->get();
         
         return $query->result();
@@ -139,6 +142,7 @@ Class ContractInfo_model extends CI_Model {
         $this->db->join('company_info', 'contract_info.company_id = company_info.company_id', 'left outer');
         $this->db->join('representative_detail', 'representative_detail.company_id = company_info.company_id', 'left outer');
         $this->db->join('accident_info', 'contract_info.contract_id = accident_info.contract_id', 'left outer');
+        $this->db->where('contract_info.del_flg', '0');
         $query = $this->db->get();
         
         return $query->result();

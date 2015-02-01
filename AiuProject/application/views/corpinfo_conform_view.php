@@ -225,7 +225,6 @@
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="<?= $row->upd_user ?>" size="50" /></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>
@@ -246,7 +245,7 @@
                             </td>
                         </tr>
                         <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
-                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
+                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->rep_mobile_phone ?>" size="50" /></td></tr>
                         <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
                         <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $row->post ?>" size="50" /></td></tr>
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $row->address ?>" size="50" /></td></tr>

@@ -88,7 +88,7 @@
                             </td>
                         </tr>
                         <tr><td>生年月日</td><td><?= $row->birthday ?></td></tr>
-                        <tr><td>携帯電話</td><td><?= $row->mobile_phone ?></td></tr>
+                        <tr><td>携帯電話</td><td><?= $row->rep_mobile_phone ?></td></tr>
                         <tr><td>メールアドレス</td><td><a href="mailto:<?= $row->mail ?>"><?= $row->mail ?></a></td></tr>
                         <tr><td>自宅郵便番号</td><td><?= $row->post ?></td></tr>
                         <tr><td>自宅所在地</td><td><?= $row->address ?></td></tr>

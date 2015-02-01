@@ -49,6 +49,8 @@ class Main extends CI_Controller {
             $this->contractInfo_change();
         } elseif ($data['move'] == '事故進捗状況') {
             $this->accident_add();
+        } elseif ($data['move'] == 'アプローチ状況') {
+            $this->contract_approach();
         } else {
             $this->index();
         }
@@ -67,7 +69,7 @@ class Main extends CI_Controller {
         $data['contract_list'] = $this->contractInfo_model->get_contract_join_accident_info($seach_column,$this->session->userdata('seach_obj'));
         $data['mst_seach_obj'] = $this->master_model->mst_seach_obj();
         $data['seach_obj'] = $this->session->userdata('seach_obj');
-        
+        $data['history_list'] = $this->history_model->get_history_all();
         $this->load->view('main_view', $data);
     }
 
@@ -126,6 +128,23 @@ class Main extends CI_Controller {
         }
         
         $this->load->view('accident_conform_view', $data);
+    }
+    
+    /*
+     * 契約毎メモ画面へ
+     */
+    function contract_approach() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい契約情報にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('main/index');
+        }
+        
+        redirect('contractapproach/index');
     }
 }
 ?>
