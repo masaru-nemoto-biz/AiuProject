@@ -12,6 +12,7 @@ class CorpInfoConform extends CI_Controller {
         $this->load->library('session');
         $this->load->helper(array('form','url'));
         $this->load->model('corpStatus_model');
+        $this->load->model('history_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -29,6 +30,7 @@ class CorpInfoConform extends CI_Controller {
         $this->corpStatus_model->set_bank_data($this->session->userdata('company_id'), $this->array4);
         $this->corpStatus_model->set_other_data($this->session->userdata('company_id'), $this->array5);
        
+        $this->history_model->insert_history('契約者情報が更新されました');
         redirect('corpinfolist/index');
     }
     
@@ -45,6 +47,7 @@ class CorpInfoConform extends CI_Controller {
         $this->corpStatus_model->insert_bank_data($this->array4);
         $this->corpStatus_model->insert_other_data($this->array5);
         
+        $this->history_model->insert_history('契約者情報が追加されました');
         redirect('corpinfolist/index');
     }
     

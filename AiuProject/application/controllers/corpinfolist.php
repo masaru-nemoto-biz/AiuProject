@@ -10,6 +10,7 @@ class CorpInfoList extends CI_Controller {
         $this->load->library('session');
         $this->load->model('corpStatus_model');
         $this->load->model('contractInfo_model');
+        $this->load->model('accident_model');
         $this->load->model('master_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -27,6 +28,8 @@ class CorpInfoList extends CI_Controller {
         $data['auto'] = $this->corpStatus_model->get_3m_ago('6');
         $data['count_acc'] = $this->corpStatus_model->get_accident();
         $data['list'] = $this->corpStatus_model->get_company_list();
+        $data['list2'] = $this->contractInfo_model->get_contract_all();
+        $data['acc_list'] = $this->accident_model->get_accident_all();
         
         $this->load->view('corpinfo_list_view', $data);
     }

@@ -32,11 +32,17 @@
 </head>
     <body>
         <div class="container" style="font-size: 12px;">
-        <?= form_open('login/index') ?>
-        <div class="text-right">
+        
+        <div style="float:right">
+            <?= form_open('login/index') ?>
             <input class="btn btn-primary" type="submit" name="move" value="logout"/>
+            <?=form_close();?>
         </div>
-        <?=form_close();?>
+        <div style="float:right; margin-right:10px">
+            <?= form_open('main/index') ?>
+            <input class="btn btn-primary" type="submit" name="move" value="main menuへ"/>
+            <?=form_close();?>
+        </div>
         <?=form_open('contractinfolist/contractInfoList_conform')?>
         <div class="page-header text-center">
             <p class="h2">契約情報一覧画面<span class="small">契約情報の閲覧・登録が可能</span></p>
@@ -94,7 +100,6 @@
                 <th class="table-style">選択</th>
                 <th class="table-style">保険種別</th>
                 <th class="table-style">保険会社</th>
-                <!--<th class="table-style">企業名</th>-->
                 <th class="table-style">商品名</th>
                 <th class="table-style">区分</th>
                 <th class="table-style">証券番号</th>
@@ -114,7 +119,6 @@
                     <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
                     <td class="table-style"><?= $row->insur_class_name ?></td>
                     <td class="table-style"><?= $row->insur_corp_name ?></td>
-                    <!--<td class="table-style"><?= $row->corp_name ?></td>-->
                     <td class="table-style"><?= $row->brand_name ?></td>
                     <td class="table-style"><?= $row->corp_div_name ?></td>
                     <td class="table-style"><?= $row->policy_number ?></td>
@@ -189,7 +193,7 @@
     <script>
         $("#table_id").dataTable( {
                     "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 3,4,7,11 ] }],
-                    "sScrollY": "200px",
+                    "sScrollY": "400px",
                     "bStateSave": true,
                     "iDisplayLength": 25
                 } );

@@ -10,6 +10,7 @@ class ContractInfoConform extends CI_Controller {
         $this->load->model('corpstatus_model');
         $this->load->model('contractInfo_model');
         $this->load->model('master_model');
+        $this->load->model('history_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -38,6 +39,11 @@ class ContractInfoConform extends CI_Controller {
         $this->session->unset_userdata('message');
         
         if ($data['move'] == '戻る') {
+            // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
+            foreach ($data['company_id'] as $row) {
+                $this->session->set_userdata('company_id', $row->company_id);
+            }
             redirect('contractinfolist/index');
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
@@ -56,6 +62,7 @@ class ContractInfoConform extends CI_Controller {
         
         if (empty($contract_id)){
             $this->contractInfo_model->insert_contract_data($this->array);
+            $this->history_model->insert_history('契約情報が追加されました');
             redirect('contractinfolist/index');
         } else {
             $this->contractInfo_model->set_contract_data($contract_id, $this->array);
@@ -71,7 +78,7 @@ class ContractInfoConform extends CI_Controller {
                 $this->car_conform_Prepare_new($contract_id);
                 $this->contractInfo_model->insert_car_data($this->array_newcar);
             }
-            
+            $this->history_model->insert_history('契約情報が更新されました');
             redirect('contractinfoconform/index');
         }
         

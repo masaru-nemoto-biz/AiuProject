@@ -78,6 +78,14 @@ Class Master_model extends CI_Model {
         $query = $this->db->get('contract_status_mst');
         return $query->result();
     }
+
+    /*
+     * 検索オブジェクトマスタ
+     */
+    function mst_seach_obj() {
+        $query = $this->db->get('mst_seach_obj');
+        return $query->result();
+    }
 }
 
 ?>

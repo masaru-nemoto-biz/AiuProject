@@ -11,6 +11,7 @@ class AccidentConform extends CI_Controller {
         $this->load->model('contractInfo_model');
         $this->load->model('accident_model');
         $this->load->model('master_model');
+        $this->load->model('history_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -53,6 +54,11 @@ class AccidentConform extends CI_Controller {
         $this->session->unset_userdata('message');
         
         if ($data['move'] == '戻る') {
+            // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
+            foreach ($data['company_id'] as $row) {
+                $this->session->set_userdata('company_id', $row->company_id);
+            }
             redirect('contractinfolist/index');
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
@@ -73,6 +79,7 @@ class AccidentConform extends CI_Controller {
         foreach ($data['acc_list'] as $row) {
             $this->conform_Prepare($row->acc_id);
             $this->accident_model->set_accident_data($row->acc_id, $this->array);
+            $this->history_model->insert_history('事故情報が更新されました');
         }
         
         // 事故情報追加
@@ -80,6 +87,7 @@ class AccidentConform extends CI_Controller {
         if (!empty($acc_id_new)) {
             $this->conform_Prepare_new();
             $this->accident_model->insert_accident_data($this->array_new);
+            $this->history_model->insert_history('事故情報が追加されました');
         }
          
         // 既存事故詳細変更
@@ -90,6 +98,7 @@ class AccidentConform extends CI_Controller {
                 $this->conform_Prepare_status_quo($row->acc_status_id);
                 $this->accident_model->set_accident_detail($row->acc_status_id, $this->array2);
             }
+            $this->history_model->insert_history('事故状況が更新されました');
         }
 
         
@@ -100,6 +109,7 @@ class AccidentConform extends CI_Controller {
                 $this->conform_Prepare_status_quo_new($row->acc_id);
                 $this->accident_model->insert_accident_detail($this->array3);
             }
+           $this->history_model->insert_history('事故状況が更新されました');
         }
         
         $this->index();
