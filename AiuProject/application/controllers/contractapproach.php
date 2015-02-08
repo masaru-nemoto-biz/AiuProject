@@ -69,7 +69,7 @@ class ContractApproach extends CI_Controller {
                 $this->conform_Prepare_status_quo($row->approach_id);
                 $this->approachinfo_model->set_approach_info($row->approach_id, $this->array2);
             }
-            $this->history_model->insert_history('アプローチ状況が更新されました');
+            $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'));
         }
 
         
@@ -79,7 +79,7 @@ class ContractApproach extends CI_Controller {
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
         }
-        $this->history_model->insert_history('アプローチ状況が更新されました');
+        $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'));
         
         $this->index();
     }

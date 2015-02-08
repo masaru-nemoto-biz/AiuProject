@@ -34,7 +34,9 @@ class Login extends CI_Controller {
         } elseif ($count == 1 and $this->input->post('move') == 'Sign in') {
             // 遷移
             //redirect('contractinfolist/index');
+            $this->session->set_userdata('user', $this->input->post('user'));
             redirect('main/index');
+//            redirect('pdf_test/index');
         } else {
             redirect('login/index');
         }

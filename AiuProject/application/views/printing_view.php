@@ -32,93 +32,71 @@
 </head>
   <body>
     <div class="container" style="font-size: 12px;">
-      <?= form_open('login/index') ?>
-      <div class="text-right">
-        <input class="btn btn-primary" type="submit" name="move" value="logout"/>
+      <div style="float:right">
+          <?= form_open('login/index') ?>
+          <input class="btn btn-primary" type="submit" name="move" value="logout"/>
+          <?=form_close();?>
       </div>
-      <?=form_close();?>
+      <div style="float:right; margin-right:10px">
+          <?= form_open('main/index') ?>
+          <input class="btn btn-primary" type="submit" name="move" value="main menuへ"/>
+          <?=form_close();?>
+      </div>
       <div class="page-header text-center">
         <p class="h2">main menu<span class="small"></span></p>
       </div>
       <div class="row">
+        <?=form_open('printing/conform') ?>
         <div class="col-md-4">
-          <?=form_open('main/seach') ?>
-          <table class="table table-condensed">
-            <tr>
-              <td>
-                <select class="form-control input-sm" name="seach_column">
-                  <?php foreach ($mst_seach_obj as $row): ?>
-                  <option value="<?= $row->seach_column ?>"><?= $row->seach_name ?></option>
-                  <?php endforeach; ?>
-                </select>
-              </td>
-              <td><input class="form-control input-sm" type="text" name="seach_obj" value="<?= $seach_obj ?>" size="20" /></td>
-              <td><input class="btn btn-sm btn-primary" type="submit" name="move" value="検索"/></td>
-            </tr>
-          </table>
-          <?=form_close();?>
-          <div class="table-responsive">
+          <div class="table-responsive" style="margin-top:28px">
             <table class="table table-striped table-bordered table-hover table-condensed">
               <thead>
                 <tr>
-                  <th class="table-style">更新情報</th>
-                  <th class="table-style">担当</th>
-                  <th class="table-style">日時</th>
+                  <th class="table-style">選択</th>
+                  <th class="table-style">印刷書類</th>
                 </tr>
               </thead>
-              <?php foreach ($history_list as $row): ?>
+              <?php foreach ($mst_print_documents as $row): ?>
               <tr>
-                <td class=""><?= $row->history_content ?></td>
-                <td class=""><?= $row->update_user ?></td>
-                <td class=""><?= $row->insert_date ?></td>
+                <td class=""><input type="radio" name="check_radio1" value="<?= $row->print_doc_id ?>" /></td>
+                <td class=""><?= $row->print_doc_name ?></td>
               </tr>
               <?php endforeach; ?>
             </table>
           </div>
+          <?php if (!empty($message)) : ?>
+          <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
+              <a class="close" data-dismiss="alert">×</a>
+          <?= $message ?>
+          </div>
+          <?php endif; ?>
         </div>
-        <?=form_open('main/main_conform') ?>
         <div class="col-md-8">
           <div class="table-responsive">
             <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
               <thead>
                 <tr>
                   <th class="table-style">選択</th>
-                  <th class="table-style">証券番号</th>
-                  <th class="table-style">事故受番号</th>
+                  <th class="table-style">契約元</th>
                   <th class="table-style">担当者</th>
                 </tr>
               </thead>
-              <?php foreach ($contract_list as $row): ?>
+              <?php foreach ($list as $row): ?>
               <tr>
-                <td class=""><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                <td class=""><?= $row->policy_number ?></td>
-                <td class=""><?= $row->acc_id ?></td>
-                <td class=""><?= $row->contract_owner ?></td>
+                <td class=""><input type="radio" name="check_radio2" value="<?= $row->company_id ?>" /></td>
+                <td class=""><?= $row->corp_name ?></td>
+                <td class=""><?= $row->upd_user ?></td>
               </tr>
               <?php endforeach; ?>
             </table>
           </div>
         </div>
         <div style="text-align:right;">
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="印刷"/>
         </div>
         <?=form_close();?>
       </div>
-      <div class="col-md-12">
-        <?php if (!empty($message)) : ?>
-        <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
-            <a class="close" data-dismiss="alert">×</a>
-        <?= $message ?>
-        </div>
-        <?php endif; ?>
-        </div>
-        <?=form_open('main/main_conform') ?>
-          <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
-          <input class="btn btn-primary" type="submit" name="move" value="各種書類印刷へ"/>
-        <?=form_close();?>
-      </div>
+    </div>
 
     <script>
         $("#table_id").dataTable( {

@@ -51,6 +51,8 @@ class Main extends CI_Controller {
             $this->accident_add();
         } elseif ($data['move'] == 'アプローチ状況') {
             $this->contract_approach();
+        } elseif ($data['move'] == '各種書類印刷へ') {
+            redirect('printing/index');
         } else {
             $this->index();
         }

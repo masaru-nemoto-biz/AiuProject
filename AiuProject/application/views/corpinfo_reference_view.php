@@ -69,7 +69,6 @@
                                 <?php endforeach; ?>
                             </td>
                         </tr>
-                        <tr><td>担当者</td><td><?= $row->upd_user ?></td></tr>
                     </table>
                     <?php endforeach; ?>
                 </div>

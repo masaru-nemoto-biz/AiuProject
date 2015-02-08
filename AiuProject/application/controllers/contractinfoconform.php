@@ -62,7 +62,7 @@ class ContractInfoConform extends CI_Controller {
         
         if (empty($contract_id)){
             $this->contractInfo_model->insert_contract_data($this->array);
-            $this->history_model->insert_history('契約情報が追加されました');
+            $this->history_model->insert_history('契約情報が追加されました', $this->session->userdata('user'));
             redirect('contractinfolist/index');
         } else {
             $this->contractInfo_model->set_contract_data($contract_id, $this->array);
@@ -78,7 +78,7 @@ class ContractInfoConform extends CI_Controller {
                 $this->car_conform_Prepare_new($contract_id);
                 $this->contractInfo_model->insert_car_data($this->array_newcar);
             }
-            $this->history_model->insert_history('契約情報が更新されました');
+            $this->history_model->insert_history('契約情報が更新されました', $this->session->userdata('user'));
             redirect('contractinfoconform/index');
         }
         

@@ -86,6 +86,14 @@ Class Master_model extends CI_Model {
         $query = $this->db->get('mst_seach_obj');
         return $query->result();
     }
+
+    /*
+     * 印刷書類マスタ
+     */
+    function mst_print_documents() {
+        $query = $this->db->get('mst_print_documents');
+        return $query->result();
+    }
 }
 
 ?>

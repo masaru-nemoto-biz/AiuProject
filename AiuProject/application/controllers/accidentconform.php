@@ -79,7 +79,7 @@ class AccidentConform extends CI_Controller {
         foreach ($data['acc_list'] as $row) {
             $this->conform_Prepare($row->acc_id);
             $this->accident_model->set_accident_data($row->acc_id, $this->array);
-            $this->history_model->insert_history('事故情報が更新されました');
+            $this->history_model->insert_history('事故情報が更新されました', $this->session->userdata('user'));
         }
         
         // 事故情報追加
@@ -87,7 +87,7 @@ class AccidentConform extends CI_Controller {
         if (!empty($acc_id_new)) {
             $this->conform_Prepare_new();
             $this->accident_model->insert_accident_data($this->array_new);
-            $this->history_model->insert_history('事故情報が追加されました');
+            $this->history_model->insert_history('事故情報が追加されました', $this->session->userdata('user'));
         }
          
         // 既存事故詳細変更
@@ -98,7 +98,7 @@ class AccidentConform extends CI_Controller {
                 $this->conform_Prepare_status_quo($row->acc_status_id);
                 $this->accident_model->set_accident_detail($row->acc_status_id, $this->array2);
             }
-            $this->history_model->insert_history('事故状況が更新されました');
+            $this->history_model->insert_history('事故状況が更新されました', $this->session->userdata('user'));
         }
 
         
@@ -109,7 +109,7 @@ class AccidentConform extends CI_Controller {
                 $this->conform_Prepare_status_quo_new($row->acc_id);
                 $this->accident_model->insert_accident_detail($this->array3);
             }
-           $this->history_model->insert_history('事故状況が更新されました');
+           $this->history_model->insert_history('事故状況が更新されました', $this->session->userdata('user'));
         }
         
         $this->index();
