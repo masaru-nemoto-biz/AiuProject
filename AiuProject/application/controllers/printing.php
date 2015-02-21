@@ -40,8 +40,12 @@ class Printing extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message_printing');
         
-        if ($data['move'] == '印刷') {
-            redirect('printing/printing_docments');
+        if ($data['move'] == '印刷情報入力・確認') {
+            $this->printing_docments();
+        } elseif ($data['move'] == '印刷' and $this->session->userdata('print_type') == '1') {
+            $this->printing_conform();
+        } elseif ($data['move'] == '印刷' and $this->session->userdata('print_type') == '2') {
+            $this->printing_conform2();
         } else {
             $this->index();
         }
@@ -52,10 +56,10 @@ class Printing extends CI_Controller {
      */
     function printing_docments() {
                 
-        $data['check1'] = $this->input->post('check_radio1');
+        $data['check'] = $this->input->post('check_radio1');
         $data['check2'] = $this->input->post('check_radio2');
         
-        if (empty($data['check1'])) {
+        if (empty($data['check'])) {
             // チェックなしの場合は自画面遷移
             $message = '印刷したい書類にチェックを入れてください';
             $this->session->set_userdata('message_printing', $message);
@@ -67,16 +71,260 @@ class Printing extends CI_Controller {
             redirect('printing/index');
         }
         
-        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
-        $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
-        $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
-        $data['corp_division_mst'] = $this->master_model->corp_division_mst();
-        $data['contract_status_mst'] = $this->master_model->contract_status_mst();
+        $data['company_data'] = $this->corpStatus_model->get_company_data($data['check2'])->row(0);
+        $data['contract'] = $this->corpStatus_model->get_contract_data($data['check2'])->row(0);
+        $this->session->set_userdata('corp_name', $data['company_data']->corp_name);
+        $this->session->set_userdata('fax', $data['company_data']->fax);
+        $this->session->set_userdata('contract_name', $data['contract']->contract_name);
         
-        $data['car_list'] = $this->contractInfo_model->get_car_info($this->session->userdata('contract_id'));
+        $this->session->set_userdata('print_type', $data['check']);
         
-        $this->load->view('contractinfo_conform_view', $data);
+        if ($data['check'] == '1') {
+            $this->load->view('printing_conform_view');
+        } elseif ($data['check'] == '2') {
+            $this->load->view('printing_conform_view');
+        } elseif ($data['check'] == '3') {
+            redirect('printing/index');
+        } elseif ($data['check'] == '4') {
+            $this->printing_conform4();
+        } elseif ($data['check'] == '5') {
+            redirect('printing/index');
+        }
     }
 
+    /*
+     * 書類送付状 印刷画面
+     */
+    function printing_conform() {
+        
+        $this->load->library('pdf');
+
+        // set document information
+        $this->pdf->SetSubject('TCPDF Tutorial');
+        $this->pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+        
+        // デフォルトでヘッダーに余計な線が出るので削除
+        $this->pdf->setPrintHeader(false);
+        $this->pdf->setPrintFooter(false);
+
+        // 1ページ目を準備
+        $this->pdf->AddPage();
+
+        // フォントを指定 ( 小塚ゴシックPro M を指定 )
+        // 日本語を使う場合は、日本語に対応しているフォントを使う
+        $this->pdf->SetFont('kozgopromedium', '', 10);
+  
+        $this->pdf->Cell( 0, 8, '平成27年2月8日', 1, 1, 'R');
+        $cell_01 = '<span style="font-size:35px;">書類送付状</span>';
+        $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span>';
+        $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
+        $cell_04 = '<span style="font-size:13px;">'.$this->input->post('title').'</span>';
+        $cell_05 = '<span style="font-size:11px;">いつも大変お世話になっております。</span>';
+        $cell_06 = '<span style="font-size:11px;">日頃は弊社業務に関し、格別のご高配を賜わり誠にありがとうございます。</span>';
+        $cell_07 = '<span style="font-size:11px;">さっそくですが、以下書類をお送り致しますので、ご査収の程よろしくお願い申し上げます。</span>';
+        $cell_08 = '<span style="font-size:11px;">＜送付書類明細＞</span>';
+        $cell_08_1 = '<span style="font-size:11px;">'.$this->input->post('document1').'</span>';
+        $cell_08_2 = '<span style="font-size:11px;">'.$this->input->post('document2').'</span>';
+        $cell_08_3 = '<span style="font-size:11px;">'.$this->input->post('document3').'</span>';
+        $cell_08_4 = '<span style="font-size:11px;">'.$this->input->post('document4').'</span>';
+        $cell_08_5 = '<span style="font-size:11px;">'.$this->input->post('document5').'</span>';
+        $cell_08_6 = '<span style="font-size:11px;">'.$this->input->post('document6').'</span>';
+        $cell_remarks1 = '<span style="font-size:11px;">'.$this->input->post('remarks1').'</span>';
+        $cell_remarks2 = '<span style="font-size:11px;">'.$this->input->post('remarks2').'</span>';
+        $cell_remarks3 = '<span style="font-size:11px;">'.$this->input->post('remarks3').'</span>';
+        $cell_remarks4 = '<span style="font-size:11px;">'.$this->input->post('remarks4').'</span>';
+        $cell_remarks5 = '<span style="font-size:11px;">'.$this->input->post('remarks5').'</span>';
+        $cell_09 = '<span style="font-size:11px;">以上、よろしくお願い申し上げます</span>';
+        $cell_10 = base_url() .'uploads/logo2.jpg';
+        $cell_11 = base_url() .'uploads/logo.jpg';
+        
+        $this->pdf->writeHTMLCell( 0, 20, '', '', $cell_01, 1, 1, false, true, 'C');
+        $this->pdf->writeHTMLCell( 80, 45, '', '', $cell_02, 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 40, 45, '', '', '', 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 70, 45, '', '', $cell_03, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 10, '', '', $cell_04, 1, 1, false, true, 'C');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_05, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_06, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_07, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', '', 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_1, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_2, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_3, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_4, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_5, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_6, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', '', 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_remarks1, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_remarks2, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_remarks3, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_remarks4, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_remarks5, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_09, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', '', 0, 1, false, true);
+        $this->pdf->Image($cell_10, '95', '40', 30, '', '', '', '', false, '300');
+        $this->pdf->Image($cell_11, '', '', 50, '', '', '', '', false, '300', 'R');
+        //  $this->pdf->writeHTML($tbl, true, false, false, false, 'C');
+        $this->pdf->Output("sample.pdf", "I");
+    }
+
+    /*
+     * FAX送付状 印刷画面
+     */
+    function printing_conform2() {
+        
+        $this->load->library('pdf');
+
+        // set document information
+        $this->pdf->SetSubject('TCPDF Tutorial');
+        $this->pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+        
+        // デフォルトでヘッダーに余計な線が出るので削除
+        $this->pdf->setPrintHeader(false);
+        $this->pdf->setPrintFooter(false);
+
+        // 1ページ目を準備
+        $this->pdf->AddPage();
+
+        // フォントを指定 ( 小塚ゴシックPro M を指定 )
+        // 日本語を使う場合は、日本語に対応しているフォントを使う
+        $this->pdf->SetFont('kozgopromedium', '', 10);
+        
+        $cell_01_1 = '<span style="font-size:35px;">FAX送付状</span><span style="font-size:10px;">（送付状含み1枚）</span>';
+        $cell_01_2 = '<span style="font-size:10px;">平成27年2月8日</span>';
+        $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span><br><br><br><br><br><br><span style="font-size:13px;">FAX番号：'.$this->session->userdata('fax').'</span>';
+        $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
+        $cell_04 = '<span style="font-size:13px;">'.$this->input->post('title').'</span>';
+        $cell_05 = '<span style="font-size:12px;">備考：□至急　□重要　□要返答</span>';
+        $cell_remarks = '<span style="font-size:12px;">お世話になります。</span><br><br>'
+                .'<span style="font-size:12px;">私、ほけん設計　ライフコンシェルジュ株式会社の建（たて）と申します。<br>宜しくお願い致します</span><br><br><br>'
+                .'<span style="font-size:12px;">'.$this->input->post('remarks1')
+                .'</span><br><span style="font-size:12px;">'.$this->input->post('remarks2')
+                .'</span><br><span style="font-size:12px;">'.$this->input->post('remarks3')
+                .'</span><br><span style="font-size:12px;">'.$this->input->post('remarks4')
+                .'</span><br><span style="font-size:12px;">'.$this->input->post('remarks5')
+                .'</span><br><span style="font-size:12px;">'.$this->input->post('remarks6').'</span>';
+        $cell_10 = base_url() .'uploads/logo2.jpg';
+        $cell_11 = base_url() .'uploads/logo.jpg';
+
+        $this->pdf->writeHTMLCell( 120, 16, '', '', $cell_01_1, 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 70, 16, '', '', $cell_01_2, 1, 1, false, true, 'R');
+        $this->pdf->writeHTMLCell( 80, 45, '', '', $cell_02, 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 40, 45, '', '', '', 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 70, 45, '', '', $cell_03, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 10, '', '', $cell_04, 1, 1, false, true, 'C');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_05, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 150, '', '', $cell_remarks, 1, 1, false, true, 'L');
+        $this->pdf->Image($cell_10, '95', '28', 30, '', '', '', '', false, '300');
+        $this->pdf->Image($cell_11, '', '240', 50, '', '', '', '', false, '300', 'R');
+        //  $this->pdf->writeHTML($tbl, true, false, false, false, 'C');
+        $this->pdf->Output("sample.pdf", "I");
+    }
+
+    /*
+     * 傷害事故受付シート 印刷画面
+     */
+    function printing_conform4() {
+        
+        $this->load->library('pdf');
+
+        // set document information
+        $this->pdf->SetSubject('TCPDF Tutorial');
+        $this->pdf->SetKeywords('TCPDF, PDF, example, test, guide');
+        
+        // デフォルトでヘッダーに余計な線が出るので削除
+        $this->pdf->setPrintHeader(false);
+        $this->pdf->setPrintFooter(false);
+
+        // 1ページ目を準備
+        $this->pdf->AddPage();
+
+        // フォントを指定 ( 小塚ゴシックPro M を指定 )
+        // 日本語を使う場合は、日本語に対応しているフォントを使う
+        $this->pdf->SetFont('kozgopromedium', '', 10);
+        
+        $param_01 = '<span style="font-size:10px;">平成27年2月8日</span>';
+        $param_02 = '<span style="font-size:16px;">傷害事故受付シート</span>';
+        $param_03 = '<span style="font-size:15px;">FAX番号：'.$this->session->userdata('fax').'</span>';
+        $param_04 = '<br><U><span style="font-size:12px;">貴社名'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'</span></U><br><br><U><span style="font-size:12px;">ご担当者様'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'</span></U><br><br><U><span style="font-size:12px;">ご連絡先'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
+                .'</U></span>';
+        $param_05 = '<span style="font-size:10px;">総合保険代理店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ほけん設計株式会社<br>担当：'.$this->session->userdata('user_name')
+                .'<br></span><span style="font-size:10px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'
+                .$this->session->userdata('user_mail_address').'</span>';
+        $param_06 = '<span style="font-size:10px;">いつもお世話になっております。さっそくですが、お怪我の件につきまして取り急ぎ下記の事項をご記入の上、ＦＡＸにてこのままご返送頂きます様お願い申しあげます。円滑な保険金の支払いの為にも、お早めにご返送下さいます様、ご協力願います。</span>';
+        $param_07_1 = '<span style="font-size:10px;">事故日時</span>';
+        $param_07_2 = '<span style="font-size:10px;">年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日&nbsp;&nbsp;&nbsp;&nbsp;午前・午後&nbsp;&nbsp;&nbsp;&nbsp;時ころ</span>';
+        $param_08 = '<span style="font-size:10px;">事故場所（住所）</span>';
+        $param_09 = '<span style="font-size:10px;">事故の状況</span>';
+        $param_10_1 = '<span style="font-size:10px;">事故にあわれた方</span>';
+        $param_11_1 = '<span style="font-size:10px;">入院の有無</span>';
+        $param_12_1 = '<span style="font-size:10px;">手術の有無</span>';
+        $param_13_1 = '<span style="font-size:10px;">病院の初診日</span>';
+        $param_14_1 = '<span style="font-size:10px;">治療費負担</span>';
+        $param_15_1 = '<span style="font-size:10px;">医療機関名</span>';
+        $param_16_1 = '<span style="font-size:10px;">治療期間</span>';
+        $param_17_1 = '<span style="font-size:10px;">ケガの場所</span><br><span style="font-size:10px;">ケガの内容</span>';
+        $param_18 = '<span style="font-size:10px;">【ご注意事項】</span>';
+        $param_19 = '<span style="font-size:10px;">針鍼灸院は医師免許のない治療施設のため、保険金が支払われない可能性がありますので、事前に必ずご連絡頂きます様お願い申しあげます。</span>';
+        $param_20 = '<span style="font-size:12px;">保険金請求に際しましては、AIU指定の診断書が必要となります。</span>';
+        $param_21 = '<span style="font-size:10px;">こちらの受付シートをいただきましてから郵送させていただきます。</span>';
+        
+        $cell_10 = base_url() .'uploads/logo2.jpg';
+        $cell_11 = base_url() .'uploads/logo.jpg';
+
+        $this->pdf->writeHTML($param_01, true, 0, true, false, 'R');
+        $this->pdf->writeHTML($param_02, true, 0, true, false, 'C');
+        $this->pdf->writeHTML($param_03, true, 0, true, false, 'C');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', '', 0, 1, false, true);
+        $this->pdf->writeHTMLCell( 120, 35, '', '', $param_04, 0, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 70, 35, '', '', $param_05, 0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $param_06, 0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 6, '', '', $param_07_1, 1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 6, '', '', $param_07_2, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 14, '', '', $param_08,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 14, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 22, '', '', $param_09,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 22, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 22, '', '', $param_10_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 22, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 6, '', '', $param_11_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 6, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 6, '', '', $param_12_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 6, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 6, '', '', $param_13_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 6, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 6, '', '', $param_14_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 6, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 22, '', '', $param_15_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 22, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 22, '', '', $param_16_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 22, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 50, 22, '', '', $param_17_1,1, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 140, 22, '', '', '',1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 6, '', '', $param_18, 0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 8, 6, '', '', '1',0, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 182, 6, '', '', $param_19,0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 8, 6, '', '', '2',0, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 182, 6, '', '', $param_20,0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 8, 6, '', '', '',0, 0, false, true, 'L');
+        $this->pdf->writeHTMLCell( 182, 6, '', '', $param_21,0, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 190, 12, '', '', 'メモ',1, 0, false, true, 'L');
+        
+        $this->pdf->Image($cell_10, '109', '35', 19, '', '', '', '', false, '300');
+        //  $this->pdf->writeHTML($tbl, true, false, false, false, 'C');
+        $this->pdf->Output("sample.pdf", "I");
+    }
 }
 ?>

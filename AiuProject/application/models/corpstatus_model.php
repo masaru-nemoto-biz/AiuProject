@@ -49,7 +49,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->where('company_info.del_flg', '0');
         $this->db->order_by('company_id');
         $query = $this->db->get('company_info');
-        return $query->result();
+        return $query;
     }
 
     function get_representative_data($check_radio) {
@@ -64,7 +64,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->where('company_id', $check_radio);
         $this->db->order_by('company_id');
         $query = $this->db->get('contract_detail');
-        return $query->result();
+        return $query;
     }
     
     function get_bank_data($check_radio) {

@@ -18,6 +18,13 @@ Class User_table_model extends CI_Model {
         $query = $this->db->get('aiu_user');
         return $query->result();
     }
+
+    function get_login_user_data($user) {
+        $this->db->where('user_id', $user);
+        $this->db->order_by('user_num');
+        $query = $this->db->get('aiu_user');
+        return $query;
+    }
     function set_user_data($user_num, $array) {
         $this->db->where('user_num', $user_num);
         $this->db->update('aiu_user', $array); 

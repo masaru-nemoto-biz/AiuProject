@@ -26,6 +26,9 @@ class Login extends CI_Controller {
         $password = $this->input->post('password');
         
         $count = $this->user_table_model->get_user_count($user, $password);
+        $data['user_data'] = $this->user_table_model->get_login_user_data($user)->row(0);
+        $this->session->set_userdata('user_name', $data['user_data']->user_name);
+        $this->session->set_userdata('user_mail_address', $data['user_data']->user_mail_address);
         
         if ($user == 'master' and $password == 'master' and $this->input->post('move') == 'user manage') {
             $data['list'] = $this->user_table_model->get_user_list();

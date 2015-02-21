@@ -43,71 +43,36 @@
           <?=form_close();?>
       </div>
       <div class="page-header text-center">
-        <p class="h2">印刷選択<span class="small"></span></p>
+        <p class="h2">印刷情報入力<span class="small"></span></p>
       </div>
       <div class="row">
         <?=form_open('printing/conform') ?>
-        <div class="col-md-4">
-          <div class="table-responsive" style="margin-top:28px">
-            <table class="table table-striped table-bordered table-hover table-condensed">
-              <thead>
-                <tr>
-                  <th class="table-style">選択</th>
-                  <th class="table-style">印刷書類</th>
+        <div class="col-md-12">
+            <table class="table table-condensed">
+                <tr><td>題名</td><td><input class="form-control input-sm" type="text" name="title" value="" size="50" /></td></tr>
+                <tr><td>書類名１</td><td><input class="form-control input-sm" type="text" name="document1" value="" size="50" /></td></tr>
+                <tr><td>書類名２</td><td><input class="form-control input-sm" type="text" name="document2" value="" size="50" /></td></tr>
+                <tr><td>書類名３</td><td><input class="form-control input-sm" type="text" name="document3" value="" size="50" /></td></tr>
+                <tr><td>書類名４</td><td><input class="form-control input-sm" type="text" name="document4" value="" size="50" /></td></tr>
+                <tr><td>書類名５</td><td><input class="form-control input-sm" type="text" name="document5" value="" size="50" /></td></tr>
+                <tr><td>書類名６</td><td><input class="form-control input-sm" type="text" name="document6" value="" size="50" /></td></tr>
+                <tr><td>フリーテキスト入力</td>
+                    <td>
+                        <input class="form-control input-sm" type="text" name="remarks1" value="" size="50" />
+                        <input class="form-control input-sm" type="text" name="remarks2" value="" size="50" />
+                        <input class="form-control input-sm" type="text" name="remarks3" value="" size="50" />
+                        <input class="form-control input-sm" type="text" name="remarks4" value="" size="50" />
+                        <input class="form-control input-sm" type="text" name="remarks5" value="" size="50" />
+                    </td>
                 </tr>
-              </thead>
-              <?php foreach ($mst_print_documents as $row): ?>
-              <tr>
-                <td class=""><input type="radio" name="check_radio1" value="<?= $row->print_doc_id ?>" /></td>
-                <td class=""><?= $row->print_doc_name ?></td>
-              </tr>
-              <?php endforeach; ?>
             </table>
-          </div>
-          <?php if (!empty($message)) : ?>
-          <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
-              <a class="close" data-dismiss="alert">×</a>
-          <?= $message ?>
-          </div>
-          <?php endif; ?>
-        </div>
-        <div class="col-md-8">
-          <div class="table-responsive">
-            <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
-              <thead>
-                <tr>
-                  <th class="table-style">選択</th>
-                  <th class="table-style">契約元</th>
-                  <th class="table-style">担当者</th>
-                </tr>
-              </thead>
-              <?php foreach ($list as $row): ?>
-              <tr>
-                <td class=""><input type="radio" name="check_radio2" value="<?= $row->company_id ?>" /></td>
-                <td class=""><?= $row->corp_name ?></td>
-                <td class=""><?= $row->upd_user ?></td>
-              </tr>
-              <?php endforeach; ?>
-            </table>
-          </div>
         </div>
         <div style="text-align:right;">
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="印刷情報入力・確認"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="印刷"/>
         </div>
         <?=form_close();?>
       </div>
     </div>
-
-    <script>
-        $("#table_id").dataTable( {
-                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ ] }],
-                    "sScrollY": "500px",
-                    "bStateSave": true,
-                    "iDisplayLength": 25
-                } );
-
-    </script>
-
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
