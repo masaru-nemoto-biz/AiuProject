@@ -80,7 +80,7 @@
           <?php foreach ($doclist as $row): ?>
           <tr>
             <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
-            <td></td>
+            <td style="vertical-align:middle;"><?= $row->description ?></td>
           </tr>
           <?php endforeach; ?>
         </table>

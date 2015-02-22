@@ -19715,3 +19715,433 @@ DEBUG - 2015-02-22 18:06:34 --> Model Class Initialized
 DEBUG - 2015-02-22 18:06:34 --> File loaded: application/views/corpinfo_list_view.php
 DEBUG - 2015-02-22 18:06:34 --> Final output sent to browser
 DEBUG - 2015-02-22 18:06:34 --> Total execution time: 0.0471
+DEBUG - 2015-02-22 18:20:56 --> Config Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:20:56 --> URI Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Router Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Output Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Security Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Input Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:56 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:20:56 --> CSRF token verified 
+DEBUG - 2015-02-22 18:20:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:20:56 --> Language Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:20:56 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Session Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:20:56 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Session routines successfully run
+DEBUG - 2015-02-22 18:20:56 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:20:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:20:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:56 --> File loaded: application/views/main_view.php
+DEBUG - 2015-02-22 18:20:56 --> Final output sent to browser
+DEBUG - 2015-02-22 18:20:56 --> Total execution time: 0.0510
+DEBUG - 2015-02-22 18:20:59 --> Config Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:20:59 --> URI Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Router Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Output Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Security Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Input Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:20:59 --> CSRF token verified 
+DEBUG - 2015-02-22 18:20:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:20:59 --> Language Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:20:59 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Session Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:20:59 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Session routines successfully run
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:20:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Config Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:20:59 --> URI Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Router Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Output Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Security Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Input Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:20:59 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:20:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:20:59 --> Language Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:20:59 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Session Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:20:59 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Session routines successfully run
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:20:59 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> Model Class Initialized
+DEBUG - 2015-02-22 18:20:59 --> File loaded: application/views/corpinfo_list_view.php
+DEBUG - 2015-02-22 18:20:59 --> Final output sent to browser
+DEBUG - 2015-02-22 18:20:59 --> Total execution time: 0.0457
+DEBUG - 2015-02-22 18:21:01 --> Config Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:21:01 --> URI Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Router Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Output Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Security Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Input Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:21:01 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:21:01 --> CSRF token verified 
+DEBUG - 2015-02-22 18:21:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:21:01 --> Language Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:21:01 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Session Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:21:01 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Session routines successfully run
+DEBUG - 2015-02-22 18:21:01 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:21:01 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> Model Class Initialized
+DEBUG - 2015-02-22 18:21:01 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:21:01 --> Final output sent to browser
+DEBUG - 2015-02-22 18:21:01 --> Total execution time: 0.0531
+DEBUG - 2015-02-22 18:24:03 --> Config Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:24:03 --> URI Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Router Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Output Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Security Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Input Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:03 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:24:03 --> CSRF token verified 
+DEBUG - 2015-02-22 18:24:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:24:03 --> Language Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:24:03 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Session Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:24:03 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Session routines successfully run
+DEBUG - 2015-02-22 18:24:03 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:24:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:03 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:24:03 --> Final output sent to browser
+DEBUG - 2015-02-22 18:24:03 --> Total execution time: 0.0595
+DEBUG - 2015-02-22 18:24:05 --> Config Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:24:05 --> URI Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Router Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Output Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Security Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Input Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:05 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:05 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:05 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:05 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:24:05 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:24:05 --> CSRF token verified 
+DEBUG - 2015-02-22 18:24:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:24:05 --> Language Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:24:05 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Session Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:24:05 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Session routines successfully run
+DEBUG - 2015-02-22 18:24:05 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:24:05 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:24:05 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:05 --> Database Driver Class Initialized
+ERROR - 2015-02-22 18:24:05 --> Severity: Notice  --> mysql_pconnect():  D:\xampp\htdocs\AiuProject\AiuProject\system\database\drivers\mysql\mysql_driver.php 88
+DEBUG - 2015-02-22 18:24:06 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:24:06 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:06 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:06 --> Model Class Initialized
+DEBUG - 2015-02-22 18:24:06 --> Helper loaded: download_helper
+DEBUG - 2015-02-22 18:25:50 --> Config Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:25:50 --> URI Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Router Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Output Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Security Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Input Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:25:50 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:25:50 --> CSRF token verified 
+DEBUG - 2015-02-22 18:25:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:25:50 --> Language Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:25:50 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Session Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:25:50 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Session routines successfully run
+DEBUG - 2015-02-22 18:25:50 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:25:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> Model Class Initialized
+DEBUG - 2015-02-22 18:25:50 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:25:50 --> Final output sent to browser
+DEBUG - 2015-02-22 18:25:50 --> Total execution time: 0.0634
+DEBUG - 2015-02-22 18:27:33 --> Config Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:27:33 --> URI Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Router Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Output Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Security Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Input Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:33 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:27:33 --> CSRF token verified 
+DEBUG - 2015-02-22 18:27:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:27:33 --> Language Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:27:33 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Session Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:27:33 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Session routines successfully run
+DEBUG - 2015-02-22 18:27:33 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:27:33 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:33 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:27:33 --> Final output sent to browser
+DEBUG - 2015-02-22 18:27:33 --> Total execution time: 0.0617
+DEBUG - 2015-02-22 18:27:55 --> Config Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:27:55 --> URI Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Router Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Output Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Security Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Input Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:27:55 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:27:55 --> CSRF token verified 
+DEBUG - 2015-02-22 18:27:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:27:55 --> Language Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:27:55 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Session Class Initialized
+DEBUG - 2015-02-22 18:27:55 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:27:55 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Session routines successfully run
+DEBUG - 2015-02-22 18:27:56 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:27:56 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> Model Class Initialized
+DEBUG - 2015-02-22 18:27:56 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:27:56 --> Final output sent to browser
+DEBUG - 2015-02-22 18:27:56 --> Total execution time: 0.0571
+DEBUG - 2015-02-22 18:28:22 --> Config Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:28:22 --> URI Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Router Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Output Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Security Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Input Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:22 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:28:22 --> CSRF token verified 
+DEBUG - 2015-02-22 18:28:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:28:22 --> Language Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:28:22 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Session Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:28:22 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Session routines successfully run
+DEBUG - 2015-02-22 18:28:22 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:28:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:22 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:28:22 --> Final output sent to browser
+DEBUG - 2015-02-22 18:28:22 --> Total execution time: 0.0589
+DEBUG - 2015-02-22 18:28:37 --> Config Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Hooks Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Utf8 Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> UTF-8 Support Enabled
+DEBUG - 2015-02-22 18:28:37 --> URI Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Router Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Output Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Security Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Input Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> XSS Filtering completed
+DEBUG - 2015-02-22 18:28:37 --> CRSF cookie Set
+DEBUG - 2015-02-22 18:28:37 --> CSRF token verified 
+DEBUG - 2015-02-22 18:28:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-02-22 18:28:37 --> Language Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Loader Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Helper loaded: url_helper
+DEBUG - 2015-02-22 18:28:37 --> Controller Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Session Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Helper loaded: string_helper
+DEBUG - 2015-02-22 18:28:37 --> Encrypt Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Session routines successfully run
+DEBUG - 2015-02-22 18:28:37 --> Helper loaded: form_helper
+DEBUG - 2015-02-22 18:28:37 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Database Driver Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Helper loaded: date_helper
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> Model Class Initialized
+DEBUG - 2015-02-22 18:28:37 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-02-22 18:28:37 --> Final output sent to browser
+DEBUG - 2015-02-22 18:28:37 --> Total execution time: 0.0554
