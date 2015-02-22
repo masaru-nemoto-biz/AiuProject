@@ -33,44 +33,42 @@
             <div class="row">
                 <div class="col-md-4">
                     <label class="label_size">◆契約者情報</label>
-                    <?php foreach ($company_data as $row): ?>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">契約者タイプ</td>
                             <td>
                               <?php foreach ($corp_division_mst as $row_mst): ?>
-                                <?php if ($row_mst->corp_div_id == $row->contracter_type) :?><?= $row_mst->corp_div_name ?><?php endif; ?>
+                                <?php if ($row_mst->corp_div_id == $company_data->contracter_type) :?><?= $row_mst->corp_div_name ?><?php endif; ?>
                               <?php endforeach; ?>
                             </td>
                         </tr>
-                        <tr><td>担当者</td><td><?= $row->upd_user ?></td></tr>
+                        <tr><td>担当者</td><td><?= $company_data->upd_user ?></td></tr>
                     </table>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">法人名称</td><td><?= $row->corp_name ?></td></tr>
-                        <tr><td>法人名称(カナ)</td><td><?= $row->corp_kana ?></td></tr>
-                        <tr><td>郵便番号(〒)</td><td><?= $row->post ?></td></tr>
-                        <tr><td>所在地</td><td><?= $row->address ?></td></tr>
-                        <tr><td>電話番号</td><td><?= $row->phone ?></td></tr>
-                        <tr><td>FAX</td><td><?= $row->fax ?></td></tr>
-                        <tr><td>会社メールアドレス</td><td><a href="mailto:<?= $row->company_mail ?>"><?= $row->company_mail ?></a></td></tr>
-                        <tr><td>会社HP</td><td><a href="<?= $row->company_hp ?>" target="_blank"><?= $row->company_hp ?></a></td></tr>
-                        <tr><td>設立年月日</td><td><?= $row->establishment ?></td></tr>
-                        <tr><td>資本金</td><td><?= $row->capital."　円" ?></td></tr>
-                        <tr><td>決算月</td><td><?= $row->settling_month."　月" ?></td></tr>
-                        <tr><td>業種 第一</td><td><?= $row->biz_first ?></td></tr>
-                        <tr><td>業種 第二</td><td><?= $row->biz_second ?></td></tr>
-                        <tr><td>従業員数</td><td><?= $row->employees."　人" ?></td></tr>
-                        <tr><td>法人会加入有無</td><td><?php if (0 == $row->corp_member) :?>無し<?php else: ?>有り<?php endif; ?></td></tr>
+                        <tr><td class="td_head_size">法人名称</td><td><?= $company_data->corp_name ?></td></tr>
+                        <tr><td>法人名称(カナ)</td><td><?= $company_data->corp_kana ?></td></tr>
+                        <tr><td>郵便番号(〒)</td><td><?= $company_data->post ?></td></tr>
+                        <tr><td>所在地</td><td><?= $company_data->address ?></td></tr>
+                        <tr><td>電話番号</td><td><?= $company_data->phone ?></td></tr>
+                        <tr><td>FAX</td><td><?= $company_data->fax ?></td></tr>
+                        <tr><td>会社メールアドレス</td><td><a href="mailto:<?= $company_data->company_mail ?>"><?= $company_data->company_mail ?></a></td></tr>
+                        <tr><td>会社HP</td><td><a href="<?= $company_data->company_hp ?>" target="_blank"><?= $company_data->company_hp ?></a></td></tr>
+                        <tr><td>設立年月日</td><td><?= $company_data->establishment ?></td></tr>
+                        <tr><td>資本金</td><td><?= $company_data->capital."　円" ?></td></tr>
+                        <tr><td>決算月</td><td><?= $company_data->settling_month."　月" ?></td></tr>
+                        <tr><td>業種 第一</td><td><?= $company_data->biz_first ?></td></tr>
+                        <tr><td>業種 第二</td><td><?= $company_data->biz_second ?></td></tr>
+                        <tr><td>従業員数</td><td><?= $company_data->employees."　人" ?></td></tr>
+                        <tr><td>法人会加入有無</td><td><?php if (0 == $company_data->corp_member) :?>無し<?php else: ?>有り<?php endif; ?></td></tr>
                         <tr><td>法人格</td>
                             <td>
                                 <?php foreach ($jurid_personal_mst as $row_jurid_personal_mst): ?>
-                                  <?php if ($row_jurid_personal_mst->Jurid_Personal_id == $row->juridical_personality) :?>
+                                  <?php if ($row_jurid_personal_mst->Jurid_Personal_id == $company_data->juridical_personality) :?>
                                     <?= $row_jurid_personal_mst->Jurid_Personal_name ?>
                                   <?php endif; ?>
                                 <?php endforeach; ?>
                             </td>
                         </tr>
                     </table>
-                    <?php endforeach; ?>
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆代表者詳細</label>
@@ -95,26 +93,24 @@
                     </table>
                     <?php endforeach; ?>
                     <label class="label_size">◆契約担当者詳細</label>
-                    <?php foreach ($contract as $row): ?>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">担当者氏名</td><td><?= $row->contract_name ?></td></tr>
-                        <tr><td>担当者氏名(カナ)</td><td><?= $row->contract_kana ?></td></tr>
-                        <tr><td>肩書</td><td><?= $row->title ?></td></tr>
+                        <tr><td class="td_head_size">担当者氏名</td><td><?= $contract->contract_name ?></td></tr>
+                        <tr><td>担当者氏名(カナ)</td><td><?= $contract->contract_kana ?></td></tr>
+                        <tr><td>肩書</td><td><?= $contract->title ?></td></tr>
                         <tr><td>性別</td>
                             <td>
                               <?php foreach ($sex_mst as $row_con_sex): ?>
-                                <?php if ($row_con_sex->sex_id == $row->sex) :?><?= $row_con_sex->sex_name ?><?php endif; ?>
+                                <?php if ($row_con_sex->sex_id == $contract->sex) :?><?= $row_con_sex->sex_name ?><?php endif; ?>
                               <?php endforeach; ?>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><?= $row->birthday ?></td></tr>
-                        <tr><td>携帯電話</td><td><?= $row->mobile_phone ?></td></tr>
-                        <tr><td>メールアドレス</td><td><a href="mailto:<?= $row->mail ?>"><?= $row->mail ?></a></td></tr>
-                        <tr><td>郵便番号</td><td><?= $row->post ?></td></tr>
-                        <tr><td>所在地</td><td><?= $row->address ?></td></tr>
-                        <tr><td>電話番号</td><td><?= $row->home_phone ?></td></tr>
+                        <tr><td>生年月日</td><td><?= $contract->birthday ?></td></tr>
+                        <tr><td>携帯電話</td><td><?= $contract->mobile_phone ?></td></tr>
+                        <tr><td>メールアドレス</td><td><a href="mailto:<?= $contract->mail ?>"><?= $contract->mail ?></a></td></tr>
+                        <tr><td>郵便番号</td><td><?= $contract->post ?></td></tr>
+                        <tr><td>所在地</td><td><?= $contract->address ?></td></tr>
+                        <tr><td>電話番号</td><td><?= $contract->home_phone ?></td></tr>
                     </table>
-                    <?php endforeach; ?>
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆口座詳細</label>

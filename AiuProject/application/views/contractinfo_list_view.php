@@ -164,6 +164,7 @@
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="新規契約登録"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
+            <input class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
             <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->

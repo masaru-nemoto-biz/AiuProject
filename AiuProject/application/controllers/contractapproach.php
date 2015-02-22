@@ -48,7 +48,12 @@ class ContractApproach extends CI_Controller {
         $this->session->unset_userdata('message');
         
         if ($data['move'] == '戻る') {
-            redirect('main/index');
+            // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
+            foreach ($data['company_id'] as $row) {
+                $this->session->set_userdata('company_id', $row->company_id);
+            }
+            redirect('contractinfolist/index');
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
         } else {

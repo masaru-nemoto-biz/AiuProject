@@ -12,6 +12,7 @@ class CorpInfoList extends CI_Controller {
         $this->load->model('contractInfo_model');
         $this->load->model('accident_model');
         $this->load->model('master_model');
+        $this->load->model('documentinfo_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -77,30 +78,17 @@ class CorpInfoList extends CI_Controller {
             redirect('corpinfolist/index');
         }
         
-        $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1']);
-        foreach ($data['company_data'] as $row) {
-            $company_id = $row->company_id;
-        }
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1'])->row(0);
         $company_id = $data['company_data']->company_id;
 
         $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1']);
-        foreach ($data['representative'] as $row) {
-            $company_id = $row->company_id;
-        }
         
         $data['contract'] = $this->corpStatus_model->get_contract_data($data['check1'])->row(0);
-        $company_id = $data['contract']->company_id;
         
         $data['bank'] = $this->corpStatus_model->get_bank_data($data['check1']);
-        foreach ($data['bank'] as $row) {
-            $company_id = $row->company_id;
-        }
         
         $data['other'] = $this->corpStatus_model->get_other_data($data['check1']);
-        foreach ($data['other'] as $row) {
-            $company_id = $row->company_id;
-        }
+
         $this->load->library('session');
         $this->session->set_userdata('company_id', $company_id);
 
@@ -140,21 +128,17 @@ class CorpInfoList extends CI_Controller {
             $this->session->set_userdata('message', $message);
             redirect('corpinfolist/index');
         }
-        
-        $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1']);
-        foreach ($data['company_data'] as $row) {
-            $company_id = $row->company_id;
-        }
+
+        $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1'])->row(0);
+        $company_id = $data['company_data']->company_id;
 
         $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1']);
         foreach ($data['representative'] as $row) {
             $company_id = $row->company_id;
         }
         
-        $data['contract'] = $this->corpStatus_model->get_contract_data($data['check1']);
-        foreach ($data['contract'] as $row) {
-            $company_id = $row->company_id;
-        }
+        $data['contract'] = $this->corpStatus_model->get_contract_data($data['check1'])->row(0);
+        $company_id = $data['contract']->company_id;
         
         $data['bank'] = $this->corpStatus_model->get_bank_data($data['check1']);
         foreach ($data['bank'] as $row) {
@@ -209,6 +193,7 @@ class CorpInfoList extends CI_Controller {
         $data['company_id'] = $this->input->post('check_radio');
         $this->session->set_userdata('company_id', $data['company_id']);
         $data['list1'] = $this->corpStatus_model->get_company_detail($this->session->userdata('company_id'));
+        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'));
         
         $this->load->view('customer_ref_view', $data);
     }

@@ -55,6 +55,8 @@ class ContractInfoList extends CI_Controller {
             $this->contractInfo_change();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
+        } elseif ($data['move'] == 'アプローチ状況') {
+            $this->contract_approach();
         } else {
             $this->index();
         }
@@ -155,6 +157,23 @@ class ContractInfoList extends CI_Controller {
         $this->contractInfo_model->set_contract_delflg($this->session->userdata('contract_id'));
         
         redirect('contractinfolist/index');
+    }
+
+    /*
+     * 契約毎メモ画面へ
+     */
+    function contract_approach() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい契約情報にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('main/index');
+        }
+        
+        redirect('contractapproach/index');
     }
 }
 ?>

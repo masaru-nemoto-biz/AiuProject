@@ -43,9 +43,9 @@
             <input class="btn btn-primary" type="submit" name="move" value="main menuへ"/>
             <?=form_close();?>
         </div>
-        <?=form_open('contractinfolist/contractInfoList_conform')?>
+        <?=form_open('customerref/customerref_conform')?>
         <div class="page-header text-center">
-            <p class="h2">契約情報一覧画面<span class="small">契約情報の閲覧・登録が可能</span></p>
+            <p class="h2">契約書類一覧画面</p>
         </div>
         <?php foreach ($list1 as $row): ?>
         <div class="row">
@@ -70,51 +70,26 @@
             </div>
         </div>
         <?php endforeach; ?>
-        <a href="#" class="thumbnail">
-          <img src="<?=base_url();?>uploads/nesakiスキルシート.pdf" alt="..."/>
-        </a>
-        <?php if (!empty($message)) : ?>
-        <div class="alert alert-danger" style="width: 300px; margin-top: 25px">
-            <a class="close" data-dismiss="alert">×</a>
-        <?= $message ?>
-        </div>
-        <?php endif; ?>
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th width="200px" class="table-style">ファイル名</th>
+            <th class="table-style">説明</th>
+          </tr>
+          </thead>
+          <?php foreach ($doclist as $row): ?>
+          <tr>
+            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td></td>
+          </tr>
+          <?php endforeach; ?>
+        </table>
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
-            <!-- 切り替えボタンの設定 -->
-            <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
         </div>
         </div>
-        <!-- モーダルの設定 -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">閉じる</span></button>
-                <h5 class="modal-title" id="myModalLabel">削除確認</h5>
-              </div>
-              <div class="modal-body">
-                <p>削除してもよろしいですか?</p>
-              </div>
-              <div class="modal-footer">
-                <input class="btn btn-primary" type="submit" name="move" value="削除"/>
-                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
         <?=form_close();?>
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script>
-        $("#table_id").dataTable( {
-                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 3,4,7,11 ] }],
-                    "sScrollY": "400px",
-                    "bStateSave": true,
-                    "iDisplayLength": 25
-                } );
-
-    </script>
-
     </body>
     <!-- jQueryの読み込み-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

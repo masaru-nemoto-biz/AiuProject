@@ -31,26 +31,27 @@ class CustomerRef extends CI_Controller {
      * ボタン押下時のバリュー値によって遷移先画面を判定し、
      * 遷移先画面毎に別理を行う。
      */
-    function contractInfoList_conform() {
-
-        $this->session->set_userdata('contract_id', $this->input->post('check_radio'));
+    function customerref_conform() {
         
         $data['move'] = $this->input->post('move');
-        $this->session->unset_userdata('message');
-        
+
         if ($data['move'] == '契約者情報一覧画面へ') {
-            $this->move_contractInfoList();
+            redirect('corpinfolist/index');
+        } elseif (!empty($data['move'])) {
+            $this->outputpdf($data['move']);
         } else {
             $this->index();
         }
     }
-
+    
     /*
-     * 契約者情報画面へ
+     * pdf出力画面
      */
-    function move_contractInfoList() {
-
-        redirect('corpinfolist/index');
+    function outputpdf($file) {
+        
+        $this->load->helper('download');
+        force_download($file, base_url().'/uploads/'.$file);
+        
     }
 }
 ?>

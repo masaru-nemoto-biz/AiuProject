@@ -176,41 +176,40 @@
             <div class="row">
                 <div class="col-md-4">
                     <label class="label_size">◆契約者情報</label>
-                    <?php foreach ($company_data as $row): ?>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">契約者タイプ</td>
                             <td>
                               <select class="form-control input-sm" name="contracter_type">
                                 <?php foreach ($corp_division_mst as $row_mst): ?>
-                                  <option value="<?= $row_mst->corp_div_id ?>" <?php if ($row_mst->corp_div_id == $row->contracter_type) :?>selected="selected"<?php endif; ?>>
+                                  <option value="<?= $row_mst->corp_div_id ?>" <?php if ($row_mst->corp_div_id == $company_data->contracter_type) :?>selected="selected"<?php endif; ?>>
                                     <?= $row_mst->corp_div_name ?>
                                   </option>
                                 <?php endforeach; ?>
                               </select>
                             </td>
                         </tr>
-                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="<?= $row->upd_user ?>" size="50" /></td></tr>
+                        <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="upd_user" value="<?= $company_data->upd_user ?>" size="50" /></td></tr>
                     </table>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $row->corp_name ?>" size="50" /></td></tr>
-                        <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="<?= $row->corp_kana ?>" size="50" /></td></tr>
-                        <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="corp_phone" value="<?= $row->phone ?>" size="50" /></td></tr>
-                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="corp_fax" value="<?= $row->fax ?>" size="50" /></td></tr>
-                        <tr><td>会社メールアドレス</td><td><input class="form-control input-sm" type="text" name="company_mail" value="<?= $row->company_mail ?>" size="50" /></td></tr>
-                        <tr><td>会社HP</td><td><input class="form-control input-sm" type="text" name="company_hp" value="<?= $row->company_hp ?>" size="50" /></td></tr>
-                        <tr><td>設立年月日</td><td><input class="form-control input-sm" type="date" name="establishment" value="<?= $row->establishment ?>" size="50" /></td></tr>
-                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="<?= $row->capital ?>" size="50" /></td><td style="vertical-align: bottom">円</td></tr>
-                        <tr><td>決算月</td><td><input class="form-control input-sm" type="text" name="settling_month" value="<?= $row->settling_month ?>" size="50" /></td></tr>
-                        <tr><td>業種 第一</td><td><input class="form-control input-sm" type="text" name="biz_first" value="<?= $row->biz_first ?>" size="50" /></td></tr>
-                        <tr><td>業種 第二</td><td><input class="form-control input-sm" type="text" name="biz_second" value="<?= $row->biz_second ?>" size="50" /></td></tr>
-                        <tr><td>従業員数</td><td><input class="form-control input-sm" type="text" name="employees" value="<?= $row->employees ?>" size="50" /></td></tr>
+                        <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $company_data->corp_name ?>" size="50" /></td></tr>
+                        <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="<?= $company_data->corp_kana ?>" size="50" /></td></tr>
+                        <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="<?= $company_data->post ?>" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="<?= $company_data->address ?>" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="corp_phone" value="<?= $company_data->phone ?>" size="50" /></td></tr>
+                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="corp_fax" value="<?= $company_data->fax ?>" size="50" /></td></tr>
+                        <tr><td>会社メールアドレス</td><td><input class="form-control input-sm" type="text" name="company_mail" value="<?= $company_data->company_mail ?>" size="50" /></td></tr>
+                        <tr><td>会社HP</td><td><input class="form-control input-sm" type="text" name="company_hp" value="<?= $company_data->company_hp ?>" size="50" /></td></tr>
+                        <tr><td>設立年月日</td><td><input class="form-control input-sm" type="date" name="establishment" value="<?= $company_data->establishment ?>" size="50" /></td></tr>
+                        <tr><td>資本金</td><td><input class="form-control input-sm" type="text" name="capital" value="<?= $company_data->capital ?>" size="50" /></td><td style="vertical-align: bottom">円</td></tr>
+                        <tr><td>決算月</td><td><input class="form-control input-sm" type="text" name="settling_month" value="<?= $company_data->settling_month ?>" size="50" /></td></tr>
+                        <tr><td>業種 第一</td><td><input class="form-control input-sm" type="text" name="biz_first" value="<?= $company_data->biz_first ?>" size="50" /></td></tr>
+                        <tr><td>業種 第二</td><td><input class="form-control input-sm" type="text" name="biz_second" value="<?= $company_data->biz_second ?>" size="50" /></td></tr>
+                        <tr><td>従業員数</td><td><input class="form-control input-sm" type="text" name="employees" value="<?= $company_data->employees ?>" size="50" /></td></tr>
                         <tr><td>法人会加入有無</td>
                             <td>
                                 <select class="form-control input-sm" name="corp_member">
-                                    <option value="0" <?php if (0 == $row->corp_member) :?>selected="selected"<?php endif; ?>>無し</option>
-                                    <option value="1" <?php if (1 == $row->corp_member) :?>selected="selected"<?php endif; ?>>有り</option>
+                                    <option value="0" <?php if (0 == $company_data->corp_member) :?>selected="selected"<?php endif; ?>>無し</option>
+                                    <option value="1" <?php if (1 == $company_data->corp_member) :?>selected="selected"<?php endif; ?>>有り</option>
                                 </select>
                             </td>
                         </tr>
@@ -218,7 +217,7 @@
                             <td>
                                 <select class="form-control input-sm" name="juridical_personality">
                                     <?php foreach ($jurid_personal_mst as $row_jurid_personal_mst): ?>
-                                    <option value="<?= $row_jurid_personal_mst->Jurid_Personal_id ?>" <?php if ($row_jurid_personal_mst->Jurid_Personal_id == $row->juridical_personality) :?>selected="selected"<?php endif; ?>>
+                                    <option value="<?= $row_jurid_personal_mst->Jurid_Personal_id ?>" <?php if ($row_jurid_personal_mst->Jurid_Personal_id == $company_data->juridical_personality) :?>selected="selected"<?php endif; ?>>
                                         <?= $row_jurid_personal_mst->Jurid_Personal_name ?>
                                     </option>
                                     <?php endforeach; ?>
@@ -226,7 +225,6 @@
                             </td>
                         </tr>
                     </table>
-                    <?php endforeach; ?>
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆代表者詳細</label>
@@ -253,28 +251,26 @@
                     </table>
                     <?php endforeach; ?>
                     <label class="label_size">◆契約担当者詳細</label>
-                    <?php foreach ($contract as $row): ?>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $row->contract_name ?>" size="50" /></td></tr>
-                        <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="<?= $row->contract_kana ?>" size="50" /></td></tr>
-                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="con_title" value="<?= $row->title ?>" size="50" /></td></tr>
+                        <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $contract->contract_name ?>" size="50" /></td></tr>
+                        <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="<?= $contract->contract_kana ?>" size="50" /></td></tr>
+                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="con_title" value="<?= $contract->title ?>" size="50" /></td></tr>
                         <tr><td>性別</td>
                             <td>
                                 <select class="form-control input-sm" name="con_sex">
                                     <?php foreach ($sex_mst as $row_con_sex): ?>
-                                    <option value="<?= $row_con_sex->sex_id ?>" <?php if ($row_con_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_con_sex->sex_name ?></option>
+                                    <option value="<?= $row_con_sex->sex_id ?>" <?php if ($row_con_sex->sex_id == $contract->sex) :?>selected="selected"<?php endif; ?>><?= $row_con_sex->sex_name ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="con_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
-                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $row->mobile_phone ?>" size="50" /></td></tr>
-                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
-                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="con_birthday" value="<?= $contract->birthday ?>" size="50" /></td></tr>
+                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="con_mobile_phone" value="<?= $contract->mobile_phone ?>" size="50" /></td></tr>
+                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="con_mail" value="<?= $contract->mail ?>" size="50" /></td></tr>
+                        <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $contract->post ?>" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $contract->address ?>" size="50" /></td></tr>
+                        <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $contract->home_phone ?>" size="50" /></td></tr>
                     </table>
-                    <?php endforeach; ?>
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆口座詳細</label>

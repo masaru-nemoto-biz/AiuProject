@@ -101,8 +101,8 @@
         </div>
         <div style="text-align:right;">
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
         </div>
         <?=form_close();?>
       </div>
