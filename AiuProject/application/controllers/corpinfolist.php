@@ -193,7 +193,7 @@ class CorpInfoList extends CI_Controller {
         $data['company_id'] = $this->input->post('check_radio');
         $this->session->set_userdata('company_id', $data['company_id']);
         $data['list1'] = $this->corpStatus_model->get_company_detail($this->session->userdata('company_id'));
-        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'));
+        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '1');
         
         $this->load->view('customer_ref_view', $data);
     }

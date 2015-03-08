@@ -166,6 +166,7 @@
             <input class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
             <input class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
             <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約/事故関連書類"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>

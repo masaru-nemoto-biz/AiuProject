@@ -61,6 +61,7 @@
             <table class="table table-striped table-bordered table-hover table-condensed">
               <thead>
                 <tr>
+                  <th class="table-style">契約元</th>
                   <th class="table-style">更新情報</th>
                   <th class="table-style">担当</th>
                   <th class="table-style">日時</th>
@@ -68,6 +69,7 @@
               </thead>
               <?php foreach ($history_list as $row): ?>
               <tr>
+                <td class=""><?= $row->contractant ?></td>
                 <td class=""><?= $row->history_content ?></td>
                 <td class=""><?= $row->update_user ?></td>
                 <td class=""><?= $row->insert_date ?></td>

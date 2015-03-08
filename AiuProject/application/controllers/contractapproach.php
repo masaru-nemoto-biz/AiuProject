@@ -66,6 +66,9 @@ class ContractApproach extends CI_Controller {
      */
     function conform_add() {
 
+        $data['company_data'] = $this->corpstatus_model->get_company_data($this->session->userdata('company_id'))->row(0);
+        $corp_name = $data['company_data']->corp_name;
+        
         // 既存アプローチ状況変更
         // TODO 出来ればindexのsession情報を利用したい。
         $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'));
@@ -74,7 +77,7 @@ class ContractApproach extends CI_Controller {
                 $this->conform_Prepare_status_quo($row->approach_id);
                 $this->approachinfo_model->set_approach_info($row->approach_id, $this->array2);
             }
-            $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'));
+            $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         }
 
         
@@ -84,7 +87,7 @@ class ContractApproach extends CI_Controller {
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
         }
-        $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'));
+        $this->history_model->insert_history('アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         
         $this->index();
     }

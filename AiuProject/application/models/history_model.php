@@ -7,8 +7,9 @@ Class History_model extends CI_Model {
         $this->load->database();
     }
 
-    function insert_history($content, $user) {
-        $this->array = array('history_content' => $content,
+    function insert_history($content, $user, $contractant) {
+        $this->array = array('contractant' => $contractant,
+                             'history_content' => $content,
                              'update_user' => $user);
         $this->db->insert('history', $this->array); 
     }
