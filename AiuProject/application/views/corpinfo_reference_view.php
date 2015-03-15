@@ -53,7 +53,7 @@
                         <tr><td>会社メールアドレス</td><td><a href="mailto:<?= $company_data->company_mail ?>"><?= $company_data->company_mail ?></a></td></tr>
                         <tr><td>会社HP</td><td><a href="<?= $company_data->company_hp ?>" target="_blank"><?= $company_data->company_hp ?></a></td></tr>
                         <tr><td>設立年月日</td><td><?= $company_data->establishment ?></td></tr>
-                        <tr><td>資本金</td><td><?= $company_data->capital."　円" ?></td></tr>
+                        <tr><td>資本金</td><td><?= number_format($company_data->capital)."　円" ?></td></tr>
                         <tr><td>決算月</td><td><?= $company_data->settling_month."　月" ?></td></tr>
                         <tr><td>業種 第一</td><td><?= $company_data->biz_first ?></td></tr>
                         <tr><td>業種 第二</td><td><?= $company_data->biz_second ?></td></tr>

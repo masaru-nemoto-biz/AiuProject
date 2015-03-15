@@ -195,6 +195,7 @@ class ContractInfoList extends CI_Controller {
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $data['doclist2'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '2');
         $data['doclist3'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '4');
         
         $this->load->view('contract_document_view', $data);
     }

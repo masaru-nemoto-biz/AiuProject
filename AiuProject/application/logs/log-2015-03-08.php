@@ -3753,3 +3753,75 @@ DEBUG - 2015-03-08 16:37:38 --> Model Class Initialized
 DEBUG - 2015-03-08 16:37:38 --> File loaded: application/views/corpinfo_list_view.php
 DEBUG - 2015-03-08 16:37:38 --> Final output sent to browser
 DEBUG - 2015-03-08 16:37:38 --> Total execution time: 0.0524
+DEBUG - 2015-03-08 16:43:11 --> Config Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Hooks Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Utf8 Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> UTF-8 Support Enabled
+DEBUG - 2015-03-08 16:43:11 --> URI Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Router Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Output Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Security Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Input Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:11 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:11 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:11 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:11 --> CRSF cookie Set
+DEBUG - 2015-03-08 16:43:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-03-08 16:43:11 --> Language Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Loader Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Helper loaded: url_helper
+DEBUG - 2015-03-08 16:43:11 --> Controller Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Session Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Helper loaded: string_helper
+DEBUG - 2015-03-08 16:43:11 --> Encrypt Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Session routines successfully run
+DEBUG - 2015-03-08 16:43:11 --> Helper loaded: form_helper
+DEBUG - 2015-03-08 16:43:11 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Database Driver Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Helper loaded: date_helper
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:11 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2015-03-08 16:43:11 --> Final output sent to browser
+DEBUG - 2015-03-08 16:43:11 --> Total execution time: 0.0544
+DEBUG - 2015-03-08 16:43:18 --> Config Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Hooks Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Utf8 Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> UTF-8 Support Enabled
+DEBUG - 2015-03-08 16:43:18 --> URI Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Router Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Output Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Security Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Input Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:18 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:18 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:18 --> XSS Filtering completed
+DEBUG - 2015-03-08 16:43:18 --> CRSF cookie Set
+DEBUG - 2015-03-08 16:43:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-03-08 16:43:18 --> Language Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Loader Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Helper loaded: url_helper
+DEBUG - 2015-03-08 16:43:18 --> Controller Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Session Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Helper loaded: string_helper
+DEBUG - 2015-03-08 16:43:18 --> Encrypt Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Session routines successfully run
+DEBUG - 2015-03-08 16:43:18 --> Helper loaded: form_helper
+DEBUG - 2015-03-08 16:43:18 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Database Driver Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Helper loaded: date_helper
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> Model Class Initialized
+DEBUG - 2015-03-08 16:43:18 --> File loaded: application/views/contractinfo_list_view.php
+DEBUG - 2015-03-08 16:43:18 --> Final output sent to browser
+DEBUG - 2015-03-08 16:43:18 --> Total execution time: 0.0489

@@ -69,21 +69,21 @@
                     <tr><td width="70">月額保険料合計</td>
                         <td style="text-align:right">
                         <?php foreach ($month_p_sum as $row): ?>
-                            <?= $row->month_p. "　円" ?>
+                            <?= number_format($row->month_p). "　円" ?>
                         <?php endforeach; ?>
                         </td>
                     </tr>
                     <tr><td>一時払い合計</td>
                         <td style="text-align:right">
                         <?php foreach ($yearly_p_sum as $row): ?>
-                            <?= $row->yearly_payment. "　円" ?>
+                            <?= number_format($row->yearly_payment). "　円" ?>
                         <?php endforeach; ?>
                         </td>
                     </tr>
                     <tr><td>年間保険料合計</td>
                         <td style="text-align:right">
                         <?php foreach ($anp_sum as $row): ?>
-                            <?= $row->anp. "　円" ?>
+                            <?= number_format($row->anp). "　円" ?>
                         <?php endforeach; ?>
                         </td>
                     </tr>
@@ -124,15 +124,25 @@
                     <td class="table-style"><?= $row->policy_number ?></td>
                     <td class="table-style"><?= $row->insurance_period_start ?></br>～<?= $row->insurance_period_end ?></td>
                     <td class="table-style"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
-                    <td class="table-style"><?= $row->month_p. "　円" ?></td>
-                    <td class="table-style"><?= $row->yearly_payment. "　円" ?></td>
-                    <td class="table-style"><?= $row->anp. "　円" ?></td>
+                    <td class="table-style"><?= number_format($row->month_p). "　円" ?></td>
+                    <td class="table-style"><?= number_format($row->yearly_payment). "　円" ?></td>
+                    <td class="table-style"><?= number_format($row->anp). "　円" ?></td>
                     <td class="table-style"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
                     <td class="table-style">
                         <?php if ($row->insurance_period_end < $month_3ago) : ?>
                           <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
-                          <?php if (3 == $row->contract_status) :?>
+                          <?php if (2 == $row->contract_status) :?>
                             <span class="label label-success">3ヶ月前</span>
+                          <?php elseif (3 == $row->contract_status) : ?>
+                            <span class="label label-success">更改済み</span>
+                          <?php elseif (4 == $row->contract_status) : ?>
+                            <span class="label label-default">満期終了</span>
+                          <?php elseif (5 == $row->contract_status) : ?>
+                            <span class="label label-default">解約</span>
+                          <?php elseif (6 == $row->contract_status) : ?>
+                            <span class="label label-default">失効</span>
+                          <?php elseif (7 == $row->contract_status) : ?>
+                            <span class="label label-info">短期契約</span>
                           <?php else: ?>
                             <span class="label label-danger">3ヶ月前</span>
                           <?php endif; ?>
@@ -140,7 +150,12 @@
                     </td>
                     <td class="table-style">
                         <?php foreach ($acc_list as $row1): ?>
-                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_status_name ?><br><?php endif; ?>
+                        <?php if ($row1->contract_id == $row->contract_id) : ?>
+                          <?php if (1 == $row1->acc_status_id) :?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
+                          <?php elseif (2 == $row1->acc_status_id) : ?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
+                          <?php elseif (3 == $row1->acc_status_id) : ?><span class="label label-success"><?= $row1->acc_status_name ?></span>
+                          <?php endif; ?><br>
+                        <?php endif; ?>
                         <?php endforeach; ?>
                     </td>
                     <td class="table-style">
