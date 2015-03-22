@@ -3,7 +3,6 @@ class Printing extends CI_Controller {
     
     var $message;
     var $acc_id;
-    var $policy_number;
     
     function Printing() {
         parent::__construct();

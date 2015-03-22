@@ -173,7 +173,7 @@ class ContractInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '変更したい契約情報にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('main/index');
+            redirect('contractinfolist/index');
         }
         
         redirect('contractapproach/index');
@@ -189,7 +189,7 @@ class ContractInfoList extends CI_Controller {
             // チェックなしの場合は自画面遷移
             $message = '参照したい契約情報にチェックを入れてください';
             $this->session->set_userdata('message', $message);
-            redirect('main/index');
+            redirect('contractinfolist/index');
         }
         
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));

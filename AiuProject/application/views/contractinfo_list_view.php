@@ -60,13 +60,13 @@
             </div>
             <div class="col-md-4">
                 <table class="table table-condensed">
-                    <tr><td width="70">契約担当者</td><td width="200"><?= $row->contract_name. "　様" ?></td></tr>
+                    <tr><td style="width:70px">契約担当者</td><td width="200"><?= $row->contract_name. "　様" ?></td></tr>
                     <tr><td>連絡先</td><td width="200"><?= $row->mobile_phone ?></td></tr>
                 </table>
             </div>
             <div class="col-md-4">
                 <table class="table table-condensed">
-                    <tr><td width="70">月額保険料合計</td>
+                    <tr><td>月額保険料合計</td>
                         <td style="text-align:right">
                         <?php foreach ($month_p_sum as $row): ?>
                             <?= number_format($row->month_p). "　円" ?>
@@ -96,39 +96,38 @@
         <div class="table-responsive">
         <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
-            <tr>
-                <th class="table-style">選択</th>
-                <th class="table-style">保険種別</th>
-                <th class="table-style">保険会社</th>
-                <th class="table-style">商品名</th>
-                <th class="table-style">区分</th>
-                <th class="table-style">証券番号</th>
-                <th class="table-style">保険期間</th>
-                <th class="table-style">契約期間</th>
-                <th class="table-style">月額保険料</th>
-                <th class="table-style">一時払い</th>
-                <th class="table-style">年間保険料</th>
-                <th class="table-style">ステータス</th>
-                <th class="table-style">満期お知らせ</th>
-                <th class="table-style">事故</th><th class="table-style">事故受け番号</th>
-                <th class="table-style">担当者</th>
-            </tr>
+                <th class="table-style ">選択</th>
+                <th class="table-style ">保険種別</th>
+                <th class="table-style ">保険会社</th>
+                <th class="table-style ">商品名</th>
+                <th class="table-style ">区分</th>
+                <th class="table-style ">証券番号</th>
+                <th class="table-style ">保険期間</th>
+                <th class="table-style ">契約期間</th>
+                <th class="table-style ">月額保険料</th>
+                <th class="table-style ">一時払い</th>
+                <th class="table-style ">年間保険料</th>
+                <th class="table-style ">ステータス</th>
+                <th class="table-style ">満期お知らせ</th>
+                <th class="table-style ">事故</th>
+                <th class="table-style ">事故受け番号</th>
+                <th class="table-style ">担当者</th>
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
-                    <td class="table-style"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                    <td class="table-style"><?= $row->insur_class_name ?></td>
-                    <td class="table-style"><?= $row->insur_corp_name ?></td>
-                    <td class="table-style"><?= $row->brand_name ?></td>
-                    <td class="table-style"><?= $row->corp_div_name ?></td>
-                    <td class="table-style"><?= $row->policy_number ?></td>
-                    <td class="table-style"><?= $row->insurance_period_start ?></br>～<?= $row->insurance_period_end ?></td>
-                    <td class="table-style"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
-                    <td class="table-style"><?= number_format($row->month_p). "　円" ?></td>
-                    <td class="table-style"><?= number_format($row->yearly_payment). "　円" ?></td>
-                    <td class="table-style"><?= number_format($row->anp). "　円" ?></td>
-                    <td class="table-style"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
-                    <td class="table-style">
+                    <td class="table-style small"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
+                    <td class="table-style small"><?= $row->insur_class_name ?></td>
+                    <td class="table-style small"><?= $row->insur_corp_name ?></td>
+                    <td class="table-style small"><?= $row->brand_name ?></td>
+                    <td class="table-style small"><?= $row->corp_div_name ?></td>
+                    <td class="table-style small"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
+                    <td class="table-style small"><?= $row->insurance_period_start ?></br>～<?= $row->insurance_period_end ?></td>
+                    <td class="table-style small"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
+                    <td class="table-style small"><?= number_format($row->month_p). "　円" ?></td>
+                    <td class="table-style small"><?= number_format($row->yearly_payment). "　円" ?></td>
+                    <td class="table-style small"><?= number_format($row->anp). "　円" ?></td>
+                    <td class="table-style small"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
+                    <td class="table-style small">
                         <?php if ($row->insurance_period_end < $month_3ago) : ?>
                           <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
                           <?php if (2 == $row->contract_status) :?>
@@ -148,7 +147,7 @@
                           <?php endif; ?>
                         <?php endif; ?>
                     </td>
-                    <td class="table-style">
+                    <td class="table-style small">
                         <?php foreach ($acc_list as $row1): ?>
                         <?php if ($row1->contract_id == $row->contract_id) : ?>
                           <?php if (1 == $row1->acc_status_id) :?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
@@ -158,12 +157,12 @@
                         <?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td class="table-style">
+                    <td class="table-style small">
                         <?php foreach ($acc_list as $row1): ?>
                         <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_id ?><br><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td class="table-style"><?= $row->contract_owner ?></td>
+                    <td class="table-style small"><?= $row->contract_owner ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>

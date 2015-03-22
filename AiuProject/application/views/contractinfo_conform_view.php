@@ -49,6 +49,7 @@
                 <tr>
                     <td width="70px">証券番号</td>
                     <td><input id="policy_number" class="form-control input-sm" type="text" name="policy_number" value="" /></td>
+                    <td><input id="policy_branch_number" class="form-control input-sm" style="width:40px" type="text" name="policy_branch_number" value="" /></td>
                     <td width="70px">商品名</td>
                     <td><input class="form-control input-sm" type="text" name="brand_name" value="" /></td>
                     <td width="70px">担当者</td>
@@ -124,6 +125,7 @@
                     <td><input class="form-control input-sm" type="text" name="brand_name" value="<?= $row->brand_name ?>" /></td>
                     <td width="70px">証券番号</td>
                     <td><input id="policy_number" class="form-control input-sm" type="text" name="policy_number" value="<?= $row->policy_number ?>" /></td>
+                    <td><input id="policy_branch_number" class="form-control input-sm" style="width:40px" type="text" name="policy_branch_number" value="<?= $row->policy_branch_number ?>" /></td>
                     <td width="70px">担当者</td>
                     <td><input id="contract_owner" class="form-control input-sm" type="text" name="contract_owner" value="<?= $row->contract_owner ?>" /></td>
                 </tr>

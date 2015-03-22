@@ -28,6 +28,9 @@
         .table-style {
             white-space: nowrap;
         }
+        .font-style-min {
+            
+        }
     </style>
 </head>
   <body>
@@ -69,10 +72,10 @@
               </thead>
               <?php foreach ($history_list as $row): ?>
               <tr>
-                <td class=""><?= $row->contractant ?></td>
-                <td class=""><?= $row->history_content ?></td>
-                <td class=""><?= $row->update_user ?></td>
-                <td class=""><?= $row->insert_date ?></td>
+                <td class="small"><?= $row->contractant ?></td>
+                <td class="small"><?= $row->history_content ?></td>
+                <td class="small"><?= $row->update_user ?></td>
+                <td class="small"><?= $row->insert_date ?></td>
               </tr>
               <?php endforeach; ?>
             </table>
@@ -93,7 +96,7 @@
               <?php foreach ($contract_list as $row): ?>
               <tr>
                 <td class=""><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                <td class=""><?= $row->policy_number ?></td>
+                <td class=""><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
                 <td class=""><?= $row->acc_id ?></td>
                 <td class=""><?= $row->contract_owner ?></td>
               </tr>

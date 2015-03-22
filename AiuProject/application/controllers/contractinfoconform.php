@@ -103,6 +103,7 @@ class ContractInfoConform extends CI_Controller {
             'brand_name' => $this->input->post('brand_name'),
             'division' => $this->input->post('division'),
             'policy_number' => $this->input->post('policy_number'),
+            'policy_branch_number' => $this->input->post('policy_branch_number'),
             'contract_period_y' => $this->input->post('contract_period_y'),
             'contract_period_m' => $this->input->post('contract_period_m'),
             'contract_period_d' => $this->input->post('contract_period_d'),

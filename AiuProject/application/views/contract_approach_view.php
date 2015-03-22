@@ -46,7 +46,7 @@
                     <tr><td style="width:100px">証券番号</td>
                         <td>
                             <?php foreach ($contract_list as $row): ?>
-                              <?= $row->policy_number ?>
+                              <?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?>
                             <?php endforeach; ?>
                         </td>
                     </tr>

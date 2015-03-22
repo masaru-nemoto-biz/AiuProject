@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-4">
               <table class="table table-condensed">
-                <tr><td width="70">証券番号</td><td><?= $row->policy_number ?></td></tr>
+                <tr><td width="70">証券番号</td><td><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td></tr>
               </table>
             </div>
             <div class="col-md-4">

@@ -43,9 +43,12 @@ Class ContractInfo_model extends CI_Model {
     
     function get_month_p_sum($company_id) {
         
+        $status_in = array('1', '2', '3', '7');
+        
         $this->db->select_sum('month_p');
         $this->db->from('contract_info');
         $this->db->where('company_id', $company_id);
+        $this->db->where_in('contract_status', $status_in);
         $this->db->where('contract_info.del_flg', '0');
         $query = $this->db->get();
 
@@ -54,9 +57,12 @@ Class ContractInfo_model extends CI_Model {
     
     function get_yearly_p_sum($company_id) {
         
+        $status_in = array('1', '2', '3', '7');
+        
         $this->db->select_sum('yearly_payment');
         $this->db->from('contract_info');
         $this->db->where('company_id', $company_id);
+        $this->db->where_in('contract_status', $status_in);
         $this->db->where('contract_info.del_flg', '0');
         $query = $this->db->get();
 
@@ -65,9 +71,12 @@ Class ContractInfo_model extends CI_Model {
     
     function get_anp_sum($company_id) {
         
+        $status_in = array('1', '2', '3', '7');
+        
         $this->db->select_sum('anp');
         $this->db->from('contract_info');
         $this->db->where('company_id', $company_id);
+        $this->db->where_in('contract_status', $status_in);
         $this->db->where('contract_info.del_flg', '0');
         $query = $this->db->get();
 
@@ -124,7 +133,7 @@ Class ContractInfo_model extends CI_Model {
     }
     
     function get_contract_join_accident_info($seach_column,$seach_obj) {
-        $this->db->select('contract_info.contract_id, policy_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
+        $this->db->select('contract_info.contract_id, policy_number, policy_branch_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
         $this->db->like($seach_column, $seach_obj);
         $this->db->from('contract_info');
         $this->db->join('company_info', 'contract_info.company_id = company_info.company_id', 'left outer');
@@ -137,7 +146,7 @@ Class ContractInfo_model extends CI_Model {
     }
     
     function get_contract_join_accident_all() {
-        $this->db->select('contract_info.contract_id, policy_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
+        $this->db->select('contract_info.contract_id, policy_number, policy_branch_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
         $this->db->from('contract_info');
         $this->db->join('company_info', 'contract_info.company_id = company_info.company_id', 'left outer');
         $this->db->join('representative_detail', 'representative_detail.company_id = company_info.company_id', 'left outer');

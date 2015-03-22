@@ -3,7 +3,6 @@ class Main extends CI_Controller {
     
     var $message;
     var $acc_id;
-    var $policy_number;
     
     function Main() {
         parent::__construct();
