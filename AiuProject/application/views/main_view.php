@@ -88,6 +88,7 @@
               <thead>
                 <tr>
                   <th class="table-style">選択</th>
+                  <th class="table-style">契約元</th>
                   <th class="table-style">証券番号</th>
                   <th class="table-style">事故受番号</th>
                   <th class="table-style">担当者</th>
@@ -96,9 +97,16 @@
               <?php foreach ($contract_list as $row): ?>
               <tr>
                 <td class=""><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                <td class=""><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
-                <td class=""><?= $row->acc_id ?></td>
-                <td class=""><?= $row->contract_owner ?></td>
+                <td class="small">
+                    <?php if (3 == $row->contracter_type) : ?>
+                      <?= $row->representative_name ?>
+                    <?php else: ?>
+                      <?= $row->corp_name ?>
+                    <?php endif; ?>
+                </td>
+                <td class="small"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
+                <td class="small"><?= $row->acc_id ?></td>
+                <td class="small"><?= $row->contract_owner ?></td>
               </tr>
               <?php endforeach; ?>
             </table>
@@ -106,7 +114,8 @@
         </div>
         <div style="text-align:right;">
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
-          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="企業アプローチ状況"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約状況"/>
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
         </div>
         <?=form_close();?>

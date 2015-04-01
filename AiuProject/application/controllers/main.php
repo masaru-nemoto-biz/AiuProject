@@ -48,8 +48,10 @@ class Main extends CI_Controller {
             $this->contractInfo_change();
         } elseif ($data['move'] == '事故進捗状況') {
             $this->accident_add();
-        } elseif ($data['move'] == 'アプローチ状況') {
+        } elseif ($data['move'] == '契約状況') {
             $this->contract_approach();
+        } elseif ($data['move'] == '企業アプローチ状況') {
+            $this->corp_approach();
         } elseif ($data['move'] == '各種書類印刷へ') {
             redirect('printing/index');
         } else {
@@ -146,6 +148,24 @@ class Main extends CI_Controller {
         }
         
         redirect('contractapproach/index');
+    }
+
+        
+    /*
+     * 企業毎メモ画面へ
+     */
+    function corp_approach() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('main/index');
+        }
+        
+        redirect('corpapproach/index');
     }
 }
 ?>

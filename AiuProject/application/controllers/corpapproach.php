@@ -1,9 +1,9 @@
 <?php
-class ContractApproach extends CI_Controller {
+class CorptApproach extends CI_Controller {
 
     var $array;  // 契約情報
     
-    function ContractApproach() {
+    function CorptApproach() {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form','url'));
@@ -24,7 +24,7 @@ class ContractApproach extends CI_Controller {
      */
     function index() {
         
-        $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'0');
+        $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'1');
         $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
         foreach ($data['company_id'] as $row) {
                 $this->session->set_userdata('company_id', $row->company_id);
@@ -70,13 +70,13 @@ class ContractApproach extends CI_Controller {
         
         // 既存アプローチ状況変更
         // TODO 出来ればindexのsession情報を利用したい。
-        $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'0');
+        $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'1');
         if (!empty($data['approach_list'])) {
             foreach ($this->session->userdata('approach_list') as $row) {
                 $this->conform_Prepare_status_quo($row->approach_id);
                 $this->approachinfo_model->set_approach_info($row->approach_id, $this->array2);
             }
-            $this->history_model->insert_history('契約状況が更新されました', $this->session->userdata('user'), $corp_name);
+            $this->history_model->insert_history('企業アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         }
 
         
@@ -86,7 +86,7 @@ class ContractApproach extends CI_Controller {
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
         }
-        $this->history_model->insert_history('契約状況が更新されました', $this->session->userdata('user'), $corp_name);
+        $this->history_model->insert_history('企業アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         
         $this->index();
     }
@@ -98,11 +98,10 @@ class ContractApproach extends CI_Controller {
      */
     function conform_Prepare_status_quo($approach_id) {
 
-        $this->array2 = array('contract_id' => $this->session->userdata('contract_id'),
-            'approach_id' => $approach_id,
+        $this->array2 = array('approach_id' => $approach_id,
             'approach_content' => $this->input->post('approach_content' . $approach_id),
             'company_id' => $this->session->userdata('company_id'),
-            'approach_div' => '0',
+            'approach_div' => '1',
             'upd_date' => $this->input->post('upd_date' . $approach_id),
             'upd_user' => $this->input->post('upd_user' . $approach_id));
     }
@@ -117,7 +116,7 @@ class ContractApproach extends CI_Controller {
         $this->array3 = array('contract_id' => $this->session->userdata('contract_id'),
             'approach_content' => $this->input->post('approach_content_new'),
             'company_id' => $this->session->userdata('company_id'),
-            'approach_div' => '0',
+            'approach_div' => '1',
             'upd_date' => $this->input->post('upd_date_new'),
             'upd_user' => $this->input->post('upd_user_new'));
     }

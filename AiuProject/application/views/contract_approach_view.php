@@ -50,7 +50,6 @@
                             <?php endforeach; ?>
                         </td>
                     </tr>
-
                 </table>
             </div>
             <div class="col-md-4">
