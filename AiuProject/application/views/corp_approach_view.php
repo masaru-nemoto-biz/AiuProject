@@ -36,22 +36,11 @@
 </head>
     <body>
       <div class="container form-group" style="font-size: 12px;">
-        <?= form_open('contractapproach/approach_conform') ?>
+        <?= form_open('corpapproach/approach_conform') ?>
         <div class="page-header text-center">
-            <p class="h2">契約状況</p>
+            <p class="h2">企業アプローチ状況</p>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <table class="table table-condensed">
-                    <tr><td style="width:100px">証券番号</td>
-                        <td>
-                            <?php foreach ($contract_list as $row): ?>
-                              <?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?>
-                            <?php endforeach; ?>
-                        </td>
-                    </tr>
-                </table>
-            </div>
             <div class="col-md-4">
                 <table class="table table-condensed">
                     <?php foreach ($list1 as $row): ?>
@@ -68,6 +57,9 @@
                     <tr><td>連絡先</td><td width="200"><?= $row->mobile_phone ?></td></tr>
                 </table>
                 <?php endforeach; ?>
+            </div>
+            <div class="col-md-4">
+
             </div>
         </div>
         <div class="row">

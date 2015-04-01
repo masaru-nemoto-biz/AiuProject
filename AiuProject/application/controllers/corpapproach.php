@@ -1,9 +1,9 @@
 <?php
-class CorptApproach extends CI_Controller {
+class CorpApproach extends CI_Controller {
 
     var $array;  // 契約情報
     
-    function CorptApproach() {
+    function CorpApproach() {
         parent::__construct();
         $this->load->library('session');
         $this->load->helper(array('form','url'));
@@ -32,7 +32,7 @@ class CorptApproach extends CI_Controller {
         $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $this->session->set_userdata('approach_list', $data['approach_list']);
-        $this->load->view('contract_approach_view', $data);
+        $this->load->view('corp_approach_view', $data);
     }
     
     /*
@@ -47,12 +47,7 @@ class CorptApproach extends CI_Controller {
         $this->session->unset_userdata('message');
         
         if ($data['move'] == '戻る') {
-            // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
-            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
-            foreach ($data['company_id'] as $row) {
-                $this->session->set_userdata('company_id', $row->company_id);
-            }
-            redirect('contractinfolist/index');
+            redirect('main/index');
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
         } else {
