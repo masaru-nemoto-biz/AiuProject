@@ -25,10 +25,9 @@ class ContractApproach extends CI_Controller {
     function index() {
         
         $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'0');
-        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
-        foreach ($data['company_id'] as $row) {
-                $this->session->set_userdata('company_id', $row->company_id);
-        }
+        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+        $this->session->set_userdata('company_id', $data['company_id']->company_id);
+        
         $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $this->session->set_userdata('approach_list', $data['approach_list']);
@@ -46,13 +45,16 @@ class ContractApproach extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '戻る') {
+        if ($data['move'] == 'main menu') {
+            redirect('main/index');
+            
+        } elseif ($data['move'] == '契約状況一覧') {
             // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
-            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
-            foreach ($data['company_id'] as $row) {
-                $this->session->set_userdata('company_id', $row->company_id);
-            }
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+            $this->session->set_userdata('company_id', $data['company_id']->company_id);
+            
             redirect('contractinfolist/index');
+            
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
         } else {
@@ -85,8 +87,8 @@ class ContractApproach extends CI_Controller {
         if (!empty($approach_content_new)){
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
+            $this->history_model->insert_history('契約状況が更新されました', $this->session->userdata('user'), $corp_name);
         }
-        $this->history_model->insert_history('契約状況が更新されました', $this->session->userdata('user'), $corp_name);
         
         $this->index();
     }

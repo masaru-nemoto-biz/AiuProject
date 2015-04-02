@@ -38,13 +38,16 @@ class ContractInfoConform extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '戻る') {
+        if ($data['move'] == 'main menu') {
+            redirect('main/index');
+            
+        } elseif ($data['move'] == '契約状況一覧') {
             // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
-            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
-            foreach ($data['company_id'] as $row) {
-                $this->session->set_userdata('company_id', $row->company_id);
-            }
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+            $this->session->set_userdata('company_id', $data['company_id']->company_id);
+            
             redirect('contractinfolist/index');
+            
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
         } else {

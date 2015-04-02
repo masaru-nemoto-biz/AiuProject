@@ -50,7 +50,7 @@ class CorpInfoList extends CI_Controller {
         
         if ($data['move'] == '情報変更/追加') {
             $this->contractInfo_change();
-        } elseif ($data['move'] == '情報照会&進捗') {
+        } elseif ($data['move'] == '情報照会') {
             $this->contractInfo_reference();
         } elseif ($data['move'] == '新規登録') {
             $this->contractInfo_add();
@@ -58,15 +58,13 @@ class CorpInfoList extends CI_Controller {
             $this->move_contractInfo();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
-        } elseif ($data['move'] == '契約者書類') {
-            $this->customer_reference();
         } else {
             $this->index();
         }
     }
 
     /*
-     * 情報照会&進捗画面へ
+     * 情報照会画面へ
      */
     function contractInfo_reference() {
         $data['check1'] = $this->input->post('check_radio');
@@ -175,27 +173,6 @@ class CorpInfoList extends CI_Controller {
         }
         
         redirect('contractinfolist/index');
-    }
-
-    /*
-     * 契約者書類画面へ
-     */
-    function customer_reference() {
-        $data['check'] = $this->input->post('check_radio');
-                
-        if (empty($data['check'])) {
-            // チェックなしの場合は自画面遷移
-            $message = '参照したい企業にチェックを入れてください';
-            $this->session->set_userdata('message', $message);
-            redirect('corpinfolist/index');
-        }
-        
-        $data['company_id'] = $this->input->post('check_radio');
-        $this->session->set_userdata('company_id', $data['company_id']);
-        $data['list1'] = $this->corpStatus_model->get_company_detail($this->session->userdata('company_id'));
-        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '1');
-        
-        $this->load->view('customer_ref_view', $data);
     }
 
     /*

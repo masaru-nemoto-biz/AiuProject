@@ -267,7 +267,8 @@
             <?php endif; ?>
             </div>
         </div>
-        <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="戻る"/>
+        <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="main menu"/>
+        <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="契約状況一覧"/>
         <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="登録"/>
         <?= form_close(); ?>
 

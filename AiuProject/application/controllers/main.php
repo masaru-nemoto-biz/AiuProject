@@ -13,7 +13,10 @@ class Main extends CI_Controller {
         $this->load->model('master_model');
         $this->load->model('accident_model');
         $this->load->model('history_model');
-                        
+        $this->load->model('corpStatus_model');
+        $this->load->model('documentinfo_model');
+        $this->load->library('user_agent');
+        
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -54,6 +57,8 @@ class Main extends CI_Controller {
             $this->corp_approach();
         } elseif ($data['move'] == '各種書類印刷へ') {
             redirect('printing/index');
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_document();
         } else {
             $this->index();
         }
@@ -166,6 +171,30 @@ class Main extends CI_Controller {
         }
         
         redirect('corpapproach/index');
+    }
+
+    /*
+     * 契約者書類画面へ
+     */
+    function customer_document() {
+        $data['check1'] = $this->input->post('check_radio');
+                
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '参照したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('main/index');
+        }
+        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+        $company_id = $data['company_id']->company_id;
+        $data['referrer1'] = $this->agent->referrer();
+        $data['list1'] = $this->corpStatus_model->get_company_detail($company_id);
+        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '4');
+        
+        $this->load->view('customer_ref_view', $data);
     }
 }
 ?>

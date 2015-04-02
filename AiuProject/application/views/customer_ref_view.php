@@ -70,6 +70,7 @@
             </div>
         </div>
         <?php endforeach; ?>
+        <h4>■契約者書類■</h4>
         <table class="table table-condensed">
           <thead>
           <tr>
@@ -84,8 +85,53 @@
           </tr>
           <?php endforeach; ?>
         </table>
+        <h4>■契約情報書類■</h4>
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th width="200px" class="table-style">ファイル名</th>
+            <th class="table-style">説明</th>
+          </tr>
+          </thead>
+          <?php foreach ($doclist2 as $row): ?>
+          <tr>
+            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td style="vertical-align:middle;"><?= $row->description ?></td>
+          </tr>
+          <?php endforeach; ?>
+        </table>
+        <h4>■自動車関連書類■</h4>
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th width="200px" class="table-style">ファイル名</th>
+            <th class="table-style">説明</th>
+          </tr>
+          </thead>
+          <?php foreach ($doclist4 as $row): ?>
+          <tr>
+            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td style="vertical-align:middle;"><?= $row->description ?></td>
+          </tr>
+          <?php endforeach; ?>
+        </table>
+        <h4>■事故関連書類■</h4>
+        <table class="table table-condensed">
+          <thead>
+          <tr>
+            <th width="200px" class="table-style">ファイル名</th>
+            <th class="table-style">説明</th>
+          </tr>
+          </thead>
+          <?php foreach ($doclist3 as $row): ?>
+          <tr>
+            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td style="vertical-align:middle;"><?= $row->description ?></td>
+          </tr>
+          <?php endforeach; ?>
+        </table>
         <div style="margin-top: 30px">
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="戻る"/>
         </div>
         </div>
         <?=form_close();?>

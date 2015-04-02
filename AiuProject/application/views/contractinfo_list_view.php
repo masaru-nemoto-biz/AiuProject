@@ -26,7 +26,13 @@
             background-color: #f5f5f5;
         }
         .table-style {
-            white-space: nowrap;
+            
+        }
+        .td-width {
+            width :40px;
+        }
+        .td-width1 {
+            width :60px;
         }
     </style>
 </head>
@@ -96,38 +102,38 @@
         <div class="table-responsive">
         <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
             <thead>
-                <th class="table-style ">選択</th>
-                <th class="table-style ">保険種別</th>
-                <th class="table-style ">保険会社</th>
-                <th class="table-style ">商品名</th>
-                <th class="table-style ">区分</th>
-                <th class="table-style ">証券番号</th>
-                <th class="table-style ">保険期間</th>
-                <th class="table-style ">契約期間</th>
-                <th class="table-style ">月額保険料</th>
-                <th class="table-style ">一時払い</th>
-                <th class="table-style ">年間保険料</th>
-                <th class="table-style ">ステータス</th>
-                <th class="table-style ">満期お知らせ</th>
-                <th class="table-style ">事故</th>
-                <th class="table-style ">事故受け番号</th>
-                <th class="table-style ">担当者</th>
+                <th class="table-style td-width small">選択</th>
+                <th class="table-style td-width small">保険種別</th>
+                <th class="table-style td-width small">保険会社</th>
+                <th class="table-style td-width1 small">商品名</th>
+                <th class="table-style td-width small">区分</th>
+                <th class="table-style td-width1 small">証券番号</th>
+                <th class="table-style td-width1 small">保険期間</th>
+                <th class="table-style td-width small">契約期間</th>
+                <th class="table-style td-width small">月額保険料</th>
+                <th class="table-style td-width small">一時払い</th>
+                <th class="table-style td-width small">年間保険料</th>
+                <th class="table-style td-width small">ステータス</th>
+                <th class="table-style td-width small">満期お知らせ</th>
+                <th class="table-style td-width small">事故</th>
+                <th class="table-style td-width small">事故受け番号</th>
+                <th class="table-style td-width small">担当者</th>
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
-                    <td class="table-style small"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                    <td class="table-style small"><?= $row->insur_class_name ?></td>
-                    <td class="table-style small"><?= $row->insur_corp_name ?></td>
-                    <td class="table-style small"><?= $row->brand_name ?></td>
-                    <td class="table-style small"><?= $row->corp_div_name ?></td>
-                    <td class="table-style small"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
-                    <td class="table-style small"><?= $row->insurance_period_start ?></br>～<?= $row->insurance_period_end ?></td>
-                    <td class="table-style small"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
-                    <td class="table-style small"><?= number_format($row->month_p). "　円" ?></td>
-                    <td class="table-style small"><?= number_format($row->yearly_payment). "　円" ?></td>
-                    <td class="table-style small"><?= number_format($row->anp). "　円" ?></td>
-                    <td class="table-style small"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
-                    <td class="table-style small">
+                    <td class="small td-width"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
+                    <td class="small td-width"><?= $row->insur_class_name ?></td>
+                    <td class="small td-width"><?= $row->insur_corp_name ?></td>
+                    <td class="small td-width1"><?= $row->brand_name ?></td>
+                    <td class="small td-width"><?= $row->corp_div_name ?></td>
+                    <td class="small td-width1"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
+                    <td class="small td-width1"><?= $row->insurance_period_start ?></br>～<?= $row->insurance_period_end ?></td>
+                    <td class="small td-width"><?= $row->contract_period_y ?>年<?= $row->contract_period_m ?>ヶ月<?= $row->contract_period_d ?>日</td>
+                    <td class="small td-width"><?= number_format($row->month_p). "　円" ?></td>
+                    <td class="small td-width"><?= number_format($row->yearly_payment). "　円" ?></td>
+                    <td class="small td-width"><?= number_format($row->anp). "　円" ?></td>
+                    <td class="small td-width"><?php foreach ($contract_status_mst as $row_mst): ?><?php if ($row_mst->contract_status_id == $row->contract_status) :?><?= $row_mst->contract_status_name ?><?php endif; ?><?php endforeach; ?></td>
+                    <td class="small td-width">
                         <?php if ($row->insurance_period_end < $month_3ago) : ?>
                           <!--<input class="btn btn-xs btn-danger" type="submit" name="move" value="3か月前"/>-->
                           <?php if (2 == $row->contract_status) :?>
@@ -147,7 +153,7 @@
                           <?php endif; ?>
                         <?php endif; ?>
                     </td>
-                    <td class="table-style small">
+                    <td class="small td-width">
                         <?php foreach ($acc_list as $row1): ?>
                         <?php if ($row1->contract_id == $row->contract_id) : ?>
                           <?php if (1 == $row1->acc_status_id) :?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
@@ -157,12 +163,12 @@
                         <?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td class="table-style small">
+                    <td class="small td-width">
                         <?php foreach ($acc_list as $row1): ?>
                         <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_id ?><br><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
-                    <td class="table-style small"><?= $row->contract_owner ?></td>
+                    <td class="small td-width"><?= $row->contract_owner ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
@@ -178,12 +184,11 @@
         <div style="margin-top: 30px">
             <input class="btn btn-primary" type="submit" name="move" value="新規契約登録"/>
             <input class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
-            <input class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
-            <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約/事故関連書類"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
+            <input class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
+            <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
         </div>
         </div>
         <!-- モーダルの設定 -->
@@ -208,7 +213,7 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id").dataTable( {
-                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 3,4,7,11 ] }],
+                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 4,7,11 ] }],
                     "sScrollY": "400px",
                     "bStateSave": true,
                     "iDisplayLength": 25

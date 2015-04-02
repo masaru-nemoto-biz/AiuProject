@@ -35,8 +35,8 @@ class CustomerRef extends CI_Controller {
         
         $data['move'] = $this->input->post('move');
 
-        if ($data['move'] == '契約者情報一覧画面へ') {
-            redirect('corpinfolist/index');
+        if ($data['move'] == '戻る') {
+            redirect('main/index');
         } elseif (!empty($data['move'])) {
             $this->outputpdf($data['move']);
         } else {

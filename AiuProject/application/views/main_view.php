@@ -28,8 +28,14 @@
         .table-style {
             white-space: nowrap;
         }
-        .font-style-min {
-            
+        .td-width {
+            width :40px;
+        }
+        .td-width1 {
+            width :80px;
+        }
+        .td-width2 {
+            width :10px;
         }
     </style>
 </head>
@@ -87,26 +93,28 @@
             <table id="table_id" class="table table-striped table-bordered table-hover table-condensed">
               <thead>
                 <tr>
-                  <th class="table-style">選択</th>
-                  <th class="table-style">契約元</th>
-                  <th class="table-style">証券番号</th>
-                  <th class="table-style">事故受番号</th>
-                  <th class="table-style">担当者</th>
+                  <th class="table-style td-width2">選択</th>
+                  <th class="table-style td-width1">契約元</th>
+                  <th class="table-style td-width1">商品名</th>
+                  <th class="table-style td-width1">証券番号</th>
+                  <th class="table-style td-width1">事故受番号</th>
+                  <th class="table-style td-width">担当者</th>
                 </tr>
               </thead>
               <?php foreach ($contract_list as $row): ?>
               <tr>
-                <td class=""><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
-                <td class="small">
+                <td class="td-width2"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
+                <td class="small td-width1">
                     <?php if (3 == $row->contracter_type) : ?>
                       <?= $row->representative_name ?>
                     <?php else: ?>
                       <?= $row->corp_name ?>
                     <?php endif; ?>
                 </td>
-                <td class="small"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
-                <td class="small"><?= $row->acc_id ?></td>
-                <td class="small"><?= $row->contract_owner ?></td>
+                <td class="small td-width1"><?= $row->brand_name ?></td>
+                <td class="small td-width1"><?= $row->policy_number ?><?= '-'.$row->policy_branch_number ?></td>
+                <td class="small td-width1"><?= $row->acc_id ?></td>
+                <td class="small td-width"><?= $row->contract_owner ?></td>
               </tr>
               <?php endforeach; ?>
             </table>
@@ -117,6 +125,7 @@
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="企業アプローチ状況"/>
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約状況"/>
           <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
+          <input style="margin-top:10px" class="btn btn-primary" type="submit" name="move" value="契約者書類"/>
         </div>
         <?=form_close();?>
       </div>

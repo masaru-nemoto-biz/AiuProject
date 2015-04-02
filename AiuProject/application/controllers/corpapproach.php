@@ -25,10 +25,9 @@ class CorpApproach extends CI_Controller {
     function index() {
         
         $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'1');
-        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'));
-        foreach ($data['company_id'] as $row) {
-                $this->session->set_userdata('company_id', $row->company_id);
-        }
+        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+        $this->session->set_userdata('company_id', $data['company_id']->company_id);
+        
         $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $this->session->set_userdata('approach_list', $data['approach_list']);
@@ -80,8 +79,9 @@ class CorpApproach extends CI_Controller {
         if (!empty($approach_content_new)){
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
+            $this->history_model->insert_history('企業アプローチ状況が追加されました', $this->session->userdata('user'), $corp_name);
         }
-        $this->history_model->insert_history('企業アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
+        
         
         $this->index();
     }

@@ -107,8 +107,9 @@
             </div>
           </div>
         </div>
-        <div class="center_auto" style="margin-top: 10px; width: 310px;">
-            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="戻る"/>
+        <div class="center_auto" style="margin-top: 10px; width: 456px;">
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="main menu"/>
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="契約状況一覧"/>
             <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="登録"/>
         </div>
         <?= form_close(); ?>

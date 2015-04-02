@@ -58,8 +58,6 @@ class ContractInfoList extends CI_Controller {
             $this->contractInfo_delete();
         } elseif ($data['move'] == 'アプローチ状況') {
             $this->contract_approach();
-        } elseif ($data['move'] == '契約/事故関連書類') {
-            $this->contract_document();
         } else {
             $this->index();
         }
@@ -179,25 +177,5 @@ class ContractInfoList extends CI_Controller {
         redirect('contractapproach/index');
     }
 
-    /*
-     * 契約書類画面へ
-     */
-    function contract_document() {
-        $data['check1'] = $this->input->post('check_radio');
-        
-        if (empty($data['check1'])) {
-            // チェックなしの場合は自画面遷移
-            $message = '参照したい契約情報にチェックを入れてください';
-            $this->session->set_userdata('message', $message);
-            redirect('contractinfolist/index');
-        }
-        
-        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
-        $data['doclist2'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '2');
-        $data['doclist3'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '3');
-        $data['doclist4'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '4');
-        
-        $this->load->view('contract_document_view', $data);
-    }
 }
 ?>
