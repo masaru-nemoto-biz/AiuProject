@@ -25,7 +25,7 @@ class Main extends CI_Controller {
 
         $this->session->unset_userdata('seach_obj');
         $data['message'] = $this->session->userdata('message');
-        $data['contract_list'] = $this->contractInfo_model->get_contract_join_accident_all();
+        $data['contract_list'] = $this->contractInfo_model->get_contract_join_accident_active();
         $data['mst_seach_obj'] = $this->master_model->mst_seach_obj();
         $data['history_list'] = $this->history_model->get_history_all();
         $data['seach_obj'] = $this->session->userdata('seach_obj');
@@ -119,27 +119,12 @@ class Main extends CI_Controller {
             $this->session->set_userdata('message', $message);
             redirect('main/index');
         }
-        
-        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
-        $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
-        $data['accident_status_mst'] = $this->master_model->accident_status_mst();
-        
-        if (!empty($data['acc_list'])) {
-            
-            $data['acc_detail_list'] = $this->accident_model->get_accident_detail_contract_id($this->session->userdata('contract_id'));
-            
-            $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
-            $this->session->set_userdata('acc_list', $data['acc_list']);
-        } else {
-            $this->session->unset_userdata('acc_detail_list');
-            $this->session->unset_userdata('acc_list');
-        }
-        
-        $this->load->view('accident_conform_view', $data);
+
+        redirect('accidentconform/index');
     }
     
     /*
-     * 契約毎メモ画面へ
+     * 契約状況画面へ
      */
     function contract_approach() {
                 
@@ -154,10 +139,9 @@ class Main extends CI_Controller {
         
         redirect('contractapproach/index');
     }
-
         
     /*
-     * 企業毎メモ画面へ
+     * 企業アプローチ画面へ
      */
     function corp_approach() {
                 
@@ -189,11 +173,10 @@ class Main extends CI_Controller {
         $company_id = $data['company_id']->company_id;
         $data['referrer1'] = $this->agent->referrer();
         $data['list1'] = $this->corpStatus_model->get_company_detail($company_id);
-        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '1');
-        $data['doclist2'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '2');
-        $data['doclist3'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '3');
-        $data['doclist4'] = $this->documentinfo_model->get_document_contract($this->session->userdata('contract_id'), '4');
-        
+        $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_company($company_id, '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_company($company_id, '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_company($company_id, '4');
         $this->load->view('customer_ref_view', $data);
     }
 }

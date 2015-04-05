@@ -156,5 +156,25 @@ Class ContractInfo_model extends CI_Model {
         
         return $query->result();
     }
+    
+    function get_contract_join_accident_active() {
+        $this->db->select('contract_info.contract_id, contract_info.brand_name, policy_number, policy_branch_number, acc_id, contract_owner, contract_info.company_id, company_info.contracter_type, company_info.corp_name, representative_detail.representative_name');
+        $this->db->from('contract_info');
+        $this->db->join('company_info', 'contract_info.company_id = company_info.company_id', 'left outer');
+        $this->db->join('representative_detail', 'representative_detail.company_id = company_info.company_id', 'left outer');
+        $this->db->join('accident_info', 'contract_info.contract_id = accident_info.contract_id', 'left outer');
+        $this->db->where('contract_info.insurance_period_end >=', mdate('%Y-%m-%d'));
+        $this->db->where('accident_info.acc_status_id', '2');
+        $this->db->where('contract_info.del_flg', '0');
+        $this->db->or_where('contract_info.insurance_period_end >=', mdate('%Y-%m-%d'));
+        $this->db->where('accident_info.acc_status_id', '1');
+        $this->db->where('contract_info.del_flg', '0');
+        $this->db->or_where('contract_info.insurance_period_end >=', mdate('%Y-%m-%d'));
+        $this->db->where('accident_info.acc_status_id', null);
+        $this->db->where('contract_info.del_flg', '0');
+        $query = $this->db->get();
+        
+        return $query->result();
+    }
 }
 ?>

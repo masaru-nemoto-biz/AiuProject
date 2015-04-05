@@ -115,8 +115,8 @@
                 <th class="table-style td-width small">年間保険料</th>
                 <th class="table-style td-width small">ステータス</th>
                 <th class="table-style td-width small">満期お知らせ</th>
-                <th class="table-style td-width small">事故</th>
                 <th class="table-style td-width small">事故受け番号</th>
+                <th class="table-style td-width small">事故</th>
                 <th class="table-style td-width small">担当者</th>
             </thead>
             <?php foreach ($list2 as $row): ?>
@@ -155,17 +155,17 @@
                     </td>
                     <td class="small td-width">
                         <?php foreach ($acc_list as $row1): ?>
+                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_id ?><br><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td class="small td-width">
+                        <?php foreach ($acc_list as $row1): ?>
                         <?php if ($row1->contract_id == $row->contract_id) : ?>
                           <?php if (1 == $row1->acc_status_id) :?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
                           <?php elseif (2 == $row1->acc_status_id) : ?><span class="label label-danger"><?= $row1->acc_status_name ?></span>
                           <?php elseif (3 == $row1->acc_status_id) : ?><span class="label label-success"><?= $row1->acc_status_name ?></span>
                           <?php endif; ?><br>
                         <?php endif; ?>
-                        <?php endforeach; ?>
-                    </td>
-                    <td class="small td-width">
-                        <?php foreach ($acc_list as $row1): ?>
-                        <?php if ($row1->contract_id == $row->contract_id) : ?><?= $row1->acc_id ?><br><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
                     <td class="small td-width"><?= $row->contract_owner ?></td>
@@ -186,9 +186,11 @@
             <input class="btn btn-primary" type="submit" name="move" value="契約情報追加/変更"/>
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">契約情報削除</a>
-            <input class="btn btn-primary" type="submit" name="move" value="アプローチ状況"/>
+            <input class="btn btn-primary" type="submit" name="move" value="企業アプローチ状況"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約状況"/>
             <input class="btn btn-primary" type="submit" name="move" value="事故進捗状況"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
+            <input class="btn btn-primary" type="submit" name="move" value="契約者書類"/>
+            <input class="btn btn-warning" type="submit" name="move" value="契約者情報一覧画面へ"/>
         </div>
         </div>
         <!-- モーダルの設定 -->

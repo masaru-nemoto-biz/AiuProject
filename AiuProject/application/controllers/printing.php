@@ -115,7 +115,7 @@ class Printing extends CI_Controller {
         // 日本語を使う場合は、日本語に対応しているフォントを使う
         $this->pdf->SetFont('kozgopromedium', '', 10);
   
-        $this->pdf->Cell( 0, 8, '平成27年2月8日', 1, 1, 'R');
+        $this->pdf->Cell( 0, 8, mdate('%Y年%m月%d日'), 1, 1, 'R');
         $cell_01 = '<span style="font-size:35px;">書類送付状</span>';
         $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span>';
         $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
@@ -192,7 +192,7 @@ class Printing extends CI_Controller {
         $this->pdf->SetFont('kozgopromedium', '', 10);
         
         $cell_01_1 = '<span style="font-size:35px;">FAX送付状</span><span style="font-size:10px;">（送付状含み1枚）</span>';
-        $cell_01_2 = '<span style="font-size:10px;">平成27年2月8日</span>';
+        $cell_01_2 = '<span style="font-size:10px;">'. mdate('%Y年%m月%d日'). '</span>';
         $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span><br><br><br><br><br><br><span style="font-size:13px;">FAX番号：'.$this->session->userdata('fax').'</span>';
         $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
         $cell_04 = '<span style="font-size:13px;">'.$this->input->post('title').'</span>';

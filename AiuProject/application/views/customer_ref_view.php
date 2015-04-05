@@ -43,7 +43,7 @@
             <input class="btn btn-primary" type="submit" name="move" value="main menuへ"/>
             <?=form_close();?>
         </div>
-        <?=form_open('customerref/customerref_conform')?>
+        <?=form_open('documentlist/document_conform')?>
         <div class="page-header text-center">
             <p class="h2">契約書類一覧画面</p>
         </div>
@@ -80,7 +80,7 @@
           </thead>
           <?php foreach ($doclist as $row): ?>
           <tr>
-            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td><input type="submit" class="btn btn-link input-sm" name="move" value="<?= $row->doc_name ?>"/></td>
             <td style="vertical-align:middle;"><?= $row->description ?></td>
           </tr>
           <?php endforeach; ?>
@@ -95,7 +95,7 @@
           </thead>
           <?php foreach ($doclist2 as $row): ?>
           <tr>
-            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td><input type="submit" class="btn btn-link input-sm" name="move" value="<?= $row->doc_name ?>"/></td>
             <td style="vertical-align:middle;"><?= $row->description ?></td>
           </tr>
           <?php endforeach; ?>
@@ -110,7 +110,7 @@
           </thead>
           <?php foreach ($doclist4 as $row): ?>
           <tr>
-            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td><input type="submit" class="btn btn-link input-sm" name="move" value="<?= $row->doc_name ?>"/></td>
             <td style="vertical-align:middle;"><?= $row->description ?></td>
           </tr>
           <?php endforeach; ?>
@@ -125,13 +125,14 @@
           </thead>
           <?php foreach ($doclist3 as $row): ?>
           <tr>
-            <td><input type="submit" class="btn btn-link" name="move" value="<?= $row->doc_name ?>"/></td>
+            <td><input type="submit" class="btn btn-link input-sm" name="move" value="<?= $row->doc_name ?>"/></td>
             <td style="vertical-align:middle;"><?= $row->description ?></td>
           </tr>
           <?php endforeach; ?>
         </table>
         <div style="margin-top: 30px">
-            <input class="btn btn-primary" type="submit" name="move" value="戻る"/>
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="main menu"/>
+            <input class="btn btn-primary" style="width:150px" type="submit" name="move" value="契約状況一覧"/>
         </div>
         </div>
         <?=form_close();?>

@@ -138,7 +138,7 @@
         <?php endif; ?>
         </div>
         <?=form_open('main/main_conform') ?>
-          <input class="btn btn-primary" type="submit" name="move" value="契約者情報一覧画面へ"/>
+          <input class="btn btn-warning" type="submit" name="move" value="契約者情報一覧画面へ"/>
           <input class="btn btn-primary" type="submit" name="move" value="各種書類印刷へ"/>
         <?=form_close();?>
       </div>

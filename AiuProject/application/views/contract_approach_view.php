@@ -88,7 +88,7 @@
                     <input class="form-control input-sm" type="date" name="upd_date<?= $row->approach_id ?>" value="<?= $row->upd_date ?>" />
                   </td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="approach_content<?= $row->approach_id ?>" cols="120" rows="7" wrap="hard"><?= $row->approach_content ?></textarea>
+                    <textarea class="form-control input-sm" name="approach_content<?= $row->approach_id ?>" cols="120" rows="4" wrap="hard"><?= $row->approach_content ?></textarea>
                   </td>
                   <td class="table-style"><input type="text" name="upd_user<?= $row->approach_id ?>" value="<?= $row->upd_user ?>" /></td>
                 </tr>
@@ -99,7 +99,7 @@
                     <input class="form-control input-sm" type="date" name="upd_date_new" value="" />
                   </td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="approach_content_new" cols="120" rows="7" wrap="hard"></textarea>
+                    <textarea class="form-control input-sm" name="approach_content_new" cols="120" rows="4" wrap="hard"></textarea>
                   </td>
                   <td class="table-style"><input type="text" name="upd_user_new" value="" /></td>
                 </tr>

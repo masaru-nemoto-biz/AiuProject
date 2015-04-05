@@ -58,6 +58,8 @@ class CorpInfoList extends CI_Controller {
             $this->move_contractInfo();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_document();
         } else {
             $this->index();
         }
@@ -217,6 +219,26 @@ class CorpInfoList extends CI_Controller {
         $this->corpStatus_model->set_company_del($this->session->userdata('company_id'));
         
         redirect('corpinfolist/index');
+    }
+
+    /*
+     * 契約者書類画面へ
+     */
+    function customer_document() {
+        $data['check1'] = $this->input->post('check_radio');
+                
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '参照したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('corpinfolist/index');
+        }
+        $data['list1'] = $this->corpStatus_model->get_company_detail($this->session->userdata('company_id'));
+        $data['doclist'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_company($this->session->userdata('company_id'), '4');
+        $this->load->view('customer_ref_view', $data);
     }
 }
 ?>

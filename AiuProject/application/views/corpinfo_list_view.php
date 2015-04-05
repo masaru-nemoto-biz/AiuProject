@@ -147,7 +147,7 @@
             <!-- 切り替えボタンの設定 -->
             <a data-toggle="modal" href="#myModal" class="btn btn-primary">情報削除</a>
             <input class="btn btn-primary" type="submit" name="move" value="情報照会"/>
-            <input class="btn btn-primary" type="submit" name="move" value="契約状況一覧"/>
+            <input class="btn btn-warning" type="submit" name="move" value="契約状況一覧"/>
         </div>
         </div>
         <!-- モーダルの設定 -->

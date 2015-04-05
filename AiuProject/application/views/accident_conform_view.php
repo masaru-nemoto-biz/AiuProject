@@ -162,7 +162,7 @@
                     <input class="form-control input-sm" type="date" name="upd_date<?= $row->acc_status_id ?>" value="<?= $row->upd_date ?>" />
                   </td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="status_quo<?= $row->acc_status_id ?>" cols="120" rows="7" wrap="hard"><?= $row->status_quo ?></textarea>
+                    <textarea class="form-control input-sm" name="status_quo<?= $row->acc_status_id ?>" cols="120" rows="4" wrap="hard"><?= $row->status_quo ?></textarea>
                   </td>
                   <td class="table-style"><input type="text" name="upd_user<?= $row->acc_status_id ?>" value="<?= $row->upd_user ?>" /></td>
                 </tr>
@@ -174,7 +174,7 @@
                     <input class="form-control input-sm" type="date" name="upd_date_new<?= $row_acc_list->acc_id ?>" value="" />
                   </td>
                   <td class="table-style">
-                    <textarea class="form-control input-sm" name="status_quo_new<?= $row_acc_list->acc_id ?>" cols="120" rows="7" wrap="hard"></textarea>
+                    <textarea class="form-control input-sm" name="status_quo_new<?= $row_acc_list->acc_id ?>" cols="120" rows="4" wrap="hard"></textarea>
                   </td>
                   <td class="table-style"><input type="text" name="upd_user_new<?= $row_acc_list->acc_id ?>" value="" /></td>
                 </tr>

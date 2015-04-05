@@ -56,8 +56,12 @@ class ContractInfoList extends CI_Controller {
             $this->contractInfo_change();
         } elseif ($data['move'] == '削除') {
             $this->contractInfo_delete();
-        } elseif ($data['move'] == 'アプローチ状況') {
+        } elseif ($data['move'] == '契約状況') {
             $this->contract_approach();
+        } elseif ($data['move'] == '企業アプローチ状況') {
+            $this->corp_approach();
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_document();
         } else {
             $this->index();
         }
@@ -122,23 +126,8 @@ class ContractInfoList extends CI_Controller {
             $this->session->set_userdata('message', $message);
             redirect('contractinfolist/index');
         }
-        
-        $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
-        $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
-        $data['accident_status_mst'] = $this->master_model->accident_status_mst();
-        
-        if (!empty($data['acc_list'])) {
-            
-            $data['acc_detail_list'] = $this->accident_model->get_accident_detail_contract_id($this->session->userdata('contract_id'));
-            
-            $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
-            $this->session->set_userdata('acc_list', $data['acc_list']);
-        } else {
-            $this->session->unset_userdata('acc_detail_list');
-            $this->session->unset_userdata('acc_list');
-        }
-        
-        $this->load->view('accident_conform_view', $data);
+
+        redirect('accidentconform/index');
     }
 
     /*
@@ -161,7 +150,7 @@ class ContractInfoList extends CI_Controller {
     }
 
     /*
-     * 契約毎メモ画面へ
+     * 契約状況画面へ
      */
     function contract_approach() {
                 
@@ -176,6 +165,44 @@ class ContractInfoList extends CI_Controller {
         
         redirect('contractapproach/index');
     }
+        
+    /*
+     * 企業アプローチ画面へ
+     */
+    function corp_approach() {
+                
+        $data['check1'] = $this->input->post('check_radio');
+        
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '変更したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('contractinfolist/index');
+        }
+        
+        redirect('corpapproach/index');
+    }
 
+    /*
+     * 契約者書類画面へ
+     */
+    function customer_document() {
+        $data['check1'] = $this->input->post('check_radio');
+                
+        if (empty($data['check1'])) {
+            // チェックなしの場合は自画面遷移
+            $message = '参照したい企業にチェックを入れてください';
+            $this->session->set_userdata('message', $message);
+            redirect('corpinfolist/index');
+        }
+        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+        $company_id = $data['company_id']->company_id;
+        $data['list1'] = $this->corpstatus_model->get_company_detail($company_id);
+        $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_company($company_id, '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_company($company_id, '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_company($company_id, '4');
+        $this->load->view('customer_ref_view', $data);
+    }
 }
 ?>

@@ -25,7 +25,6 @@ class AccidentConform extends CI_Controller {
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $data['acc_list'] = $this->contractInfo_model->get_accident_data($this->session->userdata('contract_id'));
         $data['accident_status_mst'] = $this->master_model->accident_status_mst();
-        $data['acc_count'] = $this->accident_model->count_accident_info($this->session->userdata('contract_id'));
         
         if (!empty($data['acc_list'])) {
             
@@ -33,7 +32,6 @@ class AccidentConform extends CI_Controller {
             
             $this->session->set_userdata('acc_detail_list', $data['acc_detail_list']);
             $this->session->set_userdata('acc_list', $data['acc_list']);
-            $this->session->set_userdata('acc_count', $data['acc_count']);
         } else {
             $this->session->unset_userdata('acc_detail_list');
             $this->session->unset_userdata('acc_list');
