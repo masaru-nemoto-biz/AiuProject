@@ -13,6 +13,7 @@ class CorpApproach extends CI_Controller {
         $this->load->model('master_model');
         $this->load->model('history_model');
         $this->load->model('approachinfo_model');
+        $this->load->model('documentinfo_model');
         
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
@@ -24,10 +25,13 @@ class CorpApproach extends CI_Controller {
      */
     function index() {
         
-        $data['approach_list'] = $this->approachinfo_model->get_approach_info($this->session->userdata('contract_id'),'1');
-        $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
-        $this->session->set_userdata('company_id', $data['company_id']->company_id);
+        $company_id = $this->session->userdata('company_id');
+        if (empty($company_id)) {
+            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
+            $this->session->set_userdata('company_id', $data['company_id']->company_id);
+        }
         
+        $data['approach_list'] = $this->approachinfo_model->get_approach_info_company($this->session->userdata('company_id'),'1');
         $data['list1'] = $this->corpstatus_model->get_company_detail($this->session->userdata('company_id'));
         $data['contract_list'] = $this->contractInfo_model->get_contract_info($this->session->userdata('contract_id'));
         $this->session->set_userdata('approach_list', $data['approach_list']);
@@ -45,8 +49,15 @@ class CorpApproach extends CI_Controller {
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
         
-        if ($data['move'] == '戻る') {
+        if ($data['move'] == 'main menu') {
             redirect('main/index');
+            
+        } elseif ($data['move'] == '契約状況一覧') {
+            redirect('contractinfolist/index');
+            
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_document();
+            
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
         } else {
@@ -70,18 +81,16 @@ class CorpApproach extends CI_Controller {
                 $this->conform_Prepare_status_quo($row->approach_id);
                 $this->approachinfo_model->set_approach_info($row->approach_id, $this->array2);
             }
-            $this->history_model->insert_history('企業アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         }
-
         
         // アプローチ状況追加
         $approach_content_new = $this->input->post('approach_content_new');
         if (!empty($approach_content_new)){
             $this->conform_Prepare_status_quo_new();
             $this->approachinfo_model->insert_approach_info($this->array3);
-            $this->history_model->insert_history('企業アプローチ状況が追加されました', $this->session->userdata('user'), $corp_name);
         }
         
+        $this->history_model->insert_history('企業アプローチ状況が更新されました', $this->session->userdata('user'), $corp_name);
         
         $this->index();
     }
@@ -108,12 +117,26 @@ class CorpApproach extends CI_Controller {
      */
     function conform_Prepare_status_quo_new() {
 
-        $this->array3 = array('contract_id' => $this->session->userdata('contract_id'),
+        $this->array3 = array('contract_id' => '0',
             'approach_content' => $this->input->post('approach_content_new'),
             'company_id' => $this->session->userdata('company_id'),
             'approach_div' => '1',
             'upd_date' => $this->input->post('upd_date_new'),
             'upd_user' => $this->input->post('upd_user_new'));
+    }
+    
+    /*
+     * 契約者書類画面へ
+     */
+    function customer_document() {
+
+        $company_id = $this->session->userdata('company_id');
+        $data['list1'] = $this->corpstatus_model->get_company_detail($company_id);
+        $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_company($company_id, '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_company($company_id, '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_company($company_id, '4');
+        $this->load->view('customer_ref_view', $data);
     }
 }
 ?>

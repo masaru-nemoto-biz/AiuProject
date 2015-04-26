@@ -50,6 +50,7 @@
         <div class="col-md-12">
             <table class="table table-condensed">
                 <tr><td>題名</td><td><input class="form-control input-sm" type="text" name="title" value="" size="50" /></td></tr>
+                <tr><td>担当者</td><td><input class="form-control input-sm" type="text" name="rep" value="" size="50" /></td></tr>
                 <tr><td>書類名１</td><td><input class="form-control input-sm" type="text" name="document1" value="" size="50" /></td></tr>
                 <tr><td>書類名２</td><td><input class="form-control input-sm" type="text" name="document2" value="" size="50" /></td></tr>
                 <tr><td>書類名３</td><td><input class="form-control input-sm" type="text" name="document3" value="" size="50" /></td></tr>

@@ -228,28 +228,26 @@
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆代表者詳細</label>
-                    <?php foreach ($representative as $row): ?>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">代表者氏名</td><td><input class="form-control input-sm" type="text" name="representative_name" value="<?= $row->representative_name ?>" size="50" /></td></tr>
-                        <tr><td>代表者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="representative_kana" value="<?= $row->representative_kana ?>" size="50" /></td></tr>
-                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="rep_title" value="<?= $row->title ?>" size="50" /></td></tr>
+                        <tr><td class="td_head_size">代表者氏名</td><td><input class="form-control input-sm" type="text" name="representative_name" value="<?= $representative->representative_name ?>" size="50" /></td></tr>
+                        <tr><td>代表者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="representative_kana" value="<?= $representative->representative_kana ?>" size="50" /></td></tr>
+                        <tr><td>肩書</td><td><input class="form-control input-sm" type="text" name="rep_title" value="<?= $representative->title ?>" size="50" /></td></tr>
                         <tr><td>性別</td>
                             <td>
                                 <select class="form-control input-sm" name="rep_sex">
                                     <?php foreach ($sex_mst as $row_rep_sex): ?>
-                                    <option value="<?= $row_rep_sex->sex_id ?>" <?php if ($row_rep_sex->sex_id == $row->sex) :?>selected="selected"<?php endif; ?>><?= $row_rep_sex->sex_name ?></option>
+                                    <option value="<?= $row_rep_sex->sex_id ?>" <?php if ($row_rep_sex->sex_id == $representative->sex) :?>selected="selected"<?php endif; ?>><?= $row_rep_sex->sex_name ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="rep_birthday" value="<?= $row->birthday ?>" size="50" /></td></tr>
-                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $row->rep_mobile_phone ?>" size="50" /></td></tr>
-                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $row->mail ?>" size="50" /></td></tr>
-                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $row->post ?>" size="50" /></td></tr>
-                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $row->address ?>" size="50" /></td></tr>
-                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $row->home_phone ?>" size="50" /></td></tr>
+                        <tr><td>生年月日</td><td><input class="form-control input-sm" type="date" name="rep_birthday" value="<?= $representative->birthday ?>" size="50" /></td></tr>
+                        <tr><td>携帯電話</td><td><input class="form-control input-sm" type="text" name="rep_mobile_phone" value="<?= $representative->rep_mobile_phone ?>" size="50" /></td></tr>
+                        <tr><td>メールアドレス</td><td><input class="form-control input-sm" type="text" name="rep_mail" value="<?= $representative->mail ?>" size="50" /></td></tr>
+                        <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $representative->post ?>" size="50" /></td></tr>
+                        <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $representative->address ?>" size="50" /></td></tr>
+                        <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $representative->home_phone ?>" size="50" /></td></tr>
                     </table>
-                    <?php endforeach; ?>
                     <label class="label_size">◆契約担当者詳細</label>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $contract->contract_name ?>" size="50" /></td></tr>

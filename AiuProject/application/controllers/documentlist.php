@@ -47,8 +47,8 @@ class DocumentList extends CI_Controller {
             
             redirect('contractinfolist/index');
             
-        } elseif ($data['move'] == '登録') {
-            $this->conform_add();
+        } elseif (!empty($data['move'])) {
+            $this->outputpdf($data['move']);
         } else {
             $this->index();
         }

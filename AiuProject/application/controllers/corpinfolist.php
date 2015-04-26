@@ -81,7 +81,7 @@ class CorpInfoList extends CI_Controller {
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1'])->row(0);
         $company_id = $data['company_data']->company_id;
 
-        $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1']);
+        $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1'])->row(0);
         
         $data['contract'] = $this->corpStatus_model->get_contract_data($data['check1'])->row(0);
         
@@ -132,13 +132,9 @@ class CorpInfoList extends CI_Controller {
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check1'])->row(0);
         $company_id = $data['company_data']->company_id;
 
-        $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1']);
-        foreach ($data['representative'] as $row) {
-            $company_id = $row->company_id;
-        }
+        $data['representative'] = $this->corpStatus_model->get_representative_data($data['check1'])->row(0);
         
         $data['contract'] = $this->corpStatus_model->get_contract_data($data['check1'])->row(0);
-        $company_id = $data['contract']->company_id;
         
         $data['bank'] = $this->corpStatus_model->get_bank_data($data['check1']);
         foreach ($data['bank'] as $row) {

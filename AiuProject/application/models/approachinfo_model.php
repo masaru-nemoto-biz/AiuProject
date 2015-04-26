@@ -19,6 +19,14 @@ Class Approachinfo_model extends CI_Model {
         return $query->result();
     }
 
+    function get_approach_info_company($company_id,$approach_div) {
+        $this->db->where('company_id', $company_id);
+        $this->db->where('approach_div', $approach_div);
+        $this->db->order_by('upd_date');
+        $query = $this->db->get('approach_info');
+        return $query->result();
+    }
+    
     function set_approach_info($approach_id, $array) {
         $this->db->where('approach_id', $approach_id);
         $this->db->update('approach_info', $array); 

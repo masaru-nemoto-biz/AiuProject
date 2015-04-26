@@ -3693,3 +3693,523 @@ DEBUG - 2015-04-05 17:04:38 --> User Agent Class Initialized
 DEBUG - 2015-04-05 17:04:38 --> File loaded: application/views/main_view.php
 DEBUG - 2015-04-05 17:04:38 --> Final output sent to browser
 DEBUG - 2015-04-05 17:04:38 --> Total execution time: 0.0493
+DEBUG - 2015-04-05 17:15:19 --> Config Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:15:19 --> URI Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Router Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Output Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Security Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Input Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:19 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:15:19 --> CSRF token verified 
+DEBUG - 2015-04-05 17:15:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:15:19 --> Language Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:15:19 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Session Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:15:19 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Session routines successfully run
+DEBUG - 2015-04-05 17:15:19 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:15:19 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:15:19 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:19 --> Database Driver Class Initialized
+ERROR - 2015-04-05 17:15:19 --> Severity: Notice  --> mysql_pconnect():  D:\xampp\htdocs\AiuProject\AiuProject\system\database\drivers\mysql\mysql_driver.php 88
+DEBUG - 2015-04-05 17:15:20 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:15:20 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> User Agent Class Initialized
+DEBUG - 2015-04-05 17:15:20 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-04-05 17:15:20 --> Final output sent to browser
+DEBUG - 2015-04-05 17:15:20 --> Total execution time: 1.1158
+DEBUG - 2015-04-05 17:15:22 --> Config Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:15:22 --> URI Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Router Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Output Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Security Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Input Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:22 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:22 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:22 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:22 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:15:22 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:15:22 --> CSRF token verified 
+DEBUG - 2015-04-05 17:15:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:15:22 --> Language Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:15:22 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Session Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:15:22 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Session routines successfully run
+DEBUG - 2015-04-05 17:15:22 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:15:22 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:15:22 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:15:22 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Model Class Initialized
+DEBUG - 2015-04-05 17:15:22 --> Model Class Initialized
+ERROR - 2015-04-05 17:15:22 --> Severity: Notice  --> Undefined variable: doclist D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 81
+ERROR - 2015-04-05 17:15:22 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 81
+ERROR - 2015-04-05 17:15:22 --> Severity: Notice  --> Undefined variable: doclist2 D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 96
+ERROR - 2015-04-05 17:15:22 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 96
+ERROR - 2015-04-05 17:15:22 --> Severity: Notice  --> Undefined variable: doclist4 D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 111
+ERROR - 2015-04-05 17:15:22 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 111
+ERROR - 2015-04-05 17:15:22 --> Severity: Notice  --> Undefined variable: doclist3 D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 126
+ERROR - 2015-04-05 17:15:22 --> Severity: Warning  --> Invalid argument supplied for foreach() D:\xampp\htdocs\AiuProject\AiuProject\application\views\customer_ref_view.php 126
+DEBUG - 2015-04-05 17:15:22 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-04-05 17:15:22 --> Final output sent to browser
+DEBUG - 2015-04-05 17:15:22 --> Total execution time: 0.0455
+DEBUG - 2015-04-05 17:17:47 --> Config Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:17:47 --> URI Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Router Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Output Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Security Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Input Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:47 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:47 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:47 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:47 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:47 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:17:47 --> CSRF token verified 
+DEBUG - 2015-04-05 17:17:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:17:47 --> Language Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:17:47 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Session Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:17:47 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Session routines successfully run
+DEBUG - 2015-04-05 17:17:47 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:17:47 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:17:47 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:17:47 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:47 --> Helper loaded: download_helper
+DEBUG - 2015-04-05 17:17:51 --> Config Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:17:51 --> URI Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Router Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Output Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Security Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Input Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:51 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:17:51 --> CSRF token verified 
+DEBUG - 2015-04-05 17:17:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:17:51 --> Language Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:17:51 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Session Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:17:51 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Session routines successfully run
+DEBUG - 2015-04-05 17:17:51 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:17:51 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:17:51 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> User Agent Class Initialized
+DEBUG - 2015-04-05 17:17:51 --> File loaded: application/views/main_view.php
+DEBUG - 2015-04-05 17:17:51 --> Final output sent to browser
+DEBUG - 2015-04-05 17:17:51 --> Total execution time: 0.0502
+DEBUG - 2015-04-05 17:17:53 --> Config Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:17:53 --> URI Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Router Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Output Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Security Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Input Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:53 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:17:53 --> CSRF token verified 
+DEBUG - 2015-04-05 17:17:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:17:53 --> Language Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:17:53 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Session Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:17:53 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Session routines successfully run
+DEBUG - 2015-04-05 17:17:53 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:17:53 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:17:53 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> User Agent Class Initialized
+DEBUG - 2015-04-05 17:17:53 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-04-05 17:17:53 --> Final output sent to browser
+DEBUG - 2015-04-05 17:17:53 --> Total execution time: 0.0535
+DEBUG - 2015-04-05 17:17:54 --> Config Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:17:54 --> URI Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Router Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Output Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Security Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Input Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:54 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:54 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:54 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:54 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:17:54 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:17:54 --> CSRF token verified 
+DEBUG - 2015-04-05 17:17:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:17:54 --> Language Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:17:54 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Session Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:17:54 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Session routines successfully run
+DEBUG - 2015-04-05 17:17:54 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:17:54 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:17:54 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:17:54 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Model Class Initialized
+DEBUG - 2015-04-05 17:17:54 --> Helper loaded: download_helper
+DEBUG - 2015-04-05 17:20:50 --> Config Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:20:50 --> URI Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Router Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Output Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Security Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Input Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:20:50 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:20:50 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:20:50 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:20:50 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:20:50 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:20:50 --> CSRF token verified 
+DEBUG - 2015-04-05 17:20:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:20:50 --> Language Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:20:50 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Session Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:20:50 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Session routines successfully run
+DEBUG - 2015-04-05 17:20:50 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:20:50 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:20:50 --> Model Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Model Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:20:50 --> Model Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Model Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Model Class Initialized
+DEBUG - 2015-04-05 17:20:50 --> Helper loaded: download_helper
+ERROR - 2015-04-05 17:20:50 --> Severity: Warning  --> file_get_contents(..//AiuProject/uploads/AIU BGNSS A504105386 ﾄﾞﾘｰﾑﾜｰｸｽ.pdf): failed to open stream: No such file or directory D:\xampp\htdocs\AiuProject\AiuProject\application\controllers\documentlist.php 63
+ERROR - 2015-04-05 17:20:50 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\AiuProject\AiuProject\system\core\Exceptions.php:170) D:\xampp\htdocs\AiuProject\AiuProject\system\core\Output.php 337
+DEBUG - 2015-04-05 17:20:50 --> Final output sent to browser
+DEBUG - 2015-04-05 17:20:50 --> Total execution time: 0.0457
+DEBUG - 2015-04-05 17:22:03 --> Config Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:22:03 --> URI Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Router Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Output Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Security Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Input Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:03 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:03 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:03 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:03 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:03 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:22:03 --> CSRF token verified 
+DEBUG - 2015-04-05 17:22:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:22:03 --> Language Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:22:03 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Session Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:22:03 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Session routines successfully run
+DEBUG - 2015-04-05 17:22:03 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:22:03 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:22:03 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:22:03 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:03 --> Helper loaded: download_helper
+ERROR - 2015-04-05 17:22:03 --> Severity: Warning  --> file_get_contents(..//AiuProject/uploads/AIU BGNSS A504105386 ﾄﾞﾘｰﾑﾜｰｸｽ.pdf): failed to open stream: No such file or directory D:\xampp\htdocs\AiuProject\AiuProject\application\controllers\documentlist.php 63
+ERROR - 2015-04-05 17:22:03 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\AiuProject\AiuProject\system\core\Exceptions.php:170) D:\xampp\htdocs\AiuProject\AiuProject\system\core\Output.php 337
+DEBUG - 2015-04-05 17:22:03 --> Final output sent to browser
+DEBUG - 2015-04-05 17:22:03 --> Total execution time: 0.0439
+DEBUG - 2015-04-05 17:22:06 --> Config Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:22:06 --> URI Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Router Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Output Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Security Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Input Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:06 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:06 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:06 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:06 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:22:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:22:06 --> Language Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:22:06 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Session Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:22:06 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Session routines successfully run
+DEBUG - 2015-04-05 17:22:06 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:22:06 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:22:06 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> User Agent Class Initialized
+DEBUG - 2015-04-05 17:22:06 --> File loaded: application/views/main_view.php
+DEBUG - 2015-04-05 17:22:06 --> Final output sent to browser
+DEBUG - 2015-04-05 17:22:06 --> Total execution time: 0.0548
+DEBUG - 2015-04-05 17:22:09 --> Config Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:22:09 --> URI Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Router Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Output Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Security Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Input Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:09 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:22:09 --> CSRF token verified 
+DEBUG - 2015-04-05 17:22:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:22:09 --> Language Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:22:09 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Session Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:22:09 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Session routines successfully run
+DEBUG - 2015-04-05 17:22:09 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:22:09 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:22:09 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> User Agent Class Initialized
+DEBUG - 2015-04-05 17:22:09 --> File loaded: application/views/customer_ref_view.php
+DEBUG - 2015-04-05 17:22:09 --> Final output sent to browser
+DEBUG - 2015-04-05 17:22:09 --> Total execution time: 0.0566
+DEBUG - 2015-04-05 17:22:10 --> Config Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:22:10 --> URI Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Router Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Output Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Security Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Input Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:10 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:10 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:10 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:10 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:22:10 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:22:10 --> CSRF token verified 
+DEBUG - 2015-04-05 17:22:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:22:10 --> Language Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:22:10 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Session Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:22:10 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Session routines successfully run
+DEBUG - 2015-04-05 17:22:10 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:22:10 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:22:10 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:22:10 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Model Class Initialized
+DEBUG - 2015-04-05 17:22:10 --> Helper loaded: download_helper
+ERROR - 2015-04-05 17:22:10 --> Severity: Warning  --> file_get_contents(..//AiuProject/uploads/AIU BGNSS A504105386 ﾄﾞﾘｰﾑﾜｰｸｽ.pdf): failed to open stream: No such file or directory D:\xampp\htdocs\AiuProject\AiuProject\application\controllers\documentlist.php 63
+ERROR - 2015-04-05 17:22:10 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\AiuProject\AiuProject\system\core\Exceptions.php:170) D:\xampp\htdocs\AiuProject\AiuProject\system\core\Output.php 337
+DEBUG - 2015-04-05 17:22:10 --> Final output sent to browser
+DEBUG - 2015-04-05 17:22:10 --> Total execution time: 0.0433
+DEBUG - 2015-04-05 17:23:30 --> Config Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:23:30 --> URI Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Router Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Output Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Security Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Input Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:30 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:30 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:30 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:30 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:30 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:23:30 --> CSRF token verified 
+DEBUG - 2015-04-05 17:23:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:23:30 --> Language Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:23:30 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Session Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:23:30 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Session routines successfully run
+DEBUG - 2015-04-05 17:23:30 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:23:30 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:23:30 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:23:30 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:30 --> Helper loaded: download_helper
+ERROR - 2015-04-05 17:23:30 --> Severity: Warning  --> file_get_contents(..//AiuProject/uploads/AIU BGNSS A504105386 ﾄﾞﾘｰﾑﾜｰｸｽ.pdf): failed to open stream: No such file or directory D:\xampp\htdocs\AiuProject\AiuProject\application\controllers\documentlist.php 63
+ERROR - 2015-04-05 17:23:30 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\AiuProject\AiuProject\system\core\Exceptions.php:170) D:\xampp\htdocs\AiuProject\AiuProject\system\core\Output.php 337
+DEBUG - 2015-04-05 17:23:30 --> Final output sent to browser
+DEBUG - 2015-04-05 17:23:30 --> Total execution time: 0.0451
+DEBUG - 2015-04-05 17:23:41 --> Config Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Hooks Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Utf8 Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> UTF-8 Support Enabled
+DEBUG - 2015-04-05 17:23:41 --> URI Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Router Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Output Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Security Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Input Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:41 --> XSS Filtering completed
+DEBUG - 2015-04-05 17:23:41 --> CRSF cookie Set
+DEBUG - 2015-04-05 17:23:41 --> CSRF token verified 
+DEBUG - 2015-04-05 17:23:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2015-04-05 17:23:41 --> Language Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Loader Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Helper loaded: url_helper
+DEBUG - 2015-04-05 17:23:41 --> Controller Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Session Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Helper loaded: string_helper
+DEBUG - 2015-04-05 17:23:41 --> Encrypt Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Session routines successfully run
+DEBUG - 2015-04-05 17:23:41 --> Helper loaded: form_helper
+DEBUG - 2015-04-05 17:23:41 --> Session class already loaded. Second attempt ignored.
+DEBUG - 2015-04-05 17:23:41 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Database Driver Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Helper loaded: date_helper
+DEBUG - 2015-04-05 17:23:41 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Model Class Initialized
+DEBUG - 2015-04-05 17:23:41 --> Helper loaded: download_helper
+ERROR - 2015-04-05 17:23:41 --> Severity: Warning  --> : failed to open stream: No such file or directory D:\xampp\htdocs\AiuProject\AiuProject\application\controllers\documentlist.php 63
+ERROR - 2015-04-05 17:23:41 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at D:\xampp\htdocs\AiuProject\AiuProject\system\core\Exceptions.php:170) D:\xampp\htdocs\AiuProject\AiuProject\system\core\Output.php 337
+DEBUG - 2015-04-05 17:23:41 --> Final output sent to browser
+DEBUG - 2015-04-05 17:23:41 --> Total execution time: 0.0447

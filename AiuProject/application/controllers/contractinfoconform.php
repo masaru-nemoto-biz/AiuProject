@@ -128,6 +128,8 @@ class ContractInfoConform extends CI_Controller {
     function car_conform_Prepare($carinfo_no) {
                 
         $this->array_car = array('car_name' => $this->input->post('car_name' .$carinfo_no),
+            'car_grade' => $this->input->post('car_grade' .$carinfo_no),
+            'acc_year' => $this->input->post('acc_year' .$carinfo_no),
             'regist_num' => $this->input->post('regist_num' .$carinfo_no),
             'car_type' => $this->input->post('car_type' .$carinfo_no),
             'int_person' => $this->input->post('int_person' .$carinfo_no),
@@ -153,6 +155,8 @@ class ContractInfoConform extends CI_Controller {
         $this->array_newcar = array('contract_id' => $contract_id,
             'company_id' => $data['company_id'],
             'car_name' => $this->input->post('car_name'),
+            'car_grade' => $this->input->post('car_grade'),
+            'acc_year' => $this->input->post('acc_year'),
             'regist_num' => $this->input->post('regist_num'),
             'car_type' => $this->input->post('car_type'),
             'int_person' => $this->input->post('int_person'),

@@ -71,12 +71,16 @@ class Printing extends CI_Controller {
         }
         
         $data['company_data'] = $this->corpStatus_model->get_company_data($data['check2'])->row(0);
+        $data['representative_data'] = $this->corpStatus_model->get_representative_data($data['check2'])->row(0);
         $data['contract'] = $this->corpStatus_model->get_contract_data($data['check2'])->row(0);
         $this->session->set_userdata('corp_name', $data['company_data']->corp_name);
         $this->session->set_userdata('post', $data['company_data']->post);
         $this->session->set_userdata('address', $data['company_data']->address);
         $this->session->set_userdata('fax', $data['company_data']->fax);
         $this->session->set_userdata('contract_name', $data['contract']->contract_name);
+        
+        $this->session->set_userdata('contracter_type', $data['company_data']->contracter_type);
+        $this->session->set_userdata('representative_name', $data['representative_data']->representative_name);
         
         $this->session->set_userdata('print_type', $data['check']);
         
@@ -117,7 +121,11 @@ class Printing extends CI_Controller {
   
         $this->pdf->Cell( 0, 8, mdate('%Y年%m月%d日'), 1, 1, 'R');
         $cell_01 = '<span style="font-size:35px;">書類送付状</span>';
-        $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span>';
+        if ($this->session->userdata('contracter_type') == '1') {
+            $cell_02 = '<span style="font-size:14px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:14px;">'.$this->input->post('rep').' 様</span>';
+        } else {
+            $cell_02 = '<span style="font-size:14px;">'.$this->input->post('title').' 様</span>';
+        }
         $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
         $cell_04 = '<span style="font-size:13px;">'.$this->input->post('title').'</span>';
         $cell_05 = '<span style="font-size:11px;">いつも大変お世話になっております。</span>';
@@ -193,10 +201,17 @@ class Printing extends CI_Controller {
         
         $cell_01_1 = '<span style="font-size:35px;">FAX送付状</span><span style="font-size:10px;">（送付状含み1枚）</span>';
         $cell_01_2 = '<span style="font-size:10px;">'. mdate('%Y年%m月%d日'). '</span>';
-        $cell_02 = '<span style="font-size:16px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:16px;">'.$this->session->userdata('contract_name').' 様</span><br><br><br><br><br><br><span style="font-size:13px;">FAX番号：'.$this->session->userdata('fax').'</span>';
+        $cell_02 = '<span style="font-size:14px;">'.$this->session->userdata('corp_name').'</span><br><span style="font-size:14px;">'.$this->session->userdata('contract_name').' 様</span><br><br><br><br><br><br><span style="font-size:13px;">FAX番号：'.$this->session->userdata('fax').'</span>';
         $cell_03 = '<span style="font-size:13px;">ライフコンシェルジュ株式会社<br>担当：'.$this->session->userdata('user_name').'<br></span><span style="font-size:11px;">〒151-0053<br>東京都渋谷区代々木2-14-5　F2ビル6階<br>TEL：03-5309-2503　FAX：03-6800-2509<br>Mail：'.$this->session->userdata('user_mail_address').'</span>';
         $cell_04 = '<span style="font-size:13px;">'.$this->input->post('title').'</span>';
         $cell_05 = '<span style="font-size:12px;">備考：□至急　□重要　□要返答</span>';
+        $cell_08 = '<span style="font-size:11px;">＜送付書類明細＞</span>';
+        $cell_08_1 = '<span style="font-size:11px;">'.$this->input->post('document1').'</span>';
+        $cell_08_2 = '<span style="font-size:11px;">'.$this->input->post('document2').'</span>';
+        $cell_08_3 = '<span style="font-size:11px;">'.$this->input->post('document3').'</span>';
+        $cell_08_4 = '<span style="font-size:11px;">'.$this->input->post('document4').'</span>';
+        $cell_08_5 = '<span style="font-size:11px;">'.$this->input->post('document5').'</span>';
+        $cell_08_6 = '<span style="font-size:11px;">'.$this->input->post('document6').'</span>';
         $cell_remarks = '<span style="font-size:12px;">お世話になります。</span><br><br>'
                 .'<span style="font-size:12px;">私、ほけん設計　ライフコンシェルジュ株式会社の建（たて）と申します。<br>宜しくお願い致します</span><br><br><br>'
                 .'<span style="font-size:12px;">'.$this->input->post('remarks1')
@@ -215,9 +230,17 @@ class Printing extends CI_Controller {
         $this->pdf->writeHTMLCell( 70, 45, '', '', $cell_03, 1, 1, false, true, 'L');
         $this->pdf->writeHTMLCell( 0, 10, '', '', $cell_04, 1, 1, false, true, 'C');
         $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_05, 1, 1, false, true, 'L');
-        $this->pdf->writeHTMLCell( 0, 150, '', '', $cell_remarks, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', '', 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_1, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_2, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_3, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_4, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_5, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 7, '', '', $cell_08_6, 1, 1, false, true, 'L');
+        $this->pdf->writeHTMLCell( 0, 105, '', '', $cell_remarks, 1, 1, false, true, 'L');
         $this->pdf->Image($cell_10, '95', '28', 30, '', '', '', '', false, '300');
-        $this->pdf->Image($cell_11, '', '240', 50, '', '', '', '', false, '300', 'R');
+        $this->pdf->Image($cell_11, '', '250', 50, '', '', '', '', false, '300', 'R');
         //  $this->pdf->writeHTML($tbl, true, false, false, false, 'C');
         $this->pdf->Output("sample.pdf", "I");
     }

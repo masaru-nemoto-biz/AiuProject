@@ -12,6 +12,7 @@ class AccidentConform extends CI_Controller {
         $this->load->model('accident_model');
         $this->load->model('master_model');
         $this->load->model('history_model');
+        $this->load->model('documentinfo_model');
         $this->output->set_header('Content-Type: text/html; charset=UTF-8');
 
     }
@@ -60,6 +61,9 @@ class AccidentConform extends CI_Controller {
             $this->session->set_userdata('company_id', $data['company_id']->company_id);
             
             redirect('contractinfolist/index');
+            
+        } elseif ($data['move'] == '契約者書類') {
+            $this->customer_document();
             
         } elseif ($data['move'] == '登録') {
             $this->conform_add();
@@ -182,6 +186,20 @@ class AccidentConform extends CI_Controller {
             'status_quo' => $this->input->post('status_quo_new' . $acc_id),
             'upd_date' => $this->input->post('upd_date_new' . $acc_id),
             'upd_user' => $this->input->post('upd_user_new' . $acc_id));
+    }
+    
+    /*
+     * 契約者書類画面へ
+     */
+    function customer_document() {
+
+        $company_id = $this->session->userdata('company_id');
+        $data['list1'] = $this->corpstatus_model->get_company_detail($company_id);
+        $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');
+        $data['doclist2'] = $this->documentinfo_model->get_document_company($company_id, '2');
+        $data['doclist3'] = $this->documentinfo_model->get_document_company($company_id, '3');
+        $data['doclist4'] = $this->documentinfo_model->get_document_company($company_id, '4');
+        $this->load->view('customer_ref_view', $data);
     }
 }
 ?>

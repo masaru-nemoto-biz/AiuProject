@@ -170,16 +170,7 @@ class ContractInfoList extends CI_Controller {
      * 企業アプローチ画面へ
      */
     function corp_approach() {
-                
-        $data['check1'] = $this->input->post('check_radio');
-        
-        if (empty($data['check1'])) {
-            // チェックなしの場合は自画面遷移
-            $message = '変更したい企業にチェックを入れてください';
-            $this->session->set_userdata('message', $message);
-            redirect('contractinfolist/index');
-        }
-        
+
         redirect('corpapproach/index');
     }
 

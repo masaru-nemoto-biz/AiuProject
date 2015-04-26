@@ -57,7 +57,7 @@ Class corpStatus_model extends CI_Model {
         $this->db->where('representative_detail.del_flg', '0');
         $this->db->order_by('company_id');
         $query = $this->db->get('representative_detail');
-        return $query->result();
+        return $query;
     }
     
     function get_contract_data($check_radio) {

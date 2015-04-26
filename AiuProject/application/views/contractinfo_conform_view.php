@@ -205,7 +205,7 @@
               <thead>
                 <tr>
                   <th>No</th>
-                  <th width="150px">車名</th>
+                  <th width="150px">車名／等級／事故</th>
                   <th width="150px">登録番号/車種</th>
                   <th width="120px">対人</th>
                   <th width="120px">対物</th>
@@ -213,7 +213,7 @@
                   <th width="150px">人身傷害</th>
                   <th width="150px">車両</th>
                   <th width="150px">備考</th>
-                  <th width="100px">増車日/廃車日</th>
+                  <th width="100px">増車日／廃車日</th>
                   <th width="120px">保険料</th>
                 </tr>
               </thead>
@@ -222,7 +222,10 @@
                 <?php foreach ($car_list as $rows => $row): ?>
                 <tr>
                   <td><?= $rows+1 ?></td>
-                  <td><input id="car_name" class="form-control input-sm" type="text" name="car_name<?= $row->carinfo_no ?>" value="<?= $row->car_name ?>" /></td>
+                  <td><input id="car_name" class="form-control input-sm" type="text" name="car_name<?= $row->carinfo_no ?>" value="<?= $row->car_name ?>" />
+                      <input id="car_grade" class="form-control input-sm" type="text" name="car_grade<?= $row->carinfo_no ?>" value="<?= $row->car_grade ?>" />
+                      <input id="acc_year" class="form-control input-sm" type="text" name="acc_year<?= $row->carinfo_no ?>" value="<?= $row->acc_year ?>" />
+                  </td>
                   <td>
                       <input id="regist_num" class="form-control input-sm" type="text" name="regist_num<?= $row->carinfo_no ?>" value="<?= $row->regist_num ?>" />
                       <input id="car_type" class="form-control input-sm" type="text" name="car_type<?= $row->carinfo_no ?>" value="<?= $row->car_type ?>" />
@@ -243,7 +246,10 @@
                 <?php endif; ?>
                 <tr>
                   <td><?php if (!empty($car_list)) : ?><?= $rows+2 ?><?php else: ?>1<?php endif; ?></td>
-                  <td><input id="car_name" class="form-control input-sm" type="text" name="car_name" value="" /></td>
+                  <td><input id="car_name" class="form-control input-sm" type="text" name="car_name" value="" />
+                  <input id="car_grade" class="form-control input-sm" type="text" name="car_grade" value="" />
+                  <input id="acc_year" class="form-control input-sm" type="text" name="acc_year" value="" />
+                  </td>
                   <td>
                       <input id="regist_num" class="form-control input-sm" type="text" name="regist_num" value="" />
                       <input id="car_type" class="form-control input-sm" type="text" name="car_type" value="" />

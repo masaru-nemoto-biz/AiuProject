@@ -74,22 +74,22 @@
                     <label class="label_size">◆代表者詳細</label>
                     <?php foreach ($representative as $row): ?>
                     <table class="table table-condensed">
-                        <tr><td class="td_head_size">代表者氏名</td><td><?= $row->representative_name ?></td></tr>
-                        <tr><td>代表者氏名(カナ)</td><td><?= $row->representative_kana ?></td></tr>
-                        <tr><td>肩書</td><td><?= $row->title ?></td></tr>
+                        <tr><td class="td_head_size">代表者氏名</td><td><?= $representative->representative_name ?></td></tr>
+                        <tr><td>代表者氏名(カナ)</td><td><?= $representative->representative_kana ?></td></tr>
+                        <tr><td>肩書</td><td><?= $representative->title ?></td></tr>
                         <tr><td>性別</td>
                             <td>
                               <?php foreach ($sex_mst as $row_rep_sex): ?>
-                                <?php if ($row_rep_sex->sex_id == $row->sex) :?><?= $row_rep_sex->sex_name ?><?php endif; ?>
+                                <?php if ($row_rep_sex->sex_id == $representative->sex) :?><?= $row_rep_sex->sex_name ?><?php endif; ?>
                               <?php endforeach; ?>
                             </td>
                         </tr>
-                        <tr><td>生年月日</td><td><?= $row->birthday ?></td></tr>
-                        <tr><td>携帯電話</td><td><?= $row->rep_mobile_phone ?></td></tr>
-                        <tr><td>メールアドレス</td><td><a href="mailto:<?= $row->mail ?>"><?= $row->mail ?></a></td></tr>
-                        <tr><td>自宅郵便番号</td><td><?= $row->post ?></td></tr>
-                        <tr><td>自宅所在地</td><td><?= $row->address ?></td></tr>
-                        <tr><td>自宅電話番号</td><td><?= $row->home_phone ?></td></tr>
+                        <tr><td>生年月日</td><td><?= $representative->birthday ?></td></tr>
+                        <tr><td>携帯電話</td><td><?= $representative->rep_mobile_phone ?></td></tr>
+                        <tr><td>メールアドレス</td><td><a href="mailto:<?= $representative->mail ?>"><?= $representative->mail ?></a></td></tr>
+                        <tr><td>自宅郵便番号</td><td><?= $representative->post ?></td></tr>
+                        <tr><td>自宅所在地</td><td><?= $representative->address ?></td></tr>
+                        <tr><td>自宅電話番号</td><td><?= $representative->home_phone ?></td></tr>
                     </table>
                     <?php endforeach; ?>
                     <label class="label_size">◆契約担当者詳細</label>
