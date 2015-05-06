@@ -5,6 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="<?=base_url();?>css/bootstrap.css" rel="stylesheet"/>
     <title>AIU</title>
+    <!-- jQueryの読み込み-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Bootstrapで使うJavaScriptの読み込み-->
+    <script src="<?=base_url();?>js/bootstrap.min.js"></script>
     <style type="text/css">
         body {
             padding-top: 40px;
@@ -24,7 +28,36 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .margin-left-copy {
+            margin-left: 140px;
+        }
     </style>
+    <script type="text/javascript">
+        $(function(){
+           $("#btn_clone").click(function(){
+               var representative_name = $(':text[name="representative_name"]').val();
+               var representative_kana = $(':text[name="representative_kana"]').val();
+               var rep_title = $(':text[name="rep_title"]').val();
+               var rep_sex = $('[name=rep_sex] option:selected').val();
+               var rep_birthday = $('[name="rep_birthday"]').val();
+               var rep_mobile_phone = $(':text[name="rep_mobile_phone"]').val();
+               var rep_mail = $(':text[name="rep_mail"]').val();
+               var rep_post = $(':text[name="rep_post"]').val();
+               var rep_address = $(':text[name="rep_address"]').val();
+               var rep_home_phone = $(':text[name="rep_home_phone"]').val();
+               $(':text[name="contract_name"]').val(representative_name);
+               $(':text[name="contract_kana"]').val(representative_kana);
+               $(':text[name="con_title"]').val(rep_title);
+               $('[name="con_sex"]').val(rep_sex);
+               $('[name="con_birthday"]').val(rep_birthday);
+               $(':text[name="con_mobile_phone"]').val(rep_mobile_phone);
+               $(':text[name="con_mail"]').val(rep_mail);
+               $(':text[name="con_post"]').val(rep_post);
+               $(':text[name="con_address"]').val(rep_address);
+               $(':text[name="con_home_phone"]').val(rep_home_phone);
+           });
+        });
+    </script>
 </head>
     <body>
         <?php if (is_null($company_data)) : ?>
@@ -101,7 +134,7 @@
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="" size="50" /></td></tr>
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="" size="50" /></td></tr>
                     </table>
-                    <label class="label_size">◆契約担当者詳細</label>
+                    <label class="label_size">◆契約担当者詳細</label><input id="btn_clone" class="btn btn-xs btn-primary margin-left-copy" type="button" value="代表者コピー"/>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="" size="50" /></td></tr>
                         <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="" size="50" /></td></tr>
@@ -248,7 +281,7 @@
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $representative->address ?>" size="50" /></td></tr>
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $representative->home_phone ?>" size="50" /></td></tr>
                     </table>
-                    <label class="label_size">◆契約担当者詳細</label>
+                    <label class="label_size">◆契約担当者詳細</label><input id="btn_clone" class="btn btn-xs btn-primary margin-left-copy" type="button" value="代表者コピー"/>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">担当者氏名</td><td><input class="form-control input-sm" type="text" name="contract_name" value="<?= $contract->contract_name ?>" size="50" /></td></tr>
                         <tr><td>担当者氏名(カナ)</td><td><input class="form-control input-sm" type="text" name="contract_kana" value="<?= $contract->contract_kana ?>" size="50" /></td></tr>
@@ -328,8 +361,4 @@
         </div>
         <?php endif; ?>
     </body>
-    <!-- jQueryの読み込み-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Bootstrapで使うJavaScriptの読み込み-->
-    <script src="<?=base_url();?>js/bootstrap.min.js"></script>
 </html>

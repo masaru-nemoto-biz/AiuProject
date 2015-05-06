@@ -121,7 +121,13 @@
             </thead>
             <?php foreach ($list2 as $row): ?>
                 <tr>
-                    <td class="small td-width"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
+                    <td class="small td-width">
+                        <?php if ($row->contract_id == $contract_select_id) : ?>
+                            <input type="radio" name="check_radio" value="<?= $row->contract_id ?>" checked="checked" />
+                        <?php else: ?>
+                            <input type="radio" name="check_radio" value="<?= $row->contract_id ?>" />
+                        <?php endif; ?>
+                    </td>
                     <td class="small td-width"><?= $row->insur_class_name ?></td>
                     <td class="small td-width"><?= $row->insur_corp_name ?></td>
                     <td class="small td-width1"><?= $row->brand_name ?></td>

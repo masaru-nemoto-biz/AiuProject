@@ -29,6 +29,9 @@ class Main extends CI_Controller {
         $data['mst_seach_obj'] = $this->master_model->mst_seach_obj();
         $data['history_list'] = $this->history_model->get_history_all();
         $data['seach_obj'] = $this->session->userdata('seach_obj');
+        
+        $data['contract_select_id'] = $this->session->userdata('contract_select_id');
+        
         $this->load->view('main_view', $data);
     }
 
@@ -41,6 +44,7 @@ class Main extends CI_Controller {
     function main_conform() {
 
         $this->session->set_userdata('contract_id', $this->input->post('check_radio'));
+        $this->session->set_userdata('contract_select_id', $this->input->post('check_radio'));
         
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
@@ -171,6 +175,8 @@ class Main extends CI_Controller {
         }
         $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
         $company_id = $data['company_id']->company_id;
+        $this->session->set_userdata('company_id', $company_id);
+        
         $data['referrer1'] = $this->agent->referrer();
         $data['list1'] = $this->corpStatus_model->get_company_detail($company_id);
         $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');

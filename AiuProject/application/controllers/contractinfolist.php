@@ -30,6 +30,8 @@ class ContractInfoList extends CI_Controller {
         $data['month_3ago'] = date('Y-m-d', strtotime("+3 month"));
         $data['contract_status_mst'] = $this->master_model->contract_status_mst();
         
+        $data['contract_select_id'] = $this->session->userdata('contract_select_id');
+        
         $this->load->view('contractinfo_list_view', $data);
     }
 
@@ -42,6 +44,7 @@ class ContractInfoList extends CI_Controller {
     function contractInfoList_conform() {
 
         $this->session->set_userdata('contract_id', $this->input->post('check_radio'));
+        $this->session->set_userdata('contract_select_id', $this->input->post('check_radio'));
         
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
@@ -178,16 +181,9 @@ class ContractInfoList extends CI_Controller {
      * 契約者書類画面へ
      */
     function customer_document() {
-        $data['check1'] = $this->input->post('check_radio');
-                
-        if (empty($data['check1'])) {
-            // チェックなしの場合は自画面遷移
-            $message = '参照したい企業にチェックを入れてください';
-            $this->session->set_userdata('message', $message);
-            redirect('corpinfolist/index');
-        }
+
         $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
-        $company_id = $data['company_id']->company_id;
+        $company_id = $this->session->userdata('company_id');
         $data['list1'] = $this->corpstatus_model->get_company_detail($company_id);
         $data['doclist'] = $this->documentinfo_model->get_document_company($company_id, '1');
         $data['doclist2'] = $this->documentinfo_model->get_document_company($company_id, '2');

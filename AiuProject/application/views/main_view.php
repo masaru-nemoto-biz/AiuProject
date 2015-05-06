@@ -103,7 +103,13 @@
               </thead>
               <?php foreach ($contract_list as $row): ?>
               <tr>
-                <td class="td-width2"><input type="radio" name="check_radio" value="<?= $row->contract_id ?>" /></td>
+                <td class="td-width2">
+                    <?php if ($row->contract_id == $contract_select_id) : ?>
+                        <input type="radio" name="check_radio" value="<?= $row->contract_id ?>" checked="checked" />
+                    <?php else: ?>
+                        <input type="radio" name="check_radio" value="<?= $row->contract_id ?>" />
+                    <?php endif; ?>
+                </td>
                 <td class="small td-width1">
                     <?php if (3 == $row->contracter_type) : ?>
                       <?= $row->representative_name ?>

@@ -41,10 +41,6 @@ class DocumentList extends CI_Controller {
             redirect('main/index');
             
         } elseif ($data['move'] == '契約状況一覧') {
-            // メインメニューから来た場合、company_idをsessionに持っていない為、ここでcontract_idから逆引きしてセット        
-            $data['company_id'] = $this->contractInfo_model->get_company_id($this->session->userdata('contract_id'))->row(0);
-            $this->session->set_userdata('company_id', $data['company_id']->company_id);
-            
             redirect('contractinfolist/index');
             
         } elseif (!empty($data['move'])) {

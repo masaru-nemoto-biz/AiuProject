@@ -72,7 +72,13 @@
             </thead>
             <?php foreach ($list as $row): ?>
                 <tr>
-                    <td class=" td-width"><input type="radio" name="check_radio" value="<?= $row->company_id ?>" /></td>
+                    <td class=" td-width">
+                        <?php if ($row->company_id == $corp_select_id) : ?>
+                            <input type="radio" name="check_radio" value="<?= $row->company_id ?>" checked="checked" />
+                        <?php else: ?>
+                            <input type="radio" name="check_radio" value="<?= $row->company_id ?>" />
+                        <?php endif; ?>
+                    </td>
                     <td class="small td-width">
                         <?php if (3 == $row->contracter_type) : ?>
                           <?= $row->representative_name ?>

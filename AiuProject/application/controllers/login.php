@@ -14,6 +14,7 @@ class Login extends CI_Controller {
     
     function index() {
 
+        $this->session->sess_destroy();
         $this->load->view('login_view');
     }
     

@@ -32,6 +32,8 @@ class CorpInfoList extends CI_Controller {
         $data['list2'] = $this->contractInfo_model->get_contract_all();
         $data['acc_list'] = $this->accident_model->get_accident_all();
         
+        $data['corp_select_id'] = $this->session->userdata('corp_select_id');
+        
         $this->load->view('corpinfo_list_view', $data);
     }
 
@@ -47,6 +49,8 @@ class CorpInfoList extends CI_Controller {
         
         $data['move'] = $this->input->post('move');
         $this->session->unset_userdata('message');
+        
+        $this->session->set_userdata('corp_select_id', $this->session->userdata('company_id'));
         
         if ($data['move'] == '情報変更/追加') {
             $this->contractInfo_change();
