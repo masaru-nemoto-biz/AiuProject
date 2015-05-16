@@ -72,7 +72,6 @@
                 </div>
                 <div class="col-md-4">
                     <label class="label_size">◆代表者詳細</label>
-                    <?php foreach ($representative as $row): ?>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">代表者氏名</td><td><?= $representative->representative_name ?></td></tr>
                         <tr><td>代表者氏名(カナ)</td><td><?= $representative->representative_kana ?></td></tr>
@@ -91,7 +90,6 @@
                         <tr><td>自宅所在地</td><td><?= $representative->address ?></td></tr>
                         <tr><td>自宅電話番号</td><td><?= $representative->home_phone ?></td></tr>
                     </table>
-                    <?php endforeach; ?>
                     <label class="label_size">◆契約担当者詳細</label>
                     <table class="table table-condensed">
                         <tr><td class="td_head_size">担当者氏名</td><td><?= $contract->contract_name ?></td></tr>

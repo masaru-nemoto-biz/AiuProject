@@ -20,13 +20,24 @@ class CorpInfoList extends CI_Controller {
     function index() {
 
         $data['message'] = $this->session->userdata('message');
-        
+        //火災保険
         $data['fire'] = $this->corpStatus_model->get_3m_ago('1');
-        $data['accident'] = $this->corpStatus_model->get_3m_ago('2');
-        $data['liability'] = $this->corpStatus_model->get_3m_ago('3');
-        $data['large'] = $this->corpStatus_model->get_3m_ago('4');
-        $data['other'] = $this->corpStatus_model->get_3m_ago('5');
-        $data['auto'] = $this->corpStatus_model->get_3m_ago('6');
+        //傷害保険
+        $data['accident'] = $this->corpStatus_model->get_3m_ago('3');
+        //賠償保険
+        $data['liability'] = $this->corpStatus_model->get_3m_ago('4');
+        //生命保険
+        $data['large'] = $this->corpStatus_model->get_3m_ago('5');
+        //自動車
+        $data['auto'] = $this->corpStatus_model->get_3m_ago('2');
+        //パッケージ
+        $data['package'] = $this->corpStatus_model->get_3m_ago('6');
+        //メディカル
+        $data['medical'] = $this->corpStatus_model->get_3m_ago('7');
+        //自賠責
+        $data['mandatory'] = $this->corpStatus_model->get_3m_ago('8');
+        //その他
+        $data['other'] = $this->corpStatus_model->get_3m_ago('99');
         $data['count_acc'] = $this->corpStatus_model->get_accident();
         $data['list'] = $this->corpStatus_model->get_company_list();
         $data['list2'] = $this->contractInfo_model->get_contract_all();

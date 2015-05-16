@@ -29,7 +29,7 @@
             white-space: nowrap;
         }
         .td-width {
-            width :50px;
+            width :100px;
         }
     </style>
 </head>
@@ -52,9 +52,10 @@
 <div class="row">
     <div class="col-md-12">
         <div class="table-responsive">
-        <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed">
+        <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed" style="table-layout: fixed">
             <thead>
-                <th class="table-style small td-width">選択</th>
+              <tr>
+                <th class="table-style small">選択</th>
                 <th class="table-style small td-width">契約元</th>
                 <th class="table-style small td-width">会社名</th>
                 <th class="table-style small td-width">代表者名</th>
@@ -62,17 +63,22 @@
                 <th class="table-style small td-width">証券番号</th>
                 <th class="table-style small td-width">事故番号</th>
                 <th class="table-style small td-width">火災保険</th>
+                <th class="table-style small td-width">自動車</th>
                 <th class="table-style small td-width">傷害保険</th>
                 <th class="table-style small td-width">賠償保険</th>
                 <th class="table-style small td-width">生命保険</th>
-                <th class="table-style small td-width">自動車</th>
+                <th class="table-style small td-width">パッケージ</th>
+                <th class="table-style small td-width">メディカル</th>
+                <th class="table-style small td-width">自賠責</th>
                 <th class="table-style small td-width">その他</th>
                 <th class="table-style small td-width">事故状況</th>
                 <th class="table-style small td-width">担当者</th>
+              </tr>
             </thead>
+            <tbody>
             <?php foreach ($list as $row): ?>
                 <tr>
-                    <td class=" td-width">
+                    <td class="">
                         <?php if ($row->company_id == $corp_select_id) : ?>
                             <input type="radio" name="check_radio" value="<?= $row->company_id ?>" checked="checked" />
                         <?php else: ?>
@@ -105,6 +111,11 @@
                         <?php endforeach; ?>
                     </td>
                     <td class="small td-width">
+                        <?php foreach ($auto as $row_auto): ?>
+                        <?php if ($row_auto->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td class="small td-width">
                         <?php foreach ($accident as $row_acc): ?>
                         <?php if ($row_acc->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
@@ -120,8 +131,18 @@
                         <?php endforeach; ?>
                     </td>
                     <td class="small td-width">
-                        <?php foreach ($auto as $row_auto): ?>
-                        <?php if ($row_auto->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php foreach ($mandatory as $row_mandatory): ?>
+                        <?php if ($row_mandatory->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td class="small td-width">
+                        <?php foreach ($package as $row_package): ?>
+                        <?php if ($row_package->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
+                        <?php endforeach; ?>
+                    </td>
+                    <td class="small td-width">
+                        <?php foreach ($medical as $row_medical): ?>
+                        <?php if ($row_medical->company_id == $row->company_id) : ?><span class="label label-danger">3ヶ月前あり</span><?php endif; ?>
                         <?php endforeach; ?>
                     </td>
                     <td class="small td-width">
@@ -137,6 +158,7 @@
                     <td class="small td-width"><?= $row->upd_user ?></td>
                 </tr>
             <?php endforeach; ?>
+            </tbody>
         </table>
         </div>
     </div>
@@ -179,8 +201,9 @@
     <script>
         $("#table_id1").dataTable( {
                     "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 2,3,4,5,6 ] }],
-                    "sScrollY": "400px",
+                    "bScrollInfinite":false,
                     "bStateSave": true,
+                    "sScrollY": 400,
                     "iDisplayLength": 25
                 } );
 
