@@ -19,6 +19,12 @@
       <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>AIU</title>
+<!-- 初期状態は非表示 -->
+<style type="text/css">body { visibility: hidden; }</style>
+<noscript>
+<!-- スクリプトが無効な場合は以下の指定がカスケードされる -->
+<style type="text/css">body { visibility: visible; }</style>
+</noscript>
     <style type="text/css">
         body {
             padding-top: 40px;
@@ -38,6 +44,16 @@
             width :10px;
         }
     </style>
+<script type="text/javascript">
+jQuery(function($) {
+    //
+    // DOM の再描画が発生する処理
+    //
+ 
+    // スクリプトから表示状態を指定する
+    $("body").css({ visibility: "visible" });
+});
+</script>
 </head>
   <body>
     <div class="container" style="font-size: 12px;">

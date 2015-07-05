@@ -84,6 +84,7 @@
                         <tr><td>郵便番号(〒)</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_post" value="" size="50" /></td></tr>
                         <tr><td>所在地</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_address" value="" size="50" /></td></tr>
                         <tr><td>電話番号</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_phone" value="" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td colspan="2"><input class="form-control input-sm" type="text" name="phone_sec" value="" size="50" /></td></tr>
                         <tr><td>FAX</td><td colspan="2"><input class="form-control input-sm" type="text" name="corp_fax" value="" size="50" /></td></tr>
                         <tr><td>会社メールアドレス</td><td colspan="2"><input class="form-control input-sm" type="text" name="company_mail" value="" size="50" /></td></tr>
                         <tr><td>会社HP</td><td colspan="2"><input class="form-control input-sm" type="text" name="company_hp" value="" size="50" /></td></tr>
@@ -133,6 +134,8 @@
                         <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="" size="50" /></td></tr>
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="" size="50" /></td></tr>
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td><input class="form-control input-sm" type="text" name="rep_phone_sec" value="" size="50" /></td></tr>
+                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="rep_fax" value="" size="50" /></td></tr>
                     </table>
                     <label class="label_size">◆契約担当者詳細</label><input id="btn_clone" class="btn btn-xs btn-primary margin-left-copy" type="button" value="代表者コピー"/>
                     <table class="table table-condensed">
@@ -154,6 +157,8 @@
                         <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="" size="50" /></td></tr>
                         <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="" size="50" /></td></tr>
                         <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td><input class="form-control input-sm" type="text" name="cont_phone_sec" value="" size="50" /></td></tr>
+                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="cont_fax" value="" size="50" /></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4">
@@ -227,8 +232,9 @@
                         <tr><td class="td_head_size">法人名称</td><td><input class="form-control input-sm" type="text" name="corp_name" value="<?= $company_data->corp_name ?>" size="50" /></td></tr>
                         <tr><td>法人名称(カナ)</td><td><input class="form-control input-sm" type="text" name="corp_kana" value="<?= $company_data->corp_kana ?>" size="50" /></td></tr>
                         <tr><td>郵便番号(〒)</td><td><input class="form-control input-sm" type="text" name="corp_post" value="<?= $company_data->post ?>" size="50" /></td></tr>
-                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="<?= $company_data->address ?>" size="50" /></td></tr>
+                        <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="corp_address" value="<?= $company_data->corp_address ?>" size="50" /></td></tr>
                         <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="corp_phone" value="<?= $company_data->phone ?>" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td><input class="form-control input-sm" type="text" name="phone_sec" value="<?= $company_data->phone_sec ?>" size="50" /></td></tr>
                         <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="corp_fax" value="<?= $company_data->fax ?>" size="50" /></td></tr>
                         <tr><td>会社メールアドレス</td><td><input class="form-control input-sm" type="text" name="company_mail" value="<?= $company_data->company_mail ?>" size="50" /></td></tr>
                         <tr><td>会社HP</td><td><input class="form-control input-sm" type="text" name="company_hp" value="<?= $company_data->company_hp ?>" size="50" /></td></tr>
@@ -280,6 +286,8 @@
                         <tr><td>自宅郵便番号</td><td><input class="form-control input-sm" type="text" name="rep_post" value="<?= $representative->post ?>" size="50" /></td></tr>
                         <tr><td>自宅所在地</td><td><input class="form-control input-sm" type="text" name="rep_address" value="<?= $representative->address ?>" size="50" /></td></tr>
                         <tr><td>自宅電話番号</td><td><input class="form-control input-sm" type="text" name="rep_home_phone" value="<?= $representative->home_phone ?>" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td><input class="form-control input-sm" type="text" name="rep_phone_sec" value="<?= $representative->rep_phone_sec ?>" size="50" /></td></tr>
+                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="rep_fax" value="<?= $representative->rep_fax ?>" size="50" /></td></tr>
                     </table>
                     <label class="label_size">◆契約担当者詳細</label><input id="btn_clone" class="btn btn-xs btn-primary margin-left-copy" type="button" value="代表者コピー"/>
                     <table class="table table-condensed">
@@ -301,6 +309,8 @@
                         <tr><td>郵便番号</td><td><input class="form-control input-sm" type="text" name="con_post" value="<?= $contract->post ?>" size="50" /></td></tr>
                         <tr><td>所在地</td><td><input class="form-control input-sm" type="text" name="con_address" value="<?= $contract->address ?>" size="50" /></td></tr>
                         <tr><td>電話番号</td><td><input class="form-control input-sm" type="text" name="con_home_phone" value="<?= $contract->home_phone ?>" size="50" /></td></tr>
+                        <tr><td>電話番号2</td><td><input class="form-control input-sm" type="text" name="cont_phone_sec" value="<?= $contract->cont_phone_sec ?>" size="50" /></td></tr>
+                        <tr><td>FAX</td><td><input class="form-control input-sm" type="text" name="cont_fax" value="<?= $contract->cont_fax ?>" size="50" /></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4">

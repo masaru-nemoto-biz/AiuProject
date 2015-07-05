@@ -83,6 +83,7 @@ class ContractInfoList extends CI_Controller {
      */
     function contractInfo_add() {
 
+        $this->session->unset_userdata('contract_id');
         $data['insurance_classification_mst'] = $this->master_model->insurance_classification_mst();
         $data['insurance_company_mst'] = $this->master_model->insurance_company_mst();
         $data['corp_division_mst'] = $this->master_model->corp_division_mst();

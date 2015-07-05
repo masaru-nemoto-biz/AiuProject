@@ -47,8 +47,9 @@
                         <tr><td class="td_head_size">法人名称</td><td><?= $company_data->corp_name ?></td></tr>
                         <tr><td>法人名称(カナ)</td><td><?= $company_data->corp_kana ?></td></tr>
                         <tr><td>郵便番号(〒)</td><td><?= $company_data->post ?></td></tr>
-                        <tr><td>所在地</td><td><?= $company_data->address ?></td></tr>
+                        <tr><td>所在地</td><td><?= $company_data->corp_address ?></td></tr>
                         <tr><td>電話番号</td><td><?= $company_data->phone ?></td></tr>
+                        <tr><td>電話番号2</td><td><?= $company_data->phone_sec ?></td></tr>
                         <tr><td>FAX</td><td><?= $company_data->fax ?></td></tr>
                         <tr><td>会社メールアドレス</td><td><a href="mailto:<?= $company_data->company_mail ?>"><?= $company_data->company_mail ?></a></td></tr>
                         <tr><td>会社HP</td><td><a href="<?= $company_data->company_hp ?>" target="_blank"><?= $company_data->company_hp ?></a></td></tr>
@@ -89,6 +90,8 @@
                         <tr><td>自宅郵便番号</td><td><?= $representative->post ?></td></tr>
                         <tr><td>自宅所在地</td><td><?= $representative->address ?></td></tr>
                         <tr><td>自宅電話番号</td><td><?= $representative->home_phone ?></td></tr>
+                        <tr><td>電話番号2</td><td><?= $representative->rep_phone_sec ?></td></tr>
+                        <tr><td>FAX</td><td><?= $representative->rep_fax ?></td></tr>
                     </table>
                     <label class="label_size">◆契約担当者詳細</label>
                     <table class="table table-condensed">
@@ -108,6 +111,8 @@
                         <tr><td>郵便番号</td><td><?= $contract->post ?></td></tr>
                         <tr><td>所在地</td><td><?= $contract->address ?></td></tr>
                         <tr><td>電話番号</td><td><?= $contract->home_phone ?></td></tr>
+                        <tr><td>電話番号2</td><td><?= $contract->cont_phone_sec ?></td></tr>
+                        <tr><td>FAX</td><td><?= $contract->cont_fax ?></td></tr>
                     </table>
                 </div>
                 <div class="col-md-4">

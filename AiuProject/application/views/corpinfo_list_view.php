@@ -19,6 +19,12 @@
   <script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
     <title>AIU</title>
+<!-- 初期状態は非表示 -->
+<style type="text/css">body { visibility: hidden; }</style>
+<noscript>
+<!-- スクリプトが無効な場合は以下の指定がカスケードされる -->
+<style type="text/css">body { visibility: visible; }</style>
+</noscript>
     <style type="text/css">
         body {
             padding-top: 40px;
@@ -29,9 +35,25 @@
             white-space: nowrap;
         }
         .td-width {
-            width :100px;
+            width :80px;
+        }
+        .td-name-width {
+            width :130px;
+        }
+        .td-radio-width {
+            width :40px;
         }
     </style>
+<script type="text/javascript">
+jQuery(function($) {
+    //
+    // DOM の再描画が発生する処理
+    //
+ 
+    // スクリプトから表示状態を指定する
+    $("body").css({ visibility: "visible" });
+});
+</script>
 </head>
     <body>
         <div class="container" style="font-size: 12px;">
@@ -55,9 +77,9 @@
         <table id="table_id1" class="table table-striped table-bordered table-hover table-condensed" style="table-layout: fixed">
             <thead>
               <tr>
-                <th class="table-style small">選択</th>
-                <th class="table-style small td-width">契約元</th>
-                <th class="table-style small td-width">会社名</th>
+                <th class="table-style small td-radio-width">選択</th>
+                <th class="table-style small td-name-width">契約元</th>
+                <th class="table-style small td-name-width">会社名</th>
                 <th class="table-style small td-width">代表者名</th>
                 <th class="table-style small td-width">代表者連絡先</th>
                 <th class="table-style small td-width">証券番号</th>
@@ -78,21 +100,21 @@
             <tbody>
             <?php foreach ($list as $row): ?>
                 <tr>
-                    <td class="">
+                    <td class="small td-radio-width">
                         <?php if ($row->company_id == $corp_select_id) : ?>
                             <input type="radio" name="check_radio" value="<?= $row->company_id ?>" checked="checked" />
                         <?php else: ?>
                             <input type="radio" name="check_radio" value="<?= $row->company_id ?>" />
                         <?php endif; ?>
                     </td>
-                    <td class="small td-width">
+                    <td class="small td-name-width">
                         <?php if (3 == $row->contracter_type) : ?>
                           <?= $row->representative_name ?>
                         <?php else: ?>
                           <?= $row->corp_name ?>
                         <?php endif; ?>
                     </td>
-                    <td class="small td-width"><?= $row->corp_name ?></td>
+                    <td class="small td-name-width"><?= $row->corp_name ?></td>
                     <td class="small td-width"><?= $row->representative_name ?></td>
                     <td class="small td-width"><?= $row->rep_mobile_phone ?></td>
                     <td class="small td-width">
@@ -200,7 +222,7 @@
     <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
     <script>
         $("#table_id1").dataTable( {
-                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 2,3,4,5,6 ] }],
+                    "aoColumnDefs": [{ "bVisible": false, "aTargets": [ 1,3,4,5,6 ] }],
                     "bScrollInfinite":false,
                     "bStateSave": true,
                     "sScrollY": 400,

@@ -45,7 +45,7 @@
                 <table class="table table-condensed">
                     <?php foreach ($list1 as $row): ?>
                     <tr><td style="width:70px">契約者名</td><td><?= $row->corp_name ?></td></tr>
-                    <tr><td>所在地</td><td><?= $row->address ?></td></tr>
+                    <tr><td>所在地</td><td><?= $row->corp_address ?></td></tr>
                     <tr><td>連絡先</td><td><?= $row->phone ?></td></tr>
                     <?php endforeach; ?>
                 </table>

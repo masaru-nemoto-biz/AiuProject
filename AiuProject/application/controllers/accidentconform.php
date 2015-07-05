@@ -137,6 +137,7 @@ class AccidentConform extends CI_Controller {
             'occurrence_date' => $this->input->post('occurrence_date' .$acc_id),
             'sonsa' => $this->input->post('sonsa' .$acc_id),
             'acc_phone' => $this->input->post('acc_phone' .$acc_id),
+            'sonsa_mail' => $this->input->post('sonsa_mail' .$acc_id),
             'payment' => $this->input->post('payment' .$acc_id),
             'acc_status_id' => $this->input->post('acc_status_id' .$acc_id));
 
@@ -156,6 +157,7 @@ class AccidentConform extends CI_Controller {
             'occurrence_date' => $this->input->post('occurrence_date_new'),
             'sonsa' => $this->input->post('sonsa_new'),
             'acc_phone' => $this->input->post('acc_phone_new'),
+            'sonsa_mail' => $this->input->post('sonsa_mail_new'),
             'payment' => $this->input->post('payment_new'),
             'acc_status_id' => $this->input->post('acc_status_id_new'));
 

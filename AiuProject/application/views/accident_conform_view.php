@@ -61,6 +61,16 @@
                             <?php endif; ?>
                         </td>
                     </tr>
+                    <tr><td style="width:100px">支払い</td>
+                        <td>
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <input class="form-control input-sm" type="text" name="payment<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->payment ?>" />
+                            <?php else: ?>
+                              <input class="form-control input-sm" type="text" name="payment" value="" />
+                            <?php endif; ?>
+                        </td>
+                        <td align="center" style="vertical-align: bottom">円</td>
+                    </tr>
                 </table>
             </div>
             <div class="col-md-4">
@@ -81,6 +91,27 @@
                           <?php else: ?>
                               <input class="form-control input-sm" type="date" name="occurrence_date" value="" />
                           <?php endif; ?>
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">ステータス</td>
+                        <td>
+                            <?php if (!empty($row_acc_list)) : ?>
+                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
+                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                  <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row_acc_list->acc_status_id) :?>selected="selected"<?php endif; ?>>
+                                    <?= $row_accident_status->acc_status_name ?>
+                                  </option>
+                                <?php endforeach; ?>
+                              </select>
+                            <?php else: ?>
+                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
+                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                  <option value="<?= $row_accident_status->acc_status_id ?>">
+                                    <?= $row_accident_status->acc_status_name ?>
+                                  </option>
+                                <?php endforeach; ?>
+                              </select>
+                            <?php endif; ?>
                         </td>
                     </tr>
                 </table>
@@ -105,34 +136,12 @@
                             <?php endif; ?>
                         </td>
                     </tr>
-                    <tr><td style="width:100px">支払い</td>
-                        <td>
-                            <?php if (!empty($row_acc_list)) : ?>
-                              <input class="form-control input-sm" type="text" name="payment<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->payment ?>" />
-                            <?php else: ?>
-                              <input class="form-control input-sm" type="text" name="payment" value="" />
-                            <?php endif; ?>
-                        </td>
-                        <td align="center" style="vertical-align: bottom">円</td>
-                    </tr>
-                    <tr><td style="width:100px">ステータス</td>
+                    <tr><td style="width:100px">メールアドレス</td>
                         <td colspan="2">
                             <?php if (!empty($row_acc_list)) : ?>
-                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
-                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
-                                  <option value="<?= $row_accident_status->acc_status_id ?>" <?php if ($row_accident_status->acc_status_id == $row_acc_list->acc_status_id) :?>selected="selected"<?php endif; ?>>
-                                    <?= $row_accident_status->acc_status_name ?>
-                                  </option>
-                                <?php endforeach; ?>
-                              </select>
+                              <input class="form-control input-sm" type="text" name="sonsa_mail<?= $row_acc_list->acc_id ?>" value="<?= $row_acc_list->sonsa_mail ?>" />
                             <?php else: ?>
-                              <select class="form-control input-sm" name="acc_status_id<?= $row_acc_list->acc_id ?>">
-                                <?php foreach ($accident_status_mst as $row_accident_status): ?>
-                                  <option value="<?= $row_accident_status->acc_status_id ?>">
-                                    <?= $row_accident_status->acc_status_name ?>
-                                  </option>
-                                <?php endforeach; ?>
-                              </select>
+                              <input class="form-control input-sm" type="text" name="sonsa_mail" value="" />
                             <?php endif; ?>
                         </td>
                     </tr>
@@ -201,6 +210,12 @@
                             <input class="form-control input-sm" type="text" name="acc_id_new" value="" />
                         </td>
                     </tr>
+                    <tr><td style="width:100px">支払い</td>
+                        <td>
+                            <input class="form-control input-sm" type="text" name="payment_new" value="" />
+                        </td>
+                        <td align="center" style="vertical-align: bottom">円</td>
+                    </tr>
                 </table>
             </div>
             <div class="col-md-4">
@@ -213,6 +228,17 @@
                     <tr><td style="width:100px">発生日時</td>
                         <td>
                             <input class="form-control input-sm" type="date" name="occurrence_date_new" value="" />
+                        </td>
+                    </tr>
+                    <tr><td style="width:100px">ステータス</td>
+                        <td>
+                            <select class="form-control input-sm" name="acc_status_id_new">
+                              <?php foreach ($accident_status_mst as $row_accident_status): ?>
+                                <option value="<?= $row_accident_status->acc_status_id ?>">
+                                  <?= $row_accident_status->acc_status_name ?>
+                                </option>
+                              <?php endforeach; ?>
+                            </select>
                         </td>
                     </tr>
                 </table>
@@ -229,21 +255,9 @@
                             <input class="form-control input-sm" type="text" name="acc_phone_new" value="" />
                         </td>
                     </tr>
-                    <tr><td style="width:100px">支払い</td>
-                        <td>
-                            <input class="form-control input-sm" type="text" name="payment_new" value="" />
-                        </td>
-                        <td align="center" style="vertical-align: bottom">円</td>
-                    </tr>
-                    <tr><td style="width:100px">ステータス</td>
+                    <tr><td style="width:100px">メールアドレス</td>
                         <td colspan="2">
-                            <select class="form-control input-sm" name="acc_status_id_new">
-                              <?php foreach ($accident_status_mst as $row_accident_status): ?>
-                                <option value="<?= $row_accident_status->acc_status_id ?>">
-                                  <?= $row_accident_status->acc_status_name ?>
-                                </option>
-                              <?php endforeach; ?>
-                            </select>
+                            <input class="form-control input-sm" type="text" name="sonsa_mail_new" value="" />
                         </td>
                     </tr>
                 </table>

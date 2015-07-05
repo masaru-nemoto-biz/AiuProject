@@ -75,7 +75,7 @@ class Printing extends CI_Controller {
         $data['contract'] = $this->corpStatus_model->get_contract_data($data['check2'])->row(0);
         $this->session->set_userdata('corp_name', $data['company_data']->corp_name);
         $this->session->set_userdata('post', $data['company_data']->post);
-        $this->session->set_userdata('address', $data['company_data']->address);
+        $this->session->set_userdata('corp_address', $data['company_data']->corp_address);
         $this->session->set_userdata('fax', $data['company_data']->fax);
         $this->session->set_userdata('contract_name', $data['contract']->contract_name);
         

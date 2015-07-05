@@ -52,7 +52,7 @@
             <div class="col-md-4">
               <table class="table table-condensed">
                 <tr><td style="width:70px">契約者名</td><td><?= $row->corp_name ?></td></tr>
-                <tr><td>所在地</td><td><?= $row->address ?></td></tr>
+                <tr><td>所在地</td><td><?= $row->corp_address ?></td></tr>
                 <tr><td>連絡先</td><td><?= $row->phone ?></td></tr>
               </table>
             </div>

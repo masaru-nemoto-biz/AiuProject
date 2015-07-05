@@ -18,7 +18,7 @@
                         <tr><td width="120">企業名</td><td><?= $row->corp_name ?></td></tr>
                         <tr><td>氏名</td><td><?= $row->corp_kana ?></td></tr>
                         <tr><td>肩書き</td><td><?= $row->post ?></td></tr>
-                        <tr><td>所在地</td><td><?= $row->address ?></td></tr>
+                        <tr><td>所在地</td><td><?= $row->corp_address ?></td></tr>
                         <tr><td>連絡先</td><td><?= $row->phone ?></td></tr>
                         <tr><td>メールアドレス</td><td><?= $row->fax ?></td></tr>
                         <tr><td>HP_URL</td><td><?= $row->company_mail ?></td></tr>

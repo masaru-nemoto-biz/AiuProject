@@ -18,7 +18,7 @@ class CorpInfoConform extends CI_Controller {
     }
 
     /*
-     * 契約者情報変更ロジック
+     * 契約者情報変更ロジック(変更)
      */
     function conform() {
         
@@ -35,7 +35,7 @@ class CorpInfoConform extends CI_Controller {
     }
     
     /*
-     * 契約者情報追加ロジック
+     * 契約者情報追加ロジック(新規)
      */
     function conform_add() {
         
@@ -61,8 +61,9 @@ class CorpInfoConform extends CI_Controller {
         $this->array = array('corp_name' => $this->input->post('corp_name'),
             'corp_kana' => $this->input->post('corp_kana'),
             'post' => $this->input->post('corp_post'),
-            'address' => $this->input->post('corp_address'),
+            'corp_address' => $this->input->post('corp_address'),
             'phone' => $this->input->post('corp_phone'),
+            'phone_sec' => $this->input->post('phone_sec'),
             'fax' => $this->input->post('corp_fax'),
             'company_mail' => $this->input->post('company_mail'),
             'company_hp' => $this->input->post('company_hp'),
@@ -86,7 +87,9 @@ class CorpInfoConform extends CI_Controller {
             'mail' => $this->input->post('rep_mail'),
             'post' => $this->input->post('rep_post'),
             'address' => $this->input->post('rep_address'),
-            'home_phone' => $this->input->post('rep_home_phone'));
+            'home_phone' => $this->input->post('rep_home_phone'),
+            'rep_phone_sec' => $this->input->post('rep_phone_sec'),
+            'rep_fax' => $this->input->post('rep_fax'));
         
         $this->array3 = array('contract_name' => $this->input->post('contract_name'),
             'contract_kana' => $this->input->post('contract_kana'),
@@ -97,7 +100,9 @@ class CorpInfoConform extends CI_Controller {
             'mail' => $this->input->post('con_mail'),
             'post' => $this->input->post('con_post'),
             'address' => $this->input->post('con_address'),
-            'home_phone' => $this->input->post('con_home_phone'));
+            'home_phone' => $this->input->post('con_home_phone'),
+            'cont_phone_sec' => $this->input->post('cont_phone_sec'),
+            'cont_fax' => $this->input->post('cont_fax'));
         
         $this->array4 = array('account_transfer_num' => $this->input->post('account_transfer_num'),
             'address' => $this->input->post('bank_address'),
